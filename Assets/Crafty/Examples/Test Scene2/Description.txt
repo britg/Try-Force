@@ -1,0 +1,1 @@
+﻿This is second test scene. Here note that patches will be downloaded automatically without the need of any interaction from the player.

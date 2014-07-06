@@ -1,0 +1,16 @@
+/Temp
+/obj
+/library
+*.csproj
+*.unityproj
+*.sln
+.DS_Store
+Library
+Temp
+*.csproj
+*.pidb
+*.unityproj
+*.sln
+*.userprefs
+log/
+Patchie/

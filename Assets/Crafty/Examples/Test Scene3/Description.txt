@@ -1,0 +1,4 @@
+﻿This is Third test scene.
+Here you can test the in-game error log.
+Simply dont change the URL and try to patch the game.
+An window with error will appear.
