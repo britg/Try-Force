@@ -68,11 +68,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9f625628f52e34b2090d07964d91da89, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  arrow:
-    damage: 1
-    lifetime: 2
-    speed: 30
+  easetype: 21
   destination: {x: 0, y: 0}
+  arrow:
+    _damage: 1
+    _lifetime: 2
+    _speed: 30
 --- !u!212 &21200000
 SpriteRenderer:
   m_ObjectHideFlags: 1

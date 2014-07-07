@@ -3,6 +3,8 @@ using System.Collections;
 
 public class MouseInputController : GameController, IInputController {
 
+	public Camera uiCamera;
+
 	// Moving
 
 	public bool forward { get { return Input.GetKey(KeyCode.W); } }
@@ -60,6 +62,16 @@ public class MouseInputController : GameController, IInputController {
 	}
 
 	// Attack
-	public bool attack { get { return Input.GetMouseButtonDown(0); } }
+	bool uiHit { get { return CheckUIHit(); } }
+	public bool attack { get { return Input.GetMouseButtonDown(0) && !uiHit; } }
+
+
+	bool CheckUIHit () {
+		Ray ray = uiCamera.ScreenPointToRay(Input.mousePosition);
+		RaycastHit hit;
+		bool didHit = Physics.Raycast(ray, out hit);
+
+		return didHit;
+	}
 
 }

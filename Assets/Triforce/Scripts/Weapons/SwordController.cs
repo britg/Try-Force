@@ -15,12 +15,12 @@ public class SwordController : GameController {
 	}
 
 	public void Swipe () {
-		StartSwipe();
-		Invoke ("EndSwipe", sword.swipeDuration);
-	}
-
-	void StartSwipe () {
 		swipe.SetActive(true);
+		transform.localEulerAngles = sword.arcStart;
+		iTween.RotateTo(gameObject, iTween.Hash ("time", sword.swipeDuration,
+		                                         "rotation", sword.arcEnd,
+		                                         "islocal", true,
+		                                         "oncomplete", "EndSwipe"));
 	}
 
 	void EndSwipe () {

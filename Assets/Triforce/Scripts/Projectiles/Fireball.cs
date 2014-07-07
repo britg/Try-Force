@@ -2,10 +2,14 @@
 using System.Collections;
 
 [System.Serializable]
-public class Fireball {
+public class Fireball : IProjectile {
 
-	public int damage;
-	public float lifetime;
-	public float speed;
+	public int _damage;
+	public float _lifetime;
+	public float _speed;
+
+	public int damage { get { return _damage; } }
+	public float speed { get { return _speed; } }
+	public float lifetime { get { return _lifetime; } }
 
 }

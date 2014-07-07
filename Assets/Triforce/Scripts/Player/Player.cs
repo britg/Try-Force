@@ -29,7 +29,7 @@ public class Player {
 	public bool thiefFace { get { return orientation == Player.Orientation.Thief; } }
 	public bool mageFace { get { return orientation == Player.Orientation.Mage; } }
 
-	public void RotateRight () {
+	public void RotateClockwise () {
 		if (warriorFace) {
 			orientation = Player.Orientation.Thief;
 			return;
@@ -46,7 +46,7 @@ public class Player {
 		}
 	}
 
-	public void RotateLeft () {
+	public void RotateCounterClockwise () {
 		if (warriorFace) {
 			orientation = Player.Orientation.Mage;
 			return;

@@ -4,9 +4,15 @@ using Vectrosity;
 
 public class AimDebugController : GameController {
 
+	bool showLines = false;
+
 	VectorLine topLine;
 	VectorLine rightLine;
 	VectorLine leftLine;
+
+	VectorLine debugLineBottom;
+	VectorLine debugLineRight;
+	VectorLine debugLineLeft;
 	
 	Vector2 rightTo {
 		get {
@@ -21,11 +27,35 @@ public class AimDebugController : GameController {
 	}
 
 	void Start () {
-		DrawSectors();
+
+		if (showLines) {
+			DrawSectors();
+		}
 	}
 	
 	void Update () {
-		UpdateLines();
+		if (showLines) {
+			UpdateLines();
+		}
+	}
+
+	public void ToggleDebug () {
+		showLines = !showLines;
+
+		if (showLines) {
+			DrawSectors();
+		} else {
+			RemoveAll();
+		}
+	}
+
+	void RemoveAll () {
+		VectorLine.Destroy(ref debugLineRight);
+		VectorLine.Destroy(ref debugLineLeft);
+		VectorLine.Destroy(ref debugLineBottom);
+		VectorLine.Destroy(ref topLine);
+		VectorLine.Destroy(ref rightLine);
+		VectorLine.Destroy(ref leftLine);
 	}
 
 	void DrawSectors () {
@@ -36,9 +66,9 @@ public class AimDebugController : GameController {
 		Vector2 topLeftPoint = Vector2.Scale(screenTopDiff.Rotate(-60f), scaleFactor) + currentInputController.aimFrom;
 		Vector2 bottomPoint = Vector2.Scale(screenTopDiff.Rotate(180f), scaleFactor) + currentInputController.aimFrom;
 
-		VectorLine.SetLine(Color.red, currentInputController.aimFrom, topRightPoint);
-		VectorLine.SetLine(Color.red, currentInputController.aimFrom, topLeftPoint);
-		VectorLine.SetLine(Color.red, currentInputController.aimFrom, bottomPoint);
+		debugLineRight = VectorLine.SetLine(Color.red, currentInputController.aimFrom, topRightPoint);
+		debugLineLeft = VectorLine.SetLine(Color.red, currentInputController.aimFrom, topLeftPoint);
+		debugLineBottom = VectorLine.SetLine(Color.red, currentInputController.aimFrom, bottomPoint);
 	}
 	
 	void UpdateLines () {

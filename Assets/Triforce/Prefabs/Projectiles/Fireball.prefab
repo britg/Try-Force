@@ -80,11 +80,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0fa0b0968f5a84f7497782ff99413c22, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  fireball:
-    damage: 1
-    lifetime: 2
-    speed: 10
+  easetype: 21
   destination: {x: 0, y: 0}
+  fireball:
+    _damage: 1
+    _lifetime: 3
+    _speed: 10
 --- !u!212 &21200000
 SpriteRenderer:
   m_ObjectHideFlags: 1

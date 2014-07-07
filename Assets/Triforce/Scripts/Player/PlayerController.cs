@@ -26,12 +26,12 @@ public class PlayerController : GameController {
 	}
 
 	void RotateRight () {
-		player.RotateRight();
+		player.RotateCounterClockwise();
 		UpdateOrientation();
 	}
 
 	void RotateLeft () {
-		player.RotateLeft();
+		player.RotateClockwise();
 		UpdateOrientation();
 	}
 
