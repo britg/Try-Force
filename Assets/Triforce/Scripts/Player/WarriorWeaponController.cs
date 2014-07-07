@@ -3,6 +3,8 @@ using System.Collections;
 
 public class WarriorWeaponController : GameController {
 
+	public GameObject sword;
+
 	void Update () {
 		DetectInput();
 	}
@@ -18,6 +20,7 @@ public class WarriorWeaponController : GameController {
 	}
 
 	void SwipeSword () {
-
+		SwordController swordController = sword.GetComponent<SwordController>();
+		swordController.Swipe();
 	}
 }
