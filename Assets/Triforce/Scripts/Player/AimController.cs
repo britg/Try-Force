@@ -4,54 +4,33 @@ using Vectrosity;
 
 public class AimController : GameController {
 
-	VectorLine topLine;
-	VectorLine rightLine;
-	VectorLine leftLine;
+	public Vector2 aimPointForSector (Player.Sector sector) {
 
-	Vector2 rightTo {
-		get {
-			return currentInputController.aimDiff.Rotate(120f) + currentInputController.aimFrom;
+		switch (sector) {
+		case Player.Sector.Top:
+			return aimPointForTop();
+		case Player.Sector.Right:
+			return aimPointForRight();
+		case Player.Sector.Left:
+			return aimPointForLeft();
 		}
+
+		return aimPointForTop();
+
 	}
 
-	Vector2 leftTo {
-		get {
-			return currentInputController.aimDiff.Rotate(-120f) + currentInputController.aimFrom;
-		}
+	Vector2 aimPointForTop () {
+		return Camera.main.ScreenToWorldPoint(currentInputController.aimTo).XY();
 	}
 
-	void Update () {
-		UpdateLines();
+	Vector2 aimPointForRight () {
+		Vector2 right = currentInputController.aimDiff.Rotate(120f) + currentInputController.aimFrom;
+		return Camera.main.ScreenToWorldPoint(right).XY();
 	}
 
-	void UpdateLines () {
-		if (topLine == null) {
-			CreateLines();
-		}
-		UpdateTopLine();
-		UpdateRightLine();
-		UpdateLeftLine();
-	}
-
-	void CreateLines () {
-		topLine = VectorLine.SetLine(Color.green, currentInputController.aimFrom, currentInputController.aimTo);
-		rightLine = VectorLine.SetLine(Color.green, currentInputController.aimFrom, rightTo);
-		leftLine = VectorLine.SetLine(Color.green, currentInputController.aimFrom, leftTo);
-	}
-
-	void UpdateTopLine () {
-		topLine.points2[1] = currentInputController.aimTo;
-		topLine.Draw();
-	}
-
-	void UpdateRightLine () {
-		rightLine.points2[1] = rightTo;
-		rightLine.Draw();
-	}
-
-	void UpdateLeftLine () {
-		leftLine.points2[1] = leftTo;
-		leftLine.Draw();
+	Vector2 aimPointForLeft () {
+		Vector2 left = currentInputController.aimDiff.Rotate(-120f) + currentInputController.aimFrom;
+		return Camera.main.ScreenToWorldPoint(left).XY();
 	}
 
 }

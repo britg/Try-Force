@@ -4,6 +4,12 @@ using System.Collections;
 [System.Serializable]
 public class Player {
 
+	public enum Sector {
+		Top,
+		Right,
+		Left
+	}
+
 	public enum Orientation {
 		Warrior,
 		Thief,

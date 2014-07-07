@@ -1,0 +1,34 @@
+﻿using UnityEngine;
+using System.Collections;
+
+public class ThiefWeaponController : GameController {
+
+	public GameObject arrowPrefab;
+	
+	Vector2 currentTarget {
+		get {
+			return aimController.aimPointForSector(Player.Sector.Right);
+		}
+	}
+
+	void Update () {
+		DetectInput();
+	}
+	
+	void DetectInput () {
+		if (currentInputController.attack) {
+			Attack();
+		}
+	}
+	
+	void Attack () {
+		FireBow();
+	}
+
+	void FireBow () {
+		GameObject arrowObj = (GameObject)Instantiate(arrowPrefab);
+		arrowObj.transform.position = transform.position;
+		ArrowController arrowController = arrowObj.GetComponent<ArrowController>();
+		arrowController.SetDestination(currentTarget);
+	}
+}

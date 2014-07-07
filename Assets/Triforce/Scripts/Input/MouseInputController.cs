@@ -3,6 +3,8 @@ using System.Collections;
 
 public class MouseInputController : GameController, IInputController {
 
+	// Moving
+
 	public bool forward { get { return Input.GetKey(KeyCode.W); } }
 	public bool right { get { return Input.GetKey(KeyCode.D); } }
 	public bool back { get { return Input.GetKey(KeyCode.S); } }
@@ -10,6 +12,30 @@ public class MouseInputController : GameController, IInputController {
 	public bool rotateRight { get { return Input.GetKeyDown(KeyCode.E); } }
 	public bool rotateLeft { get { return Input.GetKeyDown(KeyCode.Q); } }
 	public Vector3 resultantInputVector { get { return InputVector(); } }
+
+	Vector3 InputVector () {
+		Vector3 resultant = Vector3.zero;
+
+		if (forward) {
+			resultant += Vector3.up;
+		}
+
+		if (right) {
+			resultant += Vector3.right;
+		}
+
+		if (back) {
+			resultant += Vector3.down;
+		}
+
+		if (left) {
+			resultant += Vector3.left;
+		}
+
+		return resultant.normalized;
+	}
+
+	// Aiming
 
 	Vector2 _aimFrom = Vector2.zero;
 	public Vector2 aimFrom {
@@ -33,27 +59,7 @@ public class MouseInputController : GameController, IInputController {
 		}
 	}
 
-
-	Vector3 InputVector () {
-		Vector3 resultant = Vector3.zero;
-
-		if (forward) {
-			resultant += Vector3.up;
-		}
-
-		if (right) {
-			resultant += Vector3.right;
-		}
-
-		if (back) {
-			resultant += Vector3.down;
-		}
-
-		if (left) {
-			resultant += Vector3.left;
-		}
-
-		return resultant.normalized;
-	}
+	// Attack
+	public bool attack { get { return Input.GetMouseButtonDown(0); } }
 
 }
