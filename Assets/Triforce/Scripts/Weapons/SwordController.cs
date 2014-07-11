@@ -1,12 +1,13 @@
 ﻿using UnityEngine;
 using System.Collections;
 
-public class SwordController : GameController {
+public class SwordController : WeaponController {
 
 	public Sword sword;
 	public GameObject swipe;
 
 	void Start () {
+		weapon = sword;
 		EndSwipe();
 	}
 

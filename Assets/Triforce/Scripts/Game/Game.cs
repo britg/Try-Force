@@ -9,4 +9,5 @@ public static class Game {
 	public static string wallTag = "wall";
 	public static string playerTag = "Player";
 	public static string projectileTag = "Projectile";
+	public static string weaponTag = "Projectile";
 }
