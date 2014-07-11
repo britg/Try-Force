@@ -3,8 +3,8 @@ using System.Collections;
 
 public class ProjectileCollisionController : MonoBehaviour {
 
-	void OnTriggerEnter2D (Collider2D collider) {
-		if (collider.gameObject.tag != "Player") {
+	void OnCollisionEnter2D (Collision2D collision) {
+		if (collision.gameObject.tag != Game.playerTag) {
 			Destroy(transform.parent.gameObject);
 		}
 	}

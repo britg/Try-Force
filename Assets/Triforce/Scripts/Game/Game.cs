@@ -7,4 +7,6 @@ public static class Game {
 	public static float squareZ = -0.2f;
 
 	public static string wallTag = "wall";
+	public static string playerTag = "Player";
+	public static string projectileTag = "Projectile";
 }

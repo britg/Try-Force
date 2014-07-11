@@ -51,6 +51,13 @@ public class GameController : MonoBehaviour {
 		}
 	}
 
+	protected Vector2 playerDirection {
+		get {
+			return (playerObj.transform.position - transform.position).normalized.XY();
+		}
+	}
+
+
 	GameObject _aimObj;
 	protected GameObject aimObj {
 		get {
