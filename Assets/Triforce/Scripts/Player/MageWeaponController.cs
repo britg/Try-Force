@@ -7,7 +7,7 @@ public class MageWeaponController : GameController {
 
 	Vector2 currentTarget {
 		get {
-			return aimController.aimPointForSector(Player.Sector.Left);
+			return aimController.aimPointForOrientation(Player.Orientation.Mage);
 		}
 	}
 

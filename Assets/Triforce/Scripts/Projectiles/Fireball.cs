@@ -6,10 +6,10 @@ public class Fireball : IProjectile {
 
 	public int _damage;
 	public float _lifetime;
-	public float _speed;
+	public float _force;
 
 	public int damage { get { return _damage; } }
-	public float speed { get { return _speed; } }
+	public float force { get { return _force; } }
 	public float lifetime { get { return _lifetime; } }
 
 }

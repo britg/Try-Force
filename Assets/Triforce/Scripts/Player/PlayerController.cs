@@ -4,53 +4,30 @@ using System.Collections;
 public class PlayerController : GameController {
 
 	public Player player;
-
-	public GameObject body;
+	public CircleCollider2D collisionBody;
 
 	void Update () {
 		Move(currentInputController.resultantInputVector);
-		DetectRotate();
 	}
 
 	void Move (Vector3 direction) {
-		transform.position = transform.position + direction * player.moveSpeed;
-	}
-
-	void DetectRotate () {
-		if (currentInputController.rotateRight) {
-			RotateRight();
-		}
-		if (currentInputController.rotateLeft) {
-			RotateLeft();
-		}
-	}
-
-	void RotateRight () {
-		player.RotateCounterClockwise();
-		UpdateOrientation();
-	}
-
-	void RotateLeft () {
-		player.RotateClockwise();
-		UpdateOrientation();
-	}
-
-	void UpdateOrientation () {
-		if (player.warriorFace) {
-			iTween.RotateTo(body, iTween.Hash ("rotation", Vector3.zero, "time", player.rotateSpeed));
+		// raycast in that direction to see if you are going to hit anything
+		Vector2 direction2D = direction.XY();
+		RaycastHit2D[] hits = Physics2D.CircleCastAll(transform.position, collisionBody.radius, direction2D, player.moveSpeed);
+		bool stop = false;
+		foreach (RaycastHit2D hit in hits) {
+			if (hit.collider != null && hit.collider.gameObject.tag == Game.wallTag) {
+				direction2D += hit.normal;
+			} else {
+			}
 		}
 
-		if (player.mageFace) {
-			iTween.RotateTo(body, iTween.Hash ("rotation", new Vector3(0f, 0f, -120f), "time", player.rotateSpeed));
+		if (!stop) {
+			transform.position = transform.position + direction2D.to3() * player.moveSpeed;
 		}
 
-		if (player.thiefFace) {
-			iTween.RotateTo(body, iTween.Hash ("rotation", new Vector3(0f, 0f, 120f), "time", player.rotateSpeed));
-		}
+//		Debug.DrawRay(transform.position, direction * (player.moveSpeed + 0.62f), Color.green);
 	}
 
-	public void Attack () {
-
-	}
 
 }

@@ -7,7 +7,7 @@ public class ThiefWeaponController : GameController {
 	
 	Vector2 currentTarget {
 		get {
-			return aimController.aimPointForSector(Player.Sector.Right);
+			return aimController.aimPointForOrientation(Player.Orientation.Thief);
 		}
 	}
 

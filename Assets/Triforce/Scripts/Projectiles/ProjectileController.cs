@@ -5,10 +5,20 @@ public class ProjectileController : MonoBehaviour {
 
 	public IProjectile projectile;
 	public iTween.EaseType easetype;
-	
+
 	bool ready = false;
 	public Vector2 destination;
-	
+
+	GameObject _body;
+	GameObject body {
+		get {
+			if (_body == null) {
+				_body = transform.FindChild("body").gameObject;
+			}
+			return _body;
+		}
+	}
+
 	void Start () {
 	}
 	
@@ -20,16 +30,10 @@ public class ProjectileController : MonoBehaviour {
 	
 	void Fire () {
 		Vector2 direction = (destination - transform.position.XY()).normalized;
-		Vector2 endpoint = direction * projectile.speed * projectile.lifetime;
+		Vector2 endpoint = direction * projectile.force * projectile.lifetime;
 		
 		transform.LookAt2D(endpoint);
-		
-		iTween.MoveTo(gameObject, iTween.Hash("position", endpoint.to3(), 
-		                                      "time", projectile.lifetime,
-		                                      "axis", "z",
-		                                      "easetype", easetype,
-		                                      "oncomplete", "DestroyOnComplete"
-		                                      ));
+		body.rigidbody2D.AddForce(projectile.force * direction);
 		ready = false;
 	}
 	

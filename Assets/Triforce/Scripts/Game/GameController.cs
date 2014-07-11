@@ -41,6 +41,16 @@ public class GameController : MonoBehaviour {
 		}
 	}
 
+	Player _player;
+	protected Player player {
+		get {
+			if (_player == null) {
+				_player = playerController.player;
+			}
+			return _player;
+		}
+	}
+
 	GameObject _aimObj;
 	protected GameObject aimObj {
 		get {
