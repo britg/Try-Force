@@ -17,7 +17,7 @@ public class EnemyController : DamageReceiverController {
 	
 	// Update is called once per frame
 	void Update () {
-		ReactToAggroState();
+//		ReactToAggroState();
 	}
 
 	void ReactToAggroState () {
