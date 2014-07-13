@@ -6,6 +6,8 @@ TagManager:
   - wall
   - Projectile
   - Weapon
+  - EnemyWeapon
+  - EnemyProjectile
   - 
   Builtin Layer 0: Default
   Builtin Layer 1: TransparentFX

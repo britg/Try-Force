@@ -6,6 +6,10 @@ public class PlayerController : GameController {
 	public Player player;
 	public CircleCollider2D collisionBody;
 
+	void Start () {
+		Debug.Log (gameObject.transform.parent);
+	}
+
 	void Update () {
 		Move(currentInputController.resultantInputVector);
 	}
@@ -22,5 +26,14 @@ public class PlayerController : GameController {
 		transform.position = transform.position + direction2D.to3() * player.moveSpeed;
 	}
 
+	void OnTriggerEnter2D (Collider2D collider) {
+		if (collider.gameObject.tag == Game.enemyWeaponTag) {
+			Die();
+		}
+	}
+
+	void Die () {
+		NotificationCenter.PostNotification(this, Notifications.Dead);
+	}
 
 }

@@ -1,4 +1,4 @@
-﻿using UnityEngine;
+using UnityEngine;
 using System.Collections;
 
 public class ProjectileCollisionController : MonoBehaviour {
@@ -11,11 +11,15 @@ public class ProjectileCollisionController : MonoBehaviour {
 
 	void OnCollisionEnter2D (Collision2D collision) {
 		if (collision.gameObject.tag != Game.playerTag) {
-			var damageReceiver = collision.gameObject.GetComponent<DamageReceiverController>();
+			var damageReceiver = collision.gameObject.GetComponent<BodyController>();
 			if (damageReceiver != null) {
 				damageReceiver.TakeDamageFrom(projectile);
 			}
-			Destroy(transform.parent.gameObject);
+			Explode();
 		}
+	}
+
+	void Explode () {
+		Destroy(transform.parent.gameObject);
 	}
 }

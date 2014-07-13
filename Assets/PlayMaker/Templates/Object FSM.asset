@@ -1,0 +1,986 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 1219815696, guid: e743331561ef77147ae48cda9bcb8209, type: 3}
+  m_Name: Object FSM
+  m_EditorClassIdentifier: 
+  category: 47656e6572616c
+  fsm:
+    usedInTemplate: {fileID: 11400000}
+    owner: {fileID: 0}
+    name: 46534d
+    startState: 4c697374656e6572
+    states:
+    - name: 4c697374656e6572
+      description: 
+      colorIndex: 0
+      position:
+        x: 458
+        y: 380
+        width: 100
+        height: 32
+      isBreakpoint: 0
+      hideUnused: 0
+      transitions:
+      - fsmEvent:
+          name: 4f626a65637420436c69636b
+          isSystemEvent: 0
+          isGlobal: 0
+        toState: 5365747570
+        linkStyle: 0
+        linkConstraint: 0
+        colorIndex: 0
+      actionData:
+        actionNames: []
+        customNames: []
+        actionEnabled: []
+        actionIsOpen: []
+        actionStartIndex: 
+        actionHashCodes: 
+        unityObjectParams: []
+        fsmGameObjectParams: []
+        fsmOwnerDefaultParams: []
+        animationCurveParams: []
+        functionCallParams: []
+        fsmTemplateControlParams: []
+        fsmEventTargetParams: []
+        fsmPropertyParams: []
+        layoutOptionParams: []
+        fsmStringParams: []
+        fsmObjectParams: []
+        fsmVarParams: []
+        arrayParamSizes: 
+        arrayParamTypes: []
+        byteData: []
+        paramDataType: 
+        paramName: []
+        paramDataPos: 
+        paramByteDataSize: 
+    - name: 53657420546172676574
+      description: 
+      colorIndex: 0
+      position:
+        x: 748
+        y: 323.34375
+        width: 100
+        height: 32
+      isBreakpoint: 0
+      hideUnused: 0
+      transitions:
+      - fsmEvent:
+          name: 46494e4953484544
+          isSystemEvent: 0
+          isGlobal: 0
+        toState: 546172676574204c697374656e
+        linkStyle: 0
+        linkConstraint: 0
+        colorIndex: 0
+      actionData:
+        actionNames:
+        - 4875746f6e6747616d65732e506c61794d616b65722e416374696f6e732e46696e644368696c64
+        - 4875746f6e6747616d65732e506c61794d616b65722e416374696f6e732e69547765656e4d6f7665546f
+        customNames:
+        - 
+        - 
+        actionEnabled:
+        - 1
+        - 1
+        actionIsOpen:
+        - 1
+        - 1
+        actionStartIndex: 0000000003000000
+        actionHashCodes: 82c42b67f0ad926e
+        unityObjectParams: []
+        fsmGameObjectParams:
+        - useVariable: 1
+          name: 5374616e6420506f736974696f6e
+          tooltip: 
+          showInInspector: 0
+          networkSync: 0
+          value: {fileID: 0}
+        - useVariable: 1
+          name: 5374616e6420506f736974696f6e
+          tooltip: 
+          showInInspector: 0
+          networkSync: 0
+          value: {fileID: 0}
+        - useVariable: 1
+          name: 
+          tooltip: 
+          showInInspector: 0
+          networkSync: 0
+          value: {fileID: 0}
+        fsmOwnerDefaultParams:
+        - ownerOption: 0
+          gameObject:
+            useVariable: 0
+            name: 
+            tooltip: 
+            showInInspector: 0
+            networkSync: 0
+            value: {fileID: 0}
+        - ownerOption: 1
+          gameObject:
+            useVariable: 0
+            name: 
+            tooltip: 
+            showInInspector: 0
+            networkSync: 0
+            value: {fileID: 0}
+        animationCurveParams: []
+        functionCallParams: []
+        fsmTemplateControlParams: []
+        fsmEventTargetParams: []
+        fsmPropertyParams: []
+        layoutOptionParams: []
+        fsmStringParams:
+        - useVariable: 0
+          name: 
+          tooltip: 
+          showInInspector: 0
+          networkSync: 0
+          value: 5374616e6420506f736974696f6e
+        - useVariable: 1
+          name: 
+          tooltip: 
+          showInInspector: 0
+          networkSync: 0
+          value: 
+        fsmObjectParams: []
+        fsmVarParams: []
+        arrayParamSizes: 0000000000000000
+        arrayParamTypes:
+        - 4875746f6e6747616d65732e506c61794d616b65722e46736d47616d654f626a656374
+        - 4875746f6e6747616d65732e506c61794d616b65722e46736d566563746f7233
+        byteData:
+        - 0
+        - 0
+        - 0
+        - 0
+        - 0
+        - 0
+        - 0
+        - 0
+        - 0
+        - 0
+        - 0
+        - 0
+        - 1
+        - 205
+        - 204
+        - 204
+        - 61
+        - 0
+        - 0
+        - 0
+        - 0
+        - 0
+        - 0
+        - 0
+        - 0
+        - 0
+        - 0
+        - 1
+        - 0
+        - 0
+        - 0
+        - 0
+        - 21
+        - 0
+        - 0
+        - 0
+        - 0
+        - 0
+        - 0
+        - 0
+        - 1
+        - 0
+        - 0
+        - 0
+        - 0
+        - 0
+        - 0
+        - 0
+        - 0
+        - 0
+        - 0
+        - 0
+        - 0
+        - 0
+        - 1
+        - 0
+        - 0
+        - 0
+        - 0
+        - 1
+        - 0
+        - 0
+        - 0
+        - 0
+        - 1
+        - 0
+        - 0
+        - 0
+        - 0
+        - 0
+        - 1
+        - 0
+        - 0
+        - 0
+        - 0
+        - 1
+        - 0
+        - 1
+        - 0
+        paramDataType: 1400000012000000130000001400000012000000130000001c0000000f0000000f0000000f00000007000000070000000700000011000000130000001c0000000f00000007000000110000000f0000000c0000000c000000110000001700000017000000110000001100000011000000
+        paramName:
+        - 67616d654f626a656374
+        - 6368696c644e616d65
+        - 73746f7265526573756c74
+        - 67616d654f626a656374
+        - 6964
+        - 7472616e73666f726d506f736974696f6e
+        - 766563746f72506f736974696f6e
+        - 74696d65
+        - 64656c6179
+        - 7370656564
+        - 7370616365
+        - 6561736554797065
+        - 6c6f6f7054797065
+        - 6f7269656e74546f50617468
+        - 6c6f6f6b41744f626a656374
+        - 6c6f6f6b4174566563746f72
+        - 6c6f6f6b54696d65
+        - 61786973
+        - 6d6f7665546f50617468
+        - 6c6f6f6b4168656164
+        - 7472616e73666f726d73
+        - 766563746f7273
+        - 72657665727365
+        - 73746172744576656e74
+        - 66696e6973684576656e74
+        - 7265616c54696d65
+        - 73746f704f6e45786974
+        - 6c6f6f70446f6e7446696e697368
+        paramDataPos: 000000000000000000000000010000000100000001000000000000000d00000012000000170000001c000000200000002400000028000000020000002a000000370000003c00000040000000420000000000000001000000470000004900000049000000490000004b0000004d000000
+        paramByteDataSize: 0000000000000000000000000000000000000000000000000d00000005000000050000000500000004000000040000000400000002000000000000000d000000050000000400000002000000050000000000000000000000020000000000000000000000020000000200000002000000
+    - name: 5365747570
+      description: 
+      colorIndex: 0
+      position:
+        x: 588
+        y: 305
+        width: 100
+        height: 32
+      isBreakpoint: 0
+      hideUnused: 0
+      transitions:
+      - fsmEvent:
+          name: 46494e4953484544
+          isSystemEvent: 0
+          isGlobal: 0
+        toState: 53657420546172676574
+        linkStyle: 0
+        linkConstraint: 0
+        colorIndex: 0
+      actionData:
+        actionNames:
+        - 4875746f6e6747616d65732e506c61794d616b65722e416374696f6e732e46696e644368696c64
+        - 4875746f6e6747616d65732e506c61794d616b65722e416374696f6e732e46696e644368696c64
+        - 4875746f6e6747616d65732e506c61794d616b65722e416374696f6e732e46696e644368696c64
+        customNames:
+        - 
+        - 
+        - 
+        actionEnabled:
+        - 1
+        - 1
+        - 1
+        actionIsOpen:
+        - 1
+        - 1
+        - 1
+        actionStartIndex: 000000000300000006000000
+        actionHashCodes: 82c42b6782c42b6782c42b67
+        unityObjectParams: []
+        fsmGameObjectParams:
+        - useVariable: 1
+          name: 5374616e6420506f736974696f6e
+          tooltip: 
+          showInInspector: 0
+          networkSync: 0
+          value: {fileID: 0}
+        - useVariable: 1
+          name: 4c6f6f6b20506f736974696f6e
+          tooltip: 
+          showInInspector: 0
+          networkSync: 0
+          value: {fileID: 0}
+        - useVariable: 1
+          name: 43616d65726120506f736974696f6e
+          tooltip: 
+          showInInspector: 0
+          networkSync: 0
+          value: {fileID: 0}
+        fsmOwnerDefaultParams:
+        - ownerOption: 0
+          gameObject:
+            useVariable: 0
+            name: 
+            tooltip: 
+            showInInspector: 0
+            networkSync: 0
+            value: {fileID: 0}
+        - ownerOption: 0
+          gameObject:
+            useVariable: 0
+            name: 
+            tooltip: 
+            showInInspector: 0
+            networkSync: 0
+            value: {fileID: 0}
+        - ownerOption: 0
+          gameObject:
+            useVariable: 0
+            name: 
+            tooltip: 
+            showInInspector: 0
+            networkSync: 0
+            value: {fileID: 0}
+        animationCurveParams: []
+        functionCallParams: []
+        fsmTemplateControlParams: []
+        fsmEventTargetParams: []
+        fsmPropertyParams: []
+        layoutOptionParams: []
+        fsmStringParams:
+        - useVariable: 0
+          name: 
+          tooltip: 
+          showInInspector: 0
+          networkSync: 0
+          value: 5374616e6420506f736974696f6e
+        - useVariable: 0
+          name: 
+          tooltip: 
+          showInInspector: 0
+          networkSync: 0
+          value: 4c6f6f6b20506f696e74
+        - useVariable: 0
+          name: 
+          tooltip: 
+          showInInspector: 0
+          networkSync: 0
+          value: 43616d65726120506f696e74
+        fsmObjectParams: []
+        fsmVarParams: []
+        arrayParamSizes: 
+        arrayParamTypes: []
+        byteData: []
+        paramDataType: 140000001200000013000000140000001200000013000000140000001200000013000000
+        paramName:
+        - 67616d654f626a656374
+        - 6368696c644e616d65
+        - 73746f7265526573756c74
+        - 67616d654f626a656374
+        - 6368696c644e616d65
+        - 73746f7265526573756c74
+        - 67616d654f626a656374
+        - 6368696c644e616d65
+        - 73746f7265526573756c74
+        paramDataPos: 000000000000000000000000010000000100000001000000020000000200000002000000
+        paramByteDataSize: 000000000000000000000000000000000000000000000000000000000000000000000000
+    - name: 546172676574204c697374656e
+      description: 
+      colorIndex: 0
+      position:
+        x: 730
+        y: 396
+        width: 123
+        height: 48
+      isBreakpoint: 0
+      hideUnused: 0
+      transitions:
+      - fsmEvent:
+          name: 4e657720546172676574
+          isSystemEvent: 0
+          isGlobal: 0
+        toState: 4c697374656e6572
+        linkStyle: 0
+        linkConstraint: 0
+        colorIndex: 0
+      - fsmEvent:
+          name: 5461726765742052656163686564
+          isSystemEvent: 0
+          isGlobal: 0
+        toState: 53656e6420496e737472756374696f6e7320746f2043616d657261
+        linkStyle: 0
+        linkConstraint: 0
+        colorIndex: 0
+      actionData:
+        actionNames: []
+        customNames: []
+        actionEnabled: []
+        actionIsOpen: []
+        actionStartIndex: 
+        actionHashCodes: 
+        unityObjectParams: []
+        fsmGameObjectParams: []
+        fsmOwnerDefaultParams: []
+        animationCurveParams: []
+        functionCallParams: []
+        fsmTemplateControlParams: []
+        fsmEventTargetParams: []
+        fsmPropertyParams: []
+        layoutOptionParams: []
+        fsmStringParams: []
+        fsmObjectParams: []
+        fsmVarParams: []
+        arrayParamSizes: 
+        arrayParamTypes: []
+        byteData: []
+        paramDataType: 
+        paramName: []
+        paramDataPos: 
+        paramByteDataSize: 
+    - name: 53656e6420496e737472756374696f6e7320746f2043616d657261
+      description: 
+      colorIndex: 0
+      position:
+        x: 725
+        y: 482
+        width: 200
+        height: 32
+      isBreakpoint: 0
+      hideUnused: 0
+      transitions:
+      - fsmEvent:
+          name: 46494e4953484544
+          isSystemEvent: 0
+          isGlobal: 0
+        toState: 5761697420466f722054726967676572
+        linkStyle: 0
+        linkConstraint: 0
+        colorIndex: 0
+      actionData:
+        actionNames:
+        - 4875746f6e6747616d65732e506c61794d616b65722e416374696f6e732e536574426f6f6c56616c7565
+        - 4875746f6e6747616d65732e506c61794d616b65722e416374696f6e732e476574506f736974696f6e
+        - 4875746f6e6747616d65732e506c61794d616b65722e416374696f6e732e476574506f736974696f6e
+        - 4875746f6e6747616d65732e506c61794d616b65722e416374696f6e732e53656e644576656e74
+        customNames:
+        - 
+        - 
+        - 
+        - 
+        actionEnabled:
+        - 1
+        - 1
+        - 1
+        - 1
+        actionIsOpen:
+        - 1
+        - 1
+        - 1
+        - 1
+        actionStartIndex: 00000000030000000a00000011000000
+        actionHashCodes: 29b4727ba290608ea290608eeec9d968
+        unityObjectParams: []
+        fsmGameObjectParams: []
+        fsmOwnerDefaultParams:
+        - ownerOption: 1
+          gameObject:
+            useVariable: 1
+            name: 43616d65726120506f736974696f6e
+            tooltip: 
+            showInInspector: 0
+            networkSync: 0
+            value: {fileID: 0}
+        - ownerOption: 1
+          gameObject:
+            useVariable: 1
+            name: 4c6f6f6b20506f736974696f6e
+            tooltip: 
+            showInInspector: 0
+            networkSync: 0
+            value: {fileID: 0}
+        animationCurveParams: []
+        functionCallParams: []
+        fsmTemplateControlParams: []
+        fsmEventTargetParams:
+        - target: 2
+          excludeSelf:
+            useVariable: 0
+            name: 
+            tooltip: 
+            showInInspector: 0
+            networkSync: 0
+            value: 0
+          gameObject:
+            ownerOption: 1
+            gameObject:
+              useVariable: 0
+              name: 
+              tooltip: 
+              showInInspector: 0
+              networkSync: 0
+              value: {fileID: 0}
+          fsmName:
+            useVariable: 0
+            name: 
+            tooltip: 
+            showInInspector: 0
+            networkSync: 0
+            value: 46534d
+          sendToChildren:
+            useVariable: 0
+            name: 
+            tooltip: 
+            showInInspector: 0
+            networkSync: 0
+            value: 0
+          fsmComponent: {fileID: 0}
+        fsmPropertyParams: []
+        layoutOptionParams: []
+        fsmStringParams: []
+        fsmObjectParams: []
+        fsmVarParams: []
+        arrayParamSizes: 
+        arrayParamTypes: []
+        byteData:
+        - 0
+        - 1
+        - 67
+        - 97
+        - 109
+        - 101
+        - 114
+        - 97
+        - 32
+        - 90
+        - 111
+        - 111
+        - 109
+        - 101
+        - 100
+        - 1
+        - 0
+        - 0
+        - 0
+        - 0
+        - 0
+        - 0
+        - 0
+        - 0
+        - 0
+        - 0
+        - 0
+        - 0
+        - 0
+        - 0
+        - 1
+        - 67
+        - 97
+        - 109
+        - 101
+        - 114
+        - 97
+        - 32
+        - 80
+        - 111
+        - 115
+        - 105
+        - 116
+        - 105
+        - 111
+        - 110
+        - 0
+        - 0
+        - 0
+        - 0
+        - 1
+        - 0
+        - 0
+        - 0
+        - 0
+        - 1
+        - 0
+        - 0
+        - 0
+        - 0
+        - 1
+        - 0
+        - 0
+        - 0
+        - 0
+        - 0
+        - 0
+        - 0
+        - 0
+        - 0
+        - 0
+        - 0
+        - 0
+        - 0
+        - 0
+        - 0
+        - 0
+        - 0
+        - 1
+        - 76
+        - 111
+        - 111
+        - 107
+        - 32
+        - 80
+        - 111
+        - 115
+        - 105
+        - 116
+        - 105
+        - 111
+        - 110
+        - 0
+        - 0
+        - 0
+        - 0
+        - 1
+        - 0
+        - 0
+        - 0
+        - 0
+        - 1
+        - 0
+        - 0
+        - 0
+        - 0
+        - 1
+        - 0
+        - 0
+        - 0
+        - 0
+        - 0
+        - 85
+        - 112
+        - 100
+        - 97
+        - 116
+        - 101
+        - 32
+        - 67
+        - 97
+        - 109
+        - 101
+        - 114
+        - 97
+        - 0
+        - 0
+        - 0
+        - 0
+        - 0
+        - 0
+        paramDataType: 110000001100000001000000140000001c0000000f0000000f0000000f0000000700000001000000140000001c0000000f0000000f0000000f00000007000000010000001f000000170000000f00000001000000
+        paramName:
+        - 626f6f6c5661726961626c65
+        - 626f6f6c56616c7565
+        - 65766572794672616d65
+        - 67616d654f626a656374
+        - 766563746f72
+        - 78
+        - 79
+        - 7a
+        - 7370616365
+        - 65766572794672616d65
+        - 67616d654f626a656374
+        - 766563746f72
+        - 78
+        - 79
+        - 7a
+        - 7370616365
+        - 65766572794672616d65
+        - 6576656e74546172676574
+        - 73656e644576656e74
+        - 64656c6179
+        - 65766572794672616d65
+        paramDataPos: 000000000f0000001100000000000000120000002e00000033000000380000003d0000004100000001000000420000005c00000061000000660000006b0000006f00000000000000700000007d00000082000000
+        paramByteDataSize: 0f0000000200000001000000000000001c0000000500000005000000050000000400000001000000000000001a0000000500000005000000050000000400000001000000000000000d0000000500000001000000
+    - name: 5761697420466f722054726967676572
+      description: 
+      colorIndex: 0
+      position:
+        x: 728.414062
+        y: 544.007812
+        width: 169
+        height: 32
+      isBreakpoint: 0
+      hideUnused: 0
+      transitions:
+      - fsmEvent:
+          name: 43616d657261204d6f76652046696e6973686564
+          isSystemEvent: 0
+          isGlobal: 0
+        toState: 4f626a65637420436f6e74656e74
+        linkStyle: 0
+        linkConstraint: 0
+        colorIndex: 0
+      actionData:
+        actionNames: []
+        customNames: []
+        actionEnabled: []
+        actionIsOpen: []
+        actionStartIndex: 
+        actionHashCodes: 
+        unityObjectParams: []
+        fsmGameObjectParams: []
+        fsmOwnerDefaultParams: []
+        animationCurveParams: []
+        functionCallParams: []
+        fsmTemplateControlParams: []
+        fsmEventTargetParams: []
+        fsmPropertyParams: []
+        layoutOptionParams: []
+        fsmStringParams: []
+        fsmObjectParams: []
+        fsmVarParams: []
+        arrayParamSizes: 
+        arrayParamTypes: []
+        byteData: []
+        paramDataType: 
+        paramName: []
+        paramDataPos: 
+        paramByteDataSize: 
+    - name: 52657365742043616d657261
+      description: 
+      colorIndex: 0
+      position:
+        x: 311.804688
+        y: 385.515625
+        width: 112
+        height: 32
+      isBreakpoint: 0
+      hideUnused: 0
+      transitions:
+      - fsmEvent:
+          name: 46494e4953484544
+          isSystemEvent: 0
+          isGlobal: 0
+        toState: 4c697374656e6572
+        linkStyle: 0
+        linkConstraint: 0
+        colorIndex: 0
+      actionData:
+        actionNames:
+        - 4875746f6e6747616d65732e506c61794d616b65722e416374696f6e732e53656e644576656e74
+        customNames:
+        - 
+        actionEnabled:
+        - 1
+        actionIsOpen:
+        - 1
+        actionStartIndex: 00000000
+        actionHashCodes: eec9d968
+        unityObjectParams: []
+        fsmGameObjectParams: []
+        fsmOwnerDefaultParams: []
+        animationCurveParams: []
+        functionCallParams: []
+        fsmTemplateControlParams: []
+        fsmEventTargetParams:
+        - target: 4
+          excludeSelf:
+            useVariable: 0
+            name: 
+            tooltip: 
+            showInInspector: 0
+            networkSync: 0
+            value: 0
+          gameObject:
+            ownerOption: 0
+            gameObject:
+              useVariable: 0
+              name: 
+              tooltip: 
+              showInInspector: 0
+              networkSync: 0
+              value: {fileID: 0}
+          fsmName:
+            useVariable: 0
+            name: 
+            tooltip: 
+            showInInspector: 0
+            networkSync: 0
+            value: 
+          sendToChildren:
+            useVariable: 0
+            name: 
+            tooltip: 
+            showInInspector: 0
+            networkSync: 0
+            value: 0
+          fsmComponent: {fileID: 0}
+        fsmPropertyParams: []
+        layoutOptionParams: []
+        fsmStringParams: []
+        fsmObjectParams: []
+        fsmVarParams: []
+        arrayParamSizes: 
+        arrayParamTypes: []
+        byteData:
+        - 82
+        - 101
+        - 115
+        - 101
+        - 116
+        - 32
+        - 67
+        - 97
+        - 109
+        - 101
+        - 114
+        - 97
+        - 0
+        - 0
+        - 0
+        - 0
+        - 0
+        - 0
+        paramDataType: 1f000000170000000f00000001000000
+        paramName:
+        - 6576656e74546172676574
+        - 73656e644576656e74
+        - 64656c6179
+        - 65766572794672616d65
+        paramDataPos: 00000000000000000c00000011000000
+        paramByteDataSize: 000000000c0000000500000001000000
+    - name: 4f626a65637420436f6e74656e74
+      description: 
+      colorIndex: 0
+      position:
+        x: 314.695312
+        y: 538.703125
+        width: 119
+        height: 32
+      isBreakpoint: 0
+      hideUnused: 0
+      transitions:
+      - fsmEvent:
+          name: 46494e4953484544
+          isSystemEvent: 0
+          isGlobal: 0
+        toState: 52657365742043616d657261
+        linkStyle: 0
+        linkConstraint: 0
+        colorIndex: 0
+      actionData:
+        actionNames:
+        - 4875746f6e6747616d65732e506c61794d616b65722e416374696f6e732e57616974
+        customNames:
+        - 
+        actionEnabled:
+        - 1
+        actionIsOpen:
+        - 1
+        actionStartIndex: 00000000
+        actionHashCodes: 3708ec1a
+        unityObjectParams: []
+        fsmGameObjectParams: []
+        fsmOwnerDefaultParams: []
+        animationCurveParams: []
+        functionCallParams: []
+        fsmTemplateControlParams: []
+        fsmEventTargetParams: []
+        fsmPropertyParams: []
+        layoutOptionParams: []
+        fsmStringParams: []
+        fsmObjectParams: []
+        fsmVarParams: []
+        arrayParamSizes: 
+        arrayParamTypes: []
+        byteData:
+        - 0
+        - 0
+        - 160
+        - 64
+        - 0
+        - 70
+        - 73
+        - 78
+        - 73
+        - 83
+        - 72
+        - 69
+        - 68
+        - 0
+        paramDataType: 0f0000001700000001000000
+        paramName:
+        - 74696d65
+        - 66696e6973684576656e74
+        - 7265616c54696d65
+        paramDataPos: 00000000050000000d000000
+        paramByteDataSize: 050000000800000001000000
+    events:
+    - name: 4f626a65637420436c69636b
+      isSystemEvent: 0
+      isGlobal: 1
+    - name: 46494e4953484544
+      isSystemEvent: 1
+      isGlobal: 0
+    - name: 4e657720546172676574
+      isSystemEvent: 0
+      isGlobal: 1
+    - name: 5461726765742052656163686564
+      isSystemEvent: 0
+      isGlobal: 1
+    - name: 43616d657261204d6f76652046696e6973686564
+      isSystemEvent: 0
+      isGlobal: 1
+    globalTransitions: []
+    variables:
+      floatVariables: []
+      intVariables: []
+      boolVariables: []
+      stringVariables: []
+      vector2Variables: []
+      vector3Variables: []
+      colorVariables: []
+      rectVariables: []
+      quaternionVariables: []
+      gameObjectVariables:
+      - useVariable: 1
+        name: 43616d65726120506f736974696f6e
+        tooltip: 
+        showInInspector: 0
+        networkSync: 0
+        value: {fileID: 0}
+      - useVariable: 1
+        name: 4c6f6f6b20506f736974696f6e
+        tooltip: 
+        showInInspector: 0
+        networkSync: 0
+        value: {fileID: 0}
+      - useVariable: 1
+        name: 5374616e6420506f736974696f6e
+        tooltip: 
+        showInInspector: 0
+        networkSync: 0
+        value: {fileID: 0}
+      objectVariables: []
+      materialVariables: []
+      textureVariables: []
+    description: 
+    docUrl: 
+    showStateLabel: 1
+    maxReEnterStateCount: 1000
+    watermark: 
+    ExposedEvents: []
+    RestartOnEnable: 1
+    EnableDebugFlow: 0
+    StepFrame: 0
+    activeStateName: 

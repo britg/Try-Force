@@ -57,6 +57,12 @@ public class GameController : MonoBehaviour {
 		}
 	}
 
+	protected float playerAngle {
+		get {
+			return -Vector2.Angle(Vector2.up, playerDirection);
+		}
+	}
+
 
 	GameObject _aimObj;
 	protected GameObject aimObj {
@@ -89,5 +95,6 @@ public class GameController : MonoBehaviour {
 			return _currentInputController;
 		}
 	}
+
 
 }

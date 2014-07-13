@@ -12,4 +12,6 @@ public static class Notifications {
 
 	public static string TurnChange { get { return "OnTurnChange"; } }
 
+	public static string Dead { get { return "OnDead"; } }
+
 }

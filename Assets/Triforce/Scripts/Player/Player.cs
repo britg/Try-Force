@@ -16,7 +16,7 @@ public class Player {
 		Mage
 	}
 
-	public int life;
+	public int hitPoints;
 	public float moveSpeed;
 	public float rotateSpeed;
 	public Player.Orientation orientation = Player.Orientation.Warrior;
