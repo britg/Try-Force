@@ -49,21 +49,51 @@ public class EnemyController : DamageReceiverController {
 
 	}
 
-	void DetectPlayer () {
+	void DetectPlayerAll () {
 		RaycastHit2D[] hits = Physics2D.RaycastAll(transform.position, playerDirection, detectionRadius.radius);
 		foreach (RaycastHit2D hit in hits) {
+			if (hit.collider != null && hit.collider.gameObject.tag == Game.wallTag) {
+				enemy.EnterIdleState();
+				return;
+			}
+
 			if (hit.collider != null && hit.collider.gameObject.tag == Game.playerTag) {
 				enemy.EnterAggroState();
 				if ((hit.fraction*detectionRadius.radius) <= weaponRadius.radius) {
 					enemy.EnterInRangeState();
+					return;
 				}
+				return;
 			}
+		}
+	}
+
+	void DetectPlayer () {
+		RaycastHit2D hit = Physics2D.Raycast(transform.position, playerDirection, detectionRadius.radius, LayerMask.NameToLayer(Game.enemyLayer));
+
+		if (hit.collider == null) {
+			return;
+		}
+
+		if (hit.collider.gameObject.tag == Game.wallTag) {
+			enemy.EnterIdleState();
+			return;
+		}
+
+		if (hit.collider.gameObject.tag == Game.playerTag) {
+			Debug.Log ("Player");
+			enemy.EnterAggroState();
+			if ((hit.fraction*detectionRadius.radius) <= weaponRadius.radius) {
+				enemy.EnterInRangeState();
+				return;
+			}
+			return;
 		}
 	}
 
 	void MoveTowardsPlayer () {
 		Vector2 direction2D = playerDirection;
-		RaycastHit2D[] hits = Physics2D.CircleCastAll(transform.position, collisionBody.radius, direction2D, enemy.moveSpeed);
+		RaycastHit2D[] hits = Physics2D.CircleCastAll(transform.position, collisionBody.radius, direction2D, enemy.moveSpeed, LayerMask.NameToLayer(Game.enemyLayer));
 		foreach (RaycastHit2D hit in hits) {
 			if (hit.collider != null) {
 				direction2D += hit.normal;

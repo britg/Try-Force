@@ -11,4 +11,6 @@ public static class Game {
 	public static string projectileTag = "Projectile";
 	public static string weaponTag = "Weapon";
 	public static string enemyWeaponTag = "EnemyWeapon";
+
+	public static string enemyLayer = "Enemy";
 }

@@ -18,6 +18,7 @@ public class DeathGUIController : MonoBehaviour {
 
 	void OnDead () {
 		deathInterface.SetActive(true);
+		Invoke("Restart", 0.5f);
 	}
 
 	public void Restart () {

@@ -38,9 +38,17 @@ public class Enemy : IDamageReceiver {
 		aggroState = Enemy.AggroState.InRange;
 	}
 
+	public void EnterIdleState () {
+		aggroState = Enemy.AggroState.Idle;
+	}
+
 	public void TakeDamageFrom (IProjectile projectile) {
 		Debug.Log ("Enemy model: taking damage from projectile " + projectile);
-		Die();
+		_hitPoints -= 1;
+
+		if (_hitPoints <= 0) {
+			Die();
+		}
 	}
 
 	public void TakeDamageFrom (IWeapon weapon) {
