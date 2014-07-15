@@ -28,7 +28,6 @@ public class ThiefWeaponController : GameController {
 	void FireBow () {
 		GameObject arrowObj = (GameObject)Instantiate(arrowPrefab);
 		arrowObj.transform.position = transform.position;
-		ArrowController arrowController = arrowObj.GetComponent<ArrowController>();
-		arrowController.SetDestination(currentTarget);
+    arrowObj.transform.rotation = transform.rotation;
 	}
 }
