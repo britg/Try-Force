@@ -28,7 +28,8 @@ public class MageWeaponController : GameController {
 	void ShootFireball () {
 		GameObject fireballObj = (GameObject)Instantiate(fireballPrefab);
 		fireballObj.transform.position = transform.position;
-		FireballController fireballController = fireballObj.GetComponent<FireballController>();
-		fireballController.SetDestination(currentTarget);
+		fireballObj.transform.rotation = transform.rotation;
+//		FireballController fireballController = fireballObj.GetComponent<FireballController>();
+//		fireballController.SetDestination(currentTarget);
 	}
 }
