@@ -375,7 +375,7 @@ MonoBehaviour:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 100002}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 92c27a1cc7bf741a58cc78f3b68deada, type: 3}
   m_Name: 
@@ -1724,12 +1724,14 @@ MonoBehaviour:
       actionData:
         actionNames:
         - HutongGames.PlayMaker.Actions.GetAxisVector
+        - HutongGames.PlayMaker.Actions.ControllerMove
         customNames:
         - 
-        actionEnabled: 01
-        actionIsOpen: 01
-        actionStartIndex: 00000000
-        actionHashCodes: 04a95048
+        - 
+        actionEnabled: 0101
+        actionIsOpen: 0101
+        actionStartIndex: 0000000007000000
+        actionHashCodes: 04a95048cdd8fa00
         unityObjectParams: []
         fsmGameObjectParams:
         - useVariable: 0
@@ -1738,7 +1740,15 @@ MonoBehaviour:
           showInInspector: 0
           networkSync: 0
           value: {fileID: 0}
-        fsmOwnerDefaultParams: []
+        fsmOwnerDefaultParams:
+        - ownerOption: 0
+          gameObject:
+            useVariable: 0
+            name: 
+            tooltip: 
+            showInInspector: 0
+            networkSync: 0
+            value: {fileID: 0}
         animationCurveParams: []
         functionCallParams: []
         fsmTemplateControlParams: []
@@ -1760,12 +1770,12 @@ MonoBehaviour:
           value: Vertical
         fsmObjectParams: []
         fsmVarParams: []
-        byteData: 0000803f0001000000000000000000000000000000014d6f76656d656e7420566563746f720000000001
+        byteData: 0000803f0001000000000000000000000000000000014d6f76656d656e7420566563746f72000000000100000000000000000000000001000000000100
         arrayParamSizes: 
         arrayParamTypes: []
         customTypeSizes: 
         customTypeNames: []
-        paramDataType: 12000000120000000f00000007000000130000001c0000000f000000
+        paramDataType: 12000000120000000f00000007000000130000001c0000000f000000140000001c0000000700000011000000
         paramName:
         - horizontalAxis
         - verticalAxis
@@ -1774,8 +1784,12 @@ MonoBehaviour:
         - relativeTo
         - storeVector
         - storeMagnitude
-        paramDataPos: 00000000010000000000000005000000000000000900000025000000
-        paramByteDataSize: 00000000000000000500000004000000000000001c00000005000000
+        - gameObject
+        - moveVector
+        - space
+        - perSecond
+        paramDataPos: 00000000010000000000000005000000000000000900000025000000000000002a000000370000003b000000
+        paramByteDataSize: 00000000000000000500000004000000000000001c00000005000000000000000d0000000400000002000000
     - name: Move
       description: 
       colorIndex: 0
