@@ -6,4 +6,4 @@ EditorBuildSettings:
   serializedVersion: 2
   m_Scenes:
   - enabled: 1
-    path: Assets/Triforce/Scenes/DragonKeep 1.unity
+    path: Assets/Triforce/Scenes/Play.unity
