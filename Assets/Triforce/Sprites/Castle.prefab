@@ -813,10 +813,10 @@ MonoBehaviour:
     regionW: 0
     regionH: 0
     regionId: 0
-    colliderType: 2
+    colliderType: 3
     colliderData: []
-    boxColliderMin: {x: 0, y: 0}
-    boxColliderMax: {x: 0, y: 0}
+    boxColliderMin: {x: 29, y: 0}
+    boxColliderMax: {x: 74, y: 85}
     polyColliderIslands: []
     polyColliderCap: 1
     colliderConvex: 0

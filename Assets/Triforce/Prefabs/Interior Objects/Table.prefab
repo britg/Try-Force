@@ -11,7 +11,7 @@ GameObject:
   - 23: {fileID: 2300000}
   - 33: {fileID: 3300000}
   - 114: {fileID: 11400000}
-  - 65: {fileID: 6500000}
+  - 61: {fileID: 6100000}
   m_Layer: 0
   m_Name: Table
   m_TagString: wall
@@ -26,7 +26,7 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 100000}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -1.30060017, y: 1.34913039, z: 0}
+  m_LocalPosition: {x: -1.50302303, y: -1.14223003, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
@@ -58,18 +58,17 @@ MeshFilter:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 100000}
   m_Mesh: {fileID: 0}
---- !u!65 &6500000
-BoxCollider:
+--- !u!61 &6100000
+BoxCollider2D:
   m_ObjectHideFlags: 1
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 100000}
+  m_Enabled: 1
   m_Material: {fileID: 0}
   m_IsTrigger: 0
-  m_Enabled: 1
-  serializedVersion: 2
-  m_Size: {x: .450000018, y: 1, z: .200000003}
-  m_Center: {x: .00500001013, y: 0, z: 0}
+  m_Size: {x: .450000018, y: .850000024}
+  m_Center: {x: .0150000006, y: .0749999881}
 --- !u!114 &11400000
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -85,10 +84,10 @@ MonoBehaviour:
   _color: {r: 1, g: 1, b: 1, a: 1}
   _scale: {x: 1, y: 1, z: 1}
   _spriteId: 17
-  boxCollider2D: {fileID: 0}
+  boxCollider2D: {fileID: 6100000}
   polygonCollider2D: []
   edgeCollider2D: []
-  boxCollider: {fileID: 6500000}
+  boxCollider: {fileID: 0}
   meshCollider: {fileID: 0}
   meshColliderPositions: []
   meshColliderMesh: {fileID: 0}

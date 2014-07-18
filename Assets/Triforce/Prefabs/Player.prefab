@@ -128,9 +128,9 @@ Transform:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 100018}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalRotation: {x: 0, y: 0, z: 1, w: -1.62920685e-07}
   m_LocalPosition: {x: .00226754695, y: .154190972, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalScale: {x: .217639506, y: .217639491, z: .217639491}
   m_Children: []
   m_Father: {fileID: 400022}
   m_RootOrder: 0
@@ -167,9 +167,9 @@ Transform:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 100026}
-  m_LocalRotation: {x: 0, y: 0, z: .866025448, w: .49999997}
+  m_LocalRotation: {x: 0, y: 0, z: -.50000006, w: .866025388}
   m_LocalPosition: {x: -.128538772, y: -.0728048682, z: -.100000001}
-  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalScale: {x: .182145491, y: .182145476, z: .182145476}
   m_Children: []
   m_Father: {fileID: 400022}
   m_RootOrder: 2
@@ -179,9 +179,9 @@ Transform:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 100028}
-  m_LocalRotation: {x: 0, y: 0, z: -.866025448, w: .49999997}
+  m_LocalRotation: {x: 0, y: 0, z: .50000006, w: .866025388}
   m_LocalPosition: {x: .123416573, y: -.0715239868, z: -.100000001}
-  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalScale: {x: .212767899, y: .212767899, z: .212767899}
   m_Children: []
   m_Father: {fileID: 400022}
   m_RootOrder: 1
@@ -208,7 +208,7 @@ CircleCollider2D:
   m_GameObject: {fileID: 100002}
   m_Enabled: 1
   m_Material: {fileID: 0}
-  m_IsTrigger: 0
+  m_IsTrigger: 1
   m_Radius: .200000003
   m_Center: {x: 0, y: 0}
 --- !u!114 &11400000
@@ -1362,7 +1362,7 @@ MonoBehaviour:
           tooltip: 
           showInInspector: 0
           networkSync: 0
-          value: {fileID: 100028}
+          value: {fileID: 0}
         - useVariable: 1
           name: Weapon
           tooltip: 
@@ -1374,7 +1374,7 @@ MonoBehaviour:
           tooltip: 
           showInInspector: 0
           networkSync: 0
-          value: {fileID: 100028}
+          value: {fileID: 0}
         fsmOwnerDefaultParams:
         - ownerOption: 1
           gameObject:
@@ -1393,7 +1393,7 @@ MonoBehaviour:
         fsmStringParams: []
         fsmObjectParams: []
         fsmVarParams: []
-        byteData: 00000000000000000000000000000000000000000000000000000000000000000001000100
+        byteData: 00000000000000000000000001000000000000000000000000010000000000000001000100
         arrayParamSizes: 
         arrayParamTypes: []
         customTypeSizes: 
@@ -1943,7 +1943,7 @@ SpriteRenderer:
   m_ScaleInLightmap: 1
   m_SortingLayerID: 0
   m_SortingOrder: 0
-  m_Sprite: {fileID: 21300000, guid: 3d436c595bd554ed59822d0b5cd6c2a4, type: 3}
+  m_Sprite: {fileID: 21300000, guid: 7e319072d13814fb995b20ed3d9ab993, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
 --- !u!212 &21200002
 SpriteRenderer:
@@ -1965,7 +1965,7 @@ SpriteRenderer:
   m_ScaleInLightmap: 1
   m_SortingLayerID: 0
   m_SortingOrder: 0
-  m_Sprite: {fileID: 21300000, guid: 6bc00cbb3301e48d399396216707ef88, type: 3}
+  m_Sprite: {fileID: 21300000, guid: c2d12412898bb451c90fdd9f9836276b, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
 --- !u!212 &21200004
 SpriteRenderer:
@@ -1987,7 +1987,7 @@ SpriteRenderer:
   m_ScaleInLightmap: 1
   m_SortingLayerID: 0
   m_SortingOrder: 0
-  m_Sprite: {fileID: 21300000, guid: ca7d0efe001cf4b40b901c65f8346ed7, type: 3}
+  m_Sprite: {fileID: 21300000, guid: 419a08743d79a4353a6d0bec941110f2, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
 --- !u!212 &21200008
 SpriteRenderer:
