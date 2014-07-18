@@ -7,7 +7,6 @@ public class PlayerController : GameController {
 	public CircleCollider2D collisionBody;
 
 	void Start () {
-		Debug.Log (gameObject.transform.parent);
 	}
 
 	void Update () {
@@ -15,7 +14,7 @@ public class PlayerController : GameController {
 	}
 
 	void Move (Vector3 direction) {
-		Vector2 direction2D = direction.XY();
+		Vector2 direction2D = direction.XY() * Time.timeScale;
 		RaycastHit2D[] hits = Physics2D.CircleCastAll(transform.position, collisionBody.radius, direction2D, player.moveSpeed);
 		foreach (RaycastHit2D hit in hits) {
 			if (shouldPushBack(hit.collider)) {

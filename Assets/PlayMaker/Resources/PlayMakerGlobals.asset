@@ -47,6 +47,12 @@ MonoBehaviour:
       networkSync: 0
       value: {fileID: 0}
     - useVariable: 1
+      name: UI Root
+      tooltip: 
+      showInInspector: 0
+      networkSync: 0
+      value: {fileID: 0}
+    - useVariable: 1
       name: Warrior
       tooltip: 
       showInInspector: 0
@@ -64,3 +70,19 @@ MonoBehaviour:
   - TRIGGER STAY 2D
   - OnPerformAttack
   - OnAttack
+  - NGUI / ON CHANGE
+  - NGUI / ON CLICK
+  - NGUI / ON DRAG
+  - NGUI / ON DROP
+  - NGUI / ON HOVER
+  - NGUI / ON HOVER ENTER
+  - NGUI / ON HOVER EXIT
+  - NGUI / ON PRESS
+  - NGUI / ON PRESS DOWN
+  - NGUI / ON PRESS UP
+  - NGUI / ON SELECT
+  - NGUI / ON SELECTION CHANGE
+  - NGUI / ON SLIDER CHANGE
+  - NGUI / ON SUBMIT
+  - NGUI / ON TOOLTIP
+  - OnTeleport
