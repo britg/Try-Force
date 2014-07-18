@@ -1,9 +1,14 @@
 ﻿using UnityEngine;
 using System.Collections;
+using HutongGames.PlayMaker;
 
 public class OrientationController : GameController {
 
 	Player.Orientation previousOrientation;
+
+	void Start () {
+		UpdateOrientation();
+	}
 
 	void Update () {
 		DetectRotate();
@@ -32,7 +37,8 @@ public class OrientationController : GameController {
 	}
 
 	void UpdateOrientation () {
-		Debug.Log ("previous orientation was " + previousOrientation);
+		FsmVariables.GlobalVariables.GetFsmString("Orientation").Value = player.orientation.ToString();
+
 		if (player.warriorFace) {
 			iTween.RotateTo(gameObject, iTween.Hash ("rotation", new Vector3(0f, 0f, playerController.transform.eulerAngles.z), "time", player.rotateSpeed));
 		}
