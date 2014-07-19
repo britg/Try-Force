@@ -17,6 +17,12 @@ MonoBehaviour:
     boolVariables: []
     stringVariables:
     - useVariable: 1
+      name: Area
+      tooltip: 
+      showInInspector: 0
+      networkSync: 0
+      value: 
+    - useVariable: 1
       name: Orientation
       tooltip: 
       showInInspector: 0
