@@ -1,0 +1,254 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!1 &100000
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  serializedVersion: 4
+  m_Component:
+  - 4: {fileID: 400000}
+  - 114: {fileID: 11400000}
+  m_Layer: 0
+  m_Name: Town Buildings
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &400000
+Transform:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 100000}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 0
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 100000}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d546f34a90531a14eaba82a43b05b86b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  version: 3
+  materialIdsValid: 1
+  needMaterialInstance: 0
+  spriteDefinitions:
+  - name: Armory
+    boundsData:
+    - {x: 0, y: 0, z: 0}
+    - {x: 2, y: 2, z: 0}
+    untrimmedBoundsData:
+    - {x: 0, y: 0, z: 0}
+    - {x: 2, y: 2, z: 0}
+    texelSize: {x: .00999999978, y: .00999999978}
+    positions:
+    - {x: -1, y: -1, z: 0}
+    - {x: 1, y: -1, z: 0}
+    - {x: -1, y: 1, z: 0}
+    - {x: 1, y: 1, z: 0}
+    normals: []
+    tangents: []
+    uvs:
+    - {x: .00390820298, y: .00390820298}
+    - {x: .394529283, y: .00390820298}
+    - {x: .00390820298, y: .394529283}
+    - {x: .394529283, y: .394529283}
+    indices: 000000000300000001000000020000000300000000000000
+    material: {fileID: 2100000, guid: 69d01fec05c7ff34d842599a56c8dac5, type: 2}
+    materialId: 0
+    sourceTextureGUID: 4d91640fbd1f1b942a6e27134a77142c
+    extractRegion: 0
+    regionX: 0
+    regionY: 0
+    regionW: 0
+    regionH: 0
+    flipped: 0
+    complexGeometry: 0
+    physicsEngine: 1
+    colliderType: 2
+    customColliders: []
+    colliderVertices:
+    - {x: 0, y: 0, z: 0}
+    - {x: 1, y: 1, z: .100000001}
+    colliderIndicesFwd: 
+    colliderIndicesBack: 
+    colliderConvex: 0
+    colliderSmoothSphereCollisions: 0
+    polygonCollider2D: []
+    edgeCollider2D: []
+    attachPoints: []
+  - name: ThiefGuild
+    boundsData:
+    - {x: 0, y: .00499999523, z: 0}
+    - {x: 2, y: 1.99000001, z: 0}
+    untrimmedBoundsData:
+    - {x: 0, y: 0, z: 0}
+    - {x: 2, y: 2, z: 0}
+    texelSize: {x: .00999999978, y: .00999999978}
+    positions:
+    - {x: -1, y: -.99000001, z: 0}
+    - {x: 1, y: -.99000001, z: 0}
+    - {x: -1, y: 1, z: 0}
+    - {x: 1, y: 1, z: 0}
+    normals: []
+    tangents: []
+    uvs:
+    - {x: .402345717, y: .00390820298}
+    - {x: .792966783, y: .00390820298}
+    - {x: .402345717, y: .392576158}
+    - {x: .792966783, y: .392576158}
+    indices: 000000000300000001000000020000000300000000000000
+    material: {fileID: 2100000, guid: 69d01fec05c7ff34d842599a56c8dac5, type: 2}
+    materialId: 0
+    sourceTextureGUID: 257d4c72cb2336f4f91583bb375e867a
+    extractRegion: 0
+    regionX: 0
+    regionY: 0
+    regionW: 0
+    regionH: 0
+    flipped: 0
+    complexGeometry: 0
+    physicsEngine: 1
+    colliderType: 2
+    customColliders: []
+    colliderVertices:
+    - {x: 0, y: .00499999523, z: 0}
+    - {x: 1, y: .995000005, z: .100000001}
+    colliderIndicesFwd: 
+    colliderIndicesBack: 
+    colliderConvex: 0
+    colliderSmoothSphereCollisions: 0
+    polygonCollider2D: []
+    edgeCollider2D: []
+    attachPoints: []
+  - name: MagicShop
+    boundsData:
+    - {x: 0, y: 0, z: 0}
+    - {x: 2, y: 2, z: 0}
+    untrimmedBoundsData:
+    - {x: 0, y: 0, z: 0}
+    - {x: 2, y: 2, z: 0}
+    texelSize: {x: .00999999978, y: .00999999978}
+    positions:
+    - {x: -1, y: -1, z: 0}
+    - {x: 1, y: -1, z: 0}
+    - {x: -1, y: 1, z: 0}
+    - {x: 1, y: 1, z: 0}
+    normals: []
+    tangents: []
+    uvs:
+    - {x: .00390820298, y: .402345717}
+    - {x: .394529283, y: .402345717}
+    - {x: .00390820298, y: .792966783}
+    - {x: .394529283, y: .792966783}
+    indices: 000000000300000001000000020000000300000000000000
+    material: {fileID: 2100000, guid: 69d01fec05c7ff34d842599a56c8dac5, type: 2}
+    materialId: 0
+    sourceTextureGUID: 28c36e5f1c005bf4c8f40b7bf4ffd0c9
+    extractRegion: 0
+    regionX: 0
+    regionY: 0
+    regionW: 0
+    regionH: 0
+    flipped: 0
+    complexGeometry: 0
+    physicsEngine: 1
+    colliderType: 2
+    customColliders: []
+    colliderVertices:
+    - {x: 0, y: 0, z: 0}
+    - {x: 1, y: 1, z: .100000001}
+    colliderIndicesFwd: 
+    colliderIndicesBack: 
+    colliderConvex: 0
+    colliderSmoothSphereCollisions: 0
+    polygonCollider2D: []
+    edgeCollider2D: []
+    attachPoints: []
+  - name: Castle
+    boundsData:
+    - {x: 0, y: 0, z: 0}
+    - {x: 2, y: 1, z: 0}
+    untrimmedBoundsData:
+    - {x: 0, y: 0, z: 0}
+    - {x: 2, y: 1, z: 0}
+    texelSize: {x: .00999999978, y: .00999999978}
+    positions:
+    - {x: -1, y: -.5, z: 0}
+    - {x: 1, y: -.5, z: 0}
+    - {x: -1, y: .5, z: 0}
+    - {x: 1, y: .5, z: 0}
+    normals: []
+    tangents: []
+    uvs:
+    - {x: .00390820298, y: .800783217}
+    - {x: .394529283, y: .800783217}
+    - {x: .00390820298, y: .996091783}
+    - {x: .394529283, y: .996091783}
+    indices: 000000000300000001000000020000000300000000000000
+    material: {fileID: 2100000, guid: 69d01fec05c7ff34d842599a56c8dac5, type: 2}
+    materialId: 0
+    sourceTextureGUID: e5aa3aebd718e1d4dbd3ab51cfc425fd
+    extractRegion: 0
+    regionX: 0
+    regionY: 0
+    regionW: 0
+    regionH: 0
+    flipped: 0
+    complexGeometry: 0
+    physicsEngine: 1
+    colliderType: 0
+    customColliders: []
+    colliderVertices: []
+    colliderIndicesFwd: 
+    colliderIndicesBack: 
+    colliderConvex: 0
+    colliderSmoothSphereCollisions: 0
+    polygonCollider2D: []
+    edgeCollider2D: []
+    attachPoints: []
+  premultipliedAlpha: 0
+  material: {fileID: 0}
+  materials:
+  - {fileID: 2100000, guid: 69d01fec05c7ff34d842599a56c8dac5, type: 2}
+  textures:
+  - {fileID: 2800000, guid: d9a00fc6008071f41af657f97849252b, type: 3}
+  pngTextures: []
+  materialPngTextureId: 00000000
+  textureFilterMode: 1
+  textureMipMaps: 0
+  allowMultipleAtlases: 0
+  spriteCollectionGUID: f4e08124ba81fae47895bf0c2757c9a5
+  spriteCollectionName: Town Buildings
+  assetName: 
+  loadable: 0
+  invOrthoSize: 2
+  halfTargetHeight: 50
+  buildKey: 774757593
+  dataGuid: a3b6997aa151e864b805d2e40028e4d8
+  managedSpriteCollection: 0
+  hasPlatformData: 0
+  spriteCollectionPlatforms: []
+  spriteCollectionPlatformGUIDs: []
+--- !u!1001 &100100000
+Prefab:
+  m_ObjectHideFlags: 1
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 0}
+    m_Modifications: []
+    m_RemovedComponents: []
+  m_ParentPrefab: {fileID: 0}
+  m_RootGameObject: {fileID: 100000}
+  m_IsPrefabParent: 1
+  m_IsExploded: 1

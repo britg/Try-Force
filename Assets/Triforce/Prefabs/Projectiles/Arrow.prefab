@@ -41,7 +41,7 @@ Rigidbody2D:
   m_GameObject: {fileID: 100002}
   m_Mass: .100000001
   m_LinearDrag: 0
-  m_AngularDrag: .0500000007
+  m_AngularDrag: 100
   m_GravityScale: 1
   m_FixedAngle: 0
   m_IsKinematic: 0
@@ -481,7 +481,7 @@ MonoBehaviour:
       colorIndex: 0
       position:
         serializedVersion: 2
-        x: 50
+        x: 60
         y: 100
         width: 106
         height: 16

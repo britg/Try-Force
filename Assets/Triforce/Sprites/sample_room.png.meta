@@ -1,5 +1,5 @@
 fileFormatVersion: 2
-guid: 81d340391838fa34bbd7584e9d8388e7
+guid: 60f8c7ac4e93dd547b9927866a32c580
 TextureImporter:
   fileIDToRecycleName:
     21300000: sample_room
@@ -18,12 +18,12 @@ TextureImporter:
     externalNormalMap: 0
     heightScale: .25
     normalMapFilter: 0
-  isReadable: 1
+  isReadable: 0
   grayScaleToAlpha: 0
   generateCubemap: 0
   seamlessCubemap: 0
-  textureFormat: -3
-  maxTextureSize: 4096
+  textureFormat: -1
+  maxTextureSize: 1024
   textureSettings:
     filterMode: -1
     aniso: -1
@@ -40,7 +40,7 @@ TextureImporter:
   spriteBorder: {x: 0, y: 0, z: 0, w: 0}
   spritePixelsToUnits: 100
   alphaIsTransparency: 1
-  textureType: 5
+  textureType: 8
   buildTargetSettings: []
   spriteSheet:
     sprites: []
