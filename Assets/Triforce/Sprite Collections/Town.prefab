@@ -42,7 +42,7 @@ MonoBehaviour:
   textures: []
   textureRefs: []
   spriteSheets:
-  - texture: {fileID: 2800000, guid: 73133d0176341cf4a9e42850e979f286, type: 3}
+  - texture: {fileID: 2800000, guid: 00f317941a70def4bb18428f1421d46f, type: 3}
     tilesX: 0
     tilesY: 0
     numTiles: 0
@@ -51,8 +51,8 @@ MonoBehaviour:
     scale: {x: 1, y: 1, z: 1}
     additive: 0
     active: 1
-    tileWidth: 25
-    tileHeight: 25
+    tileWidth: 100
+    tileHeight: 100
     tileMarginX: 0
     tileMarginY: 0
     tileSpacingX: 0
@@ -78,18 +78,18 @@ MonoBehaviour:
   forcedTextureWidth: 2048
   forcedTextureHeight: 2048
   textureCompression: 0
-  atlasWidth: 64
-  atlasHeight: 64
+  atlasWidth: 256
+  atlasHeight: 256
   forceSquareAtlas: 0
-  atlasWastage: 17.8710938
+  atlasWastage: 33.9294434
   allowMultipleAtlases: 0
   removeDuplicates: 1
   textureParams:
-  - name: grass_shrub_rock/0
+  - name: grass
     disableTrimming: 0
     additive: 0
     scale: {x: 1, y: 1, z: 1}
-    texture: {fileID: 2800000, guid: 73133d0176341cf4a9e42850e979f286, type: 3}
+    texture: {fileID: 2800000, guid: 00f317941a70def4bb18428f1421d46f, type: 3}
     materialId: 0
     anchor: 4
     anchorX: 0
@@ -112,9 +112,9 @@ MonoBehaviour:
     spriteSheetY: 0
     extractRegion: 1
     regionX: 0
-    regionY: 25
-    regionW: 25
-    regionH: 25
+    regionY: 100
+    regionW: 100
+    regionH: 100
     regionId: 0
     colliderType: 0
     colliderData: []
@@ -126,11 +126,11 @@ MonoBehaviour:
     colliderSmoothSphereCollisions: 0
     colliderColor: 0
     attachPoints: []
-  - name: grass_shrub_rock/1
+  - name: 
     disableTrimming: 0
     additive: 0
     scale: {x: 1, y: 1, z: 1}
-    texture: {fileID: 2800000, guid: 73133d0176341cf4a9e42850e979f286, type: 3}
+    texture: {fileID: 0}
     materialId: 0
     anchor: 4
     anchorX: 0
@@ -143,20 +143,20 @@ MonoBehaviour:
     diceUnitX: 64
     diceUnitY: 64
     diceFilter: 0
-    pad: 2
+    pad: 0
     extraPadding: 0
     source: 0
     fromSpriteSheet: 0
-    hasSpriteSheetId: 1
+    hasSpriteSheetId: 0
     spriteSheetId: 0
-    spriteSheetX: 1
+    spriteSheetX: 0
     spriteSheetY: 0
-    extractRegion: 1
-    regionX: 25
-    regionY: 25
-    regionW: 25
-    regionH: 25
-    regionId: 1
+    extractRegion: 0
+    regionX: 0
+    regionY: 0
+    regionW: 0
+    regionH: 0
+    regionId: 0
     colliderType: 0
     colliderData: []
     boxColliderMin: {x: 0, y: 0}
@@ -167,11 +167,11 @@ MonoBehaviour:
     colliderSmoothSphereCollisions: 0
     colliderColor: 0
     attachPoints: []
-  - name: grass_shrub_rock/2
+  - name: shrub
     disableTrimming: 0
     additive: 0
     scale: {x: 1, y: 1, z: 1}
-    texture: {fileID: 2800000, guid: 73133d0176341cf4a9e42850e979f286, type: 3}
+    texture: {fileID: 2800000, guid: 00f317941a70def4bb18428f1421d46f, type: 3}
     materialId: 0
     anchor: 4
     anchorX: 0
@@ -193,10 +193,10 @@ MonoBehaviour:
     spriteSheetX: 2
     spriteSheetY: 0
     extractRegion: 1
-    regionX: 50
-    regionY: 25
-    regionW: 25
-    regionH: 25
+    regionX: 200
+    regionY: 100
+    regionW: 100
+    regionH: 100
     regionId: 2
     colliderType: 2
     colliderData: []
@@ -208,11 +208,11 @@ MonoBehaviour:
     colliderSmoothSphereCollisions: 0
     colliderColor: 0
     attachPoints: []
-  - name: grass_shrub_rock/3
+  - name: rock
     disableTrimming: 0
     additive: 0
     scale: {x: 1, y: 1, z: 1}
-    texture: {fileID: 2800000, guid: 73133d0176341cf4a9e42850e979f286, type: 3}
+    texture: {fileID: 2800000, guid: 00f317941a70def4bb18428f1421d46f, type: 3}
     materialId: 0
     anchor: 4
     anchorX: 0
@@ -234,10 +234,10 @@ MonoBehaviour:
     spriteSheetX: 3
     spriteSheetY: 0
     extractRegion: 1
-    regionX: 75
-    regionY: 25
-    regionW: 25
-    regionH: 25
+    regionX: 300
+    regionY: 100
+    regionW: 100
+    regionH: 100
     regionId: 3
     colliderType: 2
     colliderData: []
@@ -249,11 +249,11 @@ MonoBehaviour:
     colliderSmoothSphereCollisions: 0
     colliderColor: 0
     attachPoints: []
-  - name: grass_shrub_rock/4
+  - name: grass_short
     disableTrimming: 0
     additive: 0
     scale: {x: 1, y: 1, z: 1}
-    texture: {fileID: 2800000, guid: 73133d0176341cf4a9e42850e979f286, type: 3}
+    texture: {fileID: 2800000, guid: 00f317941a70def4bb18428f1421d46f, type: 3}
     materialId: 0
     anchor: 4
     anchorX: 0
@@ -277,8 +277,8 @@ MonoBehaviour:
     extractRegion: 1
     regionX: 0
     regionY: 0
-    regionW: 25
-    regionH: 25
+    regionW: 100
+    regionH: 100
     regionId: 4
     colliderType: 0
     colliderData: []
@@ -290,130 +290,7 @@ MonoBehaviour:
     colliderSmoothSphereCollisions: 0
     colliderColor: 0
     attachPoints: []
-  - name: grass_shrub_rock/5
-    disableTrimming: 0
-    additive: 0
-    scale: {x: 1, y: 1, z: 1}
-    texture: {fileID: 2800000, guid: 73133d0176341cf4a9e42850e979f286, type: 3}
-    materialId: 0
-    anchor: 4
-    anchorX: 0
-    anchorY: 0
-    overrideMesh: {fileID: 0}
-    doubleSidedSprite: 0
-    customSpriteGeometry: 0
-    geometryIslands: []
-    dice: 0
-    diceUnitX: 64
-    diceUnitY: 64
-    diceFilter: 0
-    pad: 2
-    extraPadding: 0
-    source: 0
-    fromSpriteSheet: 0
-    hasSpriteSheetId: 1
-    spriteSheetId: 0
-    spriteSheetX: 1
-    spriteSheetY: 1
-    extractRegion: 1
-    regionX: 25
-    regionY: 0
-    regionW: 25
-    regionH: 25
-    regionId: 5
-    colliderType: 0
-    colliderData: []
-    boxColliderMin: {x: 0, y: 0}
-    boxColliderMax: {x: 0, y: 0}
-    polyColliderIslands: []
-    polyColliderCap: 1
-    colliderConvex: 0
-    colliderSmoothSphereCollisions: 0
-    colliderColor: 0
-    attachPoints: []
-  - name: grass_shrub_rock/6
-    disableTrimming: 0
-    additive: 0
-    scale: {x: 1, y: 1, z: 1}
-    texture: {fileID: 2800000, guid: 73133d0176341cf4a9e42850e979f286, type: 3}
-    materialId: 0
-    anchor: 4
-    anchorX: 0
-    anchorY: 0
-    overrideMesh: {fileID: 0}
-    doubleSidedSprite: 0
-    customSpriteGeometry: 0
-    geometryIslands: []
-    dice: 0
-    diceUnitX: 64
-    diceUnitY: 64
-    diceFilter: 0
-    pad: 2
-    extraPadding: 0
-    source: 0
-    fromSpriteSheet: 0
-    hasSpriteSheetId: 1
-    spriteSheetId: 0
-    spriteSheetX: 2
-    spriteSheetY: 1
-    extractRegion: 1
-    regionX: 50
-    regionY: 0
-    regionW: 25
-    regionH: 25
-    regionId: 6
-    colliderType: 0
-    colliderData: []
-    boxColliderMin: {x: 0, y: 0}
-    boxColliderMax: {x: 0, y: 0}
-    polyColliderIslands: []
-    polyColliderCap: 1
-    colliderConvex: 0
-    colliderSmoothSphereCollisions: 0
-    colliderColor: 0
-    attachPoints: []
-  - name: grass_shrub_rock/7
-    disableTrimming: 0
-    additive: 0
-    scale: {x: 1, y: 1, z: 1}
-    texture: {fileID: 2800000, guid: 73133d0176341cf4a9e42850e979f286, type: 3}
-    materialId: 0
-    anchor: 4
-    anchorX: 0
-    anchorY: 0
-    overrideMesh: {fileID: 0}
-    doubleSidedSprite: 0
-    customSpriteGeometry: 0
-    geometryIslands: []
-    dice: 0
-    diceUnitX: 64
-    diceUnitY: 64
-    diceFilter: 0
-    pad: 2
-    extraPadding: 0
-    source: 0
-    fromSpriteSheet: 0
-    hasSpriteSheetId: 1
-    spriteSheetId: 0
-    spriteSheetX: 3
-    spriteSheetY: 1
-    extractRegion: 1
-    regionX: 75
-    regionY: 0
-    regionW: 25
-    regionH: 25
-    regionId: 7
-    colliderType: 0
-    colliderData: []
-    boxColliderMin: {x: 0, y: 0}
-    boxColliderMax: {x: 0, y: 0}
-    polyColliderIslands: []
-    polyColliderCap: 1
-    colliderConvex: 0
-    colliderSmoothSphereCollisions: 0
-    colliderColor: 0
-    attachPoints: []
-  spriteCollection: {fileID: 11400000, guid: 4dddb5faeaebcf04989df13af49cdeae, type: 2}
+  spriteCollection: {fileID: 11400000, guid: a144d4b2d8ef1744ea255bf6770d0a7d, type: 2}
   premultipliedAlpha: 0
   altMaterials:
   - {fileID: 2100000, guid: 60293e779147b1442bdc34844bac8889, type: 2}

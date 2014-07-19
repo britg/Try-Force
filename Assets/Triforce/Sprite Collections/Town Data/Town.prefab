@@ -43,35 +43,35 @@ MonoBehaviour:
   materialIdsValid: 1
   needMaterialInstance: 0
   spriteDefinitions:
-  - name: grass_shrub_rock/0
+  - name: grass
     boundsData:
-    - {x: .00499999896, y: -.00499999523, z: 0}
-    - {x: .25, y: .25, z: 0}
+    - {x: 0, y: 0, z: 0}
+    - {x: 1, y: 1, z: 0}
     untrimmedBoundsData:
-    - {x: .00499999896, y: -.00499999523, z: 0}
-    - {x: .25, y: .25, z: 0}
+    - {x: 0, y: 0, z: 0}
+    - {x: 1, y: 1, z: 0}
     texelSize: {x: .00999999978, y: .00999999978}
     positions:
-    - {x: -.119999997, y: -.129999995, z: 0}
-    - {x: .129999995, y: -.129999995, z: 0}
-    - {x: -.119999997, y: .120000005, z: 0}
-    - {x: .129999995, y: .120000005, z: 0}
+    - {x: -.5, y: -.5, z: 0}
+    - {x: .5, y: -.5, z: 0}
+    - {x: -.5, y: .5, z: 0}
+    - {x: .5, y: .5, z: 0}
     normals: []
     tangents: []
     uvs:
-    - {x: .0312656239, y: .0312656239}
-    - {x: .421859384, y: .0312656239}
-    - {x: .0312656239, y: .421859384}
-    - {x: .421859384, y: .421859384}
+    - {x: .00781640597, y: .00781640597}
+    - {x: .398433596, y: .00781640597}
+    - {x: .00781640597, y: .398433596}
+    - {x: .398433596, y: .398433596}
     indices: 000000000300000001000000020000000300000000000000
     material: {fileID: 2100000, guid: 60293e779147b1442bdc34844bac8889, type: 2}
     materialId: 0
-    sourceTextureGUID: 73133d0176341cf4a9e42850e979f286
+    sourceTextureGUID: 00f317941a70def4bb18428f1421d46f
     extractRegion: 1
     regionX: 0
-    regionY: 25
-    regionW: 25
-    regionH: 25
+    regionY: 100
+    regionW: 100
+    regionH: 100
     flipped: 0
     complexGeometry: 0
     physicsEngine: 1
@@ -85,35 +85,35 @@ MonoBehaviour:
     polygonCollider2D: []
     edgeCollider2D: []
     attachPoints: []
-  - name: grass_shrub_rock/1
+  - name: 
     boundsData:
-    - {x: .00499999896, y: -.00499999523, z: 0}
-    - {x: .25, y: .25, z: 0}
+    - {x: .310000002, y: -.310000002, z: 0}
+    - {x: .639999986, y: .639999986, z: 0}
     untrimmedBoundsData:
-    - {x: .00499999896, y: -.00499999523, z: 0}
-    - {x: .25, y: .25, z: 0}
+    - {x: .310000002, y: -.310000002, z: 0}
+    - {x: .639999986, y: .639999986, z: 0}
     texelSize: {x: .00999999978, y: .00999999978}
     positions:
-    - {x: -.119999997, y: -.129999995, z: 0}
-    - {x: .129999995, y: -.129999995, z: 0}
-    - {x: -.119999997, y: .120000005, z: 0}
-    - {x: .129999995, y: .120000005, z: 0}
+    - {x: -.00999999978, y: -.629999995, z: 0}
+    - {x: .629999995, y: -.629999995, z: 0}
+    - {x: -.00999999978, y: .00999999046, z: 0}
+    - {x: .629999995, y: .00999999046, z: 0}
     normals: []
     tangents: []
     uvs:
-    - {x: .0312656239, y: .0312656239}
-    - {x: .421859384, y: .0312656239}
-    - {x: .0312656239, y: .421859384}
-    - {x: .421859384, y: .421859384}
+    - {x: .00781640597, y: .820316434}
+    - {x: .015621094, y: .820316434}
+    - {x: .00781640597, y: .828121066}
+    - {x: .015621094, y: .828121066}
     indices: 000000000300000001000000020000000300000000000000
     material: {fileID: 2100000, guid: 60293e779147b1442bdc34844bac8889, type: 2}
     materialId: 0
-    sourceTextureGUID: 73133d0176341cf4a9e42850e979f286
-    extractRegion: 1
-    regionX: 25
-    regionY: 25
-    regionW: 25
-    regionH: 25
+    sourceTextureGUID: 
+    extractRegion: 0
+    regionX: 0
+    regionY: 0
+    regionW: 0
+    regionH: 0
     flipped: 0
     complexGeometry: 0
     physicsEngine: 1
@@ -127,43 +127,43 @@ MonoBehaviour:
     polygonCollider2D: []
     edgeCollider2D: []
     attachPoints: []
-  - name: grass_shrub_rock/2
+  - name: shrub
     boundsData:
-    - {x: .00499999896, y: -.00499999523, z: 0}
-    - {x: .25, y: .25, z: 0}
+    - {x: 0, y: 0, z: 0}
+    - {x: 1, y: 1, z: 0}
     untrimmedBoundsData:
-    - {x: .00499999896, y: -.00499999523, z: 0}
-    - {x: .25, y: .25, z: 0}
+    - {x: 0, y: 0, z: 0}
+    - {x: 1, y: 1, z: 0}
     texelSize: {x: .00999999978, y: .00999999978}
     positions:
-    - {x: -.119999997, y: -.129999995, z: 0}
-    - {x: .129999995, y: -.129999995, z: 0}
-    - {x: -.119999997, y: .120000005, z: 0}
-    - {x: .129999995, y: .120000005, z: 0}
+    - {x: -.5, y: -.5, z: 0}
+    - {x: .5, y: -.5, z: 0}
+    - {x: -.5, y: .5, z: 0}
+    - {x: .5, y: .5, z: 0}
     normals: []
     tangents: []
     uvs:
-    - {x: .0312656239, y: .484390616}
-    - {x: .421859384, y: .484390616}
-    - {x: .0312656239, y: .874984384}
-    - {x: .421859384, y: .874984384}
+    - {x: .00781640597, y: .414066404}
+    - {x: .398433596, y: .414066404}
+    - {x: .00781640597, y: .804683566}
+    - {x: .398433596, y: .804683566}
     indices: 000000000300000001000000020000000300000000000000
     material: {fileID: 2100000, guid: 60293e779147b1442bdc34844bac8889, type: 2}
     materialId: 0
-    sourceTextureGUID: 73133d0176341cf4a9e42850e979f286
+    sourceTextureGUID: 00f317941a70def4bb18428f1421d46f
     extractRegion: 1
-    regionX: 50
-    regionY: 25
-    regionW: 25
-    regionH: 25
+    regionX: 200
+    regionY: 100
+    regionW: 100
+    regionH: 100
     flipped: 0
     complexGeometry: 0
     physicsEngine: 1
     colliderType: 2
     customColliders: []
     colliderVertices:
-    - {x: .00499999896, y: -.00499999523, z: 0}
-    - {x: .125, y: .125, z: .100000001}
+    - {x: 0, y: 0, z: 0}
+    - {x: .5, y: .5, z: .100000001}
     colliderIndicesFwd: 
     colliderIndicesBack: 
     colliderConvex: 0
@@ -171,43 +171,43 @@ MonoBehaviour:
     polygonCollider2D: []
     edgeCollider2D: []
     attachPoints: []
-  - name: grass_shrub_rock/3
+  - name: rock
     boundsData:
-    - {x: .00499999896, y: -.00499999523, z: 0}
-    - {x: .25, y: .25, z: 0}
+    - {x: 0, y: 0, z: 0}
+    - {x: 1, y: 1, z: 0}
     untrimmedBoundsData:
-    - {x: .00499999896, y: -.00499999523, z: 0}
-    - {x: .25, y: .25, z: 0}
+    - {x: 0, y: 0, z: 0}
+    - {x: 1, y: 1, z: 0}
     texelSize: {x: .00999999978, y: .00999999978}
     positions:
-    - {x: -.119999997, y: -.129999995, z: 0}
-    - {x: .129999995, y: -.129999995, z: 0}
-    - {x: -.119999997, y: .120000005, z: 0}
-    - {x: .129999995, y: .120000005, z: 0}
+    - {x: -.5, y: -.5, z: 0}
+    - {x: .5, y: -.5, z: 0}
+    - {x: -.5, y: .5, z: 0}
+    - {x: .5, y: .5, z: 0}
     normals: []
     tangents: []
     uvs:
-    - {x: .484390616, y: .0312656239}
-    - {x: .874984384, y: .0312656239}
-    - {x: .484390616, y: .421859384}
-    - {x: .874984384, y: .421859384}
+    - {x: .414066404, y: .00781640597}
+    - {x: .804683566, y: .00781640597}
+    - {x: .414066404, y: .398433596}
+    - {x: .804683566, y: .398433596}
     indices: 000000000300000001000000020000000300000000000000
     material: {fileID: 2100000, guid: 60293e779147b1442bdc34844bac8889, type: 2}
     materialId: 0
-    sourceTextureGUID: 73133d0176341cf4a9e42850e979f286
+    sourceTextureGUID: 00f317941a70def4bb18428f1421d46f
     extractRegion: 1
-    regionX: 75
-    regionY: 25
-    regionW: 25
-    regionH: 25
+    regionX: 300
+    regionY: 100
+    regionW: 100
+    regionH: 100
     flipped: 0
     complexGeometry: 0
     physicsEngine: 1
     colliderType: 2
     customColliders: []
     colliderVertices:
-    - {x: .00499999896, y: -.00499999523, z: 0}
-    - {x: .125, y: .125, z: .100000001}
+    - {x: 0, y: 0, z: 0}
+    - {x: .5, y: .5, z: .100000001}
     colliderIndicesFwd: 
     colliderIndicesBack: 
     colliderConvex: 0
@@ -215,161 +215,35 @@ MonoBehaviour:
     polygonCollider2D: []
     edgeCollider2D: []
     attachPoints: []
-  - name: grass_shrub_rock/4
+  - name: grass_short
     boundsData:
-    - {x: .00499999896, y: -.00499999523, z: 0}
-    - {x: .25, y: .25, z: 0}
+    - {x: 0, y: 0, z: 0}
+    - {x: 1, y: 1, z: 0}
     untrimmedBoundsData:
-    - {x: .00499999896, y: -.00499999523, z: 0}
-    - {x: .25, y: .25, z: 0}
+    - {x: 0, y: 0, z: 0}
+    - {x: 1, y: 1, z: 0}
     texelSize: {x: .00999999978, y: .00999999978}
     positions:
-    - {x: -.119999997, y: -.129999995, z: 0}
-    - {x: .129999995, y: -.129999995, z: 0}
-    - {x: -.119999997, y: .120000005, z: 0}
-    - {x: .129999995, y: .120000005, z: 0}
+    - {x: -.5, y: -.5, z: 0}
+    - {x: .5, y: -.5, z: 0}
+    - {x: -.5, y: .5, z: 0}
+    - {x: .5, y: .5, z: 0}
     normals: []
     tangents: []
     uvs:
-    - {x: .484390616, y: .484390616}
-    - {x: .874984384, y: .484390616}
-    - {x: .484390616, y: .874984384}
-    - {x: .874984384, y: .874984384}
+    - {x: .414066404, y: .414066404}
+    - {x: .804683566, y: .414066404}
+    - {x: .414066404, y: .804683566}
+    - {x: .804683566, y: .804683566}
     indices: 000000000300000001000000020000000300000000000000
     material: {fileID: 2100000, guid: 60293e779147b1442bdc34844bac8889, type: 2}
     materialId: 0
-    sourceTextureGUID: 73133d0176341cf4a9e42850e979f286
+    sourceTextureGUID: 00f317941a70def4bb18428f1421d46f
     extractRegion: 1
     regionX: 0
     regionY: 0
-    regionW: 25
-    regionH: 25
-    flipped: 0
-    complexGeometry: 0
-    physicsEngine: 1
-    colliderType: 0
-    customColliders: []
-    colliderVertices: []
-    colliderIndicesFwd: 
-    colliderIndicesBack: 
-    colliderConvex: 0
-    colliderSmoothSphereCollisions: 0
-    polygonCollider2D: []
-    edgeCollider2D: []
-    attachPoints: []
-  - name: grass_shrub_rock/5
-    boundsData:
-    - {x: .00499999896, y: -.00499999523, z: 0}
-    - {x: .25, y: .25, z: 0}
-    untrimmedBoundsData:
-    - {x: .00499999896, y: -.00499999523, z: 0}
-    - {x: .25, y: .25, z: 0}
-    texelSize: {x: .00999999978, y: .00999999978}
-    positions:
-    - {x: -.119999997, y: -.129999995, z: 0}
-    - {x: .129999995, y: -.129999995, z: 0}
-    - {x: -.119999997, y: .120000005, z: 0}
-    - {x: .129999995, y: .120000005, z: 0}
-    normals: []
-    tangents: []
-    uvs:
-    - {x: .0312656239, y: .0312656239}
-    - {x: .421859384, y: .0312656239}
-    - {x: .0312656239, y: .421859384}
-    - {x: .421859384, y: .421859384}
-    indices: 000000000300000001000000020000000300000000000000
-    material: {fileID: 2100000, guid: 60293e779147b1442bdc34844bac8889, type: 2}
-    materialId: 0
-    sourceTextureGUID: 73133d0176341cf4a9e42850e979f286
-    extractRegion: 1
-    regionX: 25
-    regionY: 0
-    regionW: 25
-    regionH: 25
-    flipped: 0
-    complexGeometry: 0
-    physicsEngine: 1
-    colliderType: 0
-    customColliders: []
-    colliderVertices: []
-    colliderIndicesFwd: 
-    colliderIndicesBack: 
-    colliderConvex: 0
-    colliderSmoothSphereCollisions: 0
-    polygonCollider2D: []
-    edgeCollider2D: []
-    attachPoints: []
-  - name: grass_shrub_rock/6
-    boundsData:
-    - {x: .00499999896, y: -.00499999523, z: 0}
-    - {x: .25, y: .25, z: 0}
-    untrimmedBoundsData:
-    - {x: .00499999896, y: -.00499999523, z: 0}
-    - {x: .25, y: .25, z: 0}
-    texelSize: {x: .00999999978, y: .00999999978}
-    positions:
-    - {x: -.119999997, y: -.129999995, z: 0}
-    - {x: .129999995, y: -.129999995, z: 0}
-    - {x: -.119999997, y: .120000005, z: 0}
-    - {x: .129999995, y: .120000005, z: 0}
-    normals: []
-    tangents: []
-    uvs:
-    - {x: .0312656239, y: .0312656239}
-    - {x: .421859384, y: .0312656239}
-    - {x: .0312656239, y: .421859384}
-    - {x: .421859384, y: .421859384}
-    indices: 000000000300000001000000020000000300000000000000
-    material: {fileID: 2100000, guid: 60293e779147b1442bdc34844bac8889, type: 2}
-    materialId: 0
-    sourceTextureGUID: 73133d0176341cf4a9e42850e979f286
-    extractRegion: 1
-    regionX: 50
-    regionY: 0
-    regionW: 25
-    regionH: 25
-    flipped: 0
-    complexGeometry: 0
-    physicsEngine: 1
-    colliderType: 0
-    customColliders: []
-    colliderVertices: []
-    colliderIndicesFwd: 
-    colliderIndicesBack: 
-    colliderConvex: 0
-    colliderSmoothSphereCollisions: 0
-    polygonCollider2D: []
-    edgeCollider2D: []
-    attachPoints: []
-  - name: grass_shrub_rock/7
-    boundsData:
-    - {x: .00499999896, y: -.00499999523, z: 0}
-    - {x: .25, y: .25, z: 0}
-    untrimmedBoundsData:
-    - {x: .00499999896, y: -.00499999523, z: 0}
-    - {x: .25, y: .25, z: 0}
-    texelSize: {x: .00999999978, y: .00999999978}
-    positions:
-    - {x: -.119999997, y: -.129999995, z: 0}
-    - {x: .129999995, y: -.129999995, z: 0}
-    - {x: -.119999997, y: .120000005, z: 0}
-    - {x: .129999995, y: .120000005, z: 0}
-    normals: []
-    tangents: []
-    uvs:
-    - {x: .0312656239, y: .0312656239}
-    - {x: .421859384, y: .0312656239}
-    - {x: .0312656239, y: .421859384}
-    - {x: .421859384, y: .421859384}
-    indices: 000000000300000001000000020000000300000000000000
-    material: {fileID: 2100000, guid: 60293e779147b1442bdc34844bac8889, type: 2}
-    materialId: 0
-    sourceTextureGUID: 73133d0176341cf4a9e42850e979f286
-    extractRegion: 1
-    regionX: 75
-    regionY: 0
-    regionW: 25
-    regionH: 25
+    regionW: 100
+    regionH: 100
     flipped: 0
     complexGeometry: 0
     physicsEngine: 1
@@ -394,14 +268,14 @@ MonoBehaviour:
   textureFilterMode: 1
   textureMipMaps: 0
   allowMultipleAtlases: 0
-  spriteCollectionGUID: 482e82ff6dd51ef41b5db7327e136413
+  spriteCollectionGUID: c89899597bb92e246a244a09e691b42f
   spriteCollectionName: Town
   assetName: 
   loadable: 0
   invOrthoSize: 2
   halfTargetHeight: 50
-  buildKey: 279577548
-  dataGuid: 4dddb5faeaebcf04989df13af49cdeae
+  buildKey: 142316982
+  dataGuid: a144d4b2d8ef1744ea255bf6770d0a7d
   managedSpriteCollection: 0
   hasPlatformData: 0
   spriteCollectionPlatforms: []

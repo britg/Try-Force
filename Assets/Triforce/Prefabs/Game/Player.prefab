@@ -29,9 +29,9 @@ GameObject:
   serializedVersion: 4
   m_Component:
   - 4: {fileID: 400018}
-  - 212: {fileID: 21200000}
   - 114: {fileID: 11400000}
   - 114: {fileID: 11400010}
+  - 212: {fileID: 21200000}
   m_Layer: 0
   m_Name: Warrior
   m_TagString: Warrior
@@ -128,8 +128,8 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 100018}
   m_LocalRotation: {x: 0, y: 0, z: 1, w: -1.62920685e-07}
-  m_LocalPosition: {x: .00226754416, y: .154190972, z: 0}
-  m_LocalScale: {x: .312388331, y: .31238842, z: .31238842}
+  m_LocalPosition: {x: .00226760376, y: .918856561, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 400022}
   m_RootOrder: 0
@@ -167,8 +167,8 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 100026}
   m_LocalRotation: {x: 0, y: 0, z: -.50000006, w: .866025388}
-  m_LocalPosition: {x: -.128538772, y: -.0728048682, z: -.100000024}
-  m_LocalScale: {x: .286014557, y: .286014497, z: .286014497}
+  m_LocalPosition: {x: -.659916759, y: -.202409774, z: -.100000024}
+  m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 400022}
   m_RootOrder: 2
@@ -179,8 +179,8 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 100028}
   m_LocalRotation: {x: 0, y: 0, z: .50000006, w: .866025388}
-  m_LocalPosition: {x: .123416558, y: -.0715240091, z: -.100000024}
-  m_LocalScale: {x: .278639466, y: .278639436, z: .278639436}
+  m_LocalPosition: {x: .434470177, y: -.265931368, z: -.100000024}
+  m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 400022}
   m_RootOrder: 1
@@ -208,7 +208,7 @@ CircleCollider2D:
   m_Enabled: 1
   m_Material: {fileID: 0}
   m_IsTrigger: 1
-  m_Radius: .200000003
+  m_Radius: .870000005
   m_Center: {x: 0, y: 0}
 --- !u!114 &11400000
 MonoBehaviour:
@@ -380,7 +380,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   player:
     hitPoints: 0
-    moveSpeed: .0500000007
+    moveSpeed: .300000012
     rotateSpeed: 0
     orientation: 0
   collisionBody: {fileID: 5800000}

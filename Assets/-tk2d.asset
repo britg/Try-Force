@@ -756,40 +756,6 @@ MonoBehaviour:
     loadable: 0
     assetName: 
     version: 3
-  - name: Town
-    spriteCollectionGUID: 482e82ff6dd51ef41b5db7327e136413
-    spriteCollectionDataGUID: 4dddb5faeaebcf04989df13af49cdeae
-    spriteNames:
-    - grass_shrub_rock/0
-    - grass_shrub_rock/1
-    - grass_shrub_rock/2
-    - grass_shrub_rock/3
-    - grass_shrub_rock/4
-    - grass_shrub_rock/5
-    - grass_shrub_rock/6
-    - grass_shrub_rock/7
-    spriteTextureGUIDs:
-    - 73133d0176341cf4a9e42850e979f286
-    - 73133d0176341cf4a9e42850e979f286
-    - 73133d0176341cf4a9e42850e979f286
-    - 73133d0176341cf4a9e42850e979f286
-    - 73133d0176341cf4a9e42850e979f286
-    - 73133d0176341cf4a9e42850e979f286
-    - 73133d0176341cf4a9e42850e979f286
-    - 73133d0176341cf4a9e42850e979f286
-    spriteTextureTimeStamps:
-    - 1405716200.46368
-    - 1405716200.46368
-    - 1405716200.46368
-    - 1405716200.46368
-    - 1405716200.46368
-    - 1405716200.46368
-    - 1405716200.46368
-    - 1405716200.46368
-    managedSpriteCollection: 0
-    loadable: 0
-    assetName: 
-    version: 3
   - name: Town Buildings
     spriteCollectionGUID: f4e08124ba81fae47895bf0c2757c9a5
     spriteCollectionDataGUID: a3b6997aa151e864b805d2e40028e4d8
@@ -808,6 +774,31 @@ MonoBehaviour:
     - 1405717302.62072
     - 1405717349.5394
     - 1405717915.51577
+    managedSpriteCollection: 0
+    loadable: 0
+    assetName: 
+    version: 3
+  - name: Town
+    spriteCollectionGUID: c89899597bb92e246a244a09e691b42f
+    spriteCollectionDataGUID: a144d4b2d8ef1744ea255bf6770d0a7d
+    spriteNames:
+    - grass
+    - 
+    - shrub
+    - rock
+    - grass_short
+    spriteTextureGUIDs:
+    - 00f317941a70def4bb18428f1421d46f
+    - 
+    - 00f317941a70def4bb18428f1421d46f
+    - 00f317941a70def4bb18428f1421d46f
+    - 00f317941a70def4bb18428f1421d46f
+    spriteTextureTimeStamps:
+    - 1405622421.47683
+    - 0
+    - 1405622421.47683
+    - 1405622421.47683
+    - 1405622421.47683
     managedSpriteCollection: 0
     loadable: 0
     assetName: 
