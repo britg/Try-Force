@@ -28,8 +28,8 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 100002}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -1.30154324, y: 4.05598497, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalPosition: {x: -3.30984735, y: 4.37517023, z: 0}
+  m_LocalScale: {x: 1.41417384, y: 1.41417348, z: 1.41417348}
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 0
@@ -41,7 +41,7 @@ Rigidbody2D:
   m_GameObject: {fileID: 100002}
   m_Mass: .100000001
   m_LinearDrag: 0
-  m_AngularDrag: 100
+  m_AngularDrag: 10000
   m_GravityScale: 1
   m_FixedAngle: 0
   m_IsKinematic: 0
@@ -57,7 +57,7 @@ BoxCollider2D:
   m_Enabled: 1
   m_Material: {fileID: 0}
   m_IsTrigger: 0
-  m_Size: {x: .159999996, y: .540000021}
+  m_Size: {x: .150000006, y: .479999989}
   m_Center: {x: 0, y: 0}
 --- !u!114 &11400002
 MonoBehaviour:
@@ -143,7 +143,7 @@ MonoBehaviour:
         fsmStringParams: []
         fsmObjectParams: []
         fsmVarParams: []
-        byteData: 000000000000c8c2000000000000000000000000000000000001526f746174696f6e0000000000000000000000000001526f746174696f6e00000000000000000000000000000000000000803feceb6b3f8180803c0000803f00000000000000000000010000000000000000010000000001000000000100000000000000000000000001526f746174696f6e00
+        byteData: 00000000000096c3000000000000000000000000000000000001526f746174696f6e0000000000000000000000000001526f746174696f6e00000000000000000000000000000000000000803feceb6b3f8180803c0000803f00000000000000000000010000000000000000010000000001000000000100000000000000000000000001526f746174696f6e00
         arrayParamSizes: 
         arrayParamTypes: []
         customTypeSizes: 
