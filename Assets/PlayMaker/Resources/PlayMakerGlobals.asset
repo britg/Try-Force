@@ -92,3 +92,5 @@ MonoBehaviour:
   - NGUI / ON SUBMIT
   - NGUI / ON TOOLTIP
   - OnTeleport
+  - OnPatrollerAtWaypoint
+  - OnDoorActivated
