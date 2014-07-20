@@ -803,3 +803,25 @@ MonoBehaviour:
     loadable: 0
     assetName: 
     version: 3
+  - name: Grunt Sprite Collection
+    spriteCollectionGUID: 7c8cf93c3b28ab149afd02654ce62334
+    spriteCollectionDataGUID: a564ad02d34af1242b513ad7ca2e2f5c
+    spriteNames:
+    - grunt_up
+    - grunt_left
+    - grunt_down
+    - grunt_right
+    spriteTextureGUIDs:
+    - 4bd8de99548be254fba0dda83bebb73f
+    - 620a6fca3229a494492361faa5606f2b
+    - 875fd803140066643938e09351dff9ea
+    - f7d70def0bba25f4eb89ee001700d610
+    spriteTextureTimeStamps:
+    - 1405859541.83302
+    - 1405859476.28927
+    - 1405859333.4101
+    - 1405859397.44176
+    managedSpriteCollection: 0
+    loadable: 0
+    assetName: 
+    version: 3
