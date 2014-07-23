@@ -110,8 +110,8 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 100002}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: .0324074961, y: .166823, z: 0}
-  m_LocalScale: {x: 1.03953254, y: 1.03953254, z: 1.03953254}
+  m_LocalPosition: {x: .0958898067, y: .495426297, z: 0}
+  m_LocalScale: {x: 1.22113287, y: 1.22113276, z: 1.22113276}
   m_Children: []
   m_Father: {fileID: 400000}
   m_RootOrder: 0
@@ -122,7 +122,7 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 100006}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 8.43370438, y: -2.92059231, z: 0}
+  m_LocalPosition: {x: -1.90445817, y: 2.31739926, z: 0}
   m_LocalScale: {x: 1.5, y: 1.5, z: 1.90419221}
   m_Children:
   - {fileID: 400010}
@@ -239,8 +239,8 @@ MonoBehaviour:
       colorIndex: 0
       position:
         serializedVersion: 2
-        x: 597
-        y: 162
+        x: 581
+        y: 194
         width: 164
         height: 48
       isBreakpoint: 0
@@ -259,7 +259,7 @@ MonoBehaviour:
           name: OnPlayerDetected
           isSystemEvent: 0
           isGlobal: 0
-        toState: Move Toward Player
+        toState: Set Look Target to Player
         linkStyle: 0
         linkConstraint: 0
         colorIndex: 0
@@ -302,8 +302,8 @@ MonoBehaviour:
       colorIndex: 0
       position:
         serializedVersion: 2
-        x: 963.554688
-        y: 104.695312
+        x: 1014.55469
+        y: 151.695312
         width: 164
         height: 48
       isBreakpoint: 0
@@ -388,8 +388,8 @@ MonoBehaviour:
       colorIndex: 0
       position:
         serializedVersion: 2
-        x: 996.101562
-        y: 326.828125
+        x: 980.101562
+        y: 358.828125
         width: 100
         height: 32
       isBreakpoint: 0
@@ -442,8 +442,8 @@ MonoBehaviour:
       colorIndex: 0
       position:
         serializedVersion: 2
-        x: 52.296875
-        y: 210.101562
+        x: 55.296875
+        y: 321.101562
         width: 141
         height: 48
       isBreakpoint: 0
@@ -528,8 +528,8 @@ MonoBehaviour:
       colorIndex: 0
       position:
         serializedVersion: 2
-        x: 251.484375
-        y: 353.273438
+        x: 337.484375
+        y: 483.273438
         width: 101
         height: 32
       isBreakpoint: 0
@@ -618,8 +618,8 @@ MonoBehaviour:
       colorIndex: 0
       position:
         serializedVersion: 2
-        x: 361.71875
-        y: 118.71875
+        x: 345.71875
+        y: 150.71875
         width: 127
         height: 48
       isBreakpoint: 0
@@ -638,7 +638,7 @@ MonoBehaviour:
           name: OnHasWaypoint
           isSystemEvent: 0
           isGlobal: 0
-        toState: Patrol
+        toState: Set Look Target to Waypoint
         linkStyle: 0
         linkConstraint: 0
         colorIndex: 0
@@ -686,6 +686,176 @@ MonoBehaviour:
         - sendEvent
         paramDataPos: 0000000000000000000000000d0000000f00000010000000
         paramByteDataSize: 00000000000000000d000000020000000100000008000000
+    - name: Set Look Target to Waypoint
+      description: 
+      colorIndex: 0
+      position:
+        serializedVersion: 2
+        x: 79
+        y: 189
+        width: 197
+        height: 32
+      isBreakpoint: 0
+      isSequence: 0
+      hideUnused: 0
+      transitions:
+      - fsmEvent:
+          name: FINISHED
+          isSystemEvent: 1
+          isGlobal: 0
+        toState: Patrol
+        linkStyle: 0
+        linkConstraint: 0
+        colorIndex: 0
+      actionData:
+        actionNames:
+        - HutongGames.PlayMaker.Actions.SetFsmGameObject
+        - HutongGames.PlayMaker.Actions.NextFrameEvent
+        customNames:
+        - 
+        - 
+        actionEnabled: 0101
+        actionIsOpen: 0101
+        actionStartIndex: 0000000005000000
+        actionHashCodes: cc35dfe8c631a949
+        unityObjectParams: []
+        fsmGameObjectParams:
+        - useVariable: 1
+          name: Waypoint
+          tooltip: 
+          showInInspector: 0
+          networkSync: 0
+          value: {fileID: 0}
+        fsmOwnerDefaultParams:
+        - ownerOption: 0
+          gameObject:
+            useVariable: 0
+            name: 
+            tooltip: 
+            showInInspector: 0
+            networkSync: 0
+            value: {fileID: 0}
+        animationCurveParams: []
+        functionCallParams: []
+        fsmTemplateControlParams: []
+        fsmEventTargetParams: []
+        fsmPropertyParams: []
+        layoutOptionParams: []
+        fsmStringParams:
+        - useVariable: 0
+          name: 
+          tooltip: 
+          showInInspector: 0
+          networkSync: 0
+          value: Look Direction Controller
+        - useVariable: 0
+          name: 
+          tooltip: 
+          showInInspector: 0
+          networkSync: 0
+          value: Target
+        fsmObjectParams: []
+        fsmVarParams: []
+        byteData: 0046494e4953484544
+        arrayParamSizes: 
+        arrayParamTypes: []
+        customTypeSizes: 
+        customTypeNames: []
+        paramDataType: 140000001200000012000000130000000100000017000000
+        paramName:
+        - gameObject
+        - fsmName
+        - variableName
+        - setValue
+        - everyFrame
+        - sendEvent
+        paramDataPos: 000000000000000001000000000000000000000001000000
+        paramByteDataSize: 000000000000000000000000000000000100000008000000
+    - name: Set Look Target to Player
+      description: 
+      colorIndex: 0
+      position:
+        serializedVersion: 2
+        x: 798
+        y: 101.96875
+        width: 176
+        height: 32
+      isBreakpoint: 0
+      isSequence: 0
+      hideUnused: 0
+      transitions:
+      - fsmEvent:
+          name: FINISHED
+          isSystemEvent: 1
+          isGlobal: 0
+        toState: Move Toward Player
+        linkStyle: 0
+        linkConstraint: 0
+        colorIndex: 0
+      actionData:
+        actionNames:
+        - HutongGames.PlayMaker.Actions.SetFsmGameObject
+        - HutongGames.PlayMaker.Actions.NextFrameEvent
+        customNames:
+        - 
+        - 
+        actionEnabled: 0101
+        actionIsOpen: 0101
+        actionStartIndex: 0000000005000000
+        actionHashCodes: cc35dfe8c631a949
+        unityObjectParams: []
+        fsmGameObjectParams:
+        - useVariable: 1
+          name: Player
+          tooltip: 
+          showInInspector: 0
+          networkSync: 0
+          value: {fileID: 0}
+        fsmOwnerDefaultParams:
+        - ownerOption: 0
+          gameObject:
+            useVariable: 0
+            name: 
+            tooltip: 
+            showInInspector: 0
+            networkSync: 0
+            value: {fileID: 0}
+        animationCurveParams: []
+        functionCallParams: []
+        fsmTemplateControlParams: []
+        fsmEventTargetParams: []
+        fsmPropertyParams: []
+        layoutOptionParams: []
+        fsmStringParams:
+        - useVariable: 0
+          name: 
+          tooltip: 
+          showInInspector: 0
+          networkSync: 0
+          value: Look Direction Controller
+        - useVariable: 0
+          name: 
+          tooltip: 
+          showInInspector: 0
+          networkSync: 0
+          value: Target
+        fsmObjectParams: []
+        fsmVarParams: []
+        byteData: 0046494e4953484544
+        arrayParamSizes: 
+        arrayParamTypes: []
+        customTypeSizes: 
+        customTypeNames: []
+        paramDataType: 140000001200000012000000130000000100000017000000
+        paramName:
+        - gameObject
+        - fsmName
+        - variableName
+        - setValue
+        - everyFrame
+        - sendEvent
+        paramDataPos: 000000000000000001000000000000000000000001000000
+        paramByteDataSize: 000000000000000000000000000000000100000008000000
     events:
     - name: COLLISION ENTER
       isSystemEvent: 1
@@ -735,6 +905,12 @@ MonoBehaviour:
         name: Original Position
         tooltip: 
         showInInspector: 1
+        networkSync: 0
+        value: {x: 0, y: 0, z: 0}
+      - useVariable: 1
+        name: Waypoint Position
+        tooltip: 
+        showInInspector: 0
         networkSync: 0
         value: {x: 0, y: 0, z: 0}
       colorVariables: []
@@ -1392,7 +1568,7 @@ MonoBehaviour:
         fsmStringParams: []
         fsmObjectParams: []
         fsmVarParams: []
-        byteData: 0000000000000000000000000100000000000000000000000001000000000000803feceb6b3f8180803c0000803f0001000000000000000001000000000000803f00010000000000204100000000000100000000014f6e4869744f626a656374000100000000000000000100000000000000000100000000014869742044697374616e63653c0000000009000000000b000000000100f018723f8080803c0000803f0000803f000100
+        byteData: 0000000000000000000000000100000000000000000000000001000000000000803feceb6b3f8180803c0000803f0001000000000000000001000000000000803f00010000000000204100000000000100000000014f6e4869744f626a656374000100000000000000000100000000000000000100000000014869742044697374616e6365010000000009000000000b000000000100f018723f8080803c0000803f0000803f000100
         arrayParamSizes: 02000000
         arrayParamTypes:
         - HutongGames.PlayMaker.FsmInt
@@ -2375,7 +2551,7 @@ MonoBehaviour:
   fsm:
     usedInTemplate: {fileID: 0}
     name: Look Direction Controller
-    startState: Look Rotation
+    startState: Listen for Target Change
     states:
     - name: Look at Direction
       description: 
@@ -2383,7 +2559,7 @@ MonoBehaviour:
       position:
         serializedVersion: 2
         x: 429
-        y: 193
+        y: 337
         width: 133
         height: 80
       isBreakpoint: 0
@@ -2536,7 +2712,7 @@ MonoBehaviour:
       position:
         serializedVersion: 2
         x: 789
-        y: 187
+        y: 331
         width: 100
         height: 16
       isBreakpoint: 0
@@ -2596,7 +2772,7 @@ MonoBehaviour:
       position:
         serializedVersion: 2
         x: 792
-        y: 260
+        y: 404
         width: 100
         height: 16
       isBreakpoint: 0
@@ -2656,7 +2832,7 @@ MonoBehaviour:
       position:
         serializedVersion: 2
         x: 790
-        y: 355
+        y: 499
         width: 100
         height: 16
       isBreakpoint: 0
@@ -2716,7 +2892,7 @@ MonoBehaviour:
       position:
         serializedVersion: 2
         x: 800.273438
-        y: 113
+        y: 257
         width: 100
         height: 16
       isBreakpoint: 0
@@ -2770,14 +2946,74 @@ MonoBehaviour:
         - ORSpriteName
         paramDataPos: 000000000000000000000000
         paramByteDataSize: 000000000500000000000000
-    - name: Convert Angle to Direction
+    - name: Listen for Target Change
       description: 
       colorIndex: 0
       position:
         serializedVersion: 2
-        x: 405
-        y: 396
-        width: 194
+        x: 409
+        y: 102
+        width: 175
+        height: 32
+      isBreakpoint: 0
+      isSequence: 0
+      hideUnused: 0
+      transitions:
+      - fsmEvent:
+          name: OnTargetChanged
+          isSystemEvent: 0
+          isGlobal: 0
+        toState: Target to Look Direction
+        linkStyle: 0
+        linkConstraint: 0
+        colorIndex: 0
+      actionData:
+        actionNames:
+        - HutongGames.PlayMaker.Actions.GameObjectChanged
+        customNames:
+        - 
+        actionEnabled: 01
+        actionIsOpen: 01
+        actionStartIndex: 00000000
+        actionHashCodes: f3bc6e09
+        unityObjectParams: []
+        fsmGameObjectParams:
+        - useVariable: 1
+          name: Target
+          tooltip: 
+          showInInspector: 0
+          networkSync: 0
+          value: {fileID: 0}
+        fsmOwnerDefaultParams: []
+        animationCurveParams: []
+        functionCallParams: []
+        fsmTemplateControlParams: []
+        fsmEventTargetParams: []
+        fsmPropertyParams: []
+        layoutOptionParams: []
+        fsmStringParams: []
+        fsmObjectParams: []
+        fsmVarParams: []
+        byteData: 0001
+        arrayParamSizes: 
+        arrayParamTypes: []
+        customTypeSizes: 
+        customTypeNames: []
+        paramDataType: 130000001700000011000000
+        paramName:
+        - gameObjectVariable
+        - changedEvent
+        - storeResult
+        paramDataPos: 000000000000000000000000
+        paramByteDataSize: 000000000000000002000000
+    - name: Look Rotation
+      description: 
+      colorIndex: 0
+      position:
+        serializedVersion: 2
+        x: 51
+        y: 347
+        width: 111
         height: 16
       isBreakpoint: 0
       isSequence: 0
@@ -2811,14 +3047,111 @@ MonoBehaviour:
         paramName: []
         paramDataPos: 
         paramByteDataSize: 
-    - name: Look Rotation
+    - name: Target to Look Direction
       description: 
       colorIndex: 0
       position:
         serializedVersion: 2
-        x: 51
-        y: 203
-        width: 111
+        x: 408
+        y: 168
+        width: 173
+        height: 32
+      isBreakpoint: 0
+      isSequence: 0
+      hideUnused: 0
+      transitions:
+      - fsmEvent:
+          name: OnTargetUp
+          isSystemEvent: 0
+          isGlobal: 0
+        toState: Set Look Direction Up
+        linkStyle: 0
+        linkConstraint: 0
+        colorIndex: 0
+      actionData:
+        actionNames:
+        - HutongGames.PlayMaker.Actions.GetPosition
+        - HutongGames.PlayMaker.Actions.GetAngleToTarget
+        - HutongGames.PlayMaker.Actions.FloatCompare
+        customNames:
+        - 
+        - 
+        - 
+        actionEnabled: 010101
+        actionIsOpen: 010101
+        actionStartIndex: 00000000070000000d000000
+        actionHashCodes: a290608e1014f7f753489ed1
+        unityObjectParams: []
+        fsmGameObjectParams:
+        - useVariable: 0
+          name: 
+          tooltip: 
+          showInInspector: 0
+          networkSync: 0
+          value: {fileID: 0}
+        fsmOwnerDefaultParams:
+        - ownerOption: 1
+          gameObject:
+            useVariable: 1
+            name: Target
+            tooltip: 
+            showInInspector: 0
+            networkSync: 0
+            value: {fileID: 0}
+        - ownerOption: 0
+          gameObject:
+            useVariable: 0
+            name: 
+            tooltip: 
+            showInInspector: 0
+            networkSync: 0
+            value: {fileID: 0}
+        animationCurveParams: []
+        functionCallParams: []
+        fsmTemplateControlParams: []
+        fsmEventTargetParams: []
+        fsmPropertyParams: []
+        layoutOptionParams: []
+        fsmStringParams: []
+        fsmObjectParams: []
+        fsmVarParams: []
+        byteData: 0000000000000000000000000154617267657420506f736974696f6e00000000010000000001000000000100000000000000000000000000000000000154617267657420506f736974696f6e0100000000000154617267657420416e676c6500000000000154617267657420416e676c65000038420000000000004f6e546172676574557000
+        arrayParamSizes: 
+        arrayParamTypes: []
+        customTypeSizes: 
+        customTypeNames: []
+        paramDataType: 140000001c0000000f0000000f0000000f000000070000000100000014000000130000001c000000110000000f000000010000000f0000000f0000000f00000017000000170000001700000001000000
+        paramName:
+        - gameObject
+        - vector
+        - x
+        - y
+        - z
+        - space
+        - everyFrame
+        - gameObject
+        - targetObject
+        - targetPosition
+        - ignoreHeight
+        - storeAngle
+        - everyFrame
+        - float1
+        - float2
+        - tolerance
+        - equal
+        - lessThan
+        - greaterThan
+        - everyFrame
+        paramDataPos: 00000000000000001c00000021000000260000002b0000002f0000000100000000000000300000004c0000004e0000005f0000006000000071000000760000007b000000850000008500000085000000
+        paramByteDataSize: 000000001c000000050000000500000005000000040000000100000000000000000000001c0000000200000011000000010000001100000005000000050000000a000000000000000000000001000000
+    - name: Set Look Direction Up
+      description: 
+      colorIndex: 0
+      position:
+        serializedVersion: 2
+        x: 154
+        y: 249
+        width: 156
         height: 16
       isBreakpoint: 0
       isSequence: 0
@@ -2868,6 +3201,21 @@ MonoBehaviour:
     - name: OnLookUp
       isSystemEvent: 0
       isGlobal: 0
+    - name: OnTargetChanged
+      isSystemEvent: 0
+      isGlobal: 0
+    - name: OnTargetDown
+      isSystemEvent: 0
+      isGlobal: 0
+    - name: OnTargetLeft
+      isSystemEvent: 0
+      isGlobal: 0
+    - name: OnTargetRight
+      isSystemEvent: 0
+      isGlobal: 0
+    - name: OnTargetUp
+      isSystemEvent: 0
+      isGlobal: 0
     globalTransitions: []
     variables:
       floatVariables:
@@ -2911,11 +3259,23 @@ MonoBehaviour:
         networkSync: 0
         value: Up
       vector2Variables: []
-      vector3Variables: []
+      vector3Variables:
+      - useVariable: 1
+        name: Target Position
+        tooltip: 
+        showInInspector: 0
+        networkSync: 0
+        value: {x: 0, y: 0, z: 0}
       colorVariables: []
       rectVariables: []
       quaternionVariables: []
-      gameObjectVariables: []
+      gameObjectVariables:
+      - useVariable: 1
+        name: Target
+        tooltip: 
+        showInInspector: 0
+        networkSync: 0
+        value: {fileID: 0}
       objectVariables: []
       materialVariables: []
       textureVariables: []
