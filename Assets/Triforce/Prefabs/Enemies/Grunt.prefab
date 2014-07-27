@@ -44,11 +44,9 @@ GameObject:
   - 114: {fileID: 11400000}
   - 50: {fileID: 5000000}
   - 114: {fileID: 11400010}
-  - 33: {fileID: 3300000}
-  - 23: {fileID: 2300000}
-  - 114: {fileID: 11400014}
   - 61: {fileID: 6100002}
   - 114: {fileID: 11400016}
+  - 212: {fileID: 21200002}
   m_Layer: 9
   m_Name: Grunt
   m_TagString: Mob
@@ -110,8 +108,8 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 100002}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: .0958898067, y: .495426297, z: 0}
-  m_LocalScale: {x: 1.22113287, y: 1.22113276, z: 1.22113276}
+  m_LocalPosition: {x: .122102022, y: .827812791, z: 0}
+  m_LocalScale: {x: 1.63706136, y: 1.61117136, z: 1.22113276}
   m_Children: []
   m_Father: {fileID: 400000}
   m_RootOrder: 0
@@ -122,7 +120,7 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 100006}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -1.90445817, y: 2.31739926, z: 0}
+  m_LocalPosition: {x: 4.5534668, y: 12.7405071, z: 0}
   m_LocalScale: {x: 1.5, y: 1.5, z: 1.90419221}
   m_Children:
   - {fileID: 400010}
@@ -154,33 +152,6 @@ Transform:
   m_Children: []
   m_Father: {fileID: 400006}
   m_RootOrder: 0
---- !u!23 &2300000
-Renderer:
-  m_ObjectHideFlags: 1
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 100006}
-  m_Enabled: 1
-  m_CastShadows: 1
-  m_ReceiveShadows: 1
-  m_LightmapIndex: 255
-  m_LightmapTilingOffset: {x: 1, y: 1, z: 0, w: 0}
-  m_Materials:
-  - {fileID: 2100000, guid: 1fac11537b644d549ae192b37ab9d41b, type: 2}
-  m_SubsetIndices: 
-  m_StaticBatchRoot: {fileID: 0}
-  m_UseLightProbes: 0
-  m_LightProbeAnchor: {fileID: 0}
-  m_ScaleInLightmap: 1
-  m_SortingLayerID: 0
-  m_SortingOrder: 0
---- !u!33 &3300000
-MeshFilter:
-  m_ObjectHideFlags: 1
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 100006}
-  m_Mesh: {fileID: 0}
 --- !u!50 &5000000
 Rigidbody2D:
   m_ObjectHideFlags: 1
@@ -216,8 +187,8 @@ BoxCollider2D:
   m_Enabled: 1
   m_Material: {fileID: 0}
   m_IsTrigger: 0
-  m_Size: {x: .799999952, y: 1.24000001}
-  m_Center: {x: .00999999046, y: -.0500000119}
+  m_Size: {x: 1.98000002, y: .850000024}
+  m_Center: {x: .00999999046, y: -.349999994}
 --- !u!114 &11400000
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -329,14 +300,16 @@ MonoBehaviour:
       actionData:
         actionNames:
         - HutongGames.PlayMaker.Actions.MoveTowards
+        - HutongGames.PlayMaker.Actions.LookAt2D
         - HutongGames.PlayMaker.Actions.BoolTest
         customNames:
         - 
         - 
-        actionEnabled: 0101
-        actionIsOpen: 0101
-        actionStartIndex: 0000000007000000
-        actionHashCodes: b509599a3334d172
+        - 
+        actionEnabled: 010101
+        actionIsOpen: 010101
+        actionStartIndex: 00000000070000000f000000
+        actionHashCodes: b509599ab36ac7f23334d172
         unityObjectParams: []
         fsmGameObjectParams:
         - useVariable: 1
@@ -345,7 +318,21 @@ MonoBehaviour:
           showInInspector: 0
           networkSync: 0
           value: {fileID: 0}
+        - useVariable: 1
+          name: Player
+          tooltip: 
+          showInInspector: 0
+          networkSync: 0
+          value: {fileID: 0}
         fsmOwnerDefaultParams:
+        - ownerOption: 0
+          gameObject:
+            useVariable: 0
+            name: 
+            tooltip: 
+            showInInspector: 0
+            networkSync: 0
+            value: {fileID: 0}
         - ownerOption: 0
           gameObject:
             useVariable: 0
@@ -363,12 +350,12 @@ MonoBehaviour:
         fsmStringParams: []
         fsmObjectParams: []
         fsmVarParams: []
-        byteData: 0000000000000000000000000100000000204100000000400046494e49534845440001506c617965722056697369626c654f6e506c617965724e6f74446574656374656401
+        byteData: 0000000000000000000000000100000000204100000000400046494e49534845440000000000000000000000000100000000000000000000000001000000000000803feceb6b3f8180803c0000803f00010001506c617965722056697369626c654f6e506c617965724e6f74446574656374656401
         arrayParamSizes: 
         arrayParamTypes: []
         customTypeSizes: 
         customTypeNames: []
-        paramDataType: 14000000130000001c000000110000000f0000000f0000001700000011000000170000001700000001000000
+        paramDataType: 14000000130000001c000000110000000f0000000f0000001700000014000000130000001c0000001c0000001100000011000000190000000100000011000000170000001700000001000000
         paramName:
         - gameObject
         - targetObject
@@ -377,12 +364,20 @@ MonoBehaviour:
         - maxSpeed
         - finishDistance
         - finishEvent
+        - gameObject
+        - targetObject
+        - targetPosition
+        - upVector
+        - keepVertical
+        - debug
+        - debugLineColor
+        - everyFrame
         - boolVariable
         - isTrue
         - isFalse
         - everyFrame
-        paramDataPos: 0000000000000000000000000d0000000f000000140000001900000021000000310000003100000044000000
-        paramByteDataSize: 00000000000000000d0000000200000005000000050000000800000010000000000000001300000001000000
+        paramDataPos: 0000000000000000000000000d0000000f00000014000000190000000100000001000000210000002e0000003b0000003d0000003f0000005000000051000000610000006100000074000000
+        paramByteDataSize: 00000000000000000d0000000200000005000000050000000800000000000000000000000d0000000d0000000200000002000000110000000100000010000000000000001300000001000000
     - name: Pause
       description: 
       colorIndex: 0
@@ -638,7 +633,7 @@ MonoBehaviour:
           name: OnHasWaypoint
           isSystemEvent: 0
           isGlobal: 0
-        toState: Set Look Target to Waypoint
+        toState: Look at Waypoint
         linkStyle: 0
         linkConstraint: 0
         colorIndex: 0
@@ -686,14 +681,14 @@ MonoBehaviour:
         - sendEvent
         paramDataPos: 0000000000000000000000000d0000000f00000010000000
         paramByteDataSize: 00000000000000000d000000020000000100000008000000
-    - name: Set Look Target to Waypoint
+    - name: Look at Waypoint
       description: 
       colorIndex: 0
       position:
         serializedVersion: 2
         x: 79
         y: 189
-        width: 197
+        width: 129
         height: 32
       isBreakpoint: 0
       isSequence: 0
@@ -709,15 +704,15 @@ MonoBehaviour:
         colorIndex: 0
       actionData:
         actionNames:
-        - HutongGames.PlayMaker.Actions.SetFsmGameObject
+        - HutongGames.PlayMaker.Actions.LookAt2D
         - HutongGames.PlayMaker.Actions.NextFrameEvent
         customNames:
         - 
         - 
         actionEnabled: 0101
         actionIsOpen: 0101
-        actionStartIndex: 0000000005000000
-        actionHashCodes: cc35dfe8c631a949
+        actionStartIndex: 0000000008000000
+        actionHashCodes: b36ac7f2c631a949
         unityObjectParams: []
         fsmGameObjectParams:
         - useVariable: 1
@@ -741,36 +736,27 @@ MonoBehaviour:
         fsmEventTargetParams: []
         fsmPropertyParams: []
         layoutOptionParams: []
-        fsmStringParams:
-        - useVariable: 0
-          name: 
-          tooltip: 
-          showInInspector: 0
-          networkSync: 0
-          value: Look Direction Controller
-        - useVariable: 0
-          name: 
-          tooltip: 
-          showInInspector: 0
-          networkSync: 0
-          value: Target
+        fsmStringParams: []
         fsmObjectParams: []
         fsmVarParams: []
-        byteData: 0046494e4953484544
+        byteData: 0000000000000000000000000100000000000000000000000001000000000000803feceb6b3f8180803c0000803f000146494e4953484544
         arrayParamSizes: 
         arrayParamTypes: []
         customTypeSizes: 
         customTypeNames: []
-        paramDataType: 140000001200000012000000130000000100000017000000
+        paramDataType: 14000000130000001c0000001c0000001100000011000000190000000100000017000000
         paramName:
         - gameObject
-        - fsmName
-        - variableName
-        - setValue
+        - targetObject
+        - targetPosition
+        - upVector
+        - keepVertical
+        - debug
+        - debugLineColor
         - everyFrame
         - sendEvent
-        paramDataPos: 000000000000000001000000000000000000000001000000
-        paramByteDataSize: 000000000000000000000000000000000100000008000000
+        paramDataPos: 0000000000000000000000000d0000001a0000001c0000001e0000002f00000030000000
+        paramByteDataSize: 00000000000000000d0000000d0000000200000002000000110000000100000008000000
     - name: Set Look Target to Player
       description: 
       colorIndex: 0
@@ -794,15 +780,15 @@ MonoBehaviour:
         colorIndex: 0
       actionData:
         actionNames:
-        - HutongGames.PlayMaker.Actions.SetFsmGameObject
+        - HutongGames.PlayMaker.Actions.LookAt2D
         - HutongGames.PlayMaker.Actions.NextFrameEvent
         customNames:
         - 
         - 
         actionEnabled: 0101
         actionIsOpen: 0101
-        actionStartIndex: 0000000005000000
-        actionHashCodes: cc35dfe8c631a949
+        actionStartIndex: 0000000008000000
+        actionHashCodes: b36ac7f2c631a949
         unityObjectParams: []
         fsmGameObjectParams:
         - useVariable: 1
@@ -826,36 +812,27 @@ MonoBehaviour:
         fsmEventTargetParams: []
         fsmPropertyParams: []
         layoutOptionParams: []
-        fsmStringParams:
-        - useVariable: 0
-          name: 
-          tooltip: 
-          showInInspector: 0
-          networkSync: 0
-          value: Look Direction Controller
-        - useVariable: 0
-          name: 
-          tooltip: 
-          showInInspector: 0
-          networkSync: 0
-          value: Target
+        fsmStringParams: []
         fsmObjectParams: []
         fsmVarParams: []
-        byteData: 0046494e4953484544
+        byteData: 0000000000000000000000000100000000000000000000000001000000000000803feceb6b3f8180803c0000803f000146494e4953484544
         arrayParamSizes: 
         arrayParamTypes: []
         customTypeSizes: 
         customTypeNames: []
-        paramDataType: 140000001200000012000000130000000100000017000000
+        paramDataType: 14000000130000001c0000001c0000001100000011000000190000000100000017000000
         paramName:
         - gameObject
-        - fsmName
-        - variableName
-        - setValue
+        - targetObject
+        - targetPosition
+        - upVector
+        - keepVertical
+        - debug
+        - debugLineColor
         - everyFrame
         - sendEvent
-        paramDataPos: 000000000000000001000000000000000000000001000000
-        paramByteDataSize: 000000000000000000000000000000000100000008000000
+        paramDataPos: 0000000000000000000000000d0000001a0000001c0000001e0000002f00000030000000
+        paramByteDataSize: 00000000000000000d0000000d0000000200000002000000110000000100000008000000
     events:
     - name: COLLISION ENTER
       isSystemEvent: 1
@@ -2514,29 +2491,6 @@ MonoBehaviour:
     StepFrame: 0
     activeStateName: 
   fsmTemplate: {fileID: 0}
---- !u!114 &11400014
-MonoBehaviour:
-  m_ObjectHideFlags: 1
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 100006}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 3fac570381f34f647b768dc5a5aa1364, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  collection: {fileID: 11400000, guid: a564ad02d34af1242b513ad7ca2e2f5c, type: 2}
-  _color: {r: 1, g: 1, b: 1, a: 1}
-  _scale: {x: 1, y: 1, z: 1}
-  _spriteId: 1
-  boxCollider2D: {fileID: 6100002}
-  polygonCollider2D: []
-  edgeCollider2D: []
-  boxCollider: {fileID: 0}
-  meshCollider: {fileID: 0}
-  meshColliderPositions: []
-  meshColliderMesh: {fileID: 0}
-  renderLayer: 0
 --- !u!114 &11400016
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -3312,6 +3266,28 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingOrder: 0
   m_Sprite: {fileID: 21300000, guid: 7ec0423ee31c2ea47931ede655b79747, type: 3}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
+--- !u!212 &21200002
+SpriteRenderer:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 100006}
+  m_Enabled: 1
+  m_CastShadows: 0
+  m_ReceiveShadows: 0
+  m_LightmapIndex: 255
+  m_LightmapTilingOffset: {x: 1, y: 1, z: 0, w: 0}
+  m_Materials:
+  - {fileID: 10754, guid: 0000000000000000e000000000000000, type: 0}
+  m_SubsetIndices: 
+  m_StaticBatchRoot: {fileID: 0}
+  m_UseLightProbes: 0
+  m_LightProbeAnchor: {fileID: 0}
+  m_ScaleInLightmap: 1
+  m_SortingLayerID: 0
+  m_SortingOrder: 0
+  m_Sprite: {fileID: 21300000, guid: 41aa5913ec2ec4f8c8181b62a4bcef60, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
 --- !u!1001 &100100000
 Prefab:
