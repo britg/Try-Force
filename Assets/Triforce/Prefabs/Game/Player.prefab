@@ -303,13 +303,37 @@ MonoBehaviour:
     events: []
     globalTransitions: []
     variables:
-      floatVariables: []
-      intVariables: []
+      floatVariables:
+      - useVariable: 1
+        name: Hitpoints
+        tooltip: 
+        showInInspector: 1
+        networkSync: 0
+        value: 100
+      - useVariable: 1
+        name: Mana
+        tooltip: 
+        showInInspector: 1
+        networkSync: 0
+        value: 100
+      intVariables:
+      - useVariable: 1
+        name: Arrows
+        tooltip: 
+        showInInspector: 1
+        networkSync: 0
+        value: 5
+      - useVariable: 1
+        name: Lockpicks
+        tooltip: 
+        showInInspector: 1
+        networkSync: 0
+        value: 3
       boolVariables:
       - useVariable: 1
         name: Dead
         tooltip: 
-        showInInspector: 1
+        showInInspector: 0
         networkSync: 0
         value: 0
       stringVariables: []

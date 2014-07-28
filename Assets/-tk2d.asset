@@ -803,28 +803,6 @@ MonoBehaviour:
     loadable: 0
     assetName: 
     version: 3
-  - name: Grunt Sprite Collection
-    spriteCollectionGUID: 7c8cf93c3b28ab149afd02654ce62334
-    spriteCollectionDataGUID: a564ad02d34af1242b513ad7ca2e2f5c
-    spriteNames:
-    - grunt_up
-    - grunt_left
-    - grunt_down
-    - grunt_right
-    spriteTextureGUIDs:
-    - 4bd8de99548be254fba0dda83bebb73f
-    - 620a6fca3229a494492361faa5606f2b
-    - 875fd803140066643938e09351dff9ea
-    - f7d70def0bba25f4eb89ee001700d610
-    spriteTextureTimeStamps:
-    - 1405859541.83302
-    - 1405859476.28927
-    - 1405859333.4101
-    - 1405859397.44176
-    managedSpriteCollection: 0
-    loadable: 0
-    assetName: 
-    version: 3
   - name: TowerSpriteCollection
     spriteCollectionGUID: 794fdebfdc4564605bfe8825c41949b7
     spriteCollectionDataGUID: 778aa5c5f3432428bbe4fa1133dcb65b
@@ -834,6 +812,22 @@ MonoBehaviour:
     - 2e9a1411ebac647c68e6271dacf55af9
     spriteTextureTimeStamps:
     - 1406407178
+    managedSpriteCollection: 0
+    loadable: 0
+    assetName: 
+    version: 3
+  - name: Grunt Sprite Collection
+    spriteCollectionGUID: fa41bc792ab4c42edb7b059be5fed31f
+    spriteCollectionDataGUID: 52736e746b0a347c494b4f725aca3c74
+    spriteNames:
+    - Grunt
+    - Grunt_Dead
+    spriteTextureGUIDs:
+    - 41aa5913ec2ec4f8c8181b62a4bcef60
+    - 9304548eb0d9840b1900fed9b4145b8f
+    spriteTextureTimeStamps:
+    - 1406407178
+    - 1406526100
     managedSpriteCollection: 0
     loadable: 0
     assetName: 

@@ -279,7 +279,7 @@ GameObject:
   - 114: {fileID: 11400066}
   - 114: {fileID: 11400064}
   m_Layer: 8
-  m_Name: Chest Room Button
+  m_Name: Room 1 Button
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -492,7 +492,7 @@ Transform:
   m_GameObject: {fileID: 100012}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 100, z: 0}
-  m_LocalScale: {x: .00376647827, y: .00376647827, z: .00376647827}
+  m_LocalScale: {x: .00316455704, y: .00316455704, z: .00316455704}
   m_Children:
   - {fileID: 400006}
   - {fileID: 400000}
@@ -508,7 +508,7 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 100014}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 413, y: 229.5, z: 0}
+  m_LocalPosition: {x: 503.000061, y: 280, z: 0}
   m_LocalScale: {x: .99990797, y: .99990797, z: .99990797}
   m_Children:
   - {fileID: 400008}
@@ -678,7 +678,7 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 100040}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 226, z: 0}
+  m_LocalPosition: {x: 0, y: 276.5, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 400012}
@@ -2909,7 +2909,7 @@ MonoBehaviour:
   keepCrispWhenShrunk: 1
   mTrueTypeFont: {fileID: 10102, guid: 0000000000000000e000000000000000, type: 0}
   mFont: {fileID: 0}
-  mText: Demo 1
+  mText: Room 1
   mFontSize: 14
   mFontStyle: 0
   mAlignment: 0
@@ -3041,7 +3041,7 @@ MonoBehaviour:
           tooltip: 
           showInInspector: 0
           networkSync: 0
-          value: Demo 1
+          value: Room 1
         fsmObjectParams: []
         fsmVarParams: []
         byteData: 00000000
