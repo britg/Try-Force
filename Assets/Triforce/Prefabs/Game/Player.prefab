@@ -29,7 +29,6 @@ GameObject:
   serializedVersion: 4
   m_Component:
   - 4: {fileID: 400018}
-  - 114: {fileID: 11400000}
   - 114: {fileID: 11400010}
   - 212: {fileID: 21200000}
   m_Layer: 0
@@ -80,7 +79,6 @@ GameObject:
   m_Component:
   - 4: {fileID: 400026}
   - 212: {fileID: 21200002}
-  - 114: {fileID: 11400022}
   - 114: {fileID: 11400020}
   m_Layer: 0
   m_Name: Mage
@@ -98,7 +96,6 @@ GameObject:
   m_Component:
   - 4: {fileID: 400028}
   - 212: {fileID: 21200004}
-  - 114: {fileID: 11400014}
   - 114: {fileID: 11400012}
   m_Layer: 0
   m_Name: Thief
@@ -210,144 +207,6 @@ CircleCollider2D:
   m_IsTrigger: 1
   m_Radius: .870000005
   m_Center: {x: 0, y: 0}
---- !u!114 &11400000
-MonoBehaviour:
-  m_ObjectHideFlags: 1
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 100018}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 1384774831, guid: e743331561ef77147ae48cda9bcb8209, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  fsm:
-    usedInTemplate: {fileID: 0}
-    name: Properties
-    startState: Load Weapon
-    states:
-    - name: Load Weapon
-      description: 
-      colorIndex: 0
-      position:
-        serializedVersion: 2
-        x: 50
-        y: 100
-        width: 110
-        height: 16
-      isBreakpoint: 0
-      isSequence: 0
-      hideUnused: 0
-      transitions: []
-      actionData:
-        actionNames:
-        - HutongGames.PlayMaker.Actions.CreateObject
-        - HutongGames.PlayMaker.Actions.SetParent
-        customNames:
-        - 
-        - 
-        actionEnabled: 0101
-        actionIsOpen: 0101
-        actionStartIndex: 0000000007000000
-        actionHashCodes: ac65eef183d22ec8
-        unityObjectParams: []
-        fsmGameObjectParams:
-        - useVariable: 0
-          name: 
-          tooltip: 
-          showInInspector: 0
-          networkSync: 0
-          value: {fileID: 100002, guid: 2cac6ebdec1f94be495807f0e0a0896a, type: 2}
-        - useVariable: 1
-          name: Warrior
-          tooltip: 
-          showInInspector: 0
-          networkSync: 0
-          value: {fileID: 0}
-        - useVariable: 1
-          name: Weapon
-          tooltip: 
-          showInInspector: 0
-          networkSync: 0
-          value: {fileID: 0}
-        - useVariable: 1
-          name: Warrior
-          tooltip: 
-          showInInspector: 0
-          networkSync: 0
-          value: {fileID: 0}
-        fsmOwnerDefaultParams:
-        - ownerOption: 1
-          gameObject:
-            useVariable: 1
-            name: Weapon
-            tooltip: 
-            showInInspector: 0
-            networkSync: 0
-            value: {fileID: 0}
-        animationCurveParams: []
-        functionCallParams: []
-        fsmTemplateControlParams: []
-        fsmEventTargetParams: []
-        fsmPropertyParams: []
-        layoutOptionParams: []
-        fsmStringParams: []
-        fsmObjectParams: []
-        fsmVarParams: []
-        byteData: 00000000000000000000000000000000000000000000000000000000000000000001000100
-        arrayParamSizes: 
-        arrayParamTypes: []
-        customTypeSizes: 
-        customTypeNames: []
-        paramDataType: 13000000130000001c0000001c00000013000000110000001000000014000000130000001100000011000000
-        paramName:
-        - gameObject
-        - spawnPoint
-        - position
-        - rotation
-        - storeObject
-        - networkInstantiate
-        - networkGroup
-        - gameObject
-        - parent
-        - resetLocalPosition
-        - resetLocalRotation
-        paramDataPos: 0000000001000000000000000d000000020000001a0000001c00000000000000030000002100000023000000
-        paramByteDataSize: 00000000000000000d0000000d00000000000000020000000500000000000000000000000200000002000000
-    events: []
-    globalTransitions: []
-    variables:
-      floatVariables: []
-      intVariables: []
-      boolVariables: []
-      stringVariables: []
-      vector2Variables: []
-      vector3Variables: []
-      colorVariables: []
-      rectVariables: []
-      quaternionVariables: []
-      gameObjectVariables:
-      - useVariable: 1
-        name: Weapon
-        tooltip: 
-        showInInspector: 0
-        networkSync: 0
-        value: {fileID: 0}
-      objectVariables: []
-      materialVariables: []
-      textureVariables: []
-    description: 
-    docUrl: 
-    showStateLabel: 1
-    maxLoopCount: 0
-    watermark: 
-    version: 0
-    ExposedEvents: []
-    RestartOnEnable: 1
-    EnableDebugFlow: 0
-    StepFrame: 0
-    activeStateName: 
-  fsmTemplate: {fileID: 0}
 --- !u!114 &11400002
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -795,7 +654,7 @@ MonoBehaviour:
   fsm:
     usedInTemplate: {fileID: 0}
     name: Input Controller
-    startState: Ready
+    startState: Load Weapon
     states:
     - name: Ready
       description: 
@@ -803,7 +662,7 @@ MonoBehaviour:
       position:
         serializedVersion: 2
         x: 66
-        y: 100
+        y: 164
         width: 116
         height: 32
       isBreakpoint: 0
@@ -890,7 +749,7 @@ MonoBehaviour:
       position:
         serializedVersion: 2
         x: 66
-        y: 229
+        y: 293
         width: 100
         height: 32
       isBreakpoint: 0
@@ -980,7 +839,7 @@ MonoBehaviour:
       position:
         serializedVersion: 2
         x: 63
-        y: 160
+        y: 224
         width: 127
         height: 48
       isBreakpoint: 0
@@ -1051,6 +910,105 @@ MonoBehaviour:
         - everyFrame
         paramDataPos: 0000000001000000000000000a0000001200000014000000
         paramByteDataSize: 00000000000000000a000000080000000200000001000000
+    - name: Load Weapon
+      description: 
+      colorIndex: 0
+      position:
+        serializedVersion: 2
+        x: 87
+        y: 100
+        width: 103
+        height: 32
+      isBreakpoint: 0
+      isSequence: 0
+      hideUnused: 0
+      transitions:
+      - fsmEvent:
+          name: FINISHED
+          isSystemEvent: 1
+          isGlobal: 0
+        toState: Ready
+        linkStyle: 0
+        linkConstraint: 0
+        colorIndex: 0
+      actionData:
+        actionNames:
+        - HutongGames.PlayMaker.Actions.CreateObject
+        - HutongGames.PlayMaker.Actions.SetParent
+        - HutongGames.PlayMaker.Actions.NextFrameEvent
+        customNames:
+        - 
+        - 
+        - 
+        actionEnabled: 010101
+        actionIsOpen: 010101
+        actionStartIndex: 00000000070000000b000000
+        actionHashCodes: ac65eef183d22ec8c631a949
+        unityObjectParams: []
+        fsmGameObjectParams:
+        - useVariable: 0
+          name: 
+          tooltip: 
+          showInInspector: 0
+          networkSync: 0
+          value: {fileID: 100002, guid: 2cac6ebdec1f94be495807f0e0a0896a, type: 2}
+        - useVariable: 1
+          name: Warrior
+          tooltip: 
+          showInInspector: 0
+          networkSync: 0
+          value: {fileID: 0}
+        - useVariable: 1
+          name: Weapon
+          tooltip: 
+          showInInspector: 0
+          networkSync: 0
+          value: {fileID: 0}
+        - useVariable: 1
+          name: Warrior
+          tooltip: 
+          showInInspector: 0
+          networkSync: 0
+          value: {fileID: 0}
+        fsmOwnerDefaultParams:
+        - ownerOption: 1
+          gameObject:
+            useVariable: 1
+            name: Weapon
+            tooltip: 
+            showInInspector: 0
+            networkSync: 0
+            value: {fileID: 0}
+        animationCurveParams: []
+        functionCallParams: []
+        fsmTemplateControlParams: []
+        fsmEventTargetParams: []
+        fsmPropertyParams: []
+        layoutOptionParams: []
+        fsmStringParams: []
+        fsmObjectParams: []
+        fsmVarParams: []
+        byteData: 0000000000000000000000000000000000000000000000000000000000000000000100010046494e4953484544
+        arrayParamSizes: 
+        arrayParamTypes: []
+        customTypeSizes: 
+        customTypeNames: []
+        paramDataType: 13000000130000001c0000001c0000001300000011000000100000001400000013000000110000001100000017000000
+        paramName:
+        - gameObject
+        - spawnPoint
+        - position
+        - rotation
+        - storeObject
+        - networkInstantiate
+        - networkGroup
+        - gameObject
+        - parent
+        - resetLocalPosition
+        - resetLocalRotation
+        - sendEvent
+        paramDataPos: 0000000001000000000000000d000000020000001a0000001c0000000000000003000000210000002300000025000000
+        paramByteDataSize: 00000000000000000d0000000d0000000000000002000000050000000000000000000000020000000200000008000000
     events:
     - name: FINISHED
       isSystemEvent: 1
@@ -1111,7 +1069,7 @@ MonoBehaviour:
   fsm:
     usedInTemplate: {fileID: 0}
     name: Input Controller
-    startState: Ready
+    startState: Load Weapon
     states:
     - name: Ready
       description: 
@@ -1119,7 +1077,7 @@ MonoBehaviour:
       position:
         serializedVersion: 2
         x: 50
-        y: 116
+        y: 180
         width: 116
         height: 32
       isBreakpoint: 0
@@ -1206,7 +1164,7 @@ MonoBehaviour:
       position:
         serializedVersion: 2
         x: 430
-        y: 105
+        y: 169
         width: 100
         height: 32
       isBreakpoint: 0
@@ -1296,7 +1254,7 @@ MonoBehaviour:
       position:
         serializedVersion: 2
         x: 239
-        y: 231
+        y: 295
         width: 127
         height: 48
       isBreakpoint: 0
@@ -1367,92 +1325,40 @@ MonoBehaviour:
         - everyFrame
         paramDataPos: 0000000001000000000000000a0000001200000014000000
         paramByteDataSize: 00000000000000000a000000080000000200000001000000
-    events:
-    - name: FINISHED
-      isSystemEvent: 1
-      isGlobal: 0
-    - name: OnAttackInput
-      isSystemEvent: 0
-      isGlobal: 0
-    - name: OnIsActive
-      isSystemEvent: 0
-      isGlobal: 0
-    - name: OnPerformAttack
-      isSystemEvent: 0
-      isGlobal: 1
-    globalTransitions: []
-    variables:
-      floatVariables: []
-      intVariables: []
-      boolVariables: []
-      stringVariables: []
-      vector2Variables: []
-      vector3Variables: []
-      colorVariables: []
-      rectVariables: []
-      quaternionVariables: []
-      gameObjectVariables:
-      - useVariable: 1
-        name: Weapon
-        tooltip: 
-        showInInspector: 0
-        networkSync: 0
-        value: {fileID: 0}
-      objectVariables: []
-      materialVariables: []
-      textureVariables: []
-    description: 
-    docUrl: 
-    showStateLabel: 1
-    maxLoopCount: 0
-    watermark: 
-    version: 0
-    ExposedEvents: []
-    RestartOnEnable: 1
-    EnableDebugFlow: 0
-    StepFrame: 0
-    activeStateName: 
-  fsmTemplate: {fileID: 0}
---- !u!114 &11400014
-MonoBehaviour:
-  m_ObjectHideFlags: 1
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 100028}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 1384774831, guid: e743331561ef77147ae48cda9bcb8209, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  fsm:
-    usedInTemplate: {fileID: 0}
-    name: Properties
-    startState: Load Weapon
-    states:
     - name: Load Weapon
       description: 
       colorIndex: 0
       position:
         serializedVersion: 2
-        x: 50
-        y: 100
-        width: 110
-        height: 16
+        x: 76
+        y: 110.984375
+        width: 103
+        height: 32
       isBreakpoint: 0
       isSequence: 0
       hideUnused: 0
-      transitions: []
+      transitions:
+      - fsmEvent:
+          name: FINISHED
+          isSystemEvent: 1
+          isGlobal: 0
+        toState: Ready
+        linkStyle: 0
+        linkConstraint: 0
+        colorIndex: 0
       actionData:
         actionNames:
         - HutongGames.PlayMaker.Actions.CreateObject
         - HutongGames.PlayMaker.Actions.SetParent
+        - HutongGames.PlayMaker.Actions.NextFrameEvent
         customNames:
         - 
         - 
-        actionEnabled: 0101
-        actionIsOpen: 0101
-        actionStartIndex: 0000000007000000
-        actionHashCodes: ac65eef183d22ec8
+        - 
+        actionEnabled: 010101
+        actionIsOpen: 010101
+        actionStartIndex: 00000000070000000b000000
+        actionHashCodes: ac65eef183d22ec8c631a949
         unityObjectParams: []
         fsmGameObjectParams:
         - useVariable: 0
@@ -1497,12 +1403,12 @@ MonoBehaviour:
         fsmStringParams: []
         fsmObjectParams: []
         fsmVarParams: []
-        byteData: 00000000000000000000000001000000000000000000000000010000000000000001000100
+        byteData: 0000000000000000000000000100000000000000000000000001000000000000000100010046494e4953484544
         arrayParamSizes: 
         arrayParamTypes: []
         customTypeSizes: 
         customTypeNames: []
-        paramDataType: 13000000130000001c0000001c00000013000000110000001000000014000000130000001100000011000000
+        paramDataType: 13000000130000001c0000001c0000001300000011000000100000001400000013000000110000001100000017000000
         paramName:
         - gameObject
         - spawnPoint
@@ -1515,9 +1421,22 @@ MonoBehaviour:
         - parent
         - resetLocalPosition
         - resetLocalRotation
-        paramDataPos: 0000000001000000000000000d000000020000001a0000001c00000000000000030000002100000023000000
-        paramByteDataSize: 00000000000000000d0000000d00000000000000020000000500000000000000000000000200000002000000
-    events: []
+        - sendEvent
+        paramDataPos: 0000000001000000000000000d000000020000001a0000001c0000000000000003000000210000002300000025000000
+        paramByteDataSize: 00000000000000000d0000000d0000000000000002000000050000000000000000000000020000000200000008000000
+    events:
+    - name: FINISHED
+      isSystemEvent: 1
+      isGlobal: 0
+    - name: OnAttackInput
+      isSystemEvent: 0
+      isGlobal: 0
+    - name: OnIsActive
+      isSystemEvent: 0
+      isGlobal: 0
+    - name: OnPerformAttack
+      isSystemEvent: 0
+      isGlobal: 1
     globalTransitions: []
     variables:
       floatVariables: []
@@ -1587,7 +1506,7 @@ MonoBehaviour:
   fsm:
     usedInTemplate: {fileID: 0}
     name: Input Controller
-    startState: Ready
+    startState: Load Weapon
     states:
     - name: Ready
       description: 
@@ -1595,7 +1514,7 @@ MonoBehaviour:
       position:
         serializedVersion: 2
         x: 50
-        y: 116
+        y: 180
         width: 116
         height: 32
       isBreakpoint: 0
@@ -1682,7 +1601,7 @@ MonoBehaviour:
       position:
         serializedVersion: 2
         x: 456
-        y: 113
+        y: 177
         width: 100
         height: 32
       isBreakpoint: 0
@@ -1772,7 +1691,7 @@ MonoBehaviour:
       position:
         serializedVersion: 2
         x: 228
-        y: 202
+        y: 266
         width: 127
         height: 48
       isBreakpoint: 0
@@ -1843,92 +1762,40 @@ MonoBehaviour:
         - everyFrame
         paramDataPos: 0000000001000000000000000a0000001200000014000000
         paramByteDataSize: 00000000000000000a000000080000000200000001000000
-    events:
-    - name: FINISHED
-      isSystemEvent: 1
-      isGlobal: 0
-    - name: OnAttackInput
-      isSystemEvent: 0
-      isGlobal: 0
-    - name: OnIsActive
-      isSystemEvent: 0
-      isGlobal: 0
-    - name: OnPerformAttack
-      isSystemEvent: 0
-      isGlobal: 1
-    globalTransitions: []
-    variables:
-      floatVariables: []
-      intVariables: []
-      boolVariables: []
-      stringVariables: []
-      vector2Variables: []
-      vector3Variables: []
-      colorVariables: []
-      rectVariables: []
-      quaternionVariables: []
-      gameObjectVariables:
-      - useVariable: 1
-        name: Weapon
-        tooltip: 
-        showInInspector: 0
-        networkSync: 0
-        value: {fileID: 0}
-      objectVariables: []
-      materialVariables: []
-      textureVariables: []
-    description: 
-    docUrl: 
-    showStateLabel: 1
-    maxLoopCount: 0
-    watermark: 
-    version: 0
-    ExposedEvents: []
-    RestartOnEnable: 1
-    EnableDebugFlow: 0
-    StepFrame: 0
-    activeStateName: 
-  fsmTemplate: {fileID: 0}
---- !u!114 &11400022
-MonoBehaviour:
-  m_ObjectHideFlags: 1
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 100026}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 1384774831, guid: e743331561ef77147ae48cda9bcb8209, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  fsm:
-    usedInTemplate: {fileID: 0}
-    name: Properties
-    startState: Load Weapon
-    states:
     - name: Load Weapon
       description: 
       colorIndex: 0
       position:
         serializedVersion: 2
-        x: 50
+        x: 52
         y: 100
-        width: 110
-        height: 16
+        width: 103
+        height: 32
       isBreakpoint: 0
       isSequence: 0
       hideUnused: 0
-      transitions: []
+      transitions:
+      - fsmEvent:
+          name: FINISHED
+          isSystemEvent: 1
+          isGlobal: 0
+        toState: Ready
+        linkStyle: 0
+        linkConstraint: 0
+        colorIndex: 0
       actionData:
         actionNames:
         - HutongGames.PlayMaker.Actions.CreateObject
         - HutongGames.PlayMaker.Actions.SetParent
+        - HutongGames.PlayMaker.Actions.NextFrameEvent
         customNames:
         - 
         - 
-        actionEnabled: 0101
-        actionIsOpen: 0101
-        actionStartIndex: 0000000007000000
-        actionHashCodes: ac65eef183d22ec8
+        - 
+        actionEnabled: 010101
+        actionIsOpen: 010101
+        actionStartIndex: 00000000070000000b000000
+        actionHashCodes: ac65eef183d22ec8c631a949
         unityObjectParams: []
         fsmGameObjectParams:
         - useVariable: 0
@@ -1942,7 +1809,7 @@ MonoBehaviour:
           tooltip: 
           showInInspector: 0
           networkSync: 0
-          value: {fileID: 100026}
+          value: {fileID: 0}
         - useVariable: 1
           name: Weapon
           tooltip: 
@@ -1954,7 +1821,7 @@ MonoBehaviour:
           tooltip: 
           showInInspector: 0
           networkSync: 0
-          value: {fileID: 100026}
+          value: {fileID: 0}
         fsmOwnerDefaultParams:
         - ownerOption: 1
           gameObject:
@@ -1973,12 +1840,12 @@ MonoBehaviour:
         fsmStringParams: []
         fsmObjectParams: []
         fsmVarParams: []
-        byteData: 00000000000000000000000000000000000000000000000000000000000000000001000100
+        byteData: 0000000000000000000000000000000000000000000000000000000000000000000100010046494e4953484544
         arrayParamSizes: 
         arrayParamTypes: []
         customTypeSizes: 
         customTypeNames: []
-        paramDataType: 13000000130000001c0000001c00000013000000110000001000000014000000130000001100000011000000
+        paramDataType: 13000000130000001c0000001c0000001300000011000000100000001400000013000000110000001100000017000000
         paramName:
         - gameObject
         - spawnPoint
@@ -1991,9 +1858,22 @@ MonoBehaviour:
         - parent
         - resetLocalPosition
         - resetLocalRotation
-        paramDataPos: 0000000001000000000000000d000000020000001a0000001c00000000000000030000002100000023000000
-        paramByteDataSize: 00000000000000000d0000000d00000000000000020000000500000000000000000000000200000002000000
-    events: []
+        - sendEvent
+        paramDataPos: 0000000001000000000000000d000000020000001a0000001c0000000000000003000000210000002300000025000000
+        paramByteDataSize: 00000000000000000d0000000d0000000000000002000000050000000000000000000000020000000200000008000000
+    events:
+    - name: FINISHED
+      isSystemEvent: 1
+      isGlobal: 0
+    - name: OnAttackInput
+      isSystemEvent: 0
+      isGlobal: 0
+    - name: OnIsActive
+      isSystemEvent: 0
+      isGlobal: 0
+    - name: OnPerformAttack
+      isSystemEvent: 0
+      isGlobal: 1
     globalTransitions: []
     variables:
       floatVariables: []
