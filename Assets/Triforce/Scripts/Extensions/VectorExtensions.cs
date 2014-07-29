@@ -3,9 +3,9 @@ using System.Collections;
 
 public static class VectorExtensions {
 
-	public static Vector2 XY (this Vector3 v) {
-		return new Vector2 (v.x, v.y);
-	}
+//	public static Vector2 XY (this Vector3 v) {
+//		return new Vector2 (v.x, v.y);
+//	}
 
 	public static Vector3 to3 (this Vector2 v) {
 		return new Vector3 (v.x, v.y, 0f);

@@ -3317,6 +3317,34 @@ Prefab:
       propertyPath: aspectRatio
       value: 4.45238113
       objectReference: {fileID: 0}
+    - target: {fileID: 400040, guid: 5c724f367f05e4c75a00dd0333e1f8ae, type: 2}
+      propertyPath: m_LocalPosition.y
+      value: 154.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 400052, guid: 5c724f367f05e4c75a00dd0333e1f8ae, type: 2}
+      propertyPath: m_LocalPosition.y
+      value: -128.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 400012, guid: 5c724f367f05e4c75a00dd0333e1f8ae, type: 2}
+      propertyPath: m_LocalScale.x
+      value: .00515463902
+      objectReference: {fileID: 0}
+    - target: {fileID: 400012, guid: 5c724f367f05e4c75a00dd0333e1f8ae, type: 2}
+      propertyPath: m_LocalScale.y
+      value: .00515463902
+      objectReference: {fileID: 0}
+    - target: {fileID: 400012, guid: 5c724f367f05e4c75a00dd0333e1f8ae, type: 2}
+      propertyPath: m_LocalScale.z
+      value: .00515463902
+      objectReference: {fileID: 0}
+    - target: {fileID: 400014, guid: 5c724f367f05e4c75a00dd0333e1f8ae, type: 2}
+      propertyPath: m_LocalPosition.x
+      value: 286
+      objectReference: {fileID: 0}
+    - target: {fileID: 400014, guid: 5c724f367f05e4c75a00dd0333e1f8ae, type: 2}
+      propertyPath: m_LocalPosition.y
+      value: 158
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 5c724f367f05e4c75a00dd0333e1f8ae, type: 2}
   m_RootGameObject: {fileID: 1384883252}
@@ -3780,7 +3808,7 @@ MonoBehaviour:
               tooltip: 
               showInInspector: 0
               networkSync: 0
-              value: {fileID: 0}
+              value: {fileID: 1384883252}
           fsmName:
             useVariable: 0
             name: 
@@ -6325,7 +6353,7 @@ Transform:
   m_PrefabInternal: {fileID: 531551590}
   m_GameObject: {fileID: 1057742019}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 173.5, z: 0}
+  m_LocalPosition: {x: 0, y: 154.5, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 1384883256}
@@ -6846,7 +6874,7 @@ MonoBehaviour:
             tooltip: 
             showInInspector: 0
             networkSync: 0
-            value: {fileID: 0}
+            value: {fileID: 616545160}
         - ownerOption: 0
           gameObject:
             useVariable: 0
@@ -7100,7 +7128,7 @@ MonoBehaviour:
             tooltip: 
             showInInspector: 0
             networkSync: 0
-            value: {fileID: 0}
+            value: {fileID: 616545160}
         - ownerOption: 0
           gameObject:
             useVariable: 0
@@ -7842,7 +7870,7 @@ Transform:
   m_PrefabInternal: {fileID: 531551590}
   m_GameObject: {fileID: 1308363698}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: .5, y: -138, z: 0}
+  m_LocalPosition: {x: .5, y: -128.5, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 1965319747}
@@ -7886,8 +7914,8 @@ MonoBehaviour:
   updateAnchors: 1
   mColor: {r: 1, g: 1, b: 1, a: 1}
   mPivot: 4
-  mWidth: 561
-  mHeight: 126
+  mWidth: 493
+  mHeight: 107
   mDepth: 3
   autoResizeBoxCollider: 0
   hideIfOffScreen: 0
@@ -8046,7 +8074,7 @@ Transform:
   m_GameObject: {fileID: 1384883252}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 100, z: 0}
-  m_LocalScale: {x: .00469483575, y: .00469483575, z: .00469483575}
+  m_LocalScale: {x: .00515463902, y: .00515463902, z: .00515463902}
   m_Children:
   - {fileID: 242214581}
   - {fileID: 44364028}
@@ -8403,7 +8431,7 @@ Transform:
   m_PrefabInternal: {fileID: 531551590}
   m_GameObject: {fileID: 1433711866}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 320, y: 177, z: 0}
+  m_LocalPosition: {x: 286, y: 158, z: 0}
   m_LocalScale: {x: .99990797, y: .99990797, z: .99990797}
   m_Children:
   - {fileID: 760126843}
@@ -10619,7 +10647,7 @@ MonoBehaviour:
             tooltip: 
             showInInspector: 0
             networkSync: 0
-            value: {fileID: 0}
+            value: {fileID: 616545160}
         - ownerOption: 0
           gameObject:
             useVariable: 0
@@ -11392,7 +11420,7 @@ MonoBehaviour:
             tooltip: 
             showInInspector: 0
             networkSync: 0
-            value: {fileID: 0}
+            value: {fileID: 616545160}
         - ownerOption: 0
           gameObject:
             useVariable: 0
