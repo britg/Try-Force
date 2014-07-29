@@ -114,7 +114,7 @@ MonoBehaviour:
   _unityCamera: {fileID: 2000000}
   viewportClippingEnabled: 0
   viewportRegion: {x: 0, y: 0, z: 100, w: 100}
-  zoomFactor: .5
+  zoomFactor: .349999994
   forceResolutionInEditor: 1
   forceResolution: {x: 1920, y: 1080}
 --- !u!114 &11400002
@@ -128,7 +128,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d67e28f9ec4b74371b1e45eb64cfcfef, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  playerTransform: {fileID: 400002, guid: 42b63dec9386e436eac1d7267b3889d6, type: 2}
+  playerTransform: {fileID: 0}
 --- !u!124 &12400000
 Behaviour:
   m_ObjectHideFlags: 1
