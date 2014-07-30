@@ -53,6 +53,9 @@ public class OrientationController : GameController {
 	}
 
 	void DetectPivot () {
+		if (aimController == null) {
+			return;
+		}
 		Vector2 aimPoint = aimController.aimPointForSector(Player.Sector.Top);
 		playerController.transform.LookAt2D(aimPoint);
 	}

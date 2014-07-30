@@ -8,15 +8,15 @@ GameObject:
   serializedVersion: 4
   m_Component:
   - 4: {fileID: 400002}
-  - 50: {fileID: 5000002}
-  - 61: {fileID: 6100002}
   - 212: {fileID: 21200002}
+  - 58: {fileID: 5800000}
+  - 50: {fileID: 5000002}
+  - 114: {fileID: 11400000}
   - 114: {fileID: 11400004}
   - 114: {fileID: 11400002}
-  - 114: {fileID: 11400006}
   m_Layer: 11
-  m_Name: Arrow
-  m_TagString: Projectile
+  m_Name: Icebolt
+  m_TagString: Spell
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -28,8 +28,8 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 100002}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -3.30984735, y: 4.37517023, z: 0}
-  m_LocalScale: {x: 1.41417384, y: 1.41417348, z: 1.41417348}
+  m_LocalPosition: {x: -2.72968507, y: 3.4510479, z: 0}
+  m_LocalScale: {x: 1.62324548, y: 1.62324584, z: .711594164}
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 0
@@ -41,15 +41,15 @@ Rigidbody2D:
   m_GameObject: {fileID: 100002}
   m_Mass: .100000001
   m_LinearDrag: 0
-  m_AngularDrag: 10000
+  m_AngularDrag: .0500000007
   m_GravityScale: 1
   m_FixedAngle: 0
   m_IsKinematic: 0
   m_Interpolate: 0
   m_SleepingMode: 1
   m_CollisionDetection: 0
---- !u!61 &6100002
-BoxCollider2D:
+--- !u!58 &5800000
+CircleCollider2D:
   m_ObjectHideFlags: 1
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
@@ -57,9 +57,9 @@ BoxCollider2D:
   m_Enabled: 1
   m_Material: {fileID: 0}
   m_IsTrigger: 0
-  m_Size: {x: .150000006, y: .479999989}
+  m_Radius: .230000004
   m_Center: {x: 0, y: 0}
---- !u!114 &11400002
+--- !u!114 &11400000
 MonoBehaviour:
   m_ObjectHideFlags: 1
   m_PrefabParentObject: {fileID: 0}
@@ -143,7 +143,7 @@ MonoBehaviour:
         fsmStringParams: []
         fsmObjectParams: []
         fsmVarParams: []
-        byteData: 0000000000009643000000000000000000000000000000000001526f746174696f6e0000000000000000000000000001526f746174696f6e00000000000000000000000000000000000000803feceb6b3f8180803c0000803f00000000000000000000010000000000000000010000000001000000000100000000000000000000000001526f746174696f6e00
+        byteData: 000000000000c842000000000000000000000000000000000001526f746174696f6e0000000000000000000000000001526f746174696f6e00000000000000000000000001000000000000803feceb6b3f8180803c0000803f00000000000000000000010000000000000000010000000001000000000100000000000000000000000001526f746174696f6e00
         arrayParamSizes: 
         arrayParamTypes: []
         customTypeSizes: 
@@ -205,6 +205,115 @@ MonoBehaviour:
     StepFrame: 0
     activeStateName: 
   fsmTemplate: {fileID: 0}
+--- !u!114 &11400002
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 100002}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 1384774831, guid: e743331561ef77147ae48cda9bcb8209, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  fsm:
+    usedInTemplate: {fileID: 0}
+    name: Properties
+    startState: Set Properties
+    states:
+    - name: Set Properties
+      description: 
+      colorIndex: 0
+      position:
+        serializedVersion: 2
+        x: 50
+        y: 100
+        width: 106
+        height: 16
+      isBreakpoint: 0
+      isSequence: 0
+      hideUnused: 0
+      transitions: []
+      actionData:
+        actionNames: []
+        customNames: []
+        actionEnabled: 
+        actionIsOpen: 
+        actionStartIndex: 
+        actionHashCodes: 
+        unityObjectParams: []
+        fsmGameObjectParams: []
+        fsmOwnerDefaultParams: []
+        animationCurveParams: []
+        functionCallParams: []
+        fsmTemplateControlParams: []
+        fsmEventTargetParams: []
+        fsmPropertyParams: []
+        layoutOptionParams: []
+        fsmStringParams: []
+        fsmObjectParams: []
+        fsmVarParams: []
+        byteData: 
+        arrayParamSizes: 
+        arrayParamTypes: []
+        customTypeSizes: 
+        customTypeNames: []
+        paramDataType: 
+        paramName: []
+        paramDataPos: 
+        paramByteDataSize: 
+    events: []
+    globalTransitions: []
+    variables:
+      floatVariables:
+      - useVariable: 1
+        name: Damage Max
+        tooltip: 
+        showInInspector: 1
+        networkSync: 0
+        value: 7
+      - useVariable: 1
+        name: Damage Min
+        tooltip: 
+        showInInspector: 1
+        networkSync: 0
+        value: 2
+      - useVariable: 1
+        name: Mana Cost
+        tooltip: 
+        showInInspector: 1
+        networkSync: 0
+        value: 20
+      intVariables: []
+      boolVariables: []
+      stringVariables:
+      - useVariable: 1
+        name: Damage Type
+        tooltip: 
+        showInInspector: 1
+        networkSync: 0
+        value: Ice
+      vector2Variables: []
+      vector3Variables: []
+      colorVariables: []
+      rectVariables: []
+      quaternionVariables: []
+      gameObjectVariables: []
+      objectVariables: []
+      materialVariables: []
+      textureVariables: []
+    description: 
+    docUrl: 
+    showStateLabel: 1
+    maxLoopCount: 0
+    watermark: 
+    version: 0
+    ExposedEvents: []
+    RestartOnEnable: 1
+    EnableDebugFlow: 0
+    StepFrame: 0
+    activeStateName: 
+  fsmTemplate: {fileID: 0}
 --- !u!114 &11400004
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -227,7 +336,7 @@ MonoBehaviour:
       position:
         serializedVersion: 2
         x: 50
-        y: 100
+        y: 116
         width: 120
         height: 48
       isBreakpoint: 0
@@ -238,7 +347,7 @@ MonoBehaviour:
           name: OnHit
           isSystemEvent: 0
           isGlobal: 0
-        toState: Stick
+        toState: Explode
         linkStyle: 0
         linkConstraint: 0
         colorIndex: 0
@@ -307,8 +416,8 @@ MonoBehaviour:
       colorIndex: 0
       position:
         serializedVersion: 2
-        x: 405
-        y: 105
+        x: 460
+        y: 109
         width: 100
         height: 16
       isBreakpoint: 0
@@ -354,13 +463,13 @@ MonoBehaviour:
         - detachChildren
         paramDataPos: 000000000000000005000000
         paramByteDataSize: 000000000500000002000000
-    - name: Stick
+    - name: Explode
       description: 
       colorIndex: 0
       position:
         serializedVersion: 2
-        x: 241
-        y: 178
+        x: 287
+        y: 164
         width: 100
         height: 32
       isBreakpoint: 0
@@ -406,7 +515,7 @@ MonoBehaviour:
         fsmStringParams: []
         fsmObjectParams: []
         fsmVarParams: []
-        byteData: 00000000000000000100000000000000000000000000803f0046494e495348454400
+        byteData: 0000000000000000010000000000000000000000cdcc4c3e0046494e495348454400
         arrayParamSizes: 
         arrayParamTypes: []
         customTypeSizes: 
@@ -460,126 +569,6 @@ MonoBehaviour:
     StepFrame: 0
     activeStateName: 
   fsmTemplate: {fileID: 0}
---- !u!114 &11400006
-MonoBehaviour:
-  m_ObjectHideFlags: 1
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 100002}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 1384774831, guid: e743331561ef77147ae48cda9bcb8209, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  fsm:
-    usedInTemplate: {fileID: 0}
-    name: Properties
-    startState: Set Properties
-    states:
-    - name: Set Properties
-      description: 
-      colorIndex: 0
-      position:
-        serializedVersion: 2
-        x: 60
-        y: 100
-        width: 106
-        height: 16
-      isBreakpoint: 0
-      isSequence: 0
-      hideUnused: 0
-      transitions: []
-      actionData:
-        actionNames:
-        - HutongGames.PlayMaker.Actions.SetStringValue
-        customNames:
-        - 
-        actionEnabled: 01
-        actionIsOpen: 01
-        actionStartIndex: 00000000
-        actionHashCodes: c9be26cb
-        unityObjectParams: []
-        fsmGameObjectParams: []
-        fsmOwnerDefaultParams: []
-        animationCurveParams: []
-        functionCallParams: []
-        fsmTemplateControlParams: []
-        fsmEventTargetParams: []
-        fsmPropertyParams: []
-        layoutOptionParams: []
-        fsmStringParams:
-        - useVariable: 1
-          name: Damage Type
-          tooltip: 
-          showInInspector: 0
-          networkSync: 0
-          value: Fire
-        - useVariable: 0
-          name: 
-          tooltip: 
-          showInInspector: 0
-          networkSync: 0
-          value: Projectile
-        fsmObjectParams: []
-        fsmVarParams: []
-        byteData: 00
-        arrayParamSizes: 
-        arrayParamTypes: []
-        customTypeSizes: 
-        customTypeNames: []
-        paramDataType: 120000001200000001000000
-        paramName:
-        - stringVariable
-        - stringValue
-        - everyFrame
-        paramDataPos: 000000000100000000000000
-        paramByteDataSize: 000000000000000001000000
-    events: []
-    globalTransitions: []
-    variables:
-      floatVariables:
-      - useVariable: 1
-        name: Damage Max
-        tooltip: 
-        showInInspector: 1
-        networkSync: 0
-        value: 25
-      - useVariable: 1
-        name: Damage Min
-        tooltip: 
-        showInInspector: 1
-        networkSync: 0
-        value: 20
-      intVariables: []
-      boolVariables: []
-      stringVariables:
-      - useVariable: 1
-        name: Damage Type
-        tooltip: 
-        showInInspector: 1
-        networkSync: 0
-        value: Projectile
-      vector2Variables: []
-      vector3Variables: []
-      colorVariables: []
-      rectVariables: []
-      quaternionVariables: []
-      gameObjectVariables: []
-      objectVariables: []
-      materialVariables: []
-      textureVariables: []
-    description: 
-    docUrl: 
-    showStateLabel: 1
-    maxLoopCount: 0
-    watermark: 
-    version: 0
-    ExposedEvents: []
-    RestartOnEnable: 1
-    EnableDebugFlow: 0
-    StepFrame: 0
-    activeStateName: 
-  fsmTemplate: {fileID: 0}
 --- !u!212 &21200002
 SpriteRenderer:
   m_ObjectHideFlags: 1
@@ -600,7 +589,7 @@ SpriteRenderer:
   m_ScaleInLightmap: 1
   m_SortingLayerID: 0
   m_SortingOrder: 0
-  m_Sprite: {fileID: 21300000, guid: 4db3a6e80ac93824995b600378ad0261, type: 3}
+  m_Sprite: {fileID: 21300000, guid: 6911b806b4e6d43e7a47edb08808b71f, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
 --- !u!1001 &100100000
 Prefab:

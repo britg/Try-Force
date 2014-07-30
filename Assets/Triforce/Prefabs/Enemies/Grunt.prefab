@@ -239,7 +239,7 @@ MonoBehaviour:
       position:
         serializedVersion: 2
         x: 581
-        y: 194
+        y: 178
         width: 164
         height: 48
       isBreakpoint: 0
@@ -250,7 +250,7 @@ MonoBehaviour:
           name: OnPlayerNotDetected
           isSystemEvent: 0
           isGlobal: 0
-        toState: Check Waypoint
+        toState: Check Frozen 2
         linkStyle: 0
         linkConstraint: 0
         colorIndex: 0
@@ -258,7 +258,7 @@ MonoBehaviour:
           name: OnPlayerDetected
           isSystemEvent: 0
           isGlobal: 0
-        toState: Set Look Target to Player
+        toState: Check Frozen
         linkStyle: 0
         linkConstraint: 0
         colorIndex: 0
@@ -301,10 +301,10 @@ MonoBehaviour:
       colorIndex: 0
       position:
         serializedVersion: 2
-        x: 1014.55469
-        y: 151.695312
-        width: 164
-        height: 48
+        x: 1069.625
+        y: 227.695312
+        width: 152
+        height: 64
       isBreakpoint: 0
       isSequence: 0
       hideUnused: 0
@@ -325,19 +325,29 @@ MonoBehaviour:
         linkStyle: 0
         linkConstraint: 0
         colorIndex: 0
+      - fsmEvent:
+          name: OnFrozen
+          isSystemEvent: 0
+          isGlobal: 0
+        toState: Frozen
+        linkStyle: 0
+        linkConstraint: 0
+        colorIndex: 0
       actionData:
         actionNames:
         - HutongGames.PlayMaker.Actions.MoveTowards
         - HutongGames.PlayMaker.Actions.LookAt2D
         - HutongGames.PlayMaker.Actions.BoolTest
+        - HutongGames.PlayMaker.Actions.BoolTest
         customNames:
         - 
         - 
         - 
-        actionEnabled: 010101
-        actionIsOpen: 010101
-        actionStartIndex: 00000000070000000f000000
-        actionHashCodes: b509599ab36ac7f23334d172
+        - 
+        actionEnabled: 01010101
+        actionIsOpen: 01010101
+        actionStartIndex: 00000000070000000f00000013000000
+        actionHashCodes: b509599ab36ac7f23334d1723334d172
         unityObjectParams: []
         fsmGameObjectParams:
         - useVariable: 1
@@ -378,12 +388,12 @@ MonoBehaviour:
         fsmStringParams: []
         fsmObjectParams: []
         fsmVarParams: []
-        byteData: 0000000000000000000000000100000000204100000000400046494e49534845440000000000000000000000000100000000000000000000000001000000000000803feceb6b3f8180803c0000803f00010001506c617965722056697369626c654f6e506c617965724e6f74446574656374656401
+        byteData: 0000000000000000000000000100000000204100000000400046494e49534845440000000000000000000000000100000000000000000000000001000000000000803feceb6b3f8180803c0000803f00010001506c617965722056697369626c654f6e506c617965724e6f74446574656374656401000146726f7a656e4f6e46726f7a656e01
         arrayParamSizes: 
         arrayParamTypes: []
         customTypeSizes: 
         customTypeNames: []
-        paramDataType: 14000000130000001c000000110000000f0000000f0000001700000014000000130000001c0000001c0000001100000011000000190000000100000011000000170000001700000001000000
+        paramDataType: 14000000130000001c000000110000000f0000000f0000001700000014000000130000001c0000001c000000110000001100000019000000010000001100000017000000170000000100000011000000170000001700000001000000
         paramName:
         - gameObject
         - targetObject
@@ -404,15 +414,19 @@ MonoBehaviour:
         - isTrue
         - isFalse
         - everyFrame
-        paramDataPos: 0000000000000000000000000d0000000f00000014000000190000000100000001000000210000002e0000003b0000003d0000003f0000005000000051000000610000006100000074000000
-        paramByteDataSize: 00000000000000000d0000000200000005000000050000000800000000000000000000000d0000000d0000000200000002000000110000000100000010000000000000001300000001000000
+        - boolVariable
+        - isTrue
+        - isFalse
+        - everyFrame
+        paramDataPos: 0000000000000000000000000d0000000f00000014000000190000000100000001000000210000002e0000003b0000003d0000003f0000005000000051000000610000006100000074000000750000007d0000008500000085000000
+        paramByteDataSize: 00000000000000000d0000000200000005000000050000000800000000000000000000000d0000000d000000020000000200000011000000010000001000000000000000130000000100000008000000080000000000000001000000
     - name: Pause
       description: 
       colorIndex: 0
       position:
         serializedVersion: 2
         x: 980.101562
-        y: 358.828125
+        y: 342.828125
         width: 100
         height: 32
       isBreakpoint: 0
@@ -466,9 +480,9 @@ MonoBehaviour:
       position:
         serializedVersion: 2
         x: 55.296875
-        y: 321.101562
-        width: 141
-        height: 48
+        y: 305.101562
+        width: 130
+        height: 64
       isBreakpoint: 0
       isSequence: 0
       hideUnused: 0
@@ -489,17 +503,27 @@ MonoBehaviour:
         linkStyle: 0
         linkConstraint: 0
         colorIndex: 0
+      - fsmEvent:
+          name: OnFrozen
+          isSystemEvent: 0
+          isGlobal: 0
+        toState: Frozen
+        linkStyle: 0
+        linkConstraint: 0
+        colorIndex: 0
       actionData:
         actionNames:
         - HutongGames.PlayMaker.Actions.MoveTowards
         - HutongGames.PlayMaker.Actions.BoolTest
+        - HutongGames.PlayMaker.Actions.BoolTest
         customNames:
         - 
         - 
-        actionEnabled: 0101
-        actionIsOpen: 0101
-        actionStartIndex: 0000000007000000
-        actionHashCodes: b509599a3334d172
+        - 
+        actionEnabled: 010101
+        actionIsOpen: 010101
+        actionStartIndex: 00000000070000000b000000
+        actionHashCodes: b509599a3334d1723334d172
         unityObjectParams: []
         fsmGameObjectParams:
         - useVariable: 1
@@ -526,12 +550,12 @@ MonoBehaviour:
         fsmStringParams: []
         fsmObjectParams: []
         fsmVarParams: []
-        byteData: 0000000000000000000000000100000000c04000cdcccc3d0046494e49534845440001506c617965722056697369626c654f6e506c61796572446574656374656401
+        byteData: 0000000000000000000000000100000000c04000cdcccc3d0046494e49534845440001506c617965722056697369626c654f6e506c61796572446574656374656401000146726f7a656e4f6e46726f7a656e01
         arrayParamSizes: 
         arrayParamTypes: []
         customTypeSizes: 
         customTypeNames: []
-        paramDataType: 14000000130000001c000000110000000f0000000f0000001700000011000000170000001700000001000000
+        paramDataType: 14000000130000001c000000110000000f0000000f000000170000001100000017000000170000000100000011000000170000001700000001000000
         paramName:
         - gameObject
         - targetObject
@@ -544,15 +568,19 @@ MonoBehaviour:
         - isTrue
         - isFalse
         - everyFrame
-        paramDataPos: 0000000000000000000000000d0000000f000000140000001900000021000000310000004100000041000000
-        paramByteDataSize: 00000000000000000d0000000200000005000000050000000800000010000000100000000000000001000000
+        - boolVariable
+        - isTrue
+        - isFalse
+        - everyFrame
+        paramDataPos: 0000000000000000000000000d0000000f000000140000001900000021000000310000004100000041000000420000004a0000005200000052000000
+        paramByteDataSize: 00000000000000000d000000020000000500000005000000080000001000000010000000000000000100000008000000080000000000000001000000
     - name: At Waypoint
       description: 
       colorIndex: 0
       position:
         serializedVersion: 2
         x: 337.484375
-        y: 483.273438
+        y: 467.273438
         width: 101
         height: 32
       isBreakpoint: 0
@@ -641,8 +669,8 @@ MonoBehaviour:
       colorIndex: 0
       position:
         serializedVersion: 2
-        x: 345.71875
-        y: 150.71875
+        x: 254.203125
+        y: 129.71875
         width: 127
         height: 48
       isBreakpoint: 0
@@ -715,7 +743,7 @@ MonoBehaviour:
       position:
         serializedVersion: 2
         x: 79
-        y: 189
+        y: 173
         width: 129
         height: 32
       isBreakpoint: 0
@@ -790,8 +818,8 @@ MonoBehaviour:
       colorIndex: 0
       position:
         serializedVersion: 2
-        x: 798
-        y: 101.96875
+        x: 986
+        y: 102.96875
         width: 176
         height: 32
       isBreakpoint: 0
@@ -861,6 +889,240 @@ MonoBehaviour:
         - sendEvent
         paramDataPos: 0000000000000000000000000d0000001a0000001c0000001e0000002f00000030000000
         paramByteDataSize: 00000000000000000d0000000d0000000200000002000000110000000100000008000000
+    - name: Check Frozen
+      description: 
+      colorIndex: 0
+      position:
+        serializedVersion: 2
+        x: 809.796875
+        y: 105.242188
+        width: 104
+        height: 48
+      isBreakpoint: 0
+      isSequence: 0
+      hideUnused: 0
+      transitions:
+      - fsmEvent:
+          name: FINISHED
+          isSystemEvent: 1
+          isGlobal: 0
+        toState: Set Look Target to Player
+        linkStyle: 0
+        linkConstraint: 0
+        colorIndex: 0
+      - fsmEvent:
+          name: OnFrozen
+          isSystemEvent: 0
+          isGlobal: 0
+        toState: Frozen
+        linkStyle: 0
+        linkConstraint: 0
+        colorIndex: 0
+      actionData:
+        actionNames:
+        - HutongGames.PlayMaker.Actions.BoolTest
+        customNames:
+        - 
+        actionEnabled: 01
+        actionIsOpen: 01
+        actionStartIndex: 00000000
+        actionHashCodes: 3334d172
+        unityObjectParams: []
+        fsmGameObjectParams: []
+        fsmOwnerDefaultParams: []
+        animationCurveParams: []
+        functionCallParams: []
+        fsmTemplateControlParams: []
+        fsmEventTargetParams: []
+        fsmPropertyParams: []
+        layoutOptionParams: []
+        fsmStringParams: []
+        fsmObjectParams: []
+        fsmVarParams: []
+        byteData: 000146726f7a656e4f6e46726f7a656e46494e495348454400
+        arrayParamSizes: 
+        arrayParamTypes: []
+        customTypeSizes: 
+        customTypeNames: []
+        paramDataType: 11000000170000001700000001000000
+        paramName:
+        - boolVariable
+        - isTrue
+        - isFalse
+        - everyFrame
+        paramDataPos: 00000000080000001000000018000000
+        paramByteDataSize: 08000000080000000800000001000000
+    - name: Frozen
+      description: 
+      colorIndex: 0
+      position:
+        serializedVersion: 2
+        x: 616.835938
+        y: 364.320312
+        width: 100
+        height: 32
+      isBreakpoint: 0
+      isSequence: 0
+      hideUnused: 0
+      transitions:
+      - fsmEvent:
+          name: FINISHED
+          isSystemEvent: 1
+          isGlobal: 0
+        toState: Unfreeze
+        linkStyle: 0
+        linkConstraint: 0
+        colorIndex: 0
+      actionData:
+        actionNames:
+        - HutongGames.PlayMaker.Actions.Wait
+        customNames:
+        - 
+        actionEnabled: 01
+        actionIsOpen: 01
+        actionStartIndex: 00000000
+        actionHashCodes: 3708ec1a
+        unityObjectParams: []
+        fsmGameObjectParams: []
+        fsmOwnerDefaultParams: []
+        animationCurveParams: []
+        functionCallParams: []
+        fsmTemplateControlParams: []
+        fsmEventTargetParams: []
+        fsmPropertyParams: []
+        layoutOptionParams: []
+        fsmStringParams: []
+        fsmObjectParams: []
+        fsmVarParams: []
+        byteData: 000040400046494e495348454400
+        arrayParamSizes: 
+        arrayParamTypes: []
+        customTypeSizes: 
+        customTypeNames: []
+        paramDataType: 0f0000001700000001000000
+        paramName:
+        - time
+        - finishEvent
+        - realTime
+        paramDataPos: 00000000050000000d000000
+        paramByteDataSize: 050000000800000001000000
+    - name: Check Frozen 2
+      description: 
+      colorIndex: 0
+      position:
+        serializedVersion: 2
+        x: 415.625
+        y: 101.742188
+        width: 116
+        height: 48
+      isBreakpoint: 0
+      isSequence: 0
+      hideUnused: 0
+      transitions:
+      - fsmEvent:
+          name: FINISHED
+          isSystemEvent: 1
+          isGlobal: 0
+        toState: Check Waypoint
+        linkStyle: 0
+        linkConstraint: 0
+        colorIndex: 0
+      - fsmEvent:
+          name: OnFrozen
+          isSystemEvent: 0
+          isGlobal: 0
+        toState: Frozen
+        linkStyle: 0
+        linkConstraint: 0
+        colorIndex: 0
+      actionData:
+        actionNames:
+        - HutongGames.PlayMaker.Actions.BoolTest
+        customNames:
+        - 
+        actionEnabled: 01
+        actionIsOpen: 01
+        actionStartIndex: 00000000
+        actionHashCodes: 3334d172
+        unityObjectParams: []
+        fsmGameObjectParams: []
+        fsmOwnerDefaultParams: []
+        animationCurveParams: []
+        functionCallParams: []
+        fsmTemplateControlParams: []
+        fsmEventTargetParams: []
+        fsmPropertyParams: []
+        layoutOptionParams: []
+        fsmStringParams: []
+        fsmObjectParams: []
+        fsmVarParams: []
+        byteData: 000146726f7a656e4f6e46726f7a656e46494e495348454400
+        arrayParamSizes: 
+        arrayParamTypes: []
+        customTypeSizes: 
+        customTypeNames: []
+        paramDataType: 11000000170000001700000001000000
+        paramName:
+        - boolVariable
+        - isTrue
+        - isFalse
+        - everyFrame
+        paramDataPos: 00000000080000001000000018000000
+        paramByteDataSize: 08000000080000000800000001000000
+    - name: Unfreeze
+      description: 
+      colorIndex: 0
+      position:
+        serializedVersion: 2
+        x: 618
+        y: 287
+        width: 100
+        height: 32
+      isBreakpoint: 0
+      isSequence: 0
+      hideUnused: 0
+      transitions:
+      - fsmEvent:
+          name: FINISHED
+          isSystemEvent: 1
+          isGlobal: 0
+        toState: Test Player Visible
+        linkStyle: 0
+        linkConstraint: 0
+        colorIndex: 0
+      actionData:
+        actionNames:
+        - HutongGames.PlayMaker.Actions.SetBoolValue
+        customNames:
+        - 
+        actionEnabled: 01
+        actionIsOpen: 01
+        actionStartIndex: 00000000
+        actionHashCodes: 29b4727b
+        unityObjectParams: []
+        fsmGameObjectParams: []
+        fsmOwnerDefaultParams: []
+        animationCurveParams: []
+        functionCallParams: []
+        fsmTemplateControlParams: []
+        fsmEventTargetParams: []
+        fsmPropertyParams: []
+        layoutOptionParams: []
+        fsmStringParams: []
+        fsmObjectParams: []
+        fsmVarParams: []
+        byteData: 000146726f7a656e000000
+        arrayParamSizes: 
+        arrayParamTypes: []
+        customTypeSizes: 
+        customTypeNames: []
+        paramDataType: 110000001100000001000000
+        paramName:
+        - boolVariable
+        - boolValue
+        - everyFrame
+        paramDataPos: 00000000080000000a000000
+        paramByteDataSize: 080000000200000001000000
     events:
     - name: COLLISION ENTER
       isSystemEvent: 1
@@ -871,6 +1133,9 @@ MonoBehaviour:
     - name: OnAttack
       isSystemEvent: 0
       isGlobal: 1
+    - name: OnFrozen
+      isSystemEvent: 0
+      isGlobal: 0
     - name: OnHasMoved
       isSystemEvent: 0
       isGlobal: 0
@@ -891,6 +1156,12 @@ MonoBehaviour:
       floatVariables: []
       intVariables: []
       boolVariables:
+      - useVariable: 1
+        name: Frozen
+        tooltip: 
+        showInInspector: 0
+        networkSync: 0
+        value: 0
       - useVariable: 1
         name: Has Moved
         tooltip: 
@@ -2151,15 +2422,15 @@ MonoBehaviour:
   fsm:
     usedInTemplate: {fileID: 0}
     name: Hit Damage Controller
-    startState: Detect Hit
+    startState: Create Damage Display
     states:
     - name: Detect Hit
       description: 
       colorIndex: 0
       position:
         serializedVersion: 2
-        x: 62
-        y: 164
+        x: 293
+        y: 349
         width: 100
         height: 32
       isBreakpoint: 0
@@ -2170,7 +2441,7 @@ MonoBehaviour:
           name: OnHit
           isSystemEvent: 0
           isGlobal: 0
-        toState: Get Current Hit Points
+        toState: Determine Damage Type
         linkStyle: 0
         linkConstraint: 0
         colorIndex: 0
@@ -2318,8 +2589,8 @@ MonoBehaviour:
       colorIndex: 0
       position:
         serializedVersion: 2
-        x: 464
-        y: 168
+        x: 768
+        y: 264
         width: 100
         height: 32
       isBreakpoint: 0
@@ -2483,8 +2754,8 @@ MonoBehaviour:
       colorIndex: 0
       position:
         serializedVersion: 2
-        x: 637
-        y: 171
+        x: 941
+        y: 267
         width: 100
         height: 16
       isBreakpoint: 0
@@ -2527,8 +2798,8 @@ MonoBehaviour:
       colorIndex: 0
       position:
         serializedVersion: 2
-        x: 247.5
-        y: 166.085938
+        x: 554.5
+        y: 263.085938
         width: 132
         height: 32
       isBreakpoint: 0
@@ -2539,7 +2810,7 @@ MonoBehaviour:
           name: FINISHED
           isSystemEvent: 1
           isGlobal: 0
-        toState: Determine if Dead
+        toState: Display Damage
         linkStyle: 0
         linkConstraint: 0
         colorIndex: 0
@@ -2614,8 +2885,8 @@ MonoBehaviour:
       colorIndex: 0
       position:
         serializedVersion: 2
-        x: 255
-        y: 278
+        x: 559
+        y: 374
         width: 134
         height: 48
       isBreakpoint: 0
@@ -2634,7 +2905,7 @@ MonoBehaviour:
           name: OnNotDead
           isSystemEvent: 0
           isGlobal: 0
-        toState: Detect Hit
+        toState: Turn To Damage Source
         linkStyle: 0
         linkConstraint: 0
         colorIndex: 0
@@ -2680,8 +2951,8 @@ MonoBehaviour:
       colorIndex: 0
       position:
         serializedVersion: 2
-        x: 232.03125
-        y: 104.375
+        x: 547.03125
+        y: 209.375
         width: 157
         height: 32
       isBreakpoint: 0
@@ -2805,6 +3076,534 @@ MonoBehaviour:
         - everyFrame
         paramDataPos: 000000000000000001000000000000001b0000000100000002000000030000001c00000037000000020000000400000005000000380000004f000000
         paramByteDataSize: 0000000000000000000000001b000000010000000000000000000000000000001b000000010000000000000000000000000000001700000001000000
+    - name: Turn To Damage Source
+      description: 
+      colorIndex: 0
+      position:
+        serializedVersion: 2
+        x: 469
+        y: 499
+        width: 169
+        height: 32
+      isBreakpoint: 0
+      isSequence: 0
+      hideUnused: 0
+      transitions:
+      - fsmEvent:
+          name: FINISHED
+          isSystemEvent: 1
+          isGlobal: 0
+        toState: Immune
+        linkStyle: 0
+        linkConstraint: 0
+        colorIndex: 0
+      actionData:
+        actionNames:
+        - HutongGames.PlayMaker.Actions.LookAt2D
+        customNames:
+        - 
+        actionEnabled: 01
+        actionIsOpen: 01
+        actionStartIndex: 00000000
+        actionHashCodes: b36ac7f2
+        unityObjectParams: []
+        fsmGameObjectParams:
+        - useVariable: 1
+          name: Current Hit Source
+          tooltip: 
+          showInInspector: 0
+          networkSync: 0
+          value: {fileID: 0}
+        fsmOwnerDefaultParams:
+        - ownerOption: 0
+          gameObject:
+            useVariable: 0
+            name: 
+            tooltip: 
+            showInInspector: 0
+            networkSync: 0
+            value: {fileID: 0}
+        animationCurveParams: []
+        functionCallParams: []
+        fsmTemplateControlParams: []
+        fsmEventTargetParams: []
+        fsmPropertyParams: []
+        layoutOptionParams: []
+        fsmStringParams: []
+        fsmObjectParams: []
+        fsmVarParams: []
+        byteData: 0000000000000000000000000100000000000000000000000001000000000000803feceb6b3f8180803c0000803f0000
+        arrayParamSizes: 
+        arrayParamTypes: []
+        customTypeSizes: 
+        customTypeNames: []
+        paramDataType: 14000000130000001c0000001c00000011000000110000001900000001000000
+        paramName:
+        - gameObject
+        - targetObject
+        - targetPosition
+        - upVector
+        - keepVertical
+        - debug
+        - debugLineColor
+        - everyFrame
+        paramDataPos: 0000000000000000000000000d0000001a0000001c0000001e0000002f000000
+        paramByteDataSize: 00000000000000000d0000000d00000002000000020000001100000001000000
+    - name: Display Damage
+      description: 
+      colorIndex: 0
+      position:
+        serializedVersion: 2
+        x: 566
+        y: 320
+        width: 122
+        height: 32
+      isBreakpoint: 0
+      isSequence: 0
+      hideUnused: 0
+      transitions:
+      - fsmEvent:
+          name: FINISHED
+          isSystemEvent: 1
+          isGlobal: 0
+        toState: Determine if Dead
+        linkStyle: 0
+        linkConstraint: 0
+        colorIndex: 0
+      actionData:
+        actionNames:
+        - HutongGames.PlayMaker.Actions.ShowHUDText
+        customNames:
+        - 
+        actionEnabled: 01
+        actionIsOpen: 01
+        actionStartIndex: 00000000
+        actionHashCodes: 7d9314e3
+        unityObjectParams: []
+        fsmGameObjectParams: []
+        fsmOwnerDefaultParams:
+        - ownerOption: 1
+          gameObject:
+            useVariable: 1
+            name: Damage Display
+            tooltip: 
+            showInInspector: 1
+            networkSync: 0
+            value: {fileID: 100000, guid: 5c35eee2b029949a9945505199e85d45, type: 2}
+        animationCurveParams: []
+        functionCallParams: []
+        fsmTemplateControlParams: []
+        fsmEventTargetParams: []
+        fsmPropertyParams: []
+        layoutOptionParams: []
+        fsmStringParams:
+        - useVariable: 1
+          name: 
+          tooltip: 
+          showInInspector: 0
+          networkSync: 0
+          value: 
+        fsmObjectParams: []
+        fsmVarParams: []
+        byteData: 000000000143757272656e742048697420526573756c7400000000010000000000000000000000000000803f000000000000
+        arrayParamSizes: 
+        arrayParamTypes: []
+        customTypeSizes: 
+        customTypeNames: []
+        paramDataType: 14000000120000000f00000010000000190000000f000000
+        paramName:
+        - gameObject
+        - textVal
+        - floatVal
+        - intVal
+        - c
+        - stayDuration
+        paramDataPos: 000000000000000000000000170000001c0000002d000000
+        paramByteDataSize: 000000000000000017000000050000001100000005000000
+    - name: Create Damage Display
+      description: 
+      colorIndex: 0
+      position:
+        serializedVersion: 2
+        x: 263
+        y: 272
+        width: 166
+        height: 32
+      isBreakpoint: 0
+      isSequence: 1
+      hideUnused: 0
+      transitions:
+      - fsmEvent:
+          name: FINISHED
+          isSystemEvent: 1
+          isGlobal: 0
+        toState: Detect Hit
+        linkStyle: 0
+        linkConstraint: 0
+        colorIndex: 0
+      actionData:
+        actionNames:
+        - HutongGames.PlayMaker.Actions.CreateObject
+        - HutongGames.PlayMaker.Actions.SetUIFollowTarget
+        customNames:
+        - 
+        - 
+        actionEnabled: 0101
+        actionIsOpen: 0101
+        actionStartIndex: 0000000007000000
+        actionHashCodes: ac65eef140d5632e
+        unityObjectParams: []
+        fsmGameObjectParams:
+        - useVariable: 1
+          name: Damage Display
+          tooltip: 
+          showInInspector: 1
+          networkSync: 0
+          value: {fileID: 100000, guid: 5c35eee2b029949a9945505199e85d45, type: 2}
+        - useVariable: 0
+          name: 
+          tooltip: 
+          showInInspector: 0
+          networkSync: 0
+          value: {fileID: 0}
+        - useVariable: 1
+          name: Damage Display
+          tooltip: 
+          showInInspector: 1
+          networkSync: 0
+          value: {fileID: 100000, guid: 5c35eee2b029949a9945505199e85d45, type: 2}
+        fsmOwnerDefaultParams:
+        - ownerOption: 1
+          gameObject:
+            useVariable: 1
+            name: Damage Display
+            tooltip: 
+            showInInspector: 1
+            networkSync: 0
+            value: {fileID: 100000, guid: 5c35eee2b029949a9945505199e85d45, type: 2}
+        - ownerOption: 0
+          gameObject:
+            useVariable: 1
+            name: 
+            tooltip: 
+            showInInspector: 0
+            networkSync: 0
+            value: {fileID: 0}
+        animationCurveParams: []
+        functionCallParams: []
+        fsmTemplateControlParams: []
+        fsmEventTargetParams: []
+        fsmPropertyParams: []
+        layoutOptionParams: []
+        fsmStringParams: []
+        fsmObjectParams: []
+        fsmVarParams: []
+        byteData: 000000000000000000000000010000000000000000000000000100000000000000
+        arrayParamSizes: 
+        arrayParamTypes: []
+        customTypeSizes: 
+        customTypeNames: []
+        paramDataType: 13000000130000001c0000001c0000001300000011000000100000001400000014000000
+        paramName:
+        - gameObject
+        - spawnPoint
+        - position
+        - rotation
+        - storeObject
+        - networkInstantiate
+        - networkGroup
+        - gameObject
+        - target
+        paramDataPos: 0000000001000000000000000d000000020000001a0000001c0000000000000001000000
+        paramByteDataSize: 00000000000000000d0000000d0000000000000002000000050000000000000000000000
+    - name: Immune
+      description: 
+      colorIndex: 0
+      position:
+        serializedVersion: 2
+        x: 288
+        y: 424
+        width: 100
+        height: 32
+      isBreakpoint: 0
+      isSequence: 0
+      hideUnused: 0
+      transitions:
+      - fsmEvent:
+          name: FINISHED
+          isSystemEvent: 1
+          isGlobal: 0
+        toState: Detect Hit
+        linkStyle: 0
+        linkConstraint: 0
+        colorIndex: 0
+      actionData:
+        actionNames:
+        - HutongGames.PlayMaker.Actions.Wait
+        customNames:
+        - 
+        actionEnabled: 01
+        actionIsOpen: 01
+        actionStartIndex: 00000000
+        actionHashCodes: 3708ec1a
+        unityObjectParams: []
+        fsmGameObjectParams: []
+        fsmOwnerDefaultParams: []
+        animationCurveParams: []
+        functionCallParams: []
+        fsmTemplateControlParams: []
+        fsmEventTargetParams: []
+        fsmPropertyParams: []
+        layoutOptionParams: []
+        fsmStringParams: []
+        fsmObjectParams: []
+        fsmVarParams: []
+        byteData: cdcc4c3e0046494e495348454400
+        arrayParamSizes: 
+        arrayParamTypes: []
+        customTypeSizes: 
+        customTypeNames: []
+        paramDataType: 0f0000001700000001000000
+        paramName:
+        - time
+        - finishEvent
+        - realTime
+        paramDataPos: 00000000050000000d000000
+        paramByteDataSize: 050000000800000001000000
+    - name: Determine Damage Type
+      description: 
+      colorIndex: 0
+      position:
+        serializedVersion: 2
+        x: 536.53125
+        y: 102.289062
+        width: 174
+        height: 64
+      isBreakpoint: 0
+      isSequence: 0
+      hideUnused: 0
+      transitions:
+      - fsmEvent:
+          name: OnMeleeDamage
+          isSystemEvent: 0
+          isGlobal: 0
+        toState: Get Current Hit Points
+        linkStyle: 0
+        linkConstraint: 0
+        colorIndex: 0
+      - fsmEvent:
+          name: OnProjectileDamage
+          isSystemEvent: 0
+          isGlobal: 0
+        toState: Get Current Hit Points
+        linkStyle: 0
+        linkConstraint: 0
+        colorIndex: 0
+      - fsmEvent:
+          name: OnIceDamage
+          isSystemEvent: 0
+          isGlobal: 0
+        toState: Freeze
+        linkStyle: 0
+        linkConstraint: 0
+        colorIndex: 0
+      actionData:
+        actionNames:
+        - HutongGames.PlayMaker.Actions.GetFsmString
+        - HutongGames.PlayMaker.Actions.StringCompare
+        - HutongGames.PlayMaker.Actions.StringCompare
+        - HutongGames.PlayMaker.Actions.StringCompare
+        customNames:
+        - 
+        - 
+        - 
+        - 
+        actionEnabled: 01010101
+        actionIsOpen: 01010101
+        actionStartIndex: 00000000050000000b00000011000000
+        actionHashCodes: 0c0142c93ba149573ba149573ba14957
+        unityObjectParams: []
+        fsmGameObjectParams: []
+        fsmOwnerDefaultParams:
+        - ownerOption: 1
+          gameObject:
+            useVariable: 1
+            name: Current Hit Source
+            tooltip: 
+            showInInspector: 0
+            networkSync: 0
+            value: {fileID: 0}
+        animationCurveParams: []
+        functionCallParams: []
+        fsmTemplateControlParams: []
+        fsmEventTargetParams: []
+        fsmPropertyParams: []
+        layoutOptionParams: []
+        fsmStringParams:
+        - useVariable: 0
+          name: 
+          tooltip: 
+          showInInspector: 0
+          networkSync: 0
+          value: Properties
+        - useVariable: 0
+          name: 
+          tooltip: 
+          showInInspector: 0
+          networkSync: 0
+          value: Damage Type
+        - useVariable: 1
+          name: Current Hit Type
+          tooltip: 
+          showInInspector: 0
+          networkSync: 0
+          value: 
+        - useVariable: 1
+          name: Current Hit Type
+          tooltip: 
+          showInInspector: 0
+          networkSync: 0
+          value: 
+        - useVariable: 0
+          name: 
+          tooltip: 
+          showInInspector: 0
+          networkSync: 0
+          value: Melee
+        - useVariable: 1
+          name: Current Hit Type
+          tooltip: 
+          showInInspector: 0
+          networkSync: 0
+          value: 
+        - useVariable: 0
+          name: 
+          tooltip: 
+          showInInspector: 0
+          networkSync: 0
+          value: Projectile
+        - useVariable: 1
+          name: Current Hit Type
+          tooltip: 
+          showInInspector: 0
+          networkSync: 0
+          value: 
+        - useVariable: 0
+          name: 
+          tooltip: 
+          showInInspector: 0
+          networkSync: 0
+          value: Ice
+        fsmObjectParams: []
+        fsmVarParams: []
+        byteData: 004f6e4d656c656544616d6167650001004f6e50726f6a656374696c6544616d6167650001004f6e49636544616d616765000100
+        arrayParamSizes: 
+        arrayParamTypes: []
+        customTypeSizes: 
+        customTypeNames: []
+        paramDataType: 1400000012000000120000001200000001000000120000001200000017000000170000001100000001000000120000001200000017000000170000001100000001000000120000001200000017000000170000001100000001000000
+        paramName:
+        - gameObject
+        - fsmName
+        - variableName
+        - storeValue
+        - everyFrame
+        - stringVariable
+        - compareTo
+        - equalEvent
+        - notEqualEvent
+        - storeResult
+        - everyFrame
+        - stringVariable
+        - compareTo
+        - equalEvent
+        - notEqualEvent
+        - storeResult
+        - everyFrame
+        - stringVariable
+        - compareTo
+        - equalEvent
+        - notEqualEvent
+        - storeResult
+        - everyFrame
+        paramDataPos: 00000000000000000100000002000000000000000300000004000000010000000e0000000e00000010000000050000000600000011000000230000002300000025000000070000000800000026000000310000003100000033000000
+        paramByteDataSize: 000000000000000000000000000000000100000000000000000000000d00000000000000020000000100000000000000000000001200000000000000020000000100000000000000000000000b000000000000000200000001000000
+    - name: Freeze
+      description: 
+      colorIndex: 0
+      position:
+        serializedVersion: 2
+        x: 61.375
+        y: 108.90625
+        width: 100
+        height: 32
+      isBreakpoint: 0
+      isSequence: 0
+      hideUnused: 0
+      transitions:
+      - fsmEvent:
+          name: FINISHED
+          isSystemEvent: 1
+          isGlobal: 0
+        toState: Detect Hit
+        linkStyle: 0
+        linkConstraint: 0
+        colorIndex: 0
+      actionData:
+        actionNames:
+        - HutongGames.PlayMaker.Actions.SetFsmBool
+        customNames:
+        - 
+        actionEnabled: 01
+        actionIsOpen: 01
+        actionStartIndex: 00000000
+        actionHashCodes: a51886f0
+        unityObjectParams: []
+        fsmGameObjectParams: []
+        fsmOwnerDefaultParams:
+        - ownerOption: 0
+          gameObject:
+            useVariable: 0
+            name: 
+            tooltip: 
+            showInInspector: 0
+            networkSync: 0
+            value: {fileID: 0}
+        animationCurveParams: []
+        functionCallParams: []
+        fsmTemplateControlParams: []
+        fsmEventTargetParams: []
+        fsmPropertyParams: []
+        layoutOptionParams: []
+        fsmStringParams:
+        - useVariable: 0
+          name: 
+          tooltip: 
+          showInInspector: 0
+          networkSync: 0
+          value: Patrol Controller
+        - useVariable: 0
+          name: 
+          tooltip: 
+          showInInspector: 0
+          networkSync: 0
+          value: Frozen
+        fsmObjectParams: []
+        fsmVarParams: []
+        byteData: 010000
+        arrayParamSizes: 
+        arrayParamTypes: []
+        customTypeSizes: 
+        customTypeNames: []
+        paramDataType: 1400000012000000120000001100000001000000
+        paramName:
+        - gameObject
+        - fsmName
+        - variableName
+        - setValue
+        - everyFrame
+        paramDataPos: 0000000000000000010000000000000002000000
+        paramByteDataSize: 0000000000000000000000000200000001000000
     events:
     - name: FINISHED
       isSystemEvent: 1
@@ -2815,7 +3614,16 @@ MonoBehaviour:
     - name: OnHit
       isSystemEvent: 0
       isGlobal: 0
+    - name: OnIceDamage
+      isSystemEvent: 0
+      isGlobal: 0
+    - name: OnMeleeDamage
+      isSystemEvent: 0
+      isGlobal: 0
     - name: OnNotDead
+      isSystemEvent: 0
+      isGlobal: 0
+    - name: OnProjectileDamage
       isSystemEvent: 0
       isGlobal: 0
     globalTransitions: []
@@ -2853,7 +3661,13 @@ MonoBehaviour:
         showInInspector: 0
         networkSync: 0
         value: 0
-      stringVariables: []
+      stringVariables:
+      - useVariable: 1
+        name: Current Hit Type
+        tooltip: 
+        showInInspector: 0
+        networkSync: 0
+        value: 
       vector2Variables: []
       vector3Variables: []
       colorVariables: []
@@ -2866,6 +3680,12 @@ MonoBehaviour:
         showInInspector: 0
         networkSync: 0
         value: {fileID: 0}
+      - useVariable: 1
+        name: Damage Display
+        tooltip: 
+        showInInspector: 1
+        networkSync: 0
+        value: {fileID: 100000, guid: 5c35eee2b029949a9945505199e85d45, type: 2}
       objectVariables: []
       materialVariables: []
       textureVariables: []
