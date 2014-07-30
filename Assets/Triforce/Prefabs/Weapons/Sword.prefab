@@ -152,7 +152,7 @@ MonoBehaviour:
         tooltip: 
         showInInspector: 1
         networkSync: 0
-        value: 15
+        value: 20
       - useVariable: 1
         name: Damage Min
         tooltip: 
@@ -413,7 +413,7 @@ MonoBehaviour:
           value: 
         fsmObjectParams: []
         fsmVarParams: []
-        byteData: 010001000100010001000000000000000000fa7eaa3e00cdcc4c3e0000000000000000000001150000000000000000000000000001000000
+        byteData: 010001000100010001000000000000000000fa7eaa3e00cdcc4c3d0000000000000000000001150000000000000000000000000001000000
         arrayParamSizes: 
         arrayParamTypes: []
         customTypeSizes: 
@@ -488,7 +488,7 @@ MonoBehaviour:
             tooltip: 
             showInInspector: 0
             networkSync: 0
-            value: {fileID: 100000, guid: 93768bed3fdbf444da2e602048072eae, type: 2}
+            value: {fileID: 0}
         animationCurveParams: []
         functionCallParams: []
         fsmTemplateControlParams: []

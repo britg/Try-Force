@@ -44,7 +44,7 @@ MonoBehaviour:
   font: {fileID: 0}
   bitmapFont: {fileID: 0}
   trueTypeFont: {fileID: 10102, guid: 0000000000000000e000000000000000, type: 0}
-  fontSize: 20
+  fontSize: 40
   fontStyle: 0
   applyGradient: 0
   gradientTop: {r: 1, g: 1, b: 1, a: 1}
@@ -59,8 +59,8 @@ MonoBehaviour:
       inSlope: 0
       outSlope: 0
       tangentMode: 0
-    - time: .0986712575
-      value: 49.856781
+    - time: .198244631
+      value: 54.8764038
       inSlope: .532039404
       outSlope: .532039404
       tangentMode: 0
@@ -89,8 +89,8 @@ MonoBehaviour:
       inSlope: 0
       outSlope: 0
       tangentMode: 0
-    - time: .25
-      value: 1
+    - time: .197230548
+      value: .991073608
       inSlope: 0
       outSlope: 0
       tangentMode: 0

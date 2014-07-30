@@ -4851,7 +4851,7 @@ MonoBehaviour:
           tooltip: 
           showInInspector: 0
           networkSync: 0
-          value: 
+          value: F0
         fsmObjectParams: []
         fsmVarParams: []
         byteData: 000000000156616c75650101000000000156616c756501
@@ -5174,7 +5174,7 @@ MonoBehaviour:
   autoResizeBoxCollider: 0
   hideIfOffScreen: 0
   keepAspectRatio: 0
-  aspectRatio: 4.45238113
+  aspectRatio: 4.60747671
 --- !u!114 &11400118
 MonoBehaviour:
   m_ObjectHideFlags: 1
