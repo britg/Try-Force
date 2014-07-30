@@ -94,3 +94,4 @@ MonoBehaviour:
   - OnTeleport
   - OnPatrollerAtWaypoint
   - OnDoorActivated
+  - OnDead

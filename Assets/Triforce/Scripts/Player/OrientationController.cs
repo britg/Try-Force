@@ -12,15 +12,15 @@ public class OrientationController : GameController {
 
 	void Update () {
 		DetectRotate();
-		DetectPivot();
+//		DetectPivot();
 	}
 
 	void DetectRotate () {
 		if (currentInputController.rotateRight) {
-			RotateRight();
+//			RotateRight();
 		}
 		if (currentInputController.rotateLeft) {
-			RotateLeft();
+//			RotateLeft();
 		}
 	}
 

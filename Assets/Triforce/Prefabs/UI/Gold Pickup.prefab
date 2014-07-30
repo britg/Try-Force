@@ -10,9 +10,8 @@ GameObject:
   - 4: {fileID: 400000}
   - 114: {fileID: 11400002}
   - 114: {fileID: 11400000}
-  - 114: {fileID: 11400004}
   m_Layer: 8
-  m_Name: Hit Damage
+  m_Name: Gold Pickup
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -50,7 +49,7 @@ MonoBehaviour:
   gradientTop: {r: 1, g: 1, b: 1, a: 1}
   gradienBottom: {r: .699999988, g: .699999988, b: .699999988, a: 1}
   effect: 0
-  effectColor: {r: .970588207, g: .0499567352, b: .0499567352, a: 1}
+  effectColor: {r: 1, g: .705152154, b: .0705882311, a: 1}
   offsetCurve:
     serializedVersion: 2
     m_Curve:
@@ -133,21 +132,6 @@ MonoBehaviour:
   hideIfOffScreen: 0
   keepAspectRatio: 0
   aspectRatio: 1
---- !u!114 &11400004
-MonoBehaviour:
-  m_ObjectHideFlags: 1
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 100000}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 13e6525715fcfe34eb1fa8e16533b3f6, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  target: {fileID: 0}
-  gameCamera: {fileID: 0}
-  uiCamera: {fileID: 0}
-  disableIfInvisible: 1
 --- !u!1001 &100100000
 Prefab:
   m_ObjectHideFlags: 1
