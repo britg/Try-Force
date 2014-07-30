@@ -315,8 +315,8 @@ MonoBehaviour:
       colorIndex: 0
       position:
         serializedVersion: 2
-        x: 252
-        y: 237
+        x: 333
+        y: 177
         width: 129
         height: 32
       isBreakpoint: 0
@@ -327,7 +327,7 @@ MonoBehaviour:
           name: FINISHED
           isSystemEvent: 1
           isGlobal: 0
-        toState: Check Enough Mana
+        toState: Get Spell Mana
         linkStyle: 0
         linkConstraint: 0
         colorIndex: 0
@@ -455,6 +455,82 @@ MonoBehaviour:
         - everyFrame
         paramDataPos: 00000000110000002000000025000000340000004300000052000000
         paramByteDataSize: 110000000f000000050000000f0000000f0000000f00000001000000
+    - name: Get Spell Mana
+      description: 
+      colorIndex: 0
+      position:
+        serializedVersion: 2
+        x: 343
+        y: 245
+        width: 112
+        height: 32
+      isBreakpoint: 0
+      isSequence: 0
+      hideUnused: 0
+      transitions:
+      - fsmEvent:
+          name: FINISHED
+          isSystemEvent: 1
+          isGlobal: 0
+        toState: Check Enough Mana
+        linkStyle: 0
+        linkConstraint: 0
+        colorIndex: 0
+      actionData:
+        actionNames:
+        - HutongGames.PlayMaker.Actions.GetFsmFloat
+        customNames:
+        - 
+        actionEnabled: 01
+        actionIsOpen: 01
+        actionStartIndex: 00000000
+        actionHashCodes: 3373b91f
+        unityObjectParams: []
+        fsmGameObjectParams: []
+        fsmOwnerDefaultParams:
+        - ownerOption: 1
+          gameObject:
+            useVariable: 1
+            name: Ammo
+            tooltip: 
+            showInInspector: 1
+            networkSync: 0
+            value: {fileID: 100000, guid: 50ddf3ab409b341ce9dc51f08de0628f, type: 2}
+        animationCurveParams: []
+        functionCallParams: []
+        fsmTemplateControlParams: []
+        fsmEventTargetParams: []
+        fsmPropertyParams: []
+        layoutOptionParams: []
+        fsmStringParams:
+        - useVariable: 0
+          name: 
+          tooltip: 
+          showInInspector: 0
+          networkSync: 0
+          value: Properties
+        - useVariable: 0
+          name: 
+          tooltip: 
+          showInInspector: 0
+          networkSync: 0
+          value: Mana Cost
+        fsmObjectParams: []
+        fsmVarParams: []
+        byteData: 0000a041015370656c6c20436f737400
+        arrayParamSizes: 
+        arrayParamTypes: []
+        customTypeSizes: 
+        customTypeNames: []
+        paramDataType: 1400000012000000120000000f00000001000000
+        paramName:
+        - gameObject
+        - fsmName
+        - variableName
+        - storeValue
+        - everyFrame
+        paramDataPos: 000000000000000001000000000000000f000000
+        paramByteDataSize: 0000000000000000000000000f00000001000000
     events:
     - name: FINISHED
       isSystemEvent: 1
@@ -482,7 +558,7 @@ MonoBehaviour:
         tooltip: 
         showInInspector: 1
         networkSync: 0
-        value: 20
+        value: 0
       intVariables: []
       boolVariables: []
       stringVariables: []
@@ -497,7 +573,7 @@ MonoBehaviour:
         tooltip: 
         showInInspector: 1
         networkSync: 0
-        value: {fileID: 100002, guid: 4f775fe9e02a8437c976f7f4ca36c647, type: 2}
+        value: {fileID: 100000, guid: 50ddf3ab409b341ce9dc51f08de0628f, type: 2}
       objectVariables: []
       materialVariables: []
       textureVariables: []
