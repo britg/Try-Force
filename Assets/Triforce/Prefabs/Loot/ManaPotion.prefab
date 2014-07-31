@@ -177,8 +177,8 @@ MonoBehaviour:
       colorIndex: 0
       position:
         serializedVersion: 2
-        x: 544
-        y: 102
+        x: 200
+        y: 330
         width: 100
         height: 16
       isBreakpoint: 0
@@ -221,8 +221,8 @@ MonoBehaviour:
       colorIndex: 0
       position:
         serializedVersion: 2
-        x: 382
-        y: 102
+        x: 199
+        y: 177
         width: 114
         height: 32
       isBreakpoint: 0
@@ -233,7 +233,7 @@ MonoBehaviour:
           name: FINISHED
           isSystemEvent: 1
           isGlobal: 0
-        toState: Destroy
+        toState: Display Pickup
         linkStyle: 0
         linkConstraint: 0
         colorIndex: 0
@@ -325,6 +325,123 @@ MonoBehaviour:
         - everyFrame
         paramDataPos: 0000000000000000010000000000000011000000120000002300000032000000330000000100000002000000030000003400000045000000
         paramByteDataSize: 0000000000000000000000001100000001000000110000000f00000001000000010000000000000000000000000000001100000001000000
+    - name: Display Pickup
+      description: 
+      colorIndex: 0
+      position:
+        serializedVersion: 2
+        x: 188
+        y: 251
+        width: 112
+        height: 32
+      isBreakpoint: 0
+      isSequence: 0
+      hideUnused: 0
+      transitions:
+      - fsmEvent:
+          name: FINISHED
+          isSystemEvent: 1
+          isGlobal: 0
+        toState: Destroy
+        linkStyle: 0
+        linkConstraint: 0
+        colorIndex: 0
+      actionData:
+        actionNames:
+        - HutongGames.PlayMaker.Actions.CreateObject
+        - HutongGames.PlayMaker.Actions.SetRotation
+        - HutongGames.PlayMaker.Actions.ShowHUDText
+        customNames:
+        - 
+        - 
+        - 
+        actionEnabled: 010101
+        actionIsOpen: 010101
+        actionStartIndex: 000000000700000010000000
+        actionHashCodes: ac65eef15d0b71a47d9314e3
+        unityObjectParams: []
+        fsmGameObjectParams:
+        - useVariable: 1
+          name: Flying Text Display
+          tooltip: 
+          showInInspector: 1
+          networkSync: 0
+          value: {fileID: 100000, guid: 99bf5587d35b8451caa79f2c4c7eace2, type: 2}
+        - useVariable: 1
+          name: Player
+          tooltip: 
+          showInInspector: 0
+          networkSync: 0
+          value: {fileID: 0}
+        - useVariable: 1
+          name: Flying Text Display
+          tooltip: 
+          showInInspector: 1
+          networkSync: 0
+          value: {fileID: 100000, guid: 99bf5587d35b8451caa79f2c4c7eace2, type: 2}
+        fsmOwnerDefaultParams:
+        - ownerOption: 1
+          gameObject:
+            useVariable: 1
+            name: Flying Text Display
+            tooltip: 
+            showInInspector: 1
+            networkSync: 0
+            value: {fileID: 100000, guid: 99bf5587d35b8451caa79f2c4c7eace2, type: 2}
+        - ownerOption: 1
+          gameObject:
+            useVariable: 1
+            name: Flying Text Display
+            tooltip: 
+            showInInspector: 1
+            networkSync: 0
+            value: {fileID: 100000, guid: 99bf5587d35b8451caa79f2c4c7eace2, type: 2}
+        animationCurveParams: []
+        functionCallParams: []
+        fsmTemplateControlParams: []
+        fsmEventTargetParams: []
+        fsmPropertyParams: []
+        layoutOptionParams: []
+        fsmStringParams:
+        - useVariable: 0
+          name: 
+          tooltip: 
+          showInInspector: 0
+          networkSync: 0
+          value: 
+        fsmObjectParams: []
+        fsmVarParams: []
+        byteData: 00000000000000000000000001000000000000000000000000010000000000000000000000000000000000000000000000010000000000000000000000000100000000000000000000000000000000000000000000000000014d616e6120416d6f75740000000001f1f0703ef5d3a73ef1f0703f0000803f000000000000
+        arrayParamSizes: 
+        arrayParamTypes: []
+        customTypeSizes: 
+        customTypeNames: []
+        paramDataType: 13000000130000001c0000001c00000013000000110000001000000014000000230000001c0000000f0000000f0000000f00000007000000010000000100000014000000120000000f00000010000000190000000f000000
+        paramName:
+        - gameObject
+        - spawnPoint
+        - position
+        - rotation
+        - storeObject
+        - networkInstantiate
+        - networkGroup
+        - gameObject
+        - quaternion
+        - vector
+        - xAngle
+        - yAngle
+        - zAngle
+        - space
+        - everyFrame
+        - lateUpdate
+        - gameObject
+        - textVal
+        - floatVal
+        - intVal
+        - c
+        - stayDuration
+        paramDataPos: 0000000001000000000000000d000000020000001a0000001c0000000000000021000000320000003f00000044000000490000004e0000005200000053000000010000000000000054000000630000006800000079000000
+        paramByteDataSize: 00000000000000000d0000000d00000000000000020000000500000000000000110000000d00000005000000050000000500000004000000010000000100000000000000000000000f000000050000001100000005000000
     events:
     - name: FINISHED
       isSystemEvent: 1
@@ -367,7 +484,13 @@ MonoBehaviour:
         showInInspector: 1
         networkSync: 0
         value: 10
-      intVariables: []
+      intVariables:
+      - useVariable: 1
+        name: Amount
+        tooltip: 
+        showInInspector: 1
+        networkSync: 0
+        value: 23
       boolVariables: []
       stringVariables: []
       vector2Variables: []
@@ -375,7 +498,13 @@ MonoBehaviour:
       colorVariables: []
       rectVariables: []
       quaternionVariables: []
-      gameObjectVariables: []
+      gameObjectVariables:
+      - useVariable: 1
+        name: Flying Text Display
+        tooltip: 
+        showInInspector: 1
+        networkSync: 0
+        value: {fileID: 100000, guid: 99bf5587d35b8451caa79f2c4c7eace2, type: 2}
       objectVariables: []
       materialVariables: []
       textureVariables: []

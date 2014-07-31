@@ -14,7 +14,7 @@ GameObject:
   - 114: {fileID: 11400000}
   m_Layer: 0
   m_Name: Gold
-  m_TagString: Untagged
+  m_TagString: Gold
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -26,7 +26,7 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 100000}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -5.14079523, y: 7.5716033, z: 0}
+  m_LocalPosition: {x: -2.97514963, y: -3.01535368, z: 0}
   m_LocalScale: {x: .5, y: .5, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
@@ -40,7 +40,7 @@ BoxCollider2D:
   m_Enabled: 1
   m_Material: {fileID: 0}
   m_IsTrigger: 1
-  m_Size: {x: 5, y: 5}
+  m_Size: {x: 2.75, y: 2.1400001}
   m_Center: {x: 0, y: 0}
 --- !u!114 &11400000
 MonoBehaviour:
@@ -358,7 +358,7 @@ MonoBehaviour:
             tooltip: 
             showInInspector: 1
             networkSync: 0
-            value: {fileID: 100000, guid: c04ca8d6a473b43f5bcd9f5ec458a9a2, type: 2}
+            value: {fileID: 100000, guid: 99bf5587d35b8451caa79f2c4c7eace2, type: 2}
         - ownerOption: 1
           gameObject:
             useVariable: 1
@@ -366,7 +366,7 @@ MonoBehaviour:
             tooltip: 
             showInInspector: 1
             networkSync: 0
-            value: {fileID: 100000, guid: c04ca8d6a473b43f5bcd9f5ec458a9a2, type: 2}
+            value: {fileID: 100000, guid: 99bf5587d35b8451caa79f2c4c7eace2, type: 2}
         animationCurveParams: []
         functionCallParams: []
         fsmTemplateControlParams: []
@@ -452,7 +452,7 @@ MonoBehaviour:
         tooltip: 
         showInInspector: 1
         networkSync: 0
-        value: {fileID: 100000, guid: c04ca8d6a473b43f5bcd9f5ec458a9a2, type: 2}
+        value: {fileID: 100000, guid: 99bf5587d35b8451caa79f2c4c7eace2, type: 2}
       - useVariable: 1
         name: Spawn Position
         tooltip: 
