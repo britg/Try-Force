@@ -95,3 +95,4 @@ MonoBehaviour:
   - OnPatrollerAtWaypoint
   - OnDoorActivated
   - OnDead
+  - OnPlayerChange

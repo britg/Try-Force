@@ -2588,19 +2588,11 @@ MonoBehaviour:
         x: 768
         y: 312
         width: 100
-        height: 32
+        height: 16
       isBreakpoint: 0
       isSequence: 0
       hideUnused: 0
-      transitions:
-      - fsmEvent:
-          name: FINISHED
-          isSystemEvent: 1
-          isGlobal: 0
-        toState: Destroyed
-        linkStyle: 0
-        linkConstraint: 0
-        colorIndex: 0
+      transitions: []
       actionData:
         actionNames:
         - HutongGames.PlayMaker.Actions.EnableFSM
@@ -2785,50 +2777,6 @@ MonoBehaviour:
         - everyFrame
         paramDataPos: 00000000000000000000000002000000000000000400000009000000010000000b000000100000000100000001000000120000001f00000024000000290000002e00000032000000360000003a0000003a0000003a0000003c0000003e000000020000004000000002000000450000004a00000052000000030000000300000000000000530000005500000000000000570000005d00000062000000
         paramByteDataSize: 0000000000000000020000000200000000000000050000000200000000000000050000000200000000000000000000000d0000000500000005000000050000000400000004000000040000000000000000000000020000000200000002000000000000000500000000000000050000000800000001000000000000000000000000000000020000000200000000000000060000000500000001000000
-    - name: Destroyed
-      description: 
-      colorIndex: 0
-      position:
-        serializedVersion: 2
-        x: 937
-        y: 313
-        width: 100
-        height: 16
-      isBreakpoint: 0
-      isSequence: 0
-      hideUnused: 0
-      transitions: []
-      actionData:
-        actionNames:
-        - HutongGames.PlayMaker.Actions.DestroySelf
-        customNames:
-        - 
-        actionEnabled: 01
-        actionIsOpen: 01
-        actionStartIndex: 00000000
-        actionHashCodes: 3ee6a00a
-        unityObjectParams: []
-        fsmGameObjectParams: []
-        fsmOwnerDefaultParams: []
-        animationCurveParams: []
-        functionCallParams: []
-        fsmTemplateControlParams: []
-        fsmEventTargetParams: []
-        fsmPropertyParams: []
-        layoutOptionParams: []
-        fsmStringParams: []
-        fsmObjectParams: []
-        fsmVarParams: []
-        byteData: 0000
-        arrayParamSizes: 
-        arrayParamTypes: []
-        customTypeSizes: 
-        customTypeNames: []
-        paramDataType: 11000000
-        paramName:
-        - detachChildren
-        paramDataPos: 00000000
-        paramByteDataSize: 02000000
     - name: Calculate Damage
       description: 
       colorIndex: 0
