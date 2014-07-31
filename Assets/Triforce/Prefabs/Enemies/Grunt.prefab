@@ -275,8 +275,8 @@ MonoBehaviour:
       colorIndex: 0
       position:
         serializedVersion: 2
-        x: 1069.625
-        y: 227.695312
+        x: 1024.625
+        y: 163.695312
         width: 152
         height: 64
       isBreakpoint: 0
@@ -418,15 +418,31 @@ MonoBehaviour:
       actionData:
         actionNames:
         - HutongGames.PlayMaker.Actions.Wait
+        - HutongGames.PlayMaker.Actions.LookAt2D
         customNames:
         - 
-        actionEnabled: 01
-        actionIsOpen: 01
-        actionStartIndex: 00000000
-        actionHashCodes: 3708ec1a
+        - 
+        actionEnabled: 0101
+        actionIsOpen: 0101
+        actionStartIndex: 0000000003000000
+        actionHashCodes: 3708ec1ab36ac7f2
         unityObjectParams: []
-        fsmGameObjectParams: []
-        fsmOwnerDefaultParams: []
+        fsmGameObjectParams:
+        - useVariable: 1
+          name: Player
+          tooltip: 
+          showInInspector: 0
+          networkSync: 0
+          value: {fileID: 0}
+        fsmOwnerDefaultParams:
+        - ownerOption: 0
+          gameObject:
+            useVariable: 0
+            name: 
+            tooltip: 
+            showInInspector: 0
+            networkSync: 0
+            value: {fileID: 0}
         animationCurveParams: []
         functionCallParams: []
         fsmTemplateControlParams: []
@@ -436,18 +452,26 @@ MonoBehaviour:
         fsmStringParams: []
         fsmObjectParams: []
         fsmVarParams: []
-        byteData: 0000803f0046494e495348454400
+        byteData: cdcc4c3e0046494e4953484544000000000000000000000000000100000000000000000000000001000000000000803feceb6b3f8180803c0000803f0001
         arrayParamSizes: 
         arrayParamTypes: []
         customTypeSizes: 
         customTypeNames: []
-        paramDataType: 0f0000001700000001000000
+        paramDataType: 0f000000170000000100000014000000130000001c0000001c00000011000000110000001900000001000000
         paramName:
         - time
         - finishEvent
         - realTime
-        paramDataPos: 00000000050000000d000000
-        paramByteDataSize: 050000000800000001000000
+        - gameObject
+        - targetObject
+        - targetPosition
+        - upVector
+        - keepVertical
+        - debug
+        - debugLineColor
+        - everyFrame
+        paramDataPos: 00000000050000000d00000000000000000000000e0000001b000000280000002a0000002c0000003d000000
+        paramByteDataSize: 05000000080000000100000000000000000000000d0000000d00000002000000020000001100000001000000
     - name: Patrol
       description: 
       colorIndex: 0
@@ -787,82 +811,6 @@ MonoBehaviour:
         - sendEvent
         paramDataPos: 0000000000000000000000000d0000001a0000001c0000001e0000002f00000030000000
         paramByteDataSize: 00000000000000000d0000000d0000000200000002000000110000000100000008000000
-    - name: Set Look Target to Player
-      description: 
-      colorIndex: 0
-      position:
-        serializedVersion: 2
-        x: 986
-        y: 102.96875
-        width: 176
-        height: 32
-      isBreakpoint: 0
-      isSequence: 0
-      hideUnused: 0
-      transitions:
-      - fsmEvent:
-          name: FINISHED
-          isSystemEvent: 1
-          isGlobal: 0
-        toState: Move Toward Player
-        linkStyle: 0
-        linkConstraint: 0
-        colorIndex: 0
-      actionData:
-        actionNames:
-        - HutongGames.PlayMaker.Actions.LookAt2D
-        - HutongGames.PlayMaker.Actions.NextFrameEvent
-        customNames:
-        - 
-        - 
-        actionEnabled: 0101
-        actionIsOpen: 0101
-        actionStartIndex: 0000000008000000
-        actionHashCodes: b36ac7f2c631a949
-        unityObjectParams: []
-        fsmGameObjectParams:
-        - useVariable: 1
-          name: Player
-          tooltip: 
-          showInInspector: 0
-          networkSync: 0
-          value: {fileID: 0}
-        fsmOwnerDefaultParams:
-        - ownerOption: 0
-          gameObject:
-            useVariable: 0
-            name: 
-            tooltip: 
-            showInInspector: 0
-            networkSync: 0
-            value: {fileID: 0}
-        animationCurveParams: []
-        functionCallParams: []
-        fsmTemplateControlParams: []
-        fsmEventTargetParams: []
-        fsmPropertyParams: []
-        layoutOptionParams: []
-        fsmStringParams: []
-        fsmObjectParams: []
-        fsmVarParams: []
-        byteData: 0000000000000000000000000100000000000000000000000001000000000000803feceb6b3f8180803c0000803f000146494e4953484544
-        arrayParamSizes: 
-        arrayParamTypes: []
-        customTypeSizes: 
-        customTypeNames: []
-        paramDataType: 14000000130000001c0000001c0000001100000011000000190000000100000017000000
-        paramName:
-        - gameObject
-        - targetObject
-        - targetPosition
-        - upVector
-        - keepVertical
-        - debug
-        - debugLineColor
-        - everyFrame
-        - sendEvent
-        paramDataPos: 0000000000000000000000000d0000001a0000001c0000001e0000002f00000030000000
-        paramByteDataSize: 00000000000000000d0000000d0000000200000002000000110000000100000008000000
     - name: Check Frozen
       description: 
       colorIndex: 0
@@ -880,7 +828,7 @@ MonoBehaviour:
           name: FINISHED
           isSystemEvent: 1
           isGlobal: 0
-        toState: Set Look Target to Player
+        toState: Move Toward Player
         linkStyle: 0
         linkConstraint: 0
         colorIndex: 0
@@ -1650,7 +1598,7 @@ MonoBehaviour:
         fsmStringParams: []
         fsmObjectParams: []
         fsmVarParams: []
-        byteData: 0000003f0046494e495348454400
+        byteData: cdcc4c3e0046494e495348454400
         arrayParamSizes: 
         arrayParamTypes: []
         customTypeSizes: 
