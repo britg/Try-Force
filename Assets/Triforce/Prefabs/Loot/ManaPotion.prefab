@@ -242,14 +242,16 @@ MonoBehaviour:
         - HutongGames.PlayMaker.Actions.GetFsmFloat
         - HutongGames.PlayMaker.Actions.FloatAdd
         - HutongGames.PlayMaker.Actions.SetFsmFloat
+        - HutongGames.PlayMaker.Actions.SendEvent
         customNames:
         - 
         - 
         - 
-        actionEnabled: 010101
-        actionIsOpen: 010101
-        actionStartIndex: 000000000500000009000000
-        actionHashCodes: 3373b91f22e895223373b91f
+        - 
+        actionEnabled: 01010101
+        actionIsOpen: 01010101
+        actionStartIndex: 0000000005000000090000000e000000
+        actionHashCodes: 3373b91f22e895223373b91feec9d968
         unityObjectParams: []
         fsmGameObjectParams: []
         fsmOwnerDefaultParams:
@@ -272,7 +274,39 @@ MonoBehaviour:
         animationCurveParams: []
         functionCallParams: []
         fsmTemplateControlParams: []
-        fsmEventTargetParams: []
+        fsmEventTargetParams:
+        - target: 2
+          excludeSelf:
+            useVariable: 0
+            name: 
+            tooltip: 
+            showInInspector: 0
+            networkSync: 0
+            value: 0
+          gameObject:
+            ownerOption: 1
+            gameObject:
+              useVariable: 1
+              name: Player
+              tooltip: 
+              showInInspector: 0
+              networkSync: 0
+              value: {fileID: 0}
+          fsmName:
+            useVariable: 0
+            name: 
+            tooltip: 
+            showInInspector: 0
+            networkSync: 0
+            value: Properties
+          sendToChildren:
+            useVariable: 0
+            name: 
+            tooltip: 
+            showInInspector: 0
+            networkSync: 0
+            value: 0
+          fsmComponent: {fileID: 0}
         fsmPropertyParams: []
         layoutOptionParams: []
         fsmStringParams:
@@ -302,12 +336,12 @@ MonoBehaviour:
           value: Mana
         fsmObjectParams: []
         fsmVarParams: []
-        byteData: 000000000143757272656e74204d616e6100000000000143757272656e74204d616e6100000000014d616e6120416d6f75740000000000000143757272656e74204d616e6100
+        byteData: 000000000143757272656e74204d616e6100000000000143757272656e74204d616e6100000000014d616e6120416d6f75740000000000000143757272656e74204d616e61004f6e537461744368616e6765000000000000
         arrayParamSizes: 
         arrayParamTypes: []
         customTypeSizes: 
         customTypeNames: []
-        paramDataType: 1400000012000000120000000f000000010000000f0000000f00000001000000010000001400000012000000120000000f00000001000000
+        paramDataType: 1400000012000000120000000f000000010000000f0000000f00000001000000010000001400000012000000120000000f000000010000001f000000170000000f00000001000000
         paramName:
         - gameObject
         - fsmName
@@ -323,8 +357,12 @@ MonoBehaviour:
         - variableName
         - setValue
         - everyFrame
-        paramDataPos: 0000000000000000010000000000000011000000120000002300000032000000330000000100000002000000030000003400000045000000
-        paramByteDataSize: 0000000000000000000000001100000001000000110000000f00000001000000010000000000000000000000000000001100000001000000
+        - eventTarget
+        - sendEvent
+        - delay
+        - everyFrame
+        paramDataPos: 000000000000000001000000000000001100000012000000230000003200000033000000010000000200000003000000340000004500000000000000460000005200000057000000
+        paramByteDataSize: 0000000000000000000000001100000001000000110000000f00000001000000010000000000000000000000000000001100000001000000000000000c0000000500000001000000
     - name: Display Pickup
       description: 
       colorIndex: 0
