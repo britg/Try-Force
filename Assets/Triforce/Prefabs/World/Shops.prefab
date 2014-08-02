@@ -171,14 +171,14 @@ MonoBehaviour:
   fsm:
     usedInTemplate: {fileID: 0}
     name: UI Controller
-    startState: Disabled
+    startState: Attach UI
     states:
     - name: Disabled
       description: 
       colorIndex: 0
       position:
         serializedVersion: 2
-        x: 50
+        x: 258
         y: 100
         width: 126
         height: 16
@@ -234,25 +234,33 @@ MonoBehaviour:
       colorIndex: 0
       position:
         serializedVersion: 2
-        x: 210
+        x: 418
         y: 101
         width: 138
         height: 16
       isBreakpoint: 0
-      isSequence: 0
+      isSequence: 1
       hideUnused: 0
       transitions: []
       actionData:
         actionNames:
+        - HutongGames.PlayMaker.Actions.FindGameObject
         - HutongGames.PlayMaker.Actions.ActivateGameObject
         customNames:
         - 
-        actionEnabled: 01
-        actionIsOpen: 01
-        actionStartIndex: 00000000
-        actionHashCodes: b4797e4a
+        - 
+        actionEnabled: 0101
+        actionIsOpen: 0101
+        actionStartIndex: 0000000003000000
+        actionHashCodes: c54a778fb4797e4a
         unityObjectParams: []
-        fsmGameObjectParams: []
+        fsmGameObjectParams:
+        - useVariable: 1
+          name: Armory UI
+          tooltip: 
+          showInInspector: 1
+          networkSync: 0
+          value: {fileID: 0}
         fsmOwnerDefaultParams:
         - ownerOption: 1
           gameObject:
@@ -268,7 +276,19 @@ MonoBehaviour:
         fsmEventTargetParams: []
         fsmPropertyParams: []
         layoutOptionParams: []
-        fsmStringParams: []
+        fsmStringParams:
+        - useVariable: 0
+          name: 
+          tooltip: 
+          showInInspector: 0
+          networkSync: 0
+          value: Armory UI
+        - useVariable: 0
+          name: 
+          tooltip: 
+          showInInspector: 0
+          networkSync: 0
+          value: Untagged
         fsmObjectParams: []
         fsmVarParams: []
         byteData: 010001000000
@@ -276,16 +296,94 @@ MonoBehaviour:
         arrayParamTypes: []
         customTypeSizes: 
         customTypeNames: []
-        paramDataType: 1400000011000000110000000100000001000000
+        paramDataType: 1200000012000000130000001400000011000000110000000100000001000000
         paramName:
+        - objectName
+        - withTag
+        - store
         - gameObject
         - activate
         - recursive
         - resetOnExit
         - everyFrame
-        paramDataPos: 0000000000000000020000000400000005000000
-        paramByteDataSize: 0000000002000000020000000100000001000000
+        paramDataPos: 0000000001000000000000000000000000000000020000000400000005000000
+        paramByteDataSize: 0000000000000000000000000000000002000000020000000100000001000000
+    - name: Attach UI
+      description: 
+      colorIndex: 0
+      position:
+        serializedVersion: 2
+        x: 64
+        y: 100
+        width: 100
+        height: 32
+      isBreakpoint: 0
+      isSequence: 0
+      hideUnused: 0
+      transitions:
+      - fsmEvent:
+          name: FINISHED
+          isSystemEvent: 1
+          isGlobal: 0
+        toState: Disabled
+        linkStyle: 0
+        linkConstraint: 0
+        colorIndex: 0
+      actionData:
+        actionNames:
+        - HutongGames.PlayMaker.Actions.FindGameObject
+        customNames:
+        - 
+        actionEnabled: 01
+        actionIsOpen: 01
+        actionStartIndex: 00000000
+        actionHashCodes: c54a778f
+        unityObjectParams: []
+        fsmGameObjectParams:
+        - useVariable: 1
+          name: Armory UI
+          tooltip: 
+          showInInspector: 1
+          networkSync: 0
+          value: {fileID: 0}
+        fsmOwnerDefaultParams: []
+        animationCurveParams: []
+        functionCallParams: []
+        fsmTemplateControlParams: []
+        fsmEventTargetParams: []
+        fsmPropertyParams: []
+        layoutOptionParams: []
+        fsmStringParams:
+        - useVariable: 0
+          name: 
+          tooltip: 
+          showInInspector: 0
+          networkSync: 0
+          value: Armory UI
+        - useVariable: 0
+          name: 
+          tooltip: 
+          showInInspector: 0
+          networkSync: 0
+          value: Untagged
+        fsmObjectParams: []
+        fsmVarParams: []
+        byteData: 
+        arrayParamSizes: 
+        arrayParamTypes: []
+        customTypeSizes: 
+        customTypeNames: []
+        paramDataType: 120000001200000013000000
+        paramName:
+        - objectName
+        - withTag
+        - store
+        paramDataPos: 000000000100000000000000
+        paramByteDataSize: 000000000000000000000000
     events:
+    - name: FINISHED
+      isSystemEvent: 1
+      isGlobal: 0
     - name: TRIGGER ENTER 2D
       isSystemEvent: 0
       isGlobal: 1
@@ -771,11 +869,19 @@ MonoBehaviour:
         x: 114
         y: 100
         width: 123
-        height: 16
+        height: 32
       isBreakpoint: 0
       isSequence: 0
       hideUnused: 0
-      transitions: []
+      transitions:
+      - fsmEvent:
+          name: FINISHED
+          isSystemEvent: 1
+          isGlobal: 0
+        toState: Add Shops UI
+        linkStyle: 0
+        linkConstraint: 0
+        colorIndex: 0
       actionData:
         actionNames:
         - HutongGames.PlayMaker.Actions.HashTableAdd
@@ -2217,6 +2323,72 @@ MonoBehaviour:
         - everyFrame
         paramDataPos: 000000000000000005000000000000000a0000000c0000001500000022000000330000004400000000000000010000000200000000000000550000005f00000064000000
         paramByteDataSize: 0000000005000000050000000000000002000000090000000d000000110000001100000011000000000000000000000000000000000000000a0000000500000001000000
+    - name: Add Shops UI
+      description: 
+      colorIndex: 0
+      position:
+        serializedVersion: 2
+        x: 123
+        y: 173
+        width: 104
+        height: 16
+      isBreakpoint: 0
+      isSequence: 0
+      hideUnused: 0
+      transitions: []
+      actionData:
+        actionNames:
+        - HutongGames.PlayMaker.Actions.NguiToolsAddChild
+        customNames:
+        - 
+        actionEnabled: 01
+        actionIsOpen: 01
+        actionStartIndex: 00000000
+        actionHashCodes: c2f7b3f9
+        unityObjectParams: []
+        fsmGameObjectParams:
+        - useVariable: 1
+          name: Shops UI Prefab
+          tooltip: 
+          showInInspector: 1
+          networkSync: 0
+          value: {fileID: 100008, guid: 4bcc5f4e883ed4577886ec4a76e7ea43, type: 2}
+        - useVariable: 1
+          name: 
+          tooltip: 
+          showInInspector: 0
+          networkSync: 0
+          value: {fileID: 0}
+        fsmOwnerDefaultParams:
+        - ownerOption: 1
+          gameObject:
+            useVariable: 1
+            name: UI Root
+            tooltip: 
+            showInInspector: 0
+            networkSync: 0
+            value: {fileID: 0}
+        animationCurveParams: []
+        functionCallParams: []
+        fsmTemplateControlParams: []
+        fsmEventTargetParams: []
+        fsmPropertyParams: []
+        layoutOptionParams: []
+        fsmStringParams: []
+        fsmObjectParams: []
+        fsmVarParams: []
+        byteData: 
+        arrayParamSizes: 
+        arrayParamTypes: []
+        customTypeSizes: 
+        customTypeNames: []
+        paramDataType: 140000001300000013000000
+        paramName:
+        - parent
+        - childReference
+        - childInstance
+        paramDataPos: 000000000000000001000000
+        paramByteDataSize: 000000000000000000000000
     events:
     - name: FINISHED
       isSystemEvent: 1
@@ -2327,7 +2499,13 @@ MonoBehaviour:
       colorVariables: []
       rectVariables: []
       quaternionVariables: []
-      gameObjectVariables: []
+      gameObjectVariables:
+      - useVariable: 1
+        name: Shops UI Prefab
+        tooltip: 
+        showInInspector: 1
+        networkSync: 0
+        value: {fileID: 100008, guid: 4bcc5f4e883ed4577886ec4a76e7ea43, type: 2}
       objectVariables: []
       materialVariables: []
       textureVariables: []

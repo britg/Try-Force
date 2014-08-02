@@ -3536,8 +3536,8 @@ MonoBehaviour:
         serializedVersion: 2
         x: 799
         y: 346
-        width: 118
-        height: 32
+        width: 142
+        height: 64
       isBreakpoint: 0
       isSequence: 0
       hideUnused: 0
@@ -3547,6 +3547,22 @@ MonoBehaviour:
           isSystemEvent: 0
           isGlobal: 0
         toState: Grant Rune
+        linkStyle: 0
+        linkConstraint: 0
+        colorIndex: 0
+      - fsmEvent:
+          name: OnArrowGranted
+          isSystemEvent: 0
+          isGlobal: 0
+        toState: Grant Arrow
+        linkStyle: 0
+        linkConstraint: 0
+        colorIndex: 0
+      - fsmEvent:
+          name: OnLockpickGranted
+          isSystemEvent: 0
+          isGlobal: 0
+        toState: Grant Lockpick
         linkStyle: 0
         linkConstraint: 0
         colorIndex: 0
@@ -3581,25 +3597,41 @@ MonoBehaviour:
           showInInspector: 0
           networkSync: 0
           value: Rune
+        - useVariable: 0
+          name: 
+          tooltip: 
+          showInInspector: 0
+          networkSync: 0
+          value: Arrow
+        - useVariable: 0
+          name: 
+          tooltip: 
+          showInInspector: 0
+          networkSync: 0
+          value: Lockpick
         fsmObjectParams: []
         fsmVarParams: []
-        byteData: 4f6e52756e654772616e74656400
-        arrayParamSizes: 0100000001000000
+        byteData: 4f6e52756e654772616e7465644f6e4172726f774772616e7465644f6e4c6f636b7069636b4772616e74656400
+        arrayParamSizes: 0300000003000000
         arrayParamTypes:
         - HutongGames.PlayMaker.FsmString
         - HutongGames.PlayMaker.FsmEvent
         customTypeSizes: 
         customTypeNames: []
-        paramDataType: 120000000c000000120000000c0000001700000001000000
+        paramDataType: 120000000c0000001200000012000000120000000c00000017000000170000001700000001000000
         paramName:
         - stringVariable
         - compareTo
         - 
+        - 
+        - 
         - sendEvent
         - 
+        - 
+        - 
         - everyFrame
-        paramDataPos: 00000000000000000100000001000000000000000d000000
-        paramByteDataSize: 000000000000000000000000000000000d00000001000000
+        paramDataPos: 000000000000000001000000020000000300000001000000000000000d0000001b0000002c000000
+        paramByteDataSize: 0000000000000000000000000000000000000000000000000d0000000e0000001100000001000000
     - name: Grant Rune
       description: 
       colorIndex: 0
@@ -3654,13 +3686,127 @@ MonoBehaviour:
         - everyFrame
         paramDataPos: 000000000a00000022000000
         paramByteDataSize: 0a0000001800000001000000
+    - name: Grant Arrow
+      description: 
+      colorIndex: 0
+      position:
+        serializedVersion: 2
+        x: 1084
+        y: 413
+        width: 100
+        height: 32
+      isBreakpoint: 0
+      isSequence: 0
+      hideUnused: 0
+      transitions:
+      - fsmEvent:
+          name: FINISHED
+          isSystemEvent: 1
+          isGlobal: 0
+        toState: Save Properties
+        linkStyle: 0
+        linkConstraint: 0
+        colorIndex: 0
+      actionData:
+        actionNames:
+        - HutongGames.PlayMaker.Actions.IntAdd
+        customNames:
+        - 
+        actionEnabled: 01
+        actionIsOpen: 01
+        actionStartIndex: 00000000
+        actionHashCodes: 9ffa9c66
+        unityObjectParams: []
+        fsmGameObjectParams: []
+        fsmOwnerDefaultParams: []
+        animationCurveParams: []
+        functionCallParams: []
+        fsmTemplateControlParams: []
+        fsmEventTargetParams: []
+        fsmPropertyParams: []
+        layoutOptionParams: []
+        fsmStringParams: []
+        fsmObjectParams: []
+        fsmVarParams: []
+        byteData: 05000000014172726f777300000000014772616e746564204974656d20416d6f756e7400
+        arrayParamSizes: 
+        arrayParamTypes: []
+        customTypeSizes: 
+        customTypeNames: []
+        paramDataType: 100000001000000001000000
+        paramName:
+        - intVariable
+        - add
+        - everyFrame
+        paramDataPos: 000000000b00000023000000
+        paramByteDataSize: 0b0000001800000001000000
+    - name: Grant Lockpick
+      description: 
+      colorIndex: 0
+      position:
+        serializedVersion: 2
+        x: 1089
+        y: 500
+        width: 113
+        height: 32
+      isBreakpoint: 0
+      isSequence: 0
+      hideUnused: 0
+      transitions:
+      - fsmEvent:
+          name: FINISHED
+          isSystemEvent: 1
+          isGlobal: 0
+        toState: Save Properties
+        linkStyle: 0
+        linkConstraint: 0
+        colorIndex: 0
+      actionData:
+        actionNames:
+        - HutongGames.PlayMaker.Actions.IntAdd
+        customNames:
+        - 
+        actionEnabled: 01
+        actionIsOpen: 01
+        actionStartIndex: 00000000
+        actionHashCodes: 9ffa9c66
+        unityObjectParams: []
+        fsmGameObjectParams: []
+        fsmOwnerDefaultParams: []
+        animationCurveParams: []
+        functionCallParams: []
+        fsmTemplateControlParams: []
+        fsmEventTargetParams: []
+        fsmPropertyParams: []
+        layoutOptionParams: []
+        fsmStringParams: []
+        fsmObjectParams: []
+        fsmVarParams: []
+        byteData: 03000000014c6f636b7069636b7300000000014772616e746564204974656d20416d6f756e7400
+        arrayParamSizes: 
+        arrayParamTypes: []
+        customTypeSizes: 
+        customTypeNames: []
+        paramDataType: 100000001000000001000000
+        paramName:
+        - intVariable
+        - add
+        - everyFrame
+        paramDataPos: 000000000e00000026000000
+        paramByteDataSize: 0e0000001800000001000000
     events:
     - name: FINISHED
       isSystemEvent: 1
       isGlobal: 0
+    - name: OnArrowGranted
+      isSystemEvent: 0
+      isGlobal: 0
     - name: OnGrantItem
       isSystemEvent: 0
       isGlobal: 1
+    - name: OnLockpickGranted
+      isSystemEvent: 0
+      isGlobal: 0
     - name: OnPlayerChange
       isSystemEvent: 0
       isGlobal: 1
