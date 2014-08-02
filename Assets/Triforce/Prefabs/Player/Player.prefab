@@ -2760,7 +2760,7 @@ MonoBehaviour:
         fsmStringParams: []
         fsmObjectParams: []
         fsmVarParams: []
-        byteData: 0000000001476f6c64000000000000
+        byteData: 0000000001476f6c640000000001476f6c6400
         arrayParamSizes: 
         arrayParamTypes: []
         customTypeSizes: 
@@ -2770,8 +2770,8 @@ MonoBehaviour:
         - intVariable
         - intValue
         - everyFrame
-        paramDataPos: 00000000090000000e000000
-        paramByteDataSize: 090000000500000001000000
+        paramDataPos: 000000000900000012000000
+        paramByteDataSize: 090000000900000001000000
     - name: Check Arrows Exists
       description: 
       colorIndex: 0
@@ -3401,7 +3401,7 @@ MonoBehaviour:
         fsmStringParams: []
         fsmObjectParams: []
         fsmVarParams: []
-        byteData: 0000c84201486974706f696e747300000000000000484301486974706f696e7473204d6178000000c842014d616e6100000000000000c842014d616e61204d617800
+        byteData: 0000c84201486974706f696e747300000000000000c84201486974706f696e7473204d6178000000c842014d616e6100000000000000c842014d616e61204d617800
         arrayParamSizes: 
         arrayParamTypes: []
         customTypeSizes: 
@@ -3418,13 +3418,255 @@ MonoBehaviour:
         - everyFrame
         paramDataPos: 000000000e0000001300000025000000260000002f0000003400000041000000
         paramByteDataSize: 0e00000005000000120000000100000009000000050000000d00000001000000
+    - name: Capture Data
+      description: 
+      colorIndex: 0
+      position:
+        serializedVersion: 2
+        x: 802
+        y: 269
+        width: 102
+        height: 32
+      isBreakpoint: 0
+      isSequence: 0
+      hideUnused: 0
+      transitions:
+      - fsmEvent:
+          name: FINISHED
+          isSystemEvent: 1
+          isGlobal: 0
+        toState: Determine Item
+        linkStyle: 0
+        linkConstraint: 0
+        colorIndex: 0
+      actionData:
+        actionNames:
+        - HutongGames.PlayMaker.Actions.GetEventInfo
+        customNames:
+        - 
+        actionEnabled: 01
+        actionIsOpen: 01
+        actionStartIndex: 00000000
+        actionHashCodes: 743aed41
+        unityObjectParams: []
+        fsmGameObjectParams:
+        - useVariable: 1
+          name: 
+          tooltip: 
+          showInInspector: 0
+          networkSync: 0
+          value: {fileID: 0}
+        - useVariable: 1
+          name: 
+          tooltip: 
+          showInInspector: 0
+          networkSync: 0
+          value: {fileID: 0}
+        fsmOwnerDefaultParams: []
+        animationCurveParams: []
+        functionCallParams: []
+        fsmTemplateControlParams: []
+        fsmEventTargetParams: []
+        fsmPropertyParams: []
+        layoutOptionParams: []
+        fsmStringParams:
+        - useVariable: 1
+          name: 
+          tooltip: 
+          showInInspector: 0
+          networkSync: 0
+          value: 
+        - useVariable: 1
+          name: Granted Item Name
+          tooltip: 
+          showInInspector: 0
+          networkSync: 0
+          value: 
+        fsmObjectParams:
+        - useVariable: 1
+          name: 
+          tooltip: 
+          showInInspector: 0
+          networkSync: 0
+          typeName: UnityEngine.Object
+          value: {fileID: 0}
+        - useVariable: 1
+          name: 
+          tooltip: 
+          showInInspector: 0
+          networkSync: 0
+          typeName: UnityEngine.Object
+          value: {fileID: 0}
+        - useVariable: 1
+          name: 
+          tooltip: 
+          showInInspector: 0
+          networkSync: 0
+          typeName: UnityEngine.Object
+          value: {fileID: 0}
+        fsmVarParams: []
+        byteData: 000100000000014772616e746564204974656d20416d6f756e74000000000100000000000000000100000000000000000000000001000000000000000000000000000000000100000000000000000000000000000000010000000000000000000000000000803f01
+        arrayParamSizes: 
+        arrayParamTypes: []
+        customTypeSizes: 
+        customTypeNames: []
+        paramDataType: 130000001200000011000000100000000f000000250000001c00000012000000130000001e0000002300000020000000210000001900000018000000
+        paramName:
+        - sentByGameObject
+        - fsmName
+        - getBoolData
+        - getIntData
+        - getFloatData
+        - getVector2Data
+        - getVector3Data
+        - getStringData
+        - getGameObjectData
+        - getRectData
+        - getQuaternionData
+        - getMaterialData
+        - getTextureData
+        - getColorData
+        - getObjectData
+        paramDataPos: 000000000000000000000000020000001a0000001f000000280000000100000001000000350000004600000000000000010000005700000002000000
+        paramByteDataSize: 0000000000000000020000001800000005000000090000000d0000000000000000000000110000001100000000000000000000001100000000000000
+    - name: Determine Item
+      description: 
+      colorIndex: 0
+      position:
+        serializedVersion: 2
+        x: 799
+        y: 346
+        width: 118
+        height: 32
+      isBreakpoint: 0
+      isSequence: 0
+      hideUnused: 0
+      transitions:
+      - fsmEvent:
+          name: OnRuneGranted
+          isSystemEvent: 0
+          isGlobal: 0
+        toState: Grant Rune
+        linkStyle: 0
+        linkConstraint: 0
+        colorIndex: 0
+      actionData:
+        actionNames:
+        - HutongGames.PlayMaker.Actions.StringSwitch
+        customNames:
+        - 
+        actionEnabled: 01
+        actionIsOpen: 01
+        actionStartIndex: 00000000
+        actionHashCodes: 53b46ba8
+        unityObjectParams: []
+        fsmGameObjectParams: []
+        fsmOwnerDefaultParams: []
+        animationCurveParams: []
+        functionCallParams: []
+        fsmTemplateControlParams: []
+        fsmEventTargetParams: []
+        fsmPropertyParams: []
+        layoutOptionParams: []
+        fsmStringParams:
+        - useVariable: 1
+          name: Granted Item Name
+          tooltip: 
+          showInInspector: 0
+          networkSync: 0
+          value: 
+        - useVariable: 0
+          name: 
+          tooltip: 
+          showInInspector: 0
+          networkSync: 0
+          value: Rune
+        fsmObjectParams: []
+        fsmVarParams: []
+        byteData: 4f6e52756e654772616e74656400
+        arrayParamSizes: 0100000001000000
+        arrayParamTypes:
+        - HutongGames.PlayMaker.FsmString
+        - HutongGames.PlayMaker.FsmEvent
+        customTypeSizes: 
+        customTypeNames: []
+        paramDataType: 120000000c000000120000000c0000001700000001000000
+        paramName:
+        - stringVariable
+        - compareTo
+        - 
+        - sendEvent
+        - 
+        - everyFrame
+        paramDataPos: 00000000000000000100000001000000000000000d000000
+        paramByteDataSize: 000000000000000000000000000000000d00000001000000
+    - name: Grant Rune
+      description: 
+      colorIndex: 0
+      position:
+        serializedVersion: 2
+        x: 1012
+        y: 337
+        width: 100
+        height: 32
+      isBreakpoint: 0
+      isSequence: 0
+      hideUnused: 0
+      transitions:
+      - fsmEvent:
+          name: FINISHED
+          isSystemEvent: 1
+          isGlobal: 0
+        toState: Save Properties
+        linkStyle: 0
+        linkConstraint: 0
+        colorIndex: 0
+      actionData:
+        actionNames:
+        - HutongGames.PlayMaker.Actions.IntAdd
+        customNames:
+        - 
+        actionEnabled: 01
+        actionIsOpen: 01
+        actionStartIndex: 00000000
+        actionHashCodes: 9ffa9c66
+        unityObjectParams: []
+        fsmGameObjectParams: []
+        fsmOwnerDefaultParams: []
+        animationCurveParams: []
+        functionCallParams: []
+        fsmTemplateControlParams: []
+        fsmEventTargetParams: []
+        fsmPropertyParams: []
+        layoutOptionParams: []
+        fsmStringParams: []
+        fsmObjectParams: []
+        fsmVarParams: []
+        byteData: 000000000152756e657300000000014772616e746564204974656d20416d6f756e7400
+        arrayParamSizes: 
+        arrayParamTypes: []
+        customTypeSizes: 
+        customTypeNames: []
+        paramDataType: 100000001000000001000000
+        paramName:
+        - intVariable
+        - add
+        - everyFrame
+        paramDataPos: 000000000a00000022000000
+        paramByteDataSize: 0a0000001800000001000000
     events:
     - name: FINISHED
       isSystemEvent: 1
       isGlobal: 0
+    - name: OnGrantItem
+      isSystemEvent: 0
+      isGlobal: 1
     - name: OnPlayerChange
       isSystemEvent: 0
       isGlobal: 1
+    - name: OnRuneGranted
+      isSystemEvent: 0
+      isGlobal: 0
     - name: OnSave
       isSystemEvent: 0
       isGlobal: 0
@@ -3451,6 +3693,14 @@ MonoBehaviour:
         isSystemEvent: 0
         isGlobal: 1
       toState: Clamp Stats
+      linkStyle: 0
+      linkConstraint: 0
+      colorIndex: 0
+    - fsmEvent:
+        name: OnGrantItem
+        isSystemEvent: 0
+        isGlobal: 1
+      toState: Capture Data
       linkStyle: 0
       linkConstraint: 0
       colorIndex: 0
@@ -3500,6 +3750,12 @@ MonoBehaviour:
         networkSync: 0
         value: 0
       - useVariable: 1
+        name: Granted Item Amount
+        tooltip: 
+        showInInspector: 0
+        networkSync: 0
+        value: 0
+      - useVariable: 1
         name: Lockpicks
         tooltip: 
         showInInspector: 0
@@ -3530,7 +3786,13 @@ MonoBehaviour:
         showInInspector: 0
         networkSync: 0
         value: 0
-      stringVariables: []
+      stringVariables:
+      - useVariable: 1
+        name: Granted Item Name
+        tooltip: 
+        showInInspector: 0
+        networkSync: 0
+        value: 
       vector2Variables: []
       vector3Variables: []
       colorVariables: []

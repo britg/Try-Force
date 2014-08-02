@@ -92,6 +92,7 @@ MonoBehaviour:
         - HutongGames.PlayMaker.Actions.FindGameObject
         - HutongGames.PlayMaker.Actions.ScaleTime
         - HutongGames.PlayMaker.Actions.LevelNameToString
+        - HutongGames.PlayMaker.Actions.FindGameObject
         customNames:
         - 
         - 
@@ -100,10 +101,11 @@ MonoBehaviour:
         - 
         - 
         - 
-        actionEnabled: 01010101010101
-        actionIsOpen: 01010101010101
-        actionStartIndex: 000000000300000006000000090000000c0000000f00000012000000
-        actionHashCodes: c54a778fc54a778fc54a778fc54a778fc54a778f9f4e68ff65864a03
+        - 
+        actionEnabled: 0101010101010101
+        actionIsOpen: 0101010101010101
+        actionStartIndex: 000000000300000006000000090000000c0000000f0000001200000013000000
+        actionHashCodes: c54a778fc54a778fc54a778fc54a778fc54a778f9f4e68ff65864a03c54a778f
         unityObjectParams: []
         fsmGameObjectParams:
         - useVariable: 1
@@ -132,6 +134,12 @@ MonoBehaviour:
           value: {fileID: 0}
         - useVariable: 1
           name: UI Root
+          tooltip: 
+          showInInspector: 0
+          networkSync: 0
+          value: {fileID: 0}
+        - useVariable: 1
+          name: Player Notification
           tooltip: 
           showInInspector: 0
           networkSync: 0
@@ -210,6 +218,18 @@ MonoBehaviour:
           showInInspector: 0
           networkSync: 0
           value: 
+        - useVariable: 0
+          name: 
+          tooltip: 
+          showInInspector: 0
+          networkSync: 0
+          value: Player Notification
+        - useVariable: 0
+          name: 
+          tooltip: 
+          showInInspector: 0
+          networkSync: 0
+          value: Untagged
         fsmObjectParams: []
         fsmVarParams: []
         byteData: 0000803f00010000
@@ -217,7 +237,7 @@ MonoBehaviour:
         arrayParamTypes: []
         customTypeSizes: 
         customTypeNames: []
-        paramDataType: 1200000012000000130000001200000012000000130000001200000012000000130000001200000012000000130000001200000012000000130000000f000000110000000100000012000000
+        paramDataType: 1200000012000000130000001200000012000000130000001200000012000000130000001200000012000000130000001200000012000000130000000f000000110000000100000012000000120000001200000013000000
         paramName:
         - objectName
         - withTag
@@ -238,8 +258,11 @@ MonoBehaviour:
         - adjustFixedDeltaTime
         - everyFrame
         - stringVariable
-        paramDataPos: 0000000001000000000000000200000003000000010000000400000005000000020000000600000007000000030000000800000009000000040000000000000005000000070000000a000000
-        paramByteDataSize: 00000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000005000000020000000100000000000000
+        - objectName
+        - withTag
+        - store
+        paramDataPos: 0000000001000000000000000200000003000000010000000400000005000000020000000600000007000000030000000800000009000000040000000000000005000000070000000a0000000b0000000c00000005000000
+        paramByteDataSize: 00000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000005000000020000000100000000000000000000000000000000000000
     events:
     - name: FINISHED
       isSystemEvent: 1
