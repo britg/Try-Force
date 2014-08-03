@@ -2047,47 +2047,70 @@ MonoBehaviour:
       transitions: []
       actionData:
         actionNames:
-        - HutongGames.PlayMaker.Actions.ActivateGameObject
+        - HutongGames.PlayMaker.Actions.SendEvent
         customNames:
         - 
         actionEnabled: 01
         actionIsOpen: 01
         actionStartIndex: 00000000
-        actionHashCodes: b4797e4a
+        actionHashCodes: eec9d968
         unityObjectParams: []
         fsmGameObjectParams: []
-        fsmOwnerDefaultParams:
-        - ownerOption: 1
-          gameObject:
-            useVariable: 1
-            name: Armory UI
-            tooltip: 
-            showInInspector: 1
-            networkSync: 0
-            value: {fileID: 0}
+        fsmOwnerDefaultParams: []
         animationCurveParams: []
         functionCallParams: []
         fsmTemplateControlParams: []
-        fsmEventTargetParams: []
+        fsmEventTargetParams:
+        - target: 4
+          excludeSelf:
+            useVariable: 0
+            name: 
+            tooltip: 
+            showInInspector: 0
+            networkSync: 0
+            value: 0
+          gameObject:
+            ownerOption: 0
+            gameObject:
+              useVariable: 1
+              name: Shop UI
+              tooltip: 
+              showInInspector: 0
+              networkSync: 0
+              value: {fileID: 0}
+          fsmName:
+            useVariable: 0
+            name: 
+            tooltip: 
+            showInInspector: 0
+            networkSync: 0
+            value: 
+          sendToChildren:
+            useVariable: 0
+            name: 
+            tooltip: 
+            showInInspector: 0
+            networkSync: 0
+            value: 0
+          fsmComponent: {fileID: 0}
         fsmPropertyParams: []
         layoutOptionParams: []
         fsmStringParams: []
         fsmObjectParams: []
         fsmVarParams: []
-        byteData: 000001000000
+        byteData: 4f6e486964655549000000000000
         arrayParamSizes: 
         arrayParamTypes: []
         customTypeSizes: 
         customTypeNames: []
-        paramDataType: 1400000011000000110000000100000001000000
+        paramDataType: 1f000000170000000f00000001000000
         paramName:
-        - gameObject
-        - activate
-        - recursive
-        - resetOnExit
+        - eventTarget
+        - sendEvent
+        - delay
         - everyFrame
-        paramDataPos: 0000000000000000020000000400000005000000
-        paramByteDataSize: 0000000002000000020000000100000001000000
+        paramDataPos: 0000000000000000080000000d000000
+        paramByteDataSize: 00000000080000000500000001000000
     - name: Show UI
       description: 
       colorIndex: 0
@@ -2103,70 +2126,76 @@ MonoBehaviour:
       transitions: []
       actionData:
         actionNames:
-        - HutongGames.PlayMaker.Actions.FindGameObject
-        - HutongGames.PlayMaker.Actions.ActivateGameObject
+        - HutongGames.PlayMaker.Actions.SendEventByName
         customNames:
         - 
-        - 
-        actionEnabled: 0101
-        actionIsOpen: 0101
-        actionStartIndex: 0000000003000000
-        actionHashCodes: c54a778fb4797e4a
+        actionEnabled: 01
+        actionIsOpen: 01
+        actionStartIndex: 00000000
+        actionHashCodes: 7f6e5596
         unityObjectParams: []
-        fsmGameObjectParams:
-        - useVariable: 1
-          name: Armory UI
-          tooltip: 
-          showInInspector: 1
-          networkSync: 0
-          value: {fileID: 0}
-        fsmOwnerDefaultParams:
-        - ownerOption: 1
-          gameObject:
-            useVariable: 1
-            name: Armory UI
-            tooltip: 
-            showInInspector: 1
-            networkSync: 0
-            value: {fileID: 0}
+        fsmGameObjectParams: []
+        fsmOwnerDefaultParams: []
         animationCurveParams: []
         functionCallParams: []
         fsmTemplateControlParams: []
-        fsmEventTargetParams: []
+        fsmEventTargetParams:
+        - target: 4
+          excludeSelf:
+            useVariable: 0
+            name: 
+            tooltip: 
+            showInInspector: 0
+            networkSync: 0
+            value: 0
+          gameObject:
+            ownerOption: 0
+            gameObject:
+              useVariable: 1
+              name: Shop UI
+              tooltip: 
+              showInInspector: 0
+              networkSync: 0
+              value: {fileID: 0}
+          fsmName:
+            useVariable: 0
+            name: 
+            tooltip: 
+            showInInspector: 0
+            networkSync: 0
+            value: 
+          sendToChildren:
+            useVariable: 0
+            name: 
+            tooltip: 
+            showInInspector: 0
+            networkSync: 0
+            value: 0
+          fsmComponent: {fileID: 0}
         fsmPropertyParams: []
         layoutOptionParams: []
         fsmStringParams:
-        - useVariable: 0
-          name: 
+        - useVariable: 1
+          name: Event Name
           tooltip: 
-          showInInspector: 0
+          showInInspector: 1
           networkSync: 0
-          value: Armory UI
-        - useVariable: 0
-          name: 
-          tooltip: 
-          showInInspector: 0
-          networkSync: 0
-          value: Untagged
+          value: OnShowArmoryUI
         fsmObjectParams: []
         fsmVarParams: []
-        byteData: 010001000000
+        byteData: 000000000000
         arrayParamSizes: 
         arrayParamTypes: []
         customTypeSizes: 
         customTypeNames: []
-        paramDataType: 1200000012000000130000001400000011000000110000000100000001000000
+        paramDataType: 1f000000120000000f00000001000000
         paramName:
-        - objectName
-        - withTag
-        - store
-        - gameObject
-        - activate
-        - recursive
-        - resetOnExit
+        - eventTarget
+        - sendEvent
+        - delay
         - everyFrame
-        paramDataPos: 0000000001000000000000000000000000000000020000000400000005000000
-        paramByteDataSize: 0000000000000000000000000000000002000000020000000100000001000000
+        paramDataPos: 00000000000000000000000005000000
+        paramByteDataSize: 00000000000000000500000001000000
     - name: Attach UI
       description: 
       colorIndex: 0
@@ -2200,9 +2229,9 @@ MonoBehaviour:
         unityObjectParams: []
         fsmGameObjectParams:
         - useVariable: 1
-          name: Armory UI
+          name: Shop UI
           tooltip: 
-          showInInspector: 1
+          showInInspector: 0
           networkSync: 0
           value: {fileID: 0}
         fsmOwnerDefaultParams: []
@@ -2218,7 +2247,7 @@ MonoBehaviour:
           tooltip: 
           showInInspector: 0
           networkSync: 0
-          value: Armory UI
+          value: Shop UI
         - useVariable: 0
           name: 
           tooltip: 
@@ -2270,7 +2299,13 @@ MonoBehaviour:
       floatVariables: []
       intVariables: []
       boolVariables: []
-      stringVariables: []
+      stringVariables:
+      - useVariable: 1
+        name: Event Name
+        tooltip: 
+        showInInspector: 1
+        networkSync: 0
+        value: OnShowArmoryUI
       vector2Variables: []
       vector3Variables: []
       colorVariables: []
@@ -2278,9 +2313,9 @@ MonoBehaviour:
       quaternionVariables: []
       gameObjectVariables:
       - useVariable: 1
-        name: Armory UI
+        name: Shop UI
         tooltip: 
-        showInInspector: 1
+        showInInspector: 0
         networkSync: 0
         value: {fileID: 0}
       objectVariables: []
@@ -2297,7 +2332,7 @@ MonoBehaviour:
     EnableDebugFlow: 0
     StepFrame: 0
     activeStateName: 
-  fsmTemplate: {fileID: 0}
+  fsmTemplate: {fileID: 11400000, guid: dc49fbb05502c470ea2d74ba85ee81e5, type: 2}
 --- !u!114 &126106144
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -5171,9 +5206,9 @@ MonoBehaviour:
         - ownerOption: 1
           gameObject:
             useVariable: 1
-            name: Armory UI
+            name: Shop UI
             tooltip: 
-            showInInspector: 1
+            showInInspector: 0
             networkSync: 0
             value: {fileID: 0}
         animationCurveParams: []
@@ -5227,9 +5262,9 @@ MonoBehaviour:
         - ownerOption: 1
           gameObject:
             useVariable: 1
-            name: Armory UI
+            name: Shop UI
             tooltip: 
-            showInInspector: 1
+            showInInspector: 0
             networkSync: 0
             value: {fileID: 0}
         animationCurveParams: []
@@ -5283,7 +5318,13 @@ MonoBehaviour:
       floatVariables: []
       intVariables: []
       boolVariables: []
-      stringVariables: []
+      stringVariables:
+      - useVariable: 1
+        name: Event Name
+        tooltip: 
+        showInInspector: 1
+        networkSync: 0
+        value: OnShowThiefShopUI
       vector2Variables: []
       vector3Variables: []
       colorVariables: []
@@ -5291,9 +5332,9 @@ MonoBehaviour:
       quaternionVariables: []
       gameObjectVariables:
       - useVariable: 1
-        name: Armory UI
+        name: Shop UI
         tooltip: 
-        showInInspector: 1
+        showInInspector: 0
         networkSync: 0
         value: {fileID: 0}
       objectVariables: []
@@ -5310,7 +5351,7 @@ MonoBehaviour:
     EnableDebugFlow: 0
     StepFrame: 0
     activeStateName: 
-  fsmTemplate: {fileID: 0}
+  fsmTemplate: {fileID: 11400000, guid: dc49fbb05502c470ea2d74ba85ee81e5, type: 2}
 --- !u!114 &546369765
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -15057,7 +15098,7 @@ MonoBehaviour:
             useVariable: 1
             name: Armory UI
             tooltip: 
-            showInInspector: 1
+            showInInspector: 0
             networkSync: 0
             value: {fileID: 0}
         animationCurveParams: []
@@ -15113,7 +15154,7 @@ MonoBehaviour:
             useVariable: 1
             name: Armory UI
             tooltip: 
-            showInInspector: 1
+            showInInspector: 0
             networkSync: 0
             value: {fileID: 0}
         animationCurveParams: []
@@ -15167,7 +15208,13 @@ MonoBehaviour:
       floatVariables: []
       intVariables: []
       boolVariables: []
-      stringVariables: []
+      stringVariables:
+      - useVariable: 1
+        name: Event Name
+        tooltip: 
+        showInInspector: 1
+        networkSync: 0
+        value: OnShowMagicShopUI
       vector2Variables: []
       vector3Variables: []
       colorVariables: []
@@ -15175,9 +15222,9 @@ MonoBehaviour:
       quaternionVariables: []
       gameObjectVariables:
       - useVariable: 1
-        name: Armory UI
+        name: Shop UI
         tooltip: 
-        showInInspector: 1
+        showInInspector: 0
         networkSync: 0
         value: {fileID: 0}
       objectVariables: []
@@ -15194,7 +15241,7 @@ MonoBehaviour:
     EnableDebugFlow: 0
     StepFrame: 0
     activeStateName: 
-  fsmTemplate: {fileID: 0}
+  fsmTemplate: {fileID: 11400000, guid: dc49fbb05502c470ea2d74ba85ee81e5, type: 2}
 --- !u!114 &1291308091
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -15508,49 +15555,33 @@ Prefab:
       propertyPath: m_RootMapOrder
       value: 
       objectReference: {fileID: 0}
+    - target: {fileID: 11400000, guid: a3f054f8f62524a98950d07510bc09e1, type: 2}
+      propertyPath: fsm.states.Array.data[0].actionData.fsmEventTargetParams.Array.data[0].gameObject.gameObject.useVariable
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 11400000, guid: a3f054f8f62524a98950d07510bc09e1, type: 2}
+      propertyPath: fsm.states.Array.data[0].actionData.fsmEventTargetParams.Array.data[0].gameObject.gameObject.name
+      value: Shop UI
+      objectReference: {fileID: 0}
+    - target: {fileID: 11400000, guid: a3f054f8f62524a98950d07510bc09e1, type: 2}
+      propertyPath: fsm.states.Array.data[1].actionData.fsmEventTargetParams.Array.data[0].gameObject.gameObject.useVariable
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 11400000, guid: a3f054f8f62524a98950d07510bc09e1, type: 2}
+      propertyPath: fsm.states.Array.data[1].actionData.fsmEventTargetParams.Array.data[0].gameObject.gameObject.name
+      value: Shop UI
+      objectReference: {fileID: 0}
+    - target: {fileID: 11400004, guid: a3f054f8f62524a98950d07510bc09e1, type: 2}
+      propertyPath: fsm.states.Array.data[0].actionData.fsmOwnerDefaultParams.Array.data[0].gameObject.name
+      value: Shop UI
+      objectReference: {fileID: 0}
+    - target: {fileID: 11400004, guid: a3f054f8f62524a98950d07510bc09e1, type: 2}
+      propertyPath: fsm.states.Array.data[1].actionData.fsmOwnerDefaultParams.Array.data[0].gameObject.name
+      value: Shop UI
+      objectReference: {fileID: 0}
     - target: {fileID: 400006, guid: a3f054f8f62524a98950d07510bc09e1, type: 2}
       propertyPath: m_RootOrder
       value: 11
-      objectReference: {fileID: 0}
-    - target: {fileID: 11400000, guid: a3f054f8f62524a98950d07510bc09e1, type: 2}
-      propertyPath: fsm.states.Array.data[0].actionData.fsmOwnerDefaultParams.Array.data[0].gameObject.value
-      value: 
-      objectReference: {fileID: 0}
-    - target: {fileID: 11400000, guid: a3f054f8f62524a98950d07510bc09e1, type: 2}
-      propertyPath: fsm.states.Array.data[1].actionData.fsmOwnerDefaultParams.Array.data[0].gameObject.value
-      value: 
-      objectReference: {fileID: 0}
-    - target: {fileID: 11400000, guid: a3f054f8f62524a98950d07510bc09e1, type: 2}
-      propertyPath: fsm.variables.gameObjectVariables.Array.data[0].value
-      value: 
-      objectReference: {fileID: 0}
-    - target: {fileID: 11400004, guid: a3f054f8f62524a98950d07510bc09e1, type: 2}
-      propertyPath: fsm.states.Array.data[0].actionData.fsmOwnerDefaultParams.Array.data[0].gameObject.value
-      value: 
-      objectReference: {fileID: 0}
-    - target: {fileID: 11400004, guid: a3f054f8f62524a98950d07510bc09e1, type: 2}
-      propertyPath: fsm.states.Array.data[1].actionData.fsmOwnerDefaultParams.Array.data[0].gameObject.value
-      value: 
-      objectReference: {fileID: 0}
-    - target: {fileID: 11400004, guid: a3f054f8f62524a98950d07510bc09e1, type: 2}
-      propertyPath: fsm.variables.gameObjectVariables.Array.data[0].value
-      value: 
-      objectReference: {fileID: 0}
-    - target: {fileID: 11400006, guid: a3f054f8f62524a98950d07510bc09e1, type: 2}
-      propertyPath: fsm.states.Array.data[0].actionData.fsmOwnerDefaultParams.Array.data[0].gameObject.value
-      value: 
-      objectReference: {fileID: 0}
-    - target: {fileID: 11400006, guid: a3f054f8f62524a98950d07510bc09e1, type: 2}
-      propertyPath: fsm.states.Array.data[1].actionData.fsmOwnerDefaultParams.Array.data[0].gameObject.value
-      value: 
-      objectReference: {fileID: 0}
-    - target: {fileID: 11400006, guid: a3f054f8f62524a98950d07510bc09e1, type: 2}
-      propertyPath: fsm.variables.gameObjectVariables.Array.data[0].value
-      value: 
-      objectReference: {fileID: 0}
-    - target: {fileID: 11400010, guid: a3f054f8f62524a98950d07510bc09e1, type: 2}
-      propertyPath: fsm.states.Array.data[6].actionData.fsmEventTargetParams.Array.data[0].gameObject.gameObject.value
-      value: 
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: a3f054f8f62524a98950d07510bc09e1, type: 2}

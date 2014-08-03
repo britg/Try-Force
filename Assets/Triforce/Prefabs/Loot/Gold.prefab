@@ -319,54 +319,24 @@ MonoBehaviour:
         colorIndex: 0
       actionData:
         actionNames:
-        - HutongGames.PlayMaker.Actions.CreateObject
-        - HutongGames.PlayMaker.Actions.SetRotation
         - HutongGames.PlayMaker.Actions.ShowHUDText
         customNames:
         - 
-        - 
-        - 
-        actionEnabled: 010101
-        actionIsOpen: 010101
-        actionStartIndex: 000000000700000010000000
-        actionHashCodes: ac65eef15d0b71a47d9314e3
+        actionEnabled: 01
+        actionIsOpen: 01
+        actionStartIndex: 00000000
+        actionHashCodes: 7d9314e3
         unityObjectParams: []
-        fsmGameObjectParams:
-        - useVariable: 1
-          name: Gold Pickup Display
-          tooltip: 
-          showInInspector: 1
-          networkSync: 0
-          value: {fileID: 100000, guid: c04ca8d6a473b43f5bcd9f5ec458a9a2, type: 2}
-        - useVariable: 1
-          name: Player
-          tooltip: 
-          showInInspector: 0
-          networkSync: 0
-          value: {fileID: 0}
-        - useVariable: 1
-          name: Gold Pickup Display
-          tooltip: 
-          showInInspector: 1
-          networkSync: 0
-          value: {fileID: 100000, guid: c04ca8d6a473b43f5bcd9f5ec458a9a2, type: 2}
+        fsmGameObjectParams: []
         fsmOwnerDefaultParams:
         - ownerOption: 1
           gameObject:
             useVariable: 1
-            name: Gold Pickup Display
+            name: Player Notification
             tooltip: 
-            showInInspector: 1
+            showInInspector: 0
             networkSync: 0
-            value: {fileID: 100000, guid: 99bf5587d35b8451caa79f2c4c7eace2, type: 2}
-        - ownerOption: 1
-          gameObject:
-            useVariable: 1
-            name: Gold Pickup Display
-            tooltip: 
-            showInInspector: 1
-            networkSync: 0
-            value: {fileID: 100000, guid: 99bf5587d35b8451caa79f2c4c7eace2, type: 2}
+            value: {fileID: 0}
         animationCurveParams: []
         functionCallParams: []
         fsmTemplateControlParams: []
@@ -374,7 +344,7 @@ MonoBehaviour:
         fsmPropertyParams: []
         layoutOptionParams: []
         fsmStringParams:
-        - useVariable: 0
+        - useVariable: 1
           name: 
           tooltip: 
           showInInspector: 0
@@ -382,37 +352,21 @@ MonoBehaviour:
           value: 
         fsmObjectParams: []
         fsmVarParams: []
-        byteData: 00000000000000000000000001000000000000000000000000010000000000000000000000000000000000000000000000010000000000000000000000000100000000000000000000000000000000000000000000000000001700000001416d6f756e74f1f0703f5e173f3ff1f0703e0000803f000000000000
+        byteData: 00000000011700000001416d6f756e74f1f0703f5e173f3ff1f0703e0000803f000000000000
         arrayParamSizes: 
         arrayParamTypes: []
         customTypeSizes: 
         customTypeNames: []
-        paramDataType: 13000000130000001c0000001c00000013000000110000001000000014000000230000001c0000000f0000000f0000000f00000007000000010000000100000014000000120000000f00000010000000190000000f000000
+        paramDataType: 14000000120000000f00000010000000190000000f000000
         paramName:
-        - gameObject
-        - spawnPoint
-        - position
-        - rotation
-        - storeObject
-        - networkInstantiate
-        - networkGroup
-        - gameObject
-        - quaternion
-        - vector
-        - xAngle
-        - yAngle
-        - zAngle
-        - space
-        - everyFrame
-        - lateUpdate
         - gameObject
         - textVal
         - floatVal
         - intVal
         - c
         - stayDuration
-        paramDataPos: 0000000001000000000000000d000000020000001a0000001c0000000000000021000000320000003f00000044000000490000004e0000005200000053000000010000000000000054000000590000006400000075000000
-        paramByteDataSize: 00000000000000000d0000000d00000000000000020000000500000000000000110000000d0000000500000005000000050000000400000001000000010000000000000000000000050000000b0000001100000005000000
+        paramDataPos: 000000000000000000000000050000001000000021000000
+        paramByteDataSize: 0000000000000000050000000b0000001100000005000000
     events:
     - name: FINISHED
       isSystemEvent: 1
