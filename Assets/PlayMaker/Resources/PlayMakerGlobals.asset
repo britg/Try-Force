@@ -47,6 +47,12 @@ MonoBehaviour:
       networkSync: 0
       value: {fileID: 0}
     - useVariable: 1
+      name: Player Notification
+      tooltip: 
+      showInInspector: 0
+      networkSync: 0
+      value: {fileID: 0}
+    - useVariable: 1
       name: Thief
       tooltip: 
       showInInspector: 0
@@ -94,3 +100,13 @@ MonoBehaviour:
   - OnTeleport
   - OnPatrollerAtWaypoint
   - OnDoorActivated
+  - OnDead
+  - OnPlayerChange
+  - OnStatChange
+  - OnPurchase
+  - OnShowText
+  - OnGrantItem
+  - OnShowThiefShopUI
+  - OnShowMagicShopUI
+  - OnShowArmoryUI
+  - OnHideUI

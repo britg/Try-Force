@@ -54,7 +54,7 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 100002}
   m_LocalRotation: {x: 0, y: 0, z: -.734914601, w: .678159654}
-  m_LocalPosition: {x: .0214222595, y: .563784063, z: 0}
+  m_LocalPosition: {x: -1.68728638, y: 1.34600139, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 400000}
@@ -84,8 +84,8 @@ BoxCollider2D:
   m_Enabled: 1
   m_Material: {fileID: 0}
   m_IsTrigger: 1
-  m_Size: {x: .389999986, y: .25}
-  m_Center: {x: 0, y: .189999998}
+  m_Size: {x: 2.16000009, y: 1.33000004}
+  m_Center: {x: 0, y: .829999983}
 --- !u!114 &11400000
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -152,7 +152,7 @@ MonoBehaviour:
         tooltip: 
         showInInspector: 1
         networkSync: 0
-        value: 15
+        value: 20
       - useVariable: 1
         name: Damage Min
         tooltip: 
@@ -165,7 +165,7 @@ MonoBehaviour:
       - useVariable: 1
         name: Damage Type
         tooltip: 
-        showInInspector: 0
+        showInInspector: 1
         networkSync: 0
         value: Melee
       vector2Variables: []
@@ -413,7 +413,7 @@ MonoBehaviour:
           value: 
         fsmObjectParams: []
         fsmVarParams: []
-        byteData: 010001000100010001000000000000000000fa7eaa3e00cdcc4c3e0000000000000000000001150000000000000000000000000001000000
+        byteData: 010001000100010001000000000000000000fa7eaa3e00cdcc4c3d0000000000000000000001150000000000000000000000000001000000
         arrayParamSizes: 
         arrayParamTypes: []
         customTypeSizes: 
@@ -488,7 +488,7 @@ MonoBehaviour:
             tooltip: 
             showInInspector: 0
             networkSync: 0
-            value: {fileID: 100000, guid: 93768bed3fdbf444da2e602048072eae, type: 2}
+            value: {fileID: 0}
         animationCurveParams: []
         functionCallParams: []
         fsmTemplateControlParams: []
@@ -498,7 +498,7 @@ MonoBehaviour:
         fsmStringParams: []
         fsmObjectParams: []
         fsmVarParams: []
-        byteData: 000000000000000000000000000000000100000000000000000000000001000000000000000000000000c8c200010000000000cdcc4c3e0046494e495348454400
+        byteData: 000000000000000000000000000000000100000000000000000000000001000000000000000000000000c8c200010000000000000000000046494e495348454400
         arrayParamSizes: 
         arrayParamTypes: []
         customTypeSizes: 

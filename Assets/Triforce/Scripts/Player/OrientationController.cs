@@ -12,15 +12,15 @@ public class OrientationController : GameController {
 
 	void Update () {
 		DetectRotate();
-		DetectPivot();
+//		DetectPivot();
 	}
 
 	void DetectRotate () {
 		if (currentInputController.rotateRight) {
-			RotateRight();
+//			RotateRight();
 		}
 		if (currentInputController.rotateLeft) {
-			RotateLeft();
+//			RotateLeft();
 		}
 	}
 
@@ -53,6 +53,9 @@ public class OrientationController : GameController {
 	}
 
 	void DetectPivot () {
+		if (aimController == null) {
+			return;
+		}
 		Vector2 aimPoint = aimController.aimPointForSector(Player.Sector.Top);
 		playerController.transform.LookAt2D(aimPoint);
 	}

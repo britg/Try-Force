@@ -43,74 +43,30 @@ MonoBehaviour:
   materialIdsValid: 1
   needMaterialInstance: 0
   spriteDefinitions:
-  - name: grunt_up
+  - name: Grunt
     boundsData:
-    - {x: .00499999523, y: -.00500002503, z: 0}
-    - {x: .75, y: 1.30999994, z: 0}
+    - {x: .00499996543, y: -.00499999523, z: 0}
+    - {x: 1.8499999, y: 1.75, z: 0}
     untrimmedBoundsData:
     - {x: 0, y: 0, z: 0}
-    - {x: .939999998, y: 1.5, z: 0}
+    - {x: 2.5, y: 2.5, z: 0}
     texelSize: {x: .00999999978, y: .00999999978}
     positions:
-    - {x: -.370000005, y: -.660000026, z: 0}
-    - {x: .379999995, y: -.660000026, z: 0}
-    - {x: -.370000005, y: .649999976, z: 0}
-    - {x: .379999995, y: .649999976, z: 0}
+    - {x: -.920000017, y: -.879999995, z: 0}
+    - {x: .929999948, y: -.879999995, z: 0}
+    - {x: -.920000017, y: .870000005, z: 0}
+    - {x: .929999948, y: .870000005, z: 0}
     normals: []
     tangents: []
     uvs:
-    - {x: .335941404, y: .00781640597}
-    - {x: .335941404, y: .300777346}
-    - {x: .847652316, y: .00781640597}
-    - {x: .847652316, y: .300777346}
+    - {x: .00781640597, y: .451173842}
+    - {x: .730464816, y: .451173842}
+    - {x: .00781640597, y: .792966783}
+    - {x: .730464816, y: .792966783}
     indices: 000000000300000001000000020000000300000000000000
-    material: {fileID: 2100000, guid: 1fac11537b644d549ae192b37ab9d41b, type: 2}
+    material: {fileID: 2100000, guid: f7a81b0dfa8bd44e9a82b11c48d32f69, type: 2}
     materialId: 0
-    sourceTextureGUID: 4bd8de99548be254fba0dda83bebb73f
-    extractRegion: 0
-    regionX: 0
-    regionY: 0
-    regionW: 0
-    regionH: 0
-    flipped: 1
-    complexGeometry: 0
-    physicsEngine: 1
-    colliderType: 2
-    customColliders: []
-    colliderVertices:
-    - {x: .00499999523, y: -.00500002503, z: 0}
-    - {x: .375, y: .654999971, z: .100000001}
-    colliderIndicesFwd: 
-    colliderIndicesBack: 
-    colliderConvex: 0
-    colliderSmoothSphereCollisions: 0
-    polygonCollider2D: []
-    edgeCollider2D: []
-    attachPoints: []
-  - name: grunt_left
-    boundsData:
-    - {x: .00999999046, y: -.0500000119, z: 0}
-    - {x: .799999952, y: 1.24000001, z: 0}
-    untrimmedBoundsData:
-    - {x: .00499999523, y: 0, z: 0}
-    - {x: .969999969, y: 1.5, z: 0}
-    texelSize: {x: .00999999978, y: .00999999978}
-    positions:
-    - {x: -.389999986, y: -.670000017, z: 0}
-    - {x: .409999967, y: -.670000017, z: 0}
-    - {x: -.389999986, y: .569999993, z: 0}
-    - {x: .409999967, y: .569999993, z: 0}
-    normals: []
-    tangents: []
-    uvs:
-    - {x: .00781640597, y: .00781640597}
-    - {x: .320308596, y: .00781640597}
-    - {x: .00781640597, y: .492183596}
-    - {x: .320308596, y: .492183596}
-    indices: 000000000300000001000000020000000300000000000000
-    material: {fileID: 2100000, guid: 1fac11537b644d549ae192b37ab9d41b, type: 2}
-    materialId: 0
-    sourceTextureGUID: 620a6fca3229a494492361faa5606f2b
+    sourceTextureGUID: 41aa5913ec2ec4f8c8181b62a4bcef60
     extractRegion: 0
     regionX: 0
     regionY: 0
@@ -119,11 +75,9 @@ MonoBehaviour:
     flipped: 0
     complexGeometry: 0
     physicsEngine: 1
-    colliderType: 2
+    colliderType: 0
     customColliders: []
-    colliderVertices:
-    - {x: .00999999046, y: -.0500000119, z: 0}
-    - {x: .399999976, y: .620000005, z: .100000001}
+    colliderVertices: []
     colliderIndicesFwd: 
     colliderIndicesBack: 
     colliderConvex: 0
@@ -131,74 +85,30 @@ MonoBehaviour:
     polygonCollider2D: []
     edgeCollider2D: []
     attachPoints: []
-  - name: grunt_down
+  - name: Grunt_Dead
     boundsData:
-    - {x: .0300000012, y: -.025000006, z: 0}
-    - {x: .720000029, y: 1.26999998, z: 0}
+    - {x: -.00499999523, y: .00500005484, z: 0}
+    - {x: 2.3499999, y: 2.25, z: 0}
     untrimmedBoundsData:
-    - {x: .00499999523, y: 0, z: 0}
-    - {x: .949999988, y: 1.5, z: 0}
+    - {x: 0, y: 0, z: 0}
+    - {x: 2.5, y: 2.5, z: 0}
     texelSize: {x: .00999999978, y: .00999999978}
     positions:
-    - {x: -.330000013, y: -.660000026, z: 0}
-    - {x: .390000015, y: -.660000026, z: 0}
-    - {x: -.330000013, y: .610000014, z: 0}
-    - {x: .390000015, y: .610000014, z: 0}
+    - {x: -1.17999995, y: -1.12, z: 0}
+    - {x: 1.16999996, y: -1.12, z: 0}
+    - {x: -1.17999995, y: 1.13000011, z: 0}
+    - {x: 1.16999996, y: 1.13000011, z: 0}
     normals: []
     tangents: []
     uvs:
-    - {x: .335941404, y: .316410154}
-    - {x: .335941404, y: .597652316}
-    - {x: .832027316, y: .316410154}
-    - {x: .832027316, y: .597652316}
+    - {x: .00781640597, y: .00390820298}
+    - {x: .925777316, y: .00390820298}
+    - {x: .00781640597, y: .443357408}
+    - {x: .925777316, y: .443357408}
     indices: 000000000300000001000000020000000300000000000000
-    material: {fileID: 2100000, guid: 1fac11537b644d549ae192b37ab9d41b, type: 2}
+    material: {fileID: 2100000, guid: f7a81b0dfa8bd44e9a82b11c48d32f69, type: 2}
     materialId: 0
-    sourceTextureGUID: 875fd803140066643938e09351dff9ea
-    extractRegion: 0
-    regionX: 0
-    regionY: 0
-    regionW: 0
-    regionH: 0
-    flipped: 1
-    complexGeometry: 0
-    physicsEngine: 1
-    colliderType: 2
-    customColliders: []
-    colliderVertices:
-    - {x: .0300000012, y: -.025000006, z: 0}
-    - {x: .360000014, y: .63499999, z: .100000001}
-    colliderIndicesFwd: 
-    colliderIndicesBack: 
-    colliderConvex: 0
-    colliderSmoothSphereCollisions: 0
-    polygonCollider2D: []
-    edgeCollider2D: []
-    attachPoints: []
-  - name: grunt_right
-    boundsData:
-    - {x: .0300000161, y: -.00499999523, z: 0}
-    - {x: .799999952, y: 1.23000002, z: 0}
-    untrimmedBoundsData:
-    - {x: .00500002503, y: 0, z: 0}
-    - {x: .930000007, y: 1.5, z: 0}
-    texelSize: {x: .00999999978, y: .00999999978}
-    positions:
-    - {x: -.369999975, y: -.620000005, z: 0}
-    - {x: .430000007, y: -.620000005, z: 0}
-    - {x: -.369999975, y: .610000014, z: 0}
-    - {x: .430000007, y: .610000014, z: 0}
-    normals: []
-    tangents: []
-    uvs:
-    - {x: .00781640597, y: .507816434}
-    - {x: .320308596, y: .507816434}
-    - {x: .00781640597, y: .988277316}
-    - {x: .320308596, y: .988277316}
-    indices: 000000000300000001000000020000000300000000000000
-    material: {fileID: 2100000, guid: 1fac11537b644d549ae192b37ab9d41b, type: 2}
-    materialId: 0
-    sourceTextureGUID: f7d70def0bba25f4eb89ee001700d610
+    sourceTextureGUID: 9304548eb0d9840b1900fed9b4145b8f
     extractRegion: 0
     regionX: 0
     regionY: 0
@@ -207,11 +117,9 @@ MonoBehaviour:
     flipped: 0
     complexGeometry: 0
     physicsEngine: 1
-    colliderType: 2
+    colliderType: 0
     customColliders: []
-    colliderVertices:
-    - {x: .0300000161, y: -.00499999523, z: 0}
-    - {x: .399999976, y: .61500001, z: .100000001}
+    colliderVertices: []
     colliderIndicesFwd: 
     colliderIndicesBack: 
     colliderConvex: 0
@@ -222,22 +130,22 @@ MonoBehaviour:
   premultipliedAlpha: 0
   material: {fileID: 0}
   materials:
-  - {fileID: 2100000, guid: 1fac11537b644d549ae192b37ab9d41b, type: 2}
+  - {fileID: 2100000, guid: f7a81b0dfa8bd44e9a82b11c48d32f69, type: 2}
   textures:
-  - {fileID: 2800000, guid: 1bd8dd4cb20cffd44ac286a1f9de66be, type: 3}
+  - {fileID: 2800000, guid: 009d3441a64b2417bb6bdd07e9c1f6c7, type: 3}
   pngTextures: []
   materialPngTextureId: 00000000
   textureFilterMode: 1
   textureMipMaps: 0
   allowMultipleAtlases: 0
-  spriteCollectionGUID: 7c8cf93c3b28ab149afd02654ce62334
+  spriteCollectionGUID: fa41bc792ab4c42edb7b059be5fed31f
   spriteCollectionName: Grunt Sprite Collection
   assetName: 
   loadable: 0
   invOrthoSize: 2
   halfTargetHeight: 50
-  buildKey: 101679901
-  dataGuid: a564ad02d34af1242b513ad7ca2e2f5c
+  buildKey: 524810251
+  dataGuid: 52736e746b0a347c494b4f725aca3c74
   managedSpriteCollection: 0
   hasPlatformData: 0
   spriteCollectionPlatforms: []

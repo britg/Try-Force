@@ -6,9 +6,9 @@ EditorBuildSettings:
   serializedVersion: 2
   m_Scenes:
   - enabled: 1
-    path: Assets/Triforce/Scenes/Chest Room.unity
-  - enabled: 1
     path: Assets/Triforce/Scenes/Town.unity
+  - enabled: 1
+    path: Assets/Triforce/Scenes/Chest Room.unity
   - enabled: 1
     path: Assets/Triforce/Scenes/Basement.unity
   - enabled: 1
@@ -16,4 +16,4 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Triforce/Scenes/Tower.unity
   - enabled: 1
-    path: Assets/Triforce/Scenes/Demo 1.unity
+    path: Assets/Triforce/Scenes/Room 1.unity

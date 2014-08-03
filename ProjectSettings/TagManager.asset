@@ -14,6 +14,8 @@ TagManager:
   - Thief
   - Mage
   - Mob
+  - Door
+  - Gold
   - 
   Builtin Layer 0: Default
   Builtin Layer 1: TransparentFX
