@@ -233,7 +233,7 @@ MonoBehaviour:
           name: FINISHED
           isSystemEvent: 1
           isGlobal: 0
-        toState: Display Pickup
+        toState: Destroy
         linkStyle: 0
         linkConstraint: 0
         colorIndex: 0
