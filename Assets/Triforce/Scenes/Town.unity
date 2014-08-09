@@ -757,6 +757,48 @@ MonoBehaviour:
   mMaxLineHeight: 0
   mLineWidth: 0
   mMultiline: 1
+--- !u!1 &40231380
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 100000, guid: cf29f2c57e5031a469c7943460603b9a, type: 2}
+  m_PrefabInternal: {fileID: 512079988}
+  serializedVersion: 4
+  m_Component:
+  - 4: {fileID: 40231382}
+  - 114: {fileID: 40231381}
+  m_Layer: 0
+  m_Name: Camera Anchor
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &40231381
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 11400000, guid: cf29f2c57e5031a469c7943460603b9a,
+    type: 2}
+  m_PrefabInternal: {fileID: 512079988}
+  m_GameObject: {fileID: 40231380}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d67e28f9ec4b74371b1e45eb64cfcfef, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  playerTransform: {fileID: 616545162}
+--- !u!4 &40231382
+Transform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 400000, guid: cf29f2c57e5031a469c7943460603b9a, type: 2}
+  m_PrefabInternal: {fileID: 512079988}
+  m_GameObject: {fileID: 40231380}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children:
+  - {fileID: 1750859857}
+  m_Father: {fileID: 0}
+  m_RootOrder: 3
 --- !u!43 &43043328
 Mesh:
   m_ObjectHideFlags: 0
@@ -2394,7 +2436,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: 5e83d8d6d67c34d04a584bc20956bccb, type: 2}
       propertyPath: m_RootOrder
-      value: 14
+      value: 12
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 5e83d8d6d67c34d04a584bc20956bccb, type: 2}
@@ -2615,13 +2657,15 @@ MonoBehaviour:
       transitions: []
       actionData:
         actionNames:
-        - HutongGames.PlayMaker.Actions.LoadLevelNum
+        - HutongGames.PlayMaker.Actions.DeleteDefaultFolder
+        - HutongGames.PlayMaker.Actions.RestartLevel
         customNames:
         - 
-        actionEnabled: 01
-        actionIsOpen: 01
-        actionStartIndex: 00000000
-        actionHashCodes: 743d2550
+        - 
+        actionEnabled: 0101
+        actionIsOpen: 0101
+        actionStartIndex: 0000000000000000
+        actionHashCodes: 0000000000000000
         unityObjectParams: []
         fsmGameObjectParams: []
         fsmOwnerDefaultParams: []
@@ -2634,19 +2678,15 @@ MonoBehaviour:
         fsmStringParams: []
         fsmObjectParams: []
         fsmVarParams: []
-        byteData: 0000000000000000
+        byteData: 
         arrayParamSizes: 
         arrayParamTypes: []
         customTypeSizes: 
         customTypeNames: []
-        paramDataType: 10000000010000001700000011000000
-        paramName:
-        - levelIndex
-        - additive
-        - loadedEvent
-        - dontDestroyOnLoad
-        paramDataPos: 00000000050000000600000006000000
-        paramByteDataSize: 05000000010000000000000002000000
+        paramDataType: 
+        paramName: []
+        paramDataPos: 
+        paramByteDataSize: 
     events:
     - name: NGUI / ON CLICK
       isSystemEvent: 0
@@ -5123,6 +5163,54 @@ MonoBehaviour:
   mMaxLineHeight: 0
   mLineWidth: 0
   mMultiline: 1
+--- !u!1001 &512079988
+Prefab:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 400000, guid: cf29f2c57e5031a469c7943460603b9a, type: 2}
+      propertyPath: m_LocalPosition.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 400000, guid: cf29f2c57e5031a469c7943460603b9a, type: 2}
+      propertyPath: m_LocalPosition.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 400000, guid: cf29f2c57e5031a469c7943460603b9a, type: 2}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 400000, guid: cf29f2c57e5031a469c7943460603b9a, type: 2}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 400000, guid: cf29f2c57e5031a469c7943460603b9a, type: 2}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 400000, guid: cf29f2c57e5031a469c7943460603b9a, type: 2}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 400000, guid: cf29f2c57e5031a469c7943460603b9a, type: 2}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 400000, guid: cf29f2c57e5031a469c7943460603b9a, type: 2}
+      propertyPath: m_RootOrder
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 11400000, guid: cf29f2c57e5031a469c7943460603b9a, type: 2}
+      propertyPath: playerTransform
+      value: 
+      objectReference: {fileID: 616545162}
+    m_RemovedComponents: []
+  m_ParentPrefab: {fileID: 100100000, guid: cf29f2c57e5031a469c7943460603b9a, type: 2}
+  m_RootGameObject: {fileID: 40231380}
+  m_IsPrefabParent: 0
+  m_IsExploded: 1
 --- !u!1 &546369760
 GameObject:
   m_ObjectHideFlags: 0
@@ -8385,14 +8473,14 @@ MonoBehaviour:
     name: Orientation Controller
     startState: Activate Warrior
     states:
-    - name: Listen for Keys
+    - name: Detect Input
       description: 
       colorIndex: 0
       position:
         serializedVersion: 2
         x: 50
         y: 164
-        width: 131
+        width: 144
         height: 64
       isBreakpoint: 0
       isSequence: 0
@@ -8534,7 +8622,7 @@ MonoBehaviour:
           name: FINISHED
           isSystemEvent: 1
           isGlobal: 0
-        toState: Listen for Keys
+        toState: Detect Input
         linkStyle: 0
         linkConstraint: 0
         colorIndex: 0
@@ -8637,7 +8725,7 @@ MonoBehaviour:
           name: FINISHED
           isSystemEvent: 1
           isGlobal: 0
-        toState: Listen for Keys
+        toState: Detect Input
         linkStyle: 0
         linkConstraint: 0
         colorIndex: 0
@@ -8740,7 +8828,7 @@ MonoBehaviour:
           name: FINISHED
           isSystemEvent: 1
           isGlobal: 0
-        toState: Listen for Keys
+        toState: Detect Input
         linkStyle: 0
         linkConstraint: 0
         colorIndex: 0
@@ -10957,147 +11045,6 @@ MeshFilter:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 639124038}
   m_Mesh: {fileID: 619318467}
---- !u!1 &664677995
-GameObject:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 100000, guid: 590014db29a913f4c89ae97b0ed0793b, type: 2}
-  m_PrefabInternal: {fileID: 839034468}
-  serializedVersion: 4
-  m_Component:
-  - 4: {fileID: 664678000}
-  - 20: {fileID: 664677999}
-  - 114: {fileID: 664677998}
-  - 124: {fileID: 664677997}
-  - 92: {fileID: 664677996}
-  - 114: {fileID: 664678001}
-  m_Layer: 0
-  m_Name: tk2dCamera
-  m_TagString: MainCamera
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!92 &664677996
-Behaviour:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 9200000, guid: 590014db29a913f4c89ae97b0ed0793b,
-    type: 2}
-  m_PrefabInternal: {fileID: 839034468}
-  m_GameObject: {fileID: 664677995}
-  m_Enabled: 1
---- !u!124 &664677997
-Behaviour:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 12400000, guid: 590014db29a913f4c89ae97b0ed0793b,
-    type: 2}
-  m_PrefabInternal: {fileID: 839034468}
-  m_GameObject: {fileID: 664677995}
-  m_Enabled: 1
---- !u!114 &664677998
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 11400000, guid: 590014db29a913f4c89ae97b0ed0793b,
-    type: 2}
-  m_PrefabInternal: {fileID: 839034468}
-  m_GameObject: {fileID: 664677995}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: d60c017246963b14c9806a06670568b5, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  version: 1
-  cameraSettings:
-    projection: 0
-    orthographicSize: 10
-    orthographicPixelsPerMeter: 100
-    orthographicOrigin: 1
-    orthographicType: 0
-    transparencySortMode: 0
-    fieldOfView: 60
-    rect:
-      serializedVersion: 2
-      x: 0
-      y: 0
-      width: 1
-      height: 1
-  resolutionOverride:
-  - name: Override
-    matchBy: 2
-    width: 0
-    height: 0
-    aspectRatioNumerator: 4
-    aspectRatioDenominator: 3
-    scale: 1
-    offsetPixels: {x: 0, y: 0}
-    autoScaleMode: 3
-    fitMode: 1
-  inheritSettings: {fileID: 0}
-  nativeResolutionWidth: 1920
-  nativeResolutionHeight: 1080
-  _unityCamera: {fileID: 664677999}
-  viewportClippingEnabled: 0
-  viewportRegion: {x: 0, y: 0, z: 100, w: 100}
-  zoomFactor: .349999994
-  forceResolutionInEditor: 1
-  forceResolution: {x: 1920, y: 1080}
---- !u!20 &664677999
-Camera:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 2000000, guid: 590014db29a913f4c89ae97b0ed0793b,
-    type: 2}
-  m_PrefabInternal: {fileID: 839034468}
-  m_GameObject: {fileID: 664677995}
-  m_Enabled: 1
-  serializedVersion: 2
-  m_ClearFlags: 1
-  m_BackGroundColor: {r: 0, g: 0, b: 0, a: .0196078438}
-  m_NormalizedViewPortRect:
-    serializedVersion: 2
-    x: 0
-    y: 0
-    width: 1
-    height: 1
-  near clip plane: .300000012
-  far clip plane: 1000
-  field of view: 60
-  orthographic: 1
-  orthographic size: 480
-  m_Depth: 0
-  m_CullingMask:
-    serializedVersion: 2
-    m_Bits: 4294967039
-  m_RenderingPath: -1
-  m_TargetTexture: {fileID: 0}
-  m_TargetDisplay: 0
-  m_HDR: 0
-  m_OcclusionCulling: 1
-  m_StereoConvergence: 10
-  m_StereoSeparation: .0219999999
---- !u!4 &664678000
-Transform:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 400000, guid: 590014db29a913f4c89ae97b0ed0793b, type: 2}
-  m_PrefabInternal: {fileID: 839034468}
-  m_GameObject: {fileID: 664677995}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: -10}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_Children: []
-  m_Father: {fileID: 0}
-  m_RootOrder: 2
---- !u!114 &664678001
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 11400002, guid: 590014db29a913f4c89ae97b0ed0793b,
-    type: 2}
-  m_PrefabInternal: {fileID: 839034468}
-  m_GameObject: {fileID: 664677995}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: d67e28f9ec4b74371b1e45eb64cfcfef, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  playerTransform: {fileID: 616545162}
 --- !u!1 &699411358
 GameObject:
   m_ObjectHideFlags: 0
@@ -11682,54 +11629,6 @@ MeshFilter:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 838605945}
   m_Mesh: {fileID: 90108647}
---- !u!1001 &839034468
-Prefab:
-  m_ObjectHideFlags: 0
-  serializedVersion: 2
-  m_Modification:
-    m_TransformParent: {fileID: 0}
-    m_Modifications:
-    - target: {fileID: 400000, guid: 590014db29a913f4c89ae97b0ed0793b, type: 2}
-      propertyPath: m_LocalPosition.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 400000, guid: 590014db29a913f4c89ae97b0ed0793b, type: 2}
-      propertyPath: m_LocalPosition.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 400000, guid: 590014db29a913f4c89ae97b0ed0793b, type: 2}
-      propertyPath: m_LocalPosition.z
-      value: -10
-      objectReference: {fileID: 0}
-    - target: {fileID: 400000, guid: 590014db29a913f4c89ae97b0ed0793b, type: 2}
-      propertyPath: m_LocalRotation.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 400000, guid: 590014db29a913f4c89ae97b0ed0793b, type: 2}
-      propertyPath: m_LocalRotation.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 400000, guid: 590014db29a913f4c89ae97b0ed0793b, type: 2}
-      propertyPath: m_LocalRotation.z
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 400000, guid: 590014db29a913f4c89ae97b0ed0793b, type: 2}
-      propertyPath: m_LocalRotation.w
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 400000, guid: 590014db29a913f4c89ae97b0ed0793b, type: 2}
-      propertyPath: m_RootOrder
-      value: 2
-      objectReference: {fileID: 0}
-    - target: {fileID: 11400002, guid: 590014db29a913f4c89ae97b0ed0793b, type: 2}
-      propertyPath: playerTransform
-      value: 
-      objectReference: {fileID: 616545162}
-    m_RemovedComponents: []
-  m_ParentPrefab: {fileID: 100100000, guid: 590014db29a913f4c89ae97b0ed0793b, type: 2}
-  m_RootGameObject: {fileID: 664677995}
-  m_IsPrefabParent: 0
-  m_IsExploded: 1
 --- !u!1 &841604852
 GameObject:
   m_ObjectHideFlags: 0
@@ -15800,7 +15699,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: 8aed8ae5c392e46eca40ee0f0828bc77, type: 2}
       propertyPath: m_RootOrder
-      value: 3
+      value: 2
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 8aed8ae5c392e46eca40ee0f0828bc77, type: 2}
@@ -17356,7 +17255,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 3
+  m_RootOrder: 2
 --- !u!1 &1588179660
 GameObject:
   m_ObjectHideFlags: 0
@@ -17827,13 +17726,13 @@ MonoBehaviour:
         tooltip: 
         showInInspector: 1
         networkSync: 0
-        value: 20
+        value: 30
       - useVariable: 1
         name: Damage Min
         tooltip: 
         showInInspector: 1
         networkSync: 0
-        value: 10
+        value: 20
       intVariables: []
       boolVariables: []
       stringVariables:
@@ -20733,6 +20632,370 @@ MeshFilter:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1740592780}
   m_Mesh: {fileID: 1812542114}
+--- !u!1 &1750859856
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 100002, guid: cf29f2c57e5031a469c7943460603b9a, type: 2}
+  m_PrefabInternal: {fileID: 512079988}
+  serializedVersion: 4
+  m_Component:
+  - 4: {fileID: 1750859857}
+  - 20: {fileID: 1750859862}
+  - 114: {fileID: 1750859861}
+  - 124: {fileID: 1750859860}
+  - 92: {fileID: 1750859859}
+  - 114: {fileID: 1750859858}
+  m_Layer: 0
+  m_Name: tk2dCamera
+  m_TagString: MainCamera
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1750859857
+Transform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 400002, guid: cf29f2c57e5031a469c7943460603b9a, type: 2}
+  m_PrefabInternal: {fileID: 512079988}
+  m_GameObject: {fileID: 1750859856}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: -10}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 40231382}
+  m_RootOrder: 0
+--- !u!114 &1750859858
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 11400002, guid: cf29f2c57e5031a469c7943460603b9a,
+    type: 2}
+  m_PrefabInternal: {fileID: 512079988}
+  m_GameObject: {fileID: 1750859856}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 1384774831, guid: e743331561ef77147ae48cda9bcb8209, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  fsm:
+    usedInTemplate: {fileID: 0}
+    name: Camera Controller
+    startState: Get Camera Z
+    states:
+    - name: Shift Camera
+      description: 
+      colorIndex: 0
+      position:
+        serializedVersion: 2
+        x: 55
+        y: 189
+        width: 106
+        height: 16
+      isBreakpoint: 0
+      isSequence: 0
+      hideUnused: 0
+      transitions: []
+      actionData:
+        actionNames:
+        - HutongGames.PlayMaker.Actions.GetMouseX
+        - HutongGames.PlayMaker.Actions.FloatAdd
+        - HutongGames.PlayMaker.Actions.GetMouseY
+        - HutongGames.PlayMaker.Actions.FloatAdd
+        - HutongGames.PlayMaker.Actions.SetVector3XYZ
+        - HutongGames.PlayMaker.Actions.Vector3Multiply
+        - HutongGames.PlayMaker.Actions.SetPosition
+        customNames:
+        - 
+        - 
+        - 
+        - 
+        - 
+        - 
+        - 
+        actionEnabled: 01010101010101
+        actionIsOpen: 01010101010101
+        actionStartIndex: 000000000200000006000000080000000c0000001200000015000000
+        actionHashCodes: f146117622e89522f146117622e89522f922f9b06de84c638b80e9a5
+        unityObjectParams: []
+        fsmGameObjectParams: []
+        fsmOwnerDefaultParams:
+        - ownerOption: 0
+          gameObject:
+            useVariable: 0
+            name: 
+            tooltip: 
+            showInInspector: 0
+            networkSync: 0
+            value: {fileID: 0}
+        animationCurveParams: []
+        functionCallParams: []
+        fsmTemplateControlParams: []
+        fsmEventTargetParams: []
+        fsmPropertyParams: []
+        layoutOptionParams: []
+        fsmStringParams: []
+        fsmObjectParams: []
+        fsmVarParams: []
+        byteData: 00000000014d6f75736520580100000000014d6f7573652058000000bf00010000000000014d6f75736520590100000000014d6f7573652059000000bf000100000000000000000000000000014d6f75736520506f736974696f6e0000000000000000000000000100000000014d6f757365205800000000014d6f7573652059000000000143616d657261205a01000000000000000000000000014d6f75736520506f736974696f6e00004040014d756c7469706c69657201000000000000000000000000014d6f75736520506f736974696f6e000000000100000000010000000001010000000100
+        arrayParamSizes: 
+        arrayParamTypes: []
+        customTypeSizes: 
+        customTypeNames: []
+        paramDataType: 0f000000010000000f0000000f00000001000000010000000f000000010000000f0000000f00000001000000010000001c0000001c0000000f0000000f0000000f000000010000001c0000000f00000001000000140000001c0000000f0000000f0000000f000000070000000100000001000000
+        paramName:
+        - storeResult
+        - normalize
+        - floatVariable
+        - add
+        - everyFrame
+        - perSecond
+        - storeResult
+        - normalize
+        - floatVariable
+        - add
+        - everyFrame
+        - perSecond
+        - vector3Variable
+        - vector3Value
+        - x
+        - y
+        - z
+        - everyFrame
+        - vector3Variable
+        - multiplyBy
+        - everyFrame
+        - gameObject
+        - vector
+        - x
+        - y
+        - z
+        - space
+        - everyFrame
+        - lateUpdate
+        paramDataPos: 000000000c0000000d000000190000001e0000001f000000200000002c0000002d000000390000003e0000003f000000400000005b0000006800000074000000800000008d0000008e000000a9000000b800000000000000b9000000d4000000d9000000de000000e3000000e7000000e8000000
+        paramByteDataSize: 0c000000010000000c0000000500000001000000010000000c000000010000000c0000000500000001000000010000001b0000000d0000000c0000000c0000000d000000010000001b0000000f00000001000000000000001b000000050000000500000005000000040000000100000001000000
+    - name: Get Camera Z
+      description: 
+      colorIndex: 0
+      position:
+        serializedVersion: 2
+        x: 55
+        y: 115
+        width: 110
+        height: 32
+      isBreakpoint: 0
+      isSequence: 0
+      hideUnused: 0
+      transitions:
+      - fsmEvent:
+          name: FINISHED
+          isSystemEvent: 1
+          isGlobal: 0
+        toState: Shift Camera
+        linkStyle: 0
+        linkConstraint: 0
+        colorIndex: 0
+      actionData:
+        actionNames:
+        - HutongGames.PlayMaker.Actions.GetPosition
+        customNames:
+        - 
+        actionEnabled: 01
+        actionIsOpen: 01
+        actionStartIndex: 00000000
+        actionHashCodes: a290608e
+        unityObjectParams: []
+        fsmGameObjectParams: []
+        fsmOwnerDefaultParams:
+        - ownerOption: 0
+          gameObject:
+            useVariable: 0
+            name: 
+            tooltip: 
+            showInInspector: 0
+            networkSync: 0
+            value: {fileID: 0}
+        animationCurveParams: []
+        functionCallParams: []
+        fsmTemplateControlParams: []
+        fsmEventTargetParams: []
+        fsmPropertyParams: []
+        layoutOptionParams: []
+        fsmStringParams: []
+        fsmObjectParams: []
+        fsmVarParams: []
+        byteData: 0000000000000000000000000100000000010000000001000000000143616d657261205a0000000000
+        arrayParamSizes: 
+        arrayParamTypes: []
+        customTypeSizes: 
+        customTypeNames: []
+        paramDataType: 140000001c0000000f0000000f0000000f0000000700000001000000
+        paramName:
+        - gameObject
+        - vector
+        - x
+        - y
+        - z
+        - space
+        - everyFrame
+        paramDataPos: 00000000000000000d00000012000000170000002400000028000000
+        paramByteDataSize: 000000000d00000005000000050000000d0000000400000001000000
+    events:
+    - name: FINISHED
+      isSystemEvent: 1
+      isGlobal: 0
+    globalTransitions: []
+    variables:
+      floatVariables:
+      - useVariable: 1
+        name: Camera Z
+        tooltip: 
+        showInInspector: 0
+        networkSync: 0
+        value: 0
+      - useVariable: 1
+        name: Mouse X
+        tooltip: 
+        showInInspector: 0
+        networkSync: 0
+        value: 0
+      - useVariable: 1
+        name: Mouse Y
+        tooltip: 
+        showInInspector: 0
+        networkSync: 0
+        value: 0
+      - useVariable: 1
+        name: Multiplier
+        tooltip: 
+        showInInspector: 1
+        networkSync: 0
+        value: 6
+      intVariables: []
+      boolVariables: []
+      stringVariables: []
+      vector2Variables: []
+      vector3Variables:
+      - useVariable: 1
+        name: Mouse Position
+        tooltip: 
+        showInInspector: 0
+        networkSync: 0
+        value: {x: 0, y: 0, z: 0}
+      colorVariables: []
+      rectVariables: []
+      quaternionVariables: []
+      gameObjectVariables: []
+      objectVariables: []
+      materialVariables: []
+      textureVariables: []
+    description: 
+    docUrl: 
+    showStateLabel: 1
+    maxLoopCount: 0
+    watermark: 
+    version: 0
+    ExposedEvents: []
+    RestartOnEnable: 1
+    EnableDebugFlow: 0
+    StepFrame: 0
+    activeStateName: 
+  fsmTemplate: {fileID: 0}
+--- !u!92 &1750859859
+Behaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 9200000, guid: cf29f2c57e5031a469c7943460603b9a,
+    type: 2}
+  m_PrefabInternal: {fileID: 512079988}
+  m_GameObject: {fileID: 1750859856}
+  m_Enabled: 1
+--- !u!124 &1750859860
+Behaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 12400000, guid: cf29f2c57e5031a469c7943460603b9a,
+    type: 2}
+  m_PrefabInternal: {fileID: 512079988}
+  m_GameObject: {fileID: 1750859856}
+  m_Enabled: 1
+--- !u!114 &1750859861
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 11400004, guid: cf29f2c57e5031a469c7943460603b9a,
+    type: 2}
+  m_PrefabInternal: {fileID: 512079988}
+  m_GameObject: {fileID: 1750859856}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d60c017246963b14c9806a06670568b5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  version: 1
+  cameraSettings:
+    projection: 0
+    orthographicSize: 10
+    orthographicPixelsPerMeter: 100
+    orthographicOrigin: 1
+    orthographicType: 0
+    transparencySortMode: 0
+    fieldOfView: 60
+    rect:
+      serializedVersion: 2
+      x: 0
+      y: 0
+      width: 1
+      height: 1
+  resolutionOverride:
+  - name: Override
+    matchBy: 2
+    width: 0
+    height: 0
+    aspectRatioNumerator: 4
+    aspectRatioDenominator: 3
+    scale: 1
+    offsetPixels: {x: 0, y: 0}
+    autoScaleMode: 3
+    fitMode: 1
+  inheritSettings: {fileID: 0}
+  nativeResolutionWidth: 1920
+  nativeResolutionHeight: 1080
+  _unityCamera: {fileID: 1750859862}
+  viewportClippingEnabled: 0
+  viewportRegion: {x: 0, y: 0, z: 100, w: 100}
+  zoomFactor: .680000007
+  forceResolutionInEditor: 1
+  forceResolution: {x: 1920, y: 1080}
+--- !u!20 &1750859862
+Camera:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 2000000, guid: cf29f2c57e5031a469c7943460603b9a,
+    type: 2}
+  m_PrefabInternal: {fileID: 512079988}
+  m_GameObject: {fileID: 1750859856}
+  m_Enabled: 1
+  serializedVersion: 2
+  m_ClearFlags: 1
+  m_BackGroundColor: {r: 0, g: 0, b: 0, a: .0196078438}
+  m_NormalizedViewPortRect:
+    serializedVersion: 2
+    x: 0
+    y: 0
+    width: 1
+    height: 1
+  near clip plane: .300000012
+  far clip plane: 1000
+  field of view: 60
+  orthographic: 1
+  orthographic size: 480
+  m_Depth: 0
+  m_CullingMask:
+    serializedVersion: 2
+    m_Bits: 4294967039
+  m_RenderingPath: -1
+  m_TargetTexture: {fileID: 0}
+  m_TargetDisplay: 0
+  m_HDR: 0
+  m_OcclusionCulling: 1
+  m_StereoConvergence: 10
+  m_StereoSeparation: .0219999999
 --- !u!1 &1768261280
 GameObject:
   m_ObjectHideFlags: 0

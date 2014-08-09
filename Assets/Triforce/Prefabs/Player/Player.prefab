@@ -3976,14 +3976,14 @@ MonoBehaviour:
     name: Orientation Controller
     startState: Activate Warrior
     states:
-    - name: Listen for Keys
+    - name: Detect Input
       description: 
       colorIndex: 0
       position:
         serializedVersion: 2
         x: 50
         y: 164
-        width: 131
+        width: 144
         height: 64
       isBreakpoint: 0
       isSequence: 0
@@ -4125,7 +4125,7 @@ MonoBehaviour:
           name: FINISHED
           isSystemEvent: 1
           isGlobal: 0
-        toState: Listen for Keys
+        toState: Detect Input
         linkStyle: 0
         linkConstraint: 0
         colorIndex: 0
@@ -4228,7 +4228,7 @@ MonoBehaviour:
           name: FINISHED
           isSystemEvent: 1
           isGlobal: 0
-        toState: Listen for Keys
+        toState: Detect Input
         linkStyle: 0
         linkConstraint: 0
         colorIndex: 0
@@ -4331,7 +4331,7 @@ MonoBehaviour:
           name: FINISHED
           isSystemEvent: 1
           isGlobal: 0
-        toState: Listen for Keys
+        toState: Detect Input
         linkStyle: 0
         linkConstraint: 0
         colorIndex: 0
@@ -7354,13 +7354,13 @@ MonoBehaviour:
         tooltip: 
         showInInspector: 1
         networkSync: 0
-        value: 20
+        value: 30
       - useVariable: 1
         name: Damage Min
         tooltip: 
         showInInspector: 1
         networkSync: 0
-        value: 10
+        value: 20
       intVariables: []
       boolVariables: []
       stringVariables:
