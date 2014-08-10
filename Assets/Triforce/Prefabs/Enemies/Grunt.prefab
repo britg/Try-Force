@@ -1703,7 +1703,19 @@ MonoBehaviour:
       quaternionVariables: []
       gameObjectVariables:
       - useVariable: 1
+        name: Detector
+        tooltip: 
+        showInInspector: 0
+        networkSync: 0
+        value: {fileID: 0}
+      - useVariable: 1
         name: Parent
+        tooltip: 
+        showInInspector: 0
+        networkSync: 0
+        value: {fileID: 0}
+      - useVariable: 1
+        name: Visual Effect
         tooltip: 
         showInInspector: 0
         networkSync: 0
@@ -4105,7 +4117,7 @@ MonoBehaviour:
     EnableDebugFlow: 0
     StepFrame: 0
     activeStateName: 
-  fsmTemplate: {fileID: 0}
+  fsmTemplate: {fileID: 11400000, guid: 68d6d1c6952e34048adfd15d56c26bd9, type: 2}
 --- !u!114 &11400016
 MonoBehaviour:
   m_ObjectHideFlags: 1
