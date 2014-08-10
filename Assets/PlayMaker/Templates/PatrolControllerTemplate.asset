@@ -15,15 +15,15 @@ MonoBehaviour:
   fsm:
     usedInTemplate: {fileID: 11400000}
     name: Patrol Controller
-    startState: Test Player Visible
+    startState: Check Frozen
     states:
     - name: Test Player Visible
       description: 
       colorIndex: 0
       position:
         serializedVersion: 2
-        x: 581
-        y: 178
+        x: 261
+        y: 194
         width: 164
         height: 48
       isBreakpoint: 0
@@ -34,7 +34,7 @@ MonoBehaviour:
           name: OnPlayerNotDetected
           isSystemEvent: 0
           isGlobal: 0
-        toState: Check Frozen 2
+        toState: Check Waypoint
         linkStyle: 0
         linkConstraint: 0
         colorIndex: 0
@@ -42,7 +42,7 @@ MonoBehaviour:
           name: OnPlayerDetected
           isSystemEvent: 0
           isGlobal: 0
-        toState: Check Frozen
+        toState: Move Toward Player
         linkStyle: 0
         linkConstraint: 0
         colorIndex: 0
@@ -85,8 +85,8 @@ MonoBehaviour:
       colorIndex: 0
       position:
         serializedVersion: 2
-        x: 1024.625
-        y: 163.695312
+        x: 541.625
+        y: 220.695312
         width: 152
         height: 64
       isBreakpoint: 0
@@ -103,7 +103,7 @@ MonoBehaviour:
         colorIndex: 0
       - fsmEvent:
           name: FINISHED
-          isSystemEvent: 0
+          isSystemEvent: 1
           isGlobal: 0
         toState: Pause
         linkStyle: 0
@@ -209,8 +209,8 @@ MonoBehaviour:
       colorIndex: 0
       position:
         serializedVersion: 2
-        x: 980.101562
-        y: 342.828125
+        x: 564.101562
+        y: 331.828125
         width: 100
         height: 32
       isBreakpoint: 0
@@ -219,7 +219,7 @@ MonoBehaviour:
       transitions:
       - fsmEvent:
           name: FINISHED
-          isSystemEvent: 0
+          isSystemEvent: 1
           isGlobal: 0
         toState: Test Player Visible
         linkStyle: 0
@@ -287,8 +287,8 @@ MonoBehaviour:
       colorIndex: 0
       position:
         serializedVersion: 2
-        x: 55.296875
-        y: 305.101562
+        x: 56.296875
+        y: 483.101562
         width: 130
         height: 64
       isBreakpoint: 0
@@ -297,7 +297,7 @@ MonoBehaviour:
       transitions:
       - fsmEvent:
           name: FINISHED
-          isSystemEvent: 0
+          isSystemEvent: 1
           isGlobal: 0
         toState: At Waypoint
         linkStyle: 0
@@ -387,8 +387,8 @@ MonoBehaviour:
       colorIndex: 0
       position:
         serializedVersion: 2
-        x: 337.484375
-        y: 467.273438
+        x: 60.484375
+        y: 594.273438
         width: 101
         height: 32
       isBreakpoint: 0
@@ -397,7 +397,7 @@ MonoBehaviour:
       transitions:
       - fsmEvent:
           name: FINISHED
-          isSystemEvent: 0
+          isSystemEvent: 1
           isGlobal: 0
         toState: Test Player Visible
         linkStyle: 0
@@ -477,8 +477,8 @@ MonoBehaviour:
       colorIndex: 0
       position:
         serializedVersion: 2
-        x: 254.203125
-        y: 129.71875
+        x: 61.203125
+        y: 333.71875
         width: 127
         height: 48
       isBreakpoint: 0
@@ -487,7 +487,7 @@ MonoBehaviour:
       transitions:
       - fsmEvent:
           name: FINISHED
-          isSystemEvent: 0
+          isSystemEvent: 1
           isGlobal: 0
         toState: Test Player Visible
         linkStyle: 0
@@ -550,8 +550,8 @@ MonoBehaviour:
       colorIndex: 0
       position:
         serializedVersion: 2
-        x: 79
-        y: 173
+        x: 59
+        y: 407
         width: 129
         height: 32
       isBreakpoint: 0
@@ -560,7 +560,7 @@ MonoBehaviour:
       transitions:
       - fsmEvent:
           name: FINISHED
-          isSystemEvent: 0
+          isSystemEvent: 1
           isGlobal: 0
         toState: Patrol
         linkStyle: 0
@@ -626,7 +626,7 @@ MonoBehaviour:
       colorIndex: 0
       position:
         serializedVersion: 2
-        x: 809.796875
+        x: 293.796875
         y: 105.242188
         width: 104
         height: 48
@@ -636,9 +636,9 @@ MonoBehaviour:
       transitions:
       - fsmEvent:
           name: FINISHED
-          isSystemEvent: 0
+          isSystemEvent: 1
           isGlobal: 0
-        toState: Move Toward Player
+        toState: Test Player Visible
         linkStyle: 0
         linkConstraint: 0
         colorIndex: 0
@@ -689,8 +689,8 @@ MonoBehaviour:
       colorIndex: 0
       position:
         serializedVersion: 2
-        x: 616.835938
-        y: 364.320312
+        x: 374.835938
+        y: 490.320312
         width: 100
         height: 32
       isBreakpoint: 0
@@ -699,7 +699,7 @@ MonoBehaviour:
       transitions:
       - fsmEvent:
           name: FINISHED
-          isSystemEvent: 0
+          isSystemEvent: 1
           isGlobal: 0
         toState: Unfreeze
         linkStyle: 0
@@ -738,76 +738,13 @@ MonoBehaviour:
         - realTime
         paramDataPos: 00000000050000000d000000
         paramByteDataSize: 050000000800000001000000
-    - name: Check Frozen 2
-      description: 
-      colorIndex: 0
-      position:
-        serializedVersion: 2
-        x: 415.625
-        y: 101.742188
-        width: 116
-        height: 48
-      isBreakpoint: 0
-      isSequence: 0
-      hideUnused: 0
-      transitions:
-      - fsmEvent:
-          name: FINISHED
-          isSystemEvent: 0
-          isGlobal: 0
-        toState: Check Waypoint
-        linkStyle: 0
-        linkConstraint: 0
-        colorIndex: 0
-      - fsmEvent:
-          name: OnFrozen
-          isSystemEvent: 0
-          isGlobal: 0
-        toState: Frozen
-        linkStyle: 0
-        linkConstraint: 0
-        colorIndex: 0
-      actionData:
-        actionNames:
-        - HutongGames.PlayMaker.Actions.BoolTest
-        customNames:
-        - 
-        actionEnabled: 01
-        actionIsOpen: 01
-        actionStartIndex: 00000000
-        actionHashCodes: 3334d172
-        unityObjectParams: []
-        fsmGameObjectParams: []
-        fsmOwnerDefaultParams: []
-        animationCurveParams: []
-        functionCallParams: []
-        fsmTemplateControlParams: []
-        fsmEventTargetParams: []
-        fsmPropertyParams: []
-        layoutOptionParams: []
-        fsmStringParams: []
-        fsmObjectParams: []
-        fsmVarParams: []
-        byteData: 000146726f7a656e4f6e46726f7a656e46494e495348454400
-        arrayParamSizes: 
-        arrayParamTypes: []
-        customTypeSizes: 
-        customTypeNames: []
-        paramDataType: 11000000170000001700000001000000
-        paramName:
-        - boolVariable
-        - isTrue
-        - isFalse
-        - everyFrame
-        paramDataPos: 00000000080000001000000018000000
-        paramByteDataSize: 08000000080000000800000001000000
     - name: Unfreeze
       description: 
       colorIndex: 0
       position:
         serializedVersion: 2
-        x: 618
-        y: 287
+        x: 373
+        y: 539
         width: 100
         height: 32
       isBreakpoint: 0
@@ -816,9 +753,9 @@ MonoBehaviour:
       transitions:
       - fsmEvent:
           name: FINISHED
-          isSystemEvent: 0
+          isSystemEvent: 1
           isGlobal: 0
-        toState: Test Player Visible
+        toState: Check Frozen
         linkStyle: 0
         linkConstraint: 0
         colorIndex: 0
