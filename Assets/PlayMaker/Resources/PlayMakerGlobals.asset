@@ -21,13 +21,13 @@ MonoBehaviour:
       tooltip: 
       showInInspector: 0
       networkSync: 0
-      value: 
+      value: Tower
     - useVariable: 1
       name: Orientation
       tooltip: 
       showInInspector: 0
       networkSync: 0
-      value: 
+      value: Warrior
     vector2Variables: []
     vector3Variables: []
     colorVariables: []
@@ -110,3 +110,4 @@ MonoBehaviour:
   - OnShowMagicShopUI
   - OnShowArmoryUI
   - OnHideUI
+  - OnAttackReady

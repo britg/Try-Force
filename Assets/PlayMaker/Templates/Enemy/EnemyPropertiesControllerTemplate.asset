@@ -69,18 +69,6 @@ MonoBehaviour:
         networkSync: 0
         value: 10
       - useVariable: 1
-        name: Damage Max
-        tooltip: 
-        showInInspector: 1
-        networkSync: 0
-        value: 50
-      - useVariable: 1
-        name: Damage Min
-        tooltip: 
-        showInInspector: 1
-        networkSync: 0
-        value: 40
-      - useVariable: 1
         name: Hit Points
         tooltip: 
         showInInspector: 1
