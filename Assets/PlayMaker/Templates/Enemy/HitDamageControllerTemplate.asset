@@ -11,7 +11,7 @@ MonoBehaviour:
   m_Script: {fileID: 1219815696, guid: e743331561ef77147ae48cda9bcb8209, type: 3}
   m_Name: HitDamageControllerTemplate
   m_EditorClassIdentifier: 
-  category: General
+  category: Enemy
   fsm:
     usedInTemplate: {fileID: 11400000}
     name: Hit Damage Controller
