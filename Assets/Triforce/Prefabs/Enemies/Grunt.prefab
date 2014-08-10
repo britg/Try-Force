@@ -1151,7 +1151,7 @@ MonoBehaviour:
       colorIndex: 0
       position:
         serializedVersion: 2
-        x: 146
+        x: 210
         y: 100
         width: 184
         height: 32
@@ -1233,7 +1233,7 @@ MonoBehaviour:
       colorIndex: 0
       position:
         serializedVersion: 2
-        x: 504
+        x: 568
         y: 129
         width: 123
         height: 48
@@ -1329,7 +1329,7 @@ MonoBehaviour:
       colorIndex: 0
       position:
         serializedVersion: 2
-        x: 304
+        x: 368
         y: 315
         width: 100
         height: 32
@@ -1476,7 +1476,7 @@ MonoBehaviour:
       colorIndex: 0
       position:
         serializedVersion: 2
-        x: 52
+        x: 116
         y: 314
         width: 100
         height: 32
@@ -1549,7 +1549,7 @@ MonoBehaviour:
       colorIndex: 0
       position:
         serializedVersion: 2
-        x: 509
+        x: 573
         y: 226
         width: 100
         height: 32
@@ -1598,6 +1598,62 @@ MonoBehaviour:
         - realTime
         paramDataPos: 00000000050000000d000000
         paramByteDataSize: 050000000800000001000000
+    - name: Dead
+      description: 
+      colorIndex: 0
+      position:
+        serializedVersion: 2
+        x: 54
+        y: 101
+        width: 100
+        height: 16
+      isBreakpoint: 0
+      isSequence: 0
+      hideUnused: 0
+      transitions: []
+      actionData:
+        actionNames:
+        - HutongGames.PlayMaker.Actions.ActivateGameObject
+        customNames:
+        - 
+        actionEnabled: 01
+        actionIsOpen: 01
+        actionStartIndex: 00000000
+        actionHashCodes: b4797e4a
+        unityObjectParams: []
+        fsmGameObjectParams: []
+        fsmOwnerDefaultParams:
+        - ownerOption: 0
+          gameObject:
+            useVariable: 0
+            name: 
+            tooltip: 
+            showInInspector: 0
+            networkSync: 0
+            value: {fileID: 0}
+        animationCurveParams: []
+        functionCallParams: []
+        fsmTemplateControlParams: []
+        fsmEventTargetParams: []
+        fsmPropertyParams: []
+        layoutOptionParams: []
+        fsmStringParams: []
+        fsmObjectParams: []
+        fsmVarParams: []
+        byteData: 000001000000
+        arrayParamSizes: 
+        arrayParamTypes: []
+        customTypeSizes: 
+        customTypeNames: []
+        paramDataType: 1400000011000000110000000100000001000000
+        paramName:
+        - gameObject
+        - activate
+        - recursive
+        - resetOnExit
+        - everyFrame
+        paramDataPos: 0000000000000000020000000400000005000000
+        paramByteDataSize: 0000000002000000020000000100000001000000
     events:
     - name: FINISHED
       isSystemEvent: 1
@@ -1611,7 +1667,18 @@ MonoBehaviour:
     - name: OnPlayerVisible
       isSystemEvent: 0
       isGlobal: 0
-    globalTransitions: []
+    - name: OnDead
+      isSystemEvent: 0
+      isGlobal: 1
+    globalTransitions:
+    - fsmEvent:
+        name: OnDead
+        isSystemEvent: 0
+        isGlobal: 1
+      toState: Dead
+      linkStyle: 0
+      linkConstraint: 0
+      colorIndex: 0
     variables:
       floatVariables:
       - useVariable: 1
@@ -2297,7 +2364,7 @@ MonoBehaviour:
         tooltip: 
         showInInspector: 1
         networkSync: 0
-        value: 60
+        value: 90
       - useVariable: 1
         name: Vision Distance
         tooltip: 
@@ -2339,7 +2406,7 @@ MonoBehaviour:
     EnableDebugFlow: 0
     StepFrame: 0
     activeStateName: 
-  fsmTemplate: {fileID: 0}
+  fsmTemplate: {fileID: 11400000, guid: 67b84923007c8aa41869f98c5ffe7897, type: 2}
 --- !u!114 &11400010
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -3912,7 +3979,7 @@ MonoBehaviour:
     EnableDebugFlow: 0
     StepFrame: 0
     activeStateName: 
-  fsmTemplate: {fileID: 0}
+  fsmTemplate: {fileID: 11400000, guid: b96bb276dbbf6934c94f1d976e624cfc, type: 2}
 --- !u!114 &11400012
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -4639,7 +4706,7 @@ MonoBehaviour:
         tooltip: 
         showInInspector: 1
         networkSync: 0
-        value: 100
+        value: 60
       - useVariable: 1
         name: Damage Min
         tooltip: 
