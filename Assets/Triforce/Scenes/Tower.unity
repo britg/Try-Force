@@ -19061,7 +19061,7 @@ MonoBehaviour:
     EnableDebugFlow: 0
     StepFrame: 0
     activeStateName: 
-  fsmTemplate: {fileID: 0}
+  fsmTemplate: {fileID: 11400000, guid: 8d337ff3f7b910b49abf9b25f4754f26, type: 2}
 --- !u!114 &1694747227
 MonoBehaviour:
   m_ObjectHideFlags: 0

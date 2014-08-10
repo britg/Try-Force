@@ -722,7 +722,7 @@ MonoBehaviour:
             tooltip: 
             showInInspector: 0
             networkSync: 0
-            value: {fileID: 0}
+            value: {fileID: 100006, guid: a3f054f8f62524a98950d07510bc09e1, type: 2}
         animationCurveParams: []
         functionCallParams: []
         fsmTemplateControlParams: []
@@ -2564,7 +2564,7 @@ MonoBehaviour:
             tooltip: 
             showInInspector: 0
             networkSync: 0
-            value: {fileID: 0}
+            value: {fileID: 100006, guid: a3f054f8f62524a98950d07510bc09e1, type: 2}
         animationCurveParams: []
         functionCallParams: []
         fsmTemplateControlParams: []

@@ -20960,7 +20960,7 @@ MonoBehaviour:
   _unityCamera: {fileID: 1750859862}
   viewportClippingEnabled: 0
   viewportRegion: {x: 0, y: 0, z: 100, w: 100}
-  zoomFactor: .680000007
+  zoomFactor: .550000012
   forceResolutionInEditor: 1
   forceResolution: {x: 1920, y: 1080}
 --- !u!20 &1750859862
