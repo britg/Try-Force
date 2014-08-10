@@ -9,8 +9,10 @@ GameObject:
   m_Component:
   - 4: {fileID: 400000}
   - 212: {fileID: 21200000}
-  - 60: {fileID: 6000000}
   - 114: {fileID: 11400016}
+  - 60: {fileID: 6000000}
+  - 114: {fileID: 11400020}
+  - 114: {fileID: 11400018}
   m_Layer: 0
   m_Name: Hammer
   m_TagString: EnemyWeapon
@@ -66,8 +68,8 @@ Transform:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 100000}
-  m_LocalRotation: {x: 0, y: 0, z: .978885233, w: .204410568}
-  m_LocalPosition: {x: -.579999983, y: .185261413, z: 0}
+  m_LocalRotation: {x: 0, y: 0, z: .866025448, w: .49999997}
+  m_LocalPosition: {x: .0173231773, y: .0399589539, z: 0}
   m_LocalScale: {x: 1.33333337, y: 1.33333325, z: .525157094}
   m_Children: []
   m_Father: {fileID: 400004}
@@ -90,8 +92,8 @@ Transform:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 100004}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 13.1557312, y: 2.21001434, z: 0}
+  m_LocalRotation: {x: 0, y: 0, z: .712055445, w: .702123344}
+  m_LocalPosition: {x: 21.5181637, y: 1.4133358, z: 0}
   m_LocalScale: {x: 1.5, y: 1.5, z: 1.90419221}
   m_Children:
   - {fileID: 400002}
@@ -148,40 +150,40 @@ PolygonCollider2D:
   m_GameObject: {fileID: 100000}
   m_Enabled: 1
   m_Material: {fileID: 0}
-  m_IsTrigger: 1
+  m_IsTrigger: 0
   m_Poly:
     m_Paths:
-    - - {x: .469586551, y: .394677132}
-      - {x: .519586563, y: .424677134}
-      - {x: .69958657, y: .604677141}
-      - {x: .739586592, y: .604677141}
-      - {x: .779586554, y: .564677119}
-      - {x: .839586556, y: .534677148}
-      - {x: .859586537, y: .484677136}
-      - {x: .989586592, y: .494677126}
-      - {x: 1.05958652, y: .544677138}
-      - {x: 1.12958658, y: .604677141}
-      - {x: 1.12958658, y: .84467715}
-      - {x: 1.08958662, y: .894677103}
-      - {x: 1.01958656, y: .944677114}
-      - {x: .899586558, y: 1.06467712}
-      - {x: .749586582, y: 1.13467717}
-      - {x: .669586539, y: 1.13467717}
-      - {x: .539586544, y: 1.00467718}
-      - {x: .549586535, y: .914677143}
-      - {x: .469586551, y: .734677136}
-      - {x: .419586569, y: .704677105}
-      - {x: .259586573, y: .544677138}
-      - {x: .189586565, y: .424677134}
-      - {x: .139586568, y: .364677131}
-      - {x: -.0604134351, y: .164677128}
-      - {x: -.11041344, y: .0946771204}
-      - {x: -.11041344, y: .0146771241}
-      - {x: -.0304134376, y: -.0453228764}
-      - {x: .0895865634, y: -.0453228764}
-      - {x: .159586564, y: .00467712386}
-      - {x: .229586557, y: .0846771225}
-      - {x: .289586574, y: .184677124}
+    - - {x: .74000001, y: .660000026}
+      - {x: .790000021, y: .689999998}
+      - {x: .970000029, y: .870000005}
+      - {x: 1.00999999, y: .870000005}
+      - {x: 1.04999995, y: .829999983}
+      - {x: 1.11000001, y: .800000012}
+      - {x: 1.13, y: .75}
+      - {x: 1.25999999, y: .75999999}
+      - {x: 1.33000004, y: .810000002}
+      - {x: 1.39999998, y: .870000005}
+      - {x: 1.39999998, y: 1.11000001}
+      - {x: 1.36000001, y: 1.15999997}
+      - {x: 1.28999996, y: 1.21000004}
+      - {x: 1.16999996, y: 1.33000004}
+      - {x: 1.01999998, y: 1.39999998}
+      - {x: .939999998, y: 1.39999998}
+      - {x: .810000002, y: 1.26999998}
+      - {x: .819999993, y: 1.17999995}
+      - {x: .74000001, y: 1}
+      - {x: .689999998, y: .970000029}
+      - {x: .529999971, y: .810000002}
+      - {x: .460000008, y: .689999998}
+      - {x: .409999996, y: .629999995}
+      - {x: .209999993, y: .430000007}
+      - {x: .159999996, y: .360000014}
+      - {x: .159999996, y: .280000001}
+      - {x: .239999995, y: .219999999}
+      - {x: .360000014, y: .219999999}
+      - {x: .430000007, y: .270000011}
+      - {x: .5, y: .349999994}
+      - {x: .560000002, y: .449999988}
 --- !u!61 &6100000
 BoxCollider2D:
   m_ObjectHideFlags: 1
@@ -750,18 +752,6 @@ MonoBehaviour:
         showInInspector: 0
         networkSync: 0
         value: 0
-      - useVariable: 1
-        name: Damage Max
-        tooltip: 
-        showInInspector: 1
-        networkSync: 0
-        value: 50
-      - useVariable: 1
-        name: Damage Min
-        tooltip: 
-        showInInspector: 1
-        networkSync: 0
-        value: 40
       intVariables: []
       boolVariables:
       - useVariable: 1
@@ -4716,7 +4706,13 @@ MonoBehaviour:
       colorVariables: []
       rectVariables: []
       quaternionVariables: []
-      gameObjectVariables: []
+      gameObjectVariables:
+      - useVariable: 1
+        name: Parent
+        tooltip: 
+        showInInspector: 0
+        networkSync: 0
+        value: {fileID: 0}
       objectVariables: []
       materialVariables: []
       textureVariables: []
@@ -4732,6 +4728,134 @@ MonoBehaviour:
     StepFrame: 0
     activeStateName: 
   fsmTemplate: {fileID: 11400000, guid: b22468a3d5d0c3c4096464c0cc8a25d7, type: 2}
+--- !u!114 &11400018
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 100000}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 1384774831, guid: e743331561ef77147ae48cda9bcb8209, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  fsm:
+    usedInTemplate: {fileID: 0}
+    name: Melee Collision Controller
+    startState: State 1
+    states:
+    - name: State 1
+      description: 
+      colorIndex: 0
+      position:
+        serializedVersion: 2
+        x: 50
+        y: 100
+        width: 100
+        height: 16
+      isBreakpoint: 0
+      isSequence: 0
+      hideUnused: 0
+      transitions: []
+      actionData:
+        actionNames: []
+        customNames: []
+        actionEnabled: 
+        actionIsOpen: 
+        actionStartIndex: 
+        actionHashCodes: 
+        unityObjectParams: []
+        fsmGameObjectParams: []
+        fsmOwnerDefaultParams: []
+        animationCurveParams: []
+        functionCallParams: []
+        fsmTemplateControlParams: []
+        fsmEventTargetParams: []
+        fsmPropertyParams: []
+        layoutOptionParams: []
+        fsmStringParams: []
+        fsmObjectParams: []
+        fsmVarParams: []
+        byteData: 
+        arrayParamSizes: 
+        arrayParamTypes: []
+        customTypeSizes: 
+        customTypeNames: []
+        paramDataType: 
+        paramName: []
+        paramDataPos: 
+        paramByteDataSize: 
+    events: []
+    globalTransitions: []
+    variables:
+      floatVariables:
+      - useVariable: 1
+        name: Damage Max
+        tooltip: 
+        showInInspector: 1
+        networkSync: 0
+        value: 0
+      - useVariable: 1
+        name: Damage Min
+        tooltip: 
+        showInInspector: 1
+        networkSync: 0
+        value: 0
+      - useVariable: 1
+        name: Damage Result
+        tooltip: 
+        showInInspector: 0
+        networkSync: 0
+        value: 0
+      intVariables: []
+      boolVariables: []
+      stringVariables: []
+      vector2Variables: []
+      vector3Variables: []
+      colorVariables: []
+      rectVariables: []
+      quaternionVariables: []
+      gameObjectVariables:
+      - useVariable: 1
+        name: Collision Target
+        tooltip: 
+        showInInspector: 0
+        networkSync: 0
+        value: {fileID: 0}
+      objectVariables: []
+      materialVariables: []
+      textureVariables: []
+    description: 
+    docUrl: 
+    showStateLabel: 1
+    maxLoopCount: 0
+    watermark: 
+    version: 0
+    ExposedEvents: []
+    RestartOnEnable: 1
+    EnableDebugFlow: 0
+    StepFrame: 0
+    activeStateName: 
+  fsmTemplate: {fileID: 11400000, guid: 839c3266ab7c63d42bf251f3a84dacf6, type: 2}
+--- !u!114 &11400020
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 100000}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1c5a163466769484fb2c52cdc4b51276, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  debug: 0
+  HandleCollisionEnter2D: 0
+  HandleCollisionExit2D: 0
+  HandleCollisionStay2D: 0
+  HandleTriggerEnter2D: 0
+  HandleTriggerExit2D: 0
+  HandleTriggerStay2D: 0
+  lastTrigger2DInfo: {fileID: 0}
 --- !u!212 &21200000
 SpriteRenderer:
   m_ObjectHideFlags: 1
