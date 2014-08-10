@@ -11,7 +11,7 @@ GameObject:
   - 212: {fileID: 21200000}
   m_Layer: 9
   m_Name: swordswipe
-  m_TagString: EnemyWeapon
+  m_TagString: Visual Effect
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -1701,7 +1701,13 @@ MonoBehaviour:
       colorVariables: []
       rectVariables: []
       quaternionVariables: []
-      gameObjectVariables: []
+      gameObjectVariables:
+      - useVariable: 1
+        name: Parent
+        tooltip: 
+        showInInspector: 0
+        networkSync: 0
+        value: {fileID: 0}
       objectVariables: []
       materialVariables: []
       textureVariables: []
@@ -1716,7 +1722,7 @@ MonoBehaviour:
     EnableDebugFlow: 0
     StepFrame: 0
     activeStateName: 
-  fsmTemplate: {fileID: 0}
+  fsmTemplate: {fileID: 11400000, guid: e7b86b09040fdef4998a02c6043cbe38, type: 2}
 --- !u!114 &11400004
 MonoBehaviour:
   m_ObjectHideFlags: 1
