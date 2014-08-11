@@ -344,7 +344,7 @@ MonoBehaviour:
       colorIndex: 0
       position:
         serializedVersion: 2
-        x: 85
+        x: 693
         y: 253
         width: 100
         height: 32
@@ -430,7 +430,7 @@ MonoBehaviour:
       colorIndex: 0
       position:
         serializedVersion: 2
-        x: 343.976562
+        x: 951.976562
         y: 191.117188
         width: 132
         height: 32
@@ -490,7 +490,7 @@ MonoBehaviour:
       colorIndex: 0
       position:
         serializedVersion: 2
-        x: 343.414062
+        x: 951.414062
         y: 276.195312
         width: 134
         height: 48
@@ -556,7 +556,7 @@ MonoBehaviour:
       colorIndex: 0
       position:
         serializedVersion: 2
-        x: 339.03125
+        x: 947.03125
         y: 113.375
         width: 157
         height: 32
@@ -686,7 +686,7 @@ MonoBehaviour:
       colorIndex: 0
       position:
         serializedVersion: 2
-        x: 128.273438
+        x: 736.273438
         y: 334.921875
         width: 122
         height: 32
@@ -757,22 +757,14 @@ MonoBehaviour:
       colorIndex: 0
       position:
         serializedVersion: 2
-        x: 55
-        y: 176
-        width: 166
-        height: 32
+        x: 53
+        y: 211
+        width: 175
+        height: 16
       isBreakpoint: 0
       isSequence: 1
       hideUnused: 0
-      transitions:
-      - fsmEvent:
-          name: FINISHED
-          isSystemEvent: 1
-          isGlobal: 0
-        toState: Detect Hit
-        linkStyle: 0
-        linkConstraint: 0
-        colorIndex: 0
+      transitions: []
       actionData:
         actionNames:
         - HutongGames.PlayMaker.Actions.CreateObject
@@ -853,7 +845,7 @@ MonoBehaviour:
       colorIndex: 0
       position:
         serializedVersion: 2
-        x: 628.085938
+        x: 1236.08594
         y: 653.382812
         width: 100
         height: 16
@@ -896,7 +888,7 @@ MonoBehaviour:
       colorIndex: 0
       position:
         serializedVersion: 2
-        x: 194.382812
+        x: 802.382812
         y: 421.867188
         width: 111
         height: 32
@@ -972,7 +964,7 @@ MonoBehaviour:
       colorIndex: 0
       position:
         serializedVersion: 2
-        x: 581
+        x: 1189
         y: 249
         width: 118
         height: 32
@@ -1048,7 +1040,7 @@ MonoBehaviour:
       colorIndex: 0
       position:
         serializedVersion: 2
-        x: 605
+        x: 1213
         y: 326
         width: 160
         height: 48
@@ -1113,7 +1105,7 @@ MonoBehaviour:
       colorIndex: 0
       position:
         serializedVersion: 2
-        x: 863
+        x: 1471
         y: 554
         width: 104
         height: 16
@@ -1167,7 +1159,7 @@ MonoBehaviour:
       colorIndex: 0
       position:
         serializedVersion: 2
-        x: 635
+        x: 1243
         y: 415
         width: 100
         height: 32
@@ -1221,7 +1213,7 @@ MonoBehaviour:
       colorIndex: 0
       position:
         serializedVersion: 2
-        x: 622
+        x: 1230
         y: 476
         width: 125
         height: 32
@@ -1335,7 +1327,7 @@ MonoBehaviour:
       colorIndex: 0
       position:
         serializedVersion: 2
-        x: 605.0625
+        x: 1213.0625
         y: 536.945312
         width: 143
         height: 32
@@ -1406,7 +1398,7 @@ MonoBehaviour:
       colorIndex: 0
       position:
         serializedVersion: 2
-        x: 612.625
+        x: 1220.625
         y: 589.914062
         width: 124
         height: 32
@@ -1465,7 +1457,7 @@ MonoBehaviour:
       colorIndex: 0
       position:
         serializedVersion: 2
-        x: 818
+        x: 1426
         y: 372
         width: 198
         height: 32
@@ -1536,7 +1528,7 @@ MonoBehaviour:
       colorIndex: 0
       position:
         serializedVersion: 2
-        x: 841.5625
+        x: 1449.5625
         y: 430.96875
         width: 136
         height: 32
@@ -1595,7 +1587,7 @@ MonoBehaviour:
       colorIndex: 0
       position:
         serializedVersion: 2
-        x: 864
+        x: 1472
         y: 493
         width: 100
         height: 32
@@ -1677,6 +1669,47 @@ MonoBehaviour:
         - everyFrame
         paramDataPos: 00000000000000000e00000013000000
         paramByteDataSize: 000000000e0000000500000001000000
+    - name: Receive Damage
+      description: 
+      colorIndex: 0
+      position:
+        serializedVersion: 2
+        x: 350
+        y: 209
+        width: 132
+        height: 16
+      isBreakpoint: 0
+      isSequence: 0
+      hideUnused: 0
+      transitions: []
+      actionData:
+        actionNames: []
+        customNames: []
+        actionEnabled: 
+        actionIsOpen: 
+        actionStartIndex: 
+        actionHashCodes: 
+        unityObjectParams: []
+        fsmGameObjectParams: []
+        fsmOwnerDefaultParams: []
+        animationCurveParams: []
+        functionCallParams: []
+        fsmTemplateControlParams: []
+        fsmEventTargetParams: []
+        fsmPropertyParams: []
+        layoutOptionParams: []
+        fsmStringParams: []
+        fsmObjectParams: []
+        fsmVarParams: []
+        byteData: 
+        arrayParamSizes: 
+        arrayParamTypes: []
+        customTypeSizes: 
+        customTypeNames: []
+        paramDataType: 
+        paramName: []
+        paramDataPos: 
+        paramByteDataSize: 
     events:
     - name: FINISHED
       isSystemEvent: 1
@@ -1693,12 +1726,29 @@ MonoBehaviour:
     - name: OnHit
       isSystemEvent: 0
       isGlobal: 0
+    - name: OnMeleeDamage
+      isSystemEvent: 0
+      isGlobal: 0
     - name: OnNotDead
       isSystemEvent: 0
       isGlobal: 0
-    globalTransitions: []
+    globalTransitions:
+    - fsmEvent:
+        name: OnMeleeDamage
+        isSystemEvent: 0
+        isGlobal: 0
+      toState: Receive Damage
+      linkStyle: 0
+      linkConstraint: 0
+      colorIndex: 0
     variables:
       floatVariables:
+      - useVariable: 1
+        name: Current Armor Rating
+        tooltip: 
+        showInInspector: 0
+        networkSync: 0
+        value: 0
       - useVariable: 1
         name: Current Hit Damage Max
         tooltip: 
@@ -1770,7 +1820,7 @@ MonoBehaviour:
     EnableDebugFlow: 0
     StepFrame: 0
     activeStateName: 
-  fsmTemplate: {fileID: 0}
+  fsmTemplate: {fileID: 11400000, guid: 1650664437b2f58479a3e82e6c01f156, type: 2}
 --- !u!114 &11400002
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -3853,6 +3903,12 @@ MonoBehaviour:
     variables:
       floatVariables:
       - useVariable: 1
+        name: Armor Rating
+        tooltip: 
+        showInInspector: 1
+        networkSync: 0
+        value: 0
+      - useVariable: 1
         name: Hitpoints
         tooltip: 
         showInInspector: 0
@@ -3959,7 +4015,7 @@ MonoBehaviour:
     EnableDebugFlow: 0
     StepFrame: 0
     activeStateName: 
-  fsmTemplate: {fileID: 0}
+  fsmTemplate: {fileID: 11400000, guid: ada78c28764062342bd3c402d0b20b86, type: 2}
 --- !u!114 &11400008
 MonoBehaviour:
   m_ObjectHideFlags: 1

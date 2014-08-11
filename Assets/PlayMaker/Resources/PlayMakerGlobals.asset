@@ -111,3 +111,5 @@ MonoBehaviour:
   - OnShowArmoryUI
   - OnHideUI
   - OnAttackReady
+  - OnDisplayHitpointChange
+  - OnChangeHitpoints
