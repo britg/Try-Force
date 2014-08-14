@@ -41,14 +41,4 @@ public class PlayerController : GameController {
 		return true;
 	}
 
-	void OnTriggerEnter2D (Collider2D collider) {
-		if (collider.gameObject.tag == Game.enemyWeaponTag) {
-			Die();
-		}
-	}
-
-	void Die () {
-		NotificationCenter.PostNotification(this, Notifications.Dead);
-	}
-
 }
