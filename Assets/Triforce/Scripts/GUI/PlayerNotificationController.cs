@@ -24,4 +24,9 @@ public class PlayerNotificationController : GameController {
     UIFollowTarget followTarget = gameObject.AddComponent<UIFollowTarget>();
     followTarget.target = playerObj.transform;
   }
+
+	void test () {
+
+	}
+
 }
