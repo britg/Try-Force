@@ -25,8 +25,4 @@ public class PlayerNotificationController : GameController {
     followTarget.target = playerObj.transform;
   }
 
-	void test () {
-
-	}
-
 }
