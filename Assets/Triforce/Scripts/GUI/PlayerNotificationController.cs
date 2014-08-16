@@ -7,8 +7,8 @@ public class PlayerNotificationController : GameController {
 
 	// Use this for initialization
 	void Start () {
-    hudText = GetComponent<HUDText>();
-    FollowPlayer();
+        hudText = GetComponent<HUDText>();
+        FollowPlayer();
 	}
 	
 	// Update is called once per frame
@@ -16,13 +16,13 @@ public class PlayerNotificationController : GameController {
 	  
 	}
 
-  public void ChangeHitpoints (float change) {
-    hudText.Add(change.ToString("F0"), Color.red, 0f);
-  }
+    public void ChangeHitpoints (float change) {
+        hudText.Add(change.ToString("F0"), Color.red, 0f);
+    }
 
-  void FollowPlayer () {
-    UIFollowTarget followTarget = gameObject.AddComponent<UIFollowTarget>();
-    followTarget.target = playerObj.transform;
-  }
+    void FollowPlayer () {
+        UIFollowTarget followTarget = gameObject.AddComponent<UIFollowTarget>();
+        followTarget.target = playerObj.transform;
+    }
 
 }

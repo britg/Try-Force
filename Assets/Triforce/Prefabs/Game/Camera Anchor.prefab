@@ -316,7 +316,7 @@ MonoBehaviour:
         tooltip: 
         showInInspector: 1
         networkSync: 0
-        value: 6
+        value: 10
       intVariables: []
       boolVariables: []
       stringVariables: []
@@ -390,7 +390,7 @@ MonoBehaviour:
   _unityCamera: {fileID: 2000000}
   viewportClippingEnabled: 0
   viewportRegion: {x: 0, y: 0, z: 100, w: 100}
-  zoomFactor: .550000012
+  zoomFactor: .430000007
   forceResolutionInEditor: 1
   forceResolution: {x: 1920, y: 1080}
 --- !u!124 &12400000
