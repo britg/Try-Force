@@ -2912,6 +2912,34 @@ Prefab:
       propertyPath: m_RootOrder
       value: 9
       objectReference: {fileID: 0}
+    - target: {fileID: 400040, guid: 5c724f367f05e4c75a00dd0333e1f8ae, type: 2}
+      propertyPath: m_LocalPosition.y
+      value: 318.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 400052, guid: 5c724f367f05e4c75a00dd0333e1f8ae, type: 2}
+      propertyPath: m_LocalPosition.y
+      value: -210.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 400012, guid: 5c724f367f05e4c75a00dd0333e1f8ae, type: 2}
+      propertyPath: m_LocalScale.x
+      value: .00279329601
+      objectReference: {fileID: 0}
+    - target: {fileID: 400012, guid: 5c724f367f05e4c75a00dd0333e1f8ae, type: 2}
+      propertyPath: m_LocalScale.y
+      value: .00279329601
+      objectReference: {fileID: 0}
+    - target: {fileID: 400012, guid: 5c724f367f05e4c75a00dd0333e1f8ae, type: 2}
+      propertyPath: m_LocalScale.z
+      value: .00279329601
+      objectReference: {fileID: 0}
+    - target: {fileID: 400014, guid: 5c724f367f05e4c75a00dd0333e1f8ae, type: 2}
+      propertyPath: m_LocalPosition.x
+      value: 576.999939
+      objectReference: {fileID: 0}
+    - target: {fileID: 400014, guid: 5c724f367f05e4c75a00dd0333e1f8ae, type: 2}
+      propertyPath: m_LocalPosition.y
+      value: 322
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 5c724f367f05e4c75a00dd0333e1f8ae, type: 2}
   m_RootGameObject: {fileID: 1384883252}
@@ -7212,6 +7240,14 @@ Prefab:
       propertyPath: m_Mesh
       value: 
       objectReference: {fileID: 0}
+    - target: {fileID: 6000000, guid: a1406d922901ff9488201ae22db520a7, type: 2}
+      propertyPath: m_IsTrigger
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 100000, guid: a1406d922901ff9488201ae22db520a7, type: 2}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: a1406d922901ff9488201ae22db520a7, type: 2}
   m_RootGameObject: {fileID: 1745990032}
@@ -10940,7 +10976,7 @@ Transform:
   m_PrefabInternal: {fileID: 499417846}
   m_GameObject: {fileID: 1057742019}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 226, z: 0}
+  m_LocalPosition: {x: 0, y: 318.5, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 1384883256}
@@ -12706,7 +12742,7 @@ Transform:
   m_PrefabInternal: {fileID: 499417846}
   m_GameObject: {fileID: 1308363698}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: .5, y: -164.25, z: 0}
+  m_LocalPosition: {x: .5, y: -210.5, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 1965319747}
@@ -12764,8 +12800,8 @@ MonoBehaviour:
   updateAnchors: 1
   mColor: {r: 1, g: 1, b: 1, a: 1}
   mPivot: 4
-  mWidth: 747
-  mHeight: 179
+  mWidth: 1075
+  mHeight: 271
   mDepth: 3
   autoResizeBoxCollider: 0
   hideIfOffScreen: 0
@@ -13178,7 +13214,7 @@ Transform:
   m_GameObject: {fileID: 1384883252}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 100, z: 0}
-  m_LocalScale: {x: .00376647827, y: .00376647827, z: .00376647827}
+  m_LocalScale: {x: .00279329601, y: .00279329601, z: .00279329601}
   m_Children:
   - {fileID: 242214581}
   - {fileID: 44364028}
@@ -14636,7 +14672,7 @@ Transform:
   m_PrefabInternal: {fileID: 499417846}
   m_GameObject: {fileID: 1433711866}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 413, y: 229.5, z: 0}
+  m_LocalPosition: {x: 576.999939, y: 322, z: 0}
   m_LocalScale: {x: .99990797, y: .99990797, z: .99990797}
   m_Children:
   - {fileID: 760126843}
@@ -17068,7 +17104,7 @@ Transform:
   m_PrefabParentObject: {fileID: 400004, guid: a1406d922901ff9488201ae22db520a7, type: 2}
   m_PrefabInternal: {fileID: 617091523}
   m_GameObject: {fileID: 1745990032}
-  m_LocalRotation: {x: 0, y: 0, z: .712055445, w: .702123344}
+  m_LocalRotation: {x: 0, y: 0, z: .712055385, w: .702123284}
   m_LocalPosition: {x: 21.5181637, y: 1.4133358, z: 0}
   m_LocalScale: {x: 1.5, y: 1.5, z: 1.90419221}
   m_Children:
@@ -17630,6 +17666,12 @@ MonoBehaviour:
       floatVariables:
       - useVariable: 1
         name: Current Distance
+        tooltip: 
+        showInInspector: 0
+        networkSync: 0
+        value: 0
+      - useVariable: 1
+        name: Weapon Range
         tooltip: 
         showInInspector: 0
         networkSync: 0
@@ -21974,7 +22016,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!60 &1840438173
 PolygonCollider2D:
   m_ObjectHideFlags: 0
@@ -21984,7 +22026,7 @@ PolygonCollider2D:
   m_GameObject: {fileID: 1840438172}
   m_Enabled: 1
   m_Material: {fileID: 0}
-  m_IsTrigger: 0
+  m_IsTrigger: 1
   m_Poly:
     m_Paths:
     - - {x: .74000001, y: .660000026}
