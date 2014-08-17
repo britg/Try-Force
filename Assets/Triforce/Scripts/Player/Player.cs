@@ -16,11 +16,11 @@ public class Player {
 		Mage
 	}
 
-	public int maxHitPoints;
-    public int maxMana;
-    public int maxArrows;
-    public int maxRunes;
-    public int maxLockpicks;
+	public int MaxHitPoints { get; set; }
+    public int MaxMana { get; set; }
+    public int MaxArrows { get; set; }
+    public int MaxRunes { get; set; }
+    public int MaxLockpicks { get; set; }
 
     public int HitPoints { get; set; }
     public int Mana { get; set; }
@@ -45,6 +45,10 @@ public class Player {
 
     public object GetProperty (string propertyName) {
         return this.GetType().GetProperty(propertyName).GetValue(this, null);
+    }
+
+    public void SetProperty (string propName, object value) {
+        this.GetType().GetProperty(propName).SetValue(this, value, null);
     }
 
 }

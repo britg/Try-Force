@@ -3,11 +3,14 @@ using System.Collections;
 
 public class PlayerController : GameController {
 
-	public Player player;
+	public new Player player;
 	public CircleCollider2D collisionBody;
 
-	void Start () {
+    void Awake () {
         LoadPlayer();
+    }
+
+	void Start () {
 	}
 
 	void Update () {

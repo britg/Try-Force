@@ -4,8 +4,6 @@ using HutongGames.PlayMaker;
 
 public class OrientationController : GameController {
 
-	Player.Orientation previousOrientation;
-
 	void Start () {
 		FsmVariables.GlobalVariables.GetFsmString("Orientation").Value = player.orientation.ToString();
 	}
