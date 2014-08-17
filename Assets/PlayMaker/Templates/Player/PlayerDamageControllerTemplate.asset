@@ -23,7 +23,7 @@ MonoBehaviour:
       position:
         serializedVersion: 2
         x: 53
-        y: 211
+        y: 115
         width: 175
         height: 16
       isBreakpoint: 0
@@ -111,7 +111,7 @@ MonoBehaviour:
       position:
         serializedVersion: 2
         x: 322
-        y: 212
+        y: 116
         width: 173
         height: 32
       isBreakpoint: 0
@@ -222,7 +222,7 @@ MonoBehaviour:
       position:
         serializedVersion: 2
         x: 315
-        y: 276
+        y: 180
         width: 188
         height: 32
       isBreakpoint: 0
@@ -298,7 +298,7 @@ MonoBehaviour:
       position:
         serializedVersion: 2
         x: 295
-        y: 336
+        y: 240
         width: 237
         height: 32
       isBreakpoint: 0
@@ -353,7 +353,7 @@ MonoBehaviour:
       position:
         serializedVersion: 2
         x: 329
-        y: 456
+        y: 360
         width: 182
         height: 32
       isBreakpoint: 0
@@ -450,7 +450,7 @@ MonoBehaviour:
       position:
         serializedVersion: 2
         x: 347
-        y: 524
+        y: 428
         width: 152
         height: 16
       isBreakpoint: 0
@@ -529,7 +529,7 @@ MonoBehaviour:
       position:
         serializedVersion: 2
         x: 326
-        y: 398
+        y: 302
         width: 177
         height: 32
       isBreakpoint: 0
