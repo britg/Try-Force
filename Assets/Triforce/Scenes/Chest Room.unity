@@ -10442,7 +10442,7 @@ MonoBehaviour:
             tooltip: 
             showInInspector: 0
             networkSync: 0
-            value: {fileID: 616545160}
+            value: {fileID: 0}
         animationCurveParams: []
         functionCallParams: []
         fsmTemplateControlParams: []
@@ -11268,7 +11268,7 @@ MonoBehaviour:
       isGlobal: 0
     - name: OnDead
       isSystemEvent: 0
-      isGlobal: 0
+      isGlobal: 1
     - name: OnHit
       isSystemEvent: 0
       isGlobal: 0
@@ -18336,7 +18336,7 @@ MonoBehaviour:
             tooltip: 
             showInInspector: 0
             networkSync: 0
-            value: {fileID: 616545160}
+            value: {fileID: 0}
         animationCurveParams: []
         functionCallParams: []
         fsmTemplateControlParams: []
@@ -18595,7 +18595,7 @@ MonoBehaviour:
             tooltip: 
             showInInspector: 0
             networkSync: 0
-            value: {fileID: 616545160}
+            value: {fileID: 0}
         animationCurveParams: []
         functionCallParams: []
         fsmTemplateControlParams: []
@@ -27889,7 +27889,7 @@ MonoBehaviour:
       isGlobal: 0
     - name: OnDead
       isSystemEvent: 0
-      isGlobal: 0
+      isGlobal: 1
     - name: OnHit
       isSystemEvent: 0
       isGlobal: 0
@@ -32567,7 +32567,7 @@ MonoBehaviour:
             tooltip: 
             showInInspector: 0
             networkSync: 0
-            value: {fileID: 616545160}
+            value: {fileID: 0}
         animationCurveParams: []
         functionCallParams: []
         fsmTemplateControlParams: []
@@ -32710,7 +32710,7 @@ MonoBehaviour:
             tooltip: 
             showInInspector: 0
             networkSync: 0
-            value: {fileID: 616545160}
+            value: {fileID: 0}
         animationCurveParams: []
         functionCallParams: []
         fsmTemplateControlParams: []

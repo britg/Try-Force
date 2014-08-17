@@ -43,6 +43,4 @@ public class Player {
 	public bool thiefFace { get { return orientation == Player.Orientation.Thief; } }
 	public bool mageFace { get { return orientation == Player.Orientation.Mage; } }
 
-
-
 }
