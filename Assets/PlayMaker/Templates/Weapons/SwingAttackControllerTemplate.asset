@@ -23,7 +23,7 @@ MonoBehaviour:
       position:
         serializedVersion: 2
         x: 299
-        y: 171
+        y: 235
         width: 100
         height: 32
       isBreakpoint: 0
@@ -101,8 +101,8 @@ MonoBehaviour:
       colorIndex: 0
       position:
         serializedVersion: 2
-        x: 63
-        y: 218
+        x: 305
+        y: 102.898438
         width: 100
         height: 32
       isBreakpoint: 0
@@ -113,7 +113,7 @@ MonoBehaviour:
           name: FINISHED
           isSystemEvent: 1
           isGlobal: 0
-        toState: Announce Ready
+        toState: Start Delay
         linkStyle: 0
         linkConstraint: 0
         colorIndex: 0
@@ -169,8 +169,8 @@ MonoBehaviour:
       colorIndex: 0
       position:
         serializedVersion: 2
-        x: 294
-        y: 308
+        x: 296
+        y: 375
         width: 129
         height: 16
       isBreakpoint: 0
@@ -249,21 +249,13 @@ MonoBehaviour:
       position:
         serializedVersion: 2
         x: 65
-        y: 157
+        y: 221
         width: 100
-        height: 32
+        height: 16
       isBreakpoint: 0
       isSequence: 0
       hideUnused: 0
-      transitions:
-      - fsmEvent:
-          name: FINISHED
-          isSystemEvent: 1
-          isGlobal: 0
-        toState: Reset
-        linkStyle: 0
-        linkConstraint: 0
-        colorIndex: 0
+      transitions: []
       actionData:
         actionNames:
         - HutongGames.PlayMaker.Actions.GetParent
@@ -316,7 +308,7 @@ MonoBehaviour:
       position:
         serializedVersion: 2
         x: 304
-        y: 105
+        y: 169
         width: 100
         height: 32
       isBreakpoint: 0
@@ -370,7 +362,7 @@ MonoBehaviour:
       position:
         serializedVersion: 2
         x: 306
-        y: 230
+        y: 294
         width: 100
         height: 32
       isBreakpoint: 0
@@ -381,7 +373,7 @@ MonoBehaviour:
           name: FINISHED
           isSystemEvent: 1
           isGlobal: 0
-        toState: Reset
+        toState: Announce Ready
         linkStyle: 0
         linkConstraint: 0
         colorIndex: 0
@@ -433,7 +425,7 @@ MonoBehaviour:
         name: OnAttack
         isSystemEvent: 0
         isGlobal: 1
-      toState: Start Delay
+      toState: Reset
       linkStyle: 0
       linkConstraint: 0
       colorIndex: 0

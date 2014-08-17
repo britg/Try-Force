@@ -23,8 +23,8 @@ MonoBehaviour:
       position:
         serializedVersion: 2
         x: 546
-        y: 170
-        width: 155
+        y: 186
+        width: 145
         height: 32
       isBreakpoint: 0
       isSequence: 0
@@ -104,8 +104,8 @@ MonoBehaviour:
       colorIndex: 0
       position:
         serializedVersion: 2
-        x: 560
-        y: 333
+        x: 551
+        y: 422
         width: 140
         height: 16
       isBreakpoint: 0
@@ -184,7 +184,7 @@ MonoBehaviour:
       position:
         serializedVersion: 2
         x: 56
-        y: 225
+        y: 241
         width: 100
         height: 16
       isBreakpoint: 0
@@ -240,7 +240,7 @@ MonoBehaviour:
       position:
         serializedVersion: 2
         x: 265
-        y: 101
+        y: 117
         width: 104
         height: 32
       isBreakpoint: 0
@@ -321,7 +321,7 @@ MonoBehaviour:
       position:
         serializedVersion: 2
         x: 263
-        y: 170
+        y: 186
         width: 101
         height: 32
       isBreakpoint: 0
@@ -402,7 +402,7 @@ MonoBehaviour:
       position:
         serializedVersion: 2
         x: 547
-        y: 248
+        y: 264
         width: 151
         height: 48
       isBreakpoint: 0
@@ -413,7 +413,7 @@ MonoBehaviour:
           name: OnHitObject
           isSystemEvent: 0
           isGlobal: 0
-        toState: Send Attack Event
+        toState: Show Weapon
         linkStyle: 0
         linkConstraint: 0
         colorIndex: 0
@@ -496,7 +496,7 @@ MonoBehaviour:
       position:
         serializedVersion: 2
         x: 258
-        y: 246
+        y: 262
         width: 146
         height: 32
       isBreakpoint: 0
@@ -507,7 +507,7 @@ MonoBehaviour:
           name: FINISHED
           isSystemEvent: 1
           isGlobal: 0
-        toState: Check Player Visible
+        toState: Hide Weapon
         linkStyle: 0
         linkConstraint: 0
         colorIndex: 0
@@ -566,6 +566,134 @@ MonoBehaviour:
         - everyFrame
         paramDataPos: 0000000000000000010000000000000011000000
         paramByteDataSize: 0000000000000000000000001100000001000000
+    - name: Hide Weapon
+      description: 
+      colorIndex: 0
+      position:
+        serializedVersion: 2
+        x: 555
+        y: 114.992188
+        width: 115
+        height: 32
+      isBreakpoint: 0
+      isSequence: 0
+      hideUnused: 0
+      transitions:
+      - fsmEvent:
+          name: FINISHED
+          isSystemEvent: 1
+          isGlobal: 0
+        toState: Check Player Visible
+        linkStyle: 0
+        linkConstraint: 0
+        colorIndex: 0
+      actionData:
+        actionNames:
+        - HutongGames.PlayMaker.Actions.ActivateGameObject
+        customNames:
+        - 
+        actionEnabled: 01
+        actionIsOpen: 01
+        actionStartIndex: 00000000
+        actionHashCodes: b4797e4a
+        unityObjectParams: []
+        fsmGameObjectParams: []
+        fsmOwnerDefaultParams:
+        - ownerOption: 1
+          gameObject:
+            useVariable: 1
+            name: Weapon
+            tooltip: 
+            showInInspector: 0
+            networkSync: 0
+            value: {fileID: 0}
+        animationCurveParams: []
+        functionCallParams: []
+        fsmTemplateControlParams: []
+        fsmEventTargetParams: []
+        fsmPropertyParams: []
+        layoutOptionParams: []
+        fsmStringParams: []
+        fsmObjectParams: []
+        fsmVarParams: []
+        byteData: 000001000000
+        arrayParamSizes: 
+        arrayParamTypes: []
+        customTypeSizes: 
+        customTypeNames: []
+        paramDataType: 1400000011000000110000000100000001000000
+        paramName:
+        - gameObject
+        - activate
+        - recursive
+        - resetOnExit
+        - everyFrame
+        paramDataPos: 0000000000000000020000000400000005000000
+        paramByteDataSize: 0000000002000000020000000100000001000000
+    - name: Show Weapon
+      description: 
+      colorIndex: 0
+      position:
+        serializedVersion: 2
+        x: 568
+        y: 349
+        width: 106
+        height: 32
+      isBreakpoint: 0
+      isSequence: 0
+      hideUnused: 0
+      transitions:
+      - fsmEvent:
+          name: FINISHED
+          isSystemEvent: 1
+          isGlobal: 0
+        toState: Send Attack Event
+        linkStyle: 0
+        linkConstraint: 0
+        colorIndex: 0
+      actionData:
+        actionNames:
+        - HutongGames.PlayMaker.Actions.ActivateGameObject
+        customNames:
+        - 
+        actionEnabled: 01
+        actionIsOpen: 01
+        actionStartIndex: 00000000
+        actionHashCodes: b4797e4a
+        unityObjectParams: []
+        fsmGameObjectParams: []
+        fsmOwnerDefaultParams:
+        - ownerOption: 1
+          gameObject:
+            useVariable: 1
+            name: Weapon
+            tooltip: 
+            showInInspector: 0
+            networkSync: 0
+            value: {fileID: 0}
+        animationCurveParams: []
+        functionCallParams: []
+        fsmTemplateControlParams: []
+        fsmEventTargetParams: []
+        fsmPropertyParams: []
+        layoutOptionParams: []
+        fsmStringParams: []
+        fsmObjectParams: []
+        fsmVarParams: []
+        byteData: 010000000000
+        arrayParamSizes: 
+        arrayParamTypes: []
+        customTypeSizes: 
+        customTypeNames: []
+        paramDataType: 1400000011000000110000000100000001000000
+        paramName:
+        - gameObject
+        - activate
+        - recursive
+        - resetOnExit
+        - everyFrame
+        paramDataPos: 0000000000000000020000000400000005000000
+        paramByteDataSize: 0000000002000000020000000100000001000000
     events:
     - name: FINISHED
       isSystemEvent: 1
@@ -601,7 +729,7 @@ MonoBehaviour:
         name: OnAttackReady
         isSystemEvent: 0
         isGlobal: 1
-      toState: Check Player Visible
+      toState: Hide Weapon
       linkStyle: 0
       linkConstraint: 0
       colorIndex: 0
