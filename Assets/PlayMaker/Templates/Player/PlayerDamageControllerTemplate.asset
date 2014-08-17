@@ -540,7 +540,7 @@ MonoBehaviour:
           name: FINISHED
           isSystemEvent: 1
           isGlobal: 0
-        toState: Set Damage Event Value
+        toState: Send Damage Message
         linkStyle: 0
         linkConstraint: 0
         colorIndex: 0
@@ -577,6 +577,47 @@ MonoBehaviour:
         - everyFrame
         paramDataPos: 00000000170000001c000000
         paramByteDataSize: 170000000500000001000000
+    - name: Send Damage Message
+      description: 
+      colorIndex: 0
+      position:
+        serializedVersion: 2
+        x: 597
+        y: 334
+        width: 172
+        height: 16
+      isBreakpoint: 0
+      isSequence: 0
+      hideUnused: 0
+      transitions: []
+      actionData:
+        actionNames: []
+        customNames: []
+        actionEnabled: 
+        actionIsOpen: 
+        actionStartIndex: 
+        actionHashCodes: 
+        unityObjectParams: []
+        fsmGameObjectParams: []
+        fsmOwnerDefaultParams: []
+        animationCurveParams: []
+        functionCallParams: []
+        fsmTemplateControlParams: []
+        fsmEventTargetParams: []
+        fsmPropertyParams: []
+        layoutOptionParams: []
+        fsmStringParams: []
+        fsmObjectParams: []
+        fsmVarParams: []
+        byteData: 
+        arrayParamSizes: 
+        arrayParamTypes: []
+        customTypeSizes: 
+        customTypeNames: []
+        paramDataType: 
+        paramName: []
+        paramDataPos: 
+        paramByteDataSize: 
     events:
     - name: FINISHED
       isSystemEvent: 1

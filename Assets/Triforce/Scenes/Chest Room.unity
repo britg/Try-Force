@@ -595,7 +595,7 @@ MonoBehaviour:
               tooltip: 
               showInInspector: 0
               networkSync: 0
-              value: {fileID: 0}
+              value: {fileID: 616545160}
           fsmName:
             useVariable: 0
             name: 
@@ -8223,7 +8223,7 @@ MonoBehaviour:
       isGlobal: 0
     - name: OnDead
       isSystemEvent: 0
-      isGlobal: 0
+      isGlobal: 1
     - name: OnHit
       isSystemEvent: 0
       isGlobal: 0
@@ -11774,7 +11774,7 @@ MonoBehaviour:
             tooltip: 
             showInInspector: 0
             networkSync: 0
-            value: {fileID: 0}
+            value: {fileID: 616545160}
         - ownerOption: 1
           gameObject:
             useVariable: 1
@@ -11782,7 +11782,7 @@ MonoBehaviour:
             tooltip: 
             showInInspector: 0
             networkSync: 0
-            value: {fileID: 0}
+            value: {fileID: 616545160}
         animationCurveParams: []
         functionCallParams: []
         fsmTemplateControlParams: []
@@ -11803,7 +11803,7 @@ MonoBehaviour:
               tooltip: 
               showInInspector: 0
               networkSync: 0
-              value: {fileID: 0}
+              value: {fileID: 616545160}
           fsmName:
             useVariable: 0
             name: 
@@ -11915,7 +11915,7 @@ MonoBehaviour:
             tooltip: 
             showInInspector: 0
             networkSync: 0
-            value: {fileID: 0}
+            value: {fileID: 1361644027}
         animationCurveParams: []
         functionCallParams: []
         fsmTemplateControlParams: []
@@ -22729,7 +22729,7 @@ MonoBehaviour:
       isGlobal: 0
     - name: OnDead
       isSystemEvent: 0
-      isGlobal: 0
+      isGlobal: 1
     - name: OnHit
       isSystemEvent: 0
       isGlobal: 0
@@ -24010,7 +24010,7 @@ MonoBehaviour:
               tooltip: 
               showInInspector: 0
               networkSync: 0
-              value: {fileID: 0}
+              value: {fileID: 616545160}
           fsmName:
             useVariable: 0
             name: 
@@ -27171,6 +27171,30 @@ Prefab:
     - target: {fileID: 400012, guid: 5c724f367f05e4c75a00dd0333e1f8ae, type: 2}
       propertyPath: m_RootOrder
       value: 6
+      objectReference: {fileID: 0}
+    - target: {fileID: 400040, guid: 5c724f367f05e4c75a00dd0333e1f8ae, type: 2}
+      propertyPath: m_LocalPosition.y
+      value: 171.499985
+      objectReference: {fileID: 0}
+    - target: {fileID: 400012, guid: 5c724f367f05e4c75a00dd0333e1f8ae, type: 2}
+      propertyPath: m_LocalScale.x
+      value: .00473933667
+      objectReference: {fileID: 0}
+    - target: {fileID: 400012, guid: 5c724f367f05e4c75a00dd0333e1f8ae, type: 2}
+      propertyPath: m_LocalScale.y
+      value: .00473933667
+      objectReference: {fileID: 0}
+    - target: {fileID: 400012, guid: 5c724f367f05e4c75a00dd0333e1f8ae, type: 2}
+      propertyPath: m_LocalScale.z
+      value: .00473933667
+      objectReference: {fileID: 0}
+    - target: {fileID: 400014, guid: 5c724f367f05e4c75a00dd0333e1f8ae, type: 2}
+      propertyPath: m_LocalPosition.x
+      value: 316.499969
+      objectReference: {fileID: 0}
+    - target: {fileID: 400014, guid: 5c724f367f05e4c75a00dd0333e1f8ae, type: 2}
+      propertyPath: m_LocalPosition.y
+      value: 174.999985
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 5c724f367f05e4c75a00dd0333e1f8ae, type: 2}
