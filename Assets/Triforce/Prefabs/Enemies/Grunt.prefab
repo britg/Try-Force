@@ -19,7 +19,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!1 &100002
 GameObject:
   m_ObjectHideFlags: 0
@@ -93,7 +93,7 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 100004}
   m_LocalRotation: {x: 0, y: 0, z: .712055445, w: .702123344}
-  m_LocalPosition: {x: 21.5181637, y: 1.4133358, z: 0}
+  m_LocalPosition: {x: 1.28196311, y: 7.19718933, z: 0}
   m_LocalScale: {x: 1.5, y: 1.5, z: 1.90419221}
   m_Children:
   - {fileID: 400002}
@@ -748,6 +748,12 @@ MonoBehaviour:
       floatVariables:
       - useVariable: 1
         name: Current Distance
+        tooltip: 
+        showInInspector: 0
+        networkSync: 0
+        value: 0
+      - useVariable: 1
+        name: Weapon Range
         tooltip: 
         showInInspector: 0
         networkSync: 0
@@ -4697,7 +4703,19 @@ MonoBehaviour:
     events: []
     globalTransitions: []
     variables:
-      floatVariables: []
+      floatVariables:
+      - useVariable: 1
+        name: End Delay
+        tooltip: 
+        showInInspector: 1
+        networkSync: 0
+        value: 1
+      - useVariable: 1
+        name: Start Delay
+        tooltip: 
+        showInInspector: 1
+        networkSync: 0
+        value: .800000012
       intVariables: []
       boolVariables: []
       stringVariables: []

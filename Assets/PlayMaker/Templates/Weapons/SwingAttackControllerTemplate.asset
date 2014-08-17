@@ -344,7 +344,7 @@ MonoBehaviour:
         fsmStringParams: []
         fsmObjectParams: []
         fsmVarParams: []
-        byteData: cdcccc3d0046494e495348454400
+        byteData: 000000000153746172742044656c617946494e495348454400
         arrayParamSizes: 
         arrayParamTypes: []
         customTypeSizes: 
@@ -354,8 +354,8 @@ MonoBehaviour:
         - time
         - finishEvent
         - realTime
-        paramDataPos: 00000000050000000d000000
-        paramByteDataSize: 050000000800000001000000
+        paramDataPos: 000000001000000018000000
+        paramByteDataSize: 100000000800000001000000
     - name: End Delay
       description: 
       colorIndex: 0
@@ -398,7 +398,7 @@ MonoBehaviour:
         fsmStringParams: []
         fsmObjectParams: []
         fsmVarParams: []
-        byteData: 0000003f0000
+        byteData: 0000000001456e642044656c617900
         arrayParamSizes: 
         arrayParamTypes: []
         customTypeSizes: 
@@ -408,8 +408,8 @@ MonoBehaviour:
         - time
         - finishEvent
         - realTime
-        paramDataPos: 000000000500000005000000
-        paramByteDataSize: 050000000000000001000000
+        paramDataPos: 000000000e0000000e000000
+        paramByteDataSize: 0e0000000000000001000000
     events:
     - name: FINISHED
       isSystemEvent: 1
@@ -430,7 +430,19 @@ MonoBehaviour:
       linkConstraint: 0
       colorIndex: 0
     variables:
-      floatVariables: []
+      floatVariables:
+      - useVariable: 1
+        name: End Delay
+        tooltip: 
+        showInInspector: 1
+        networkSync: 0
+        value: 0
+      - useVariable: 1
+        name: Start Delay
+        tooltip: 
+        showInInspector: 1
+        networkSync: 0
+        value: 0
       intVariables: []
       boolVariables: []
       stringVariables: []

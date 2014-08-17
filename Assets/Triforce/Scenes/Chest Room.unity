@@ -450,6 +450,10 @@ Prefab:
       propertyPath: playerTransform
       value: 
       objectReference: {fileID: 616545162}
+    - target: {fileID: 2000000, guid: cf29f2c57e5031a469c7943460603b9a, type: 2}
+      propertyPath: m_CullingMask.m_Bits
+      value: 4294967295
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: cf29f2c57e5031a469c7943460603b9a, type: 2}
   m_RootGameObject: {fileID: 1610161153}
@@ -5066,7 +5070,7 @@ MonoBehaviour:
         tooltip: 
         showInInspector: 1
         networkSync: 0
-        value: 6
+        value: 10
       intVariables: []
       boolVariables: []
       stringVariables: []
@@ -5157,7 +5161,7 @@ MonoBehaviour:
   _unityCamera: {fileID: 377442939}
   viewportClippingEnabled: 0
   viewportRegion: {x: 0, y: 0, z: 100, w: 100}
-  zoomFactor: .550000012
+  zoomFactor: .430000007
   forceResolutionInEditor: 1
   forceResolution: {x: 1920, y: 1080}
 --- !u!20 &377442939
@@ -5185,7 +5189,7 @@ Camera:
   m_Depth: 0
   m_CullingMask:
     serializedVersion: 2
-    m_Bits: 4294967039
+    m_Bits: 4294967295
   m_RenderingPath: -1
   m_TargetTexture: {fileID: 0}
   m_TargetDisplay: 0
@@ -5470,7 +5474,7 @@ GameObject:
   - 50: {fileID: 469507181}
   - 114: {fileID: 469507180}
   - 114: {fileID: 469507179}
-  m_Layer: 11
+  m_Layer: 8
   m_Name: Sword
   m_TagString: Weapon
   m_Icon: {fileID: 0}
@@ -8116,7 +8120,7 @@ GameObject:
   - 50: {fileID: 616545166}
   - 114: {fileID: 616545164}
   - 114: {fileID: 1473564762}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Player
   m_TagString: Player
   m_Icon: {fileID: 0}
@@ -11253,7 +11257,7 @@ MonoBehaviour:
       isGlobal: 0
     - name: OnDead
       isSystemEvent: 0
-      isGlobal: 0
+      isGlobal: 1
     - name: OnHit
       isSystemEvent: 0
       isGlobal: 0
@@ -11360,7 +11364,7 @@ Transform:
   m_PrefabInternal: {fileID: 1998484056}
   m_GameObject: {fileID: 638322139}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: .5, y: -210.5, z: 0}
+  m_LocalPosition: {x: .5, y: -172.75, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 446139963}
@@ -11418,13 +11422,13 @@ MonoBehaviour:
   updateAnchors: 1
   mColor: {r: 1, g: 1, b: 1, a: 1}
   mPivot: 4
-  mWidth: 1075
-  mHeight: 271
+  mWidth: 807
+  mHeight: 196
   mDepth: 3
   autoResizeBoxCollider: 0
   hideIfOffScreen: 0
   keepAspectRatio: 0
-  aspectRatio: 2.89542484
+  aspectRatio: 4.17318439
 --- !u!1 &659649945
 GameObject:
   m_ObjectHideFlags: 0
@@ -14862,7 +14866,7 @@ Transform:
   m_PrefabInternal: {fileID: 1998484056}
   m_GameObject: {fileID: 1057742019}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 318.5, z: 0}
+  m_LocalPosition: {x: 0, y: 243, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 1384883256}
@@ -15800,7 +15804,7 @@ Transform:
   m_PrefabParentObject: {fileID: 400000, guid: 1ff62915f0fa24d8f8dc54c55cc997d9, type: 2}
   m_PrefabInternal: {fileID: 1539318796}
   m_GameObject: {fileID: 1112241866}
-  m_LocalRotation: {x: 0, y: 0, z: .707106829, w: .707106709}
+  m_LocalRotation: {x: 0, y: 0, z: .707106888, w: .707106769}
   m_LocalPosition: {x: -7.70954418, y: -45.1234856, z: 0}
   m_LocalScale: {x: 10.3499966, y: .5, z: 1}
   m_Children: []
@@ -18017,7 +18021,7 @@ GameObject:
   m_Component:
   - 4: {fileID: 1195978343}
   - 114: {fileID: 1195978344}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Bow
   m_TagString: Weapon
   m_Icon: {fileID: 0}
@@ -20240,7 +20244,7 @@ Transform:
   m_GameObject: {fileID: 1384883252}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 100, z: 0}
-  m_LocalScale: {x: .00279329601, y: .00279329601, z: .00279329601}
+  m_LocalScale: {x: .003539823, y: .003539823, z: .003539823}
   m_Children:
   - {fileID: 242214581}
   - {fileID: 44364028}
@@ -21437,7 +21441,7 @@ Transform:
   m_PrefabParentObject: {fileID: 400000, guid: 1ff62915f0fa24d8f8dc54c55cc997d9, type: 2}
   m_PrefabInternal: {fileID: 978897638}
   m_GameObject: {fileID: 1420628615}
-  m_LocalRotation: {x: 0, y: 0, z: .707106829, w: .707106709}
+  m_LocalRotation: {x: 0, y: 0, z: .707106888, w: .707106769}
   m_LocalPosition: {x: 50.1674309, y: -.373027802, z: 0}
   m_LocalScale: {x: 102.768478, y: .5, z: 1}
   m_Children: []
@@ -21511,7 +21515,7 @@ Transform:
   m_PrefabInternal: {fileID: 1998484056}
   m_GameObject: {fileID: 1433711866}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 576.999939, y: 322, z: 0}
+  m_LocalPosition: {x: 443, y: 246.5, z: 0}
   m_LocalScale: {x: .99990797, y: .99990797, z: .99990797}
   m_Children:
   - {fileID: 760126843}
@@ -22076,7 +22080,7 @@ GameObject:
   - 4: {fileID: 1473564761}
   - 114: {fileID: 1473564764}
   - 212: {fileID: 1473564763}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Warrior
   m_TagString: Warrior
   m_Icon: {fileID: 0}
@@ -26025,7 +26029,7 @@ GameObject:
   m_Component:
   - 4: {fileID: 1687059715}
   - 114: {fileID: 616545165}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Orientation
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -26963,7 +26967,7 @@ GameObject:
   m_Component:
   - 4: {fileID: 1740256159}
   - 212: {fileID: 1740256160}
-  m_Layer: 11
+  m_Layer: 8
   m_Name: swordswipe
   m_TagString: Weapon
   m_Icon: {fileID: 0}
@@ -27771,7 +27775,7 @@ MonoBehaviour:
       isGlobal: 0
     - name: OnDead
       isSystemEvent: 0
-      isGlobal: 0
+      isGlobal: 1
     - name: OnHit
       isSystemEvent: 0
       isGlobal: 0
@@ -27876,7 +27880,7 @@ Transform:
   m_PrefabParentObject: {fileID: 400000, guid: 00b7721245b86450bb6b46ef5ef86bf1, type: 2}
   m_PrefabInternal: {fileID: 1907829027}
   m_GameObject: {fileID: 1844067352}
-  m_LocalRotation: {x: 0, y: 0, z: .707106829, w: .707106709}
+  m_LocalRotation: {x: 0, y: 0, z: .707106888, w: .707106769}
   m_LocalPosition: {x: 15.9218998, y: -28.7970753, z: 0}
   m_LocalScale: {x: 1.12500048, y: 1, z: 1}
   m_Children:
@@ -27893,7 +27897,7 @@ GameObject:
   - 4: {fileID: 1851723939}
   - 212: {fileID: 1851723940}
   - 114: {fileID: 1851723941}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Mage
   m_TagString: Mage
   m_Icon: {fileID: 0}
@@ -28912,6 +28916,42 @@ Prefab:
     - target: {fileID: 400002, guid: 42b63dec9386e436eac1d7267b3889d6, type: 2}
       propertyPath: m_RootOrder
       value: 5
+      objectReference: {fileID: 0}
+    - target: {fileID: 100008, guid: 42b63dec9386e436eac1d7267b3889d6, type: 2}
+      propertyPath: m_Layer
+      value: 8
+      objectReference: {fileID: 0}
+    - target: {fileID: 100002, guid: 42b63dec9386e436eac1d7267b3889d6, type: 2}
+      propertyPath: m_Layer
+      value: 8
+      objectReference: {fileID: 0}
+    - target: {fileID: 100000, guid: 42b63dec9386e436eac1d7267b3889d6, type: 2}
+      propertyPath: m_Layer
+      value: 8
+      objectReference: {fileID: 0}
+    - target: {fileID: 100018, guid: 42b63dec9386e436eac1d7267b3889d6, type: 2}
+      propertyPath: m_Layer
+      value: 8
+      objectReference: {fileID: 0}
+    - target: {fileID: 100022, guid: 42b63dec9386e436eac1d7267b3889d6, type: 2}
+      propertyPath: m_Layer
+      value: 8
+      objectReference: {fileID: 0}
+    - target: {fileID: 100006, guid: 42b63dec9386e436eac1d7267b3889d6, type: 2}
+      propertyPath: m_Layer
+      value: 8
+      objectReference: {fileID: 0}
+    - target: {fileID: 100026, guid: 42b63dec9386e436eac1d7267b3889d6, type: 2}
+      propertyPath: m_Layer
+      value: 8
+      objectReference: {fileID: 0}
+    - target: {fileID: 100028, guid: 42b63dec9386e436eac1d7267b3889d6, type: 2}
+      propertyPath: m_Layer
+      value: 8
+      objectReference: {fileID: 0}
+    - target: {fileID: 100004, guid: 42b63dec9386e436eac1d7267b3889d6, type: 2}
+      propertyPath: m_Layer
+      value: 8
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 42b63dec9386e436eac1d7267b3889d6, type: 2}
@@ -31056,31 +31096,31 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 400052, guid: 5c724f367f05e4c75a00dd0333e1f8ae, type: 2}
       propertyPath: m_LocalPosition.y
-      value: -210.5
+      value: -172.75
       objectReference: {fileID: 0}
     - target: {fileID: 400040, guid: 5c724f367f05e4c75a00dd0333e1f8ae, type: 2}
       propertyPath: m_LocalPosition.y
-      value: 318.5
+      value: 243
       objectReference: {fileID: 0}
     - target: {fileID: 400012, guid: 5c724f367f05e4c75a00dd0333e1f8ae, type: 2}
       propertyPath: m_LocalScale.x
-      value: .00279329601
+      value: .003539823
       objectReference: {fileID: 0}
     - target: {fileID: 400012, guid: 5c724f367f05e4c75a00dd0333e1f8ae, type: 2}
       propertyPath: m_LocalScale.y
-      value: .00279329601
+      value: .003539823
       objectReference: {fileID: 0}
     - target: {fileID: 400012, guid: 5c724f367f05e4c75a00dd0333e1f8ae, type: 2}
       propertyPath: m_LocalScale.z
-      value: .00279329601
+      value: .003539823
       objectReference: {fileID: 0}
     - target: {fileID: 400014, guid: 5c724f367f05e4c75a00dd0333e1f8ae, type: 2}
       propertyPath: m_LocalPosition.x
-      value: 576.999939
+      value: 443
       objectReference: {fileID: 0}
     - target: {fileID: 400014, guid: 5c724f367f05e4c75a00dd0333e1f8ae, type: 2}
       propertyPath: m_LocalPosition.y
-      value: 322
+      value: 246.5
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 5c724f367f05e4c75a00dd0333e1f8ae, type: 2}
@@ -31097,7 +31137,7 @@ GameObject:
   - 4: {fileID: 2013738095}
   - 212: {fileID: 2013738096}
   - 114: {fileID: 2013738097}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Thief
   m_TagString: Thief
   m_Icon: {fileID: 0}
@@ -32203,7 +32243,7 @@ GameObject:
   m_Component:
   - 4: {fileID: 2063108273}
   - 114: {fileID: 2063108272}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Staff
   m_TagString: Untagged
   m_Icon: {fileID: 0}
