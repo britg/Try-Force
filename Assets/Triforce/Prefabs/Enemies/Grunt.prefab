@@ -4709,13 +4709,13 @@ MonoBehaviour:
         tooltip: 
         showInInspector: 1
         networkSync: 0
-        value: 1
+        value: .800000012
       - useVariable: 1
         name: Start Delay
         tooltip: 
         showInInspector: 1
         networkSync: 0
-        value: .800000012
+        value: .5
       intVariables: []
       boolVariables: []
       stringVariables: []
