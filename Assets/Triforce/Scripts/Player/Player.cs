@@ -22,13 +22,13 @@ public class Player {
     public int maxRunes;
     public int maxLockpicks;
 
-	int currentHitPoints;
-    int currentMana;
-    int currentArrows;
-    int currentRunes;
-    int currentLockpicks;
+    public int HitPoints { get; set; }
+    public int Mana { get; set; }
+    public int Arrows { get; set; }
+    public int Runes { get; set; }
+    public int Lockpicks { get; set; }
 
-    public int gold;
+    public int Gold { get; set; }
 
 	public float moveSpeed;
 	public float rotateSpeed;
@@ -42,5 +42,9 @@ public class Player {
 	public bool warriorFace { get { return orientation == Player.Orientation.Warrior; } }
 	public bool thiefFace { get { return orientation == Player.Orientation.Thief; } }
 	public bool mageFace { get { return orientation == Player.Orientation.Mage; } }
+
+    public object GetProperty (string propertyName) {
+        return this.GetType().GetProperty(propertyName).GetValue(this, null);
+    }
 
 }

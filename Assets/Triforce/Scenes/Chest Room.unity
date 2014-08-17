@@ -183,7 +183,7 @@ MonoBehaviour:
             tooltip: 
             showInInspector: 0
             networkSync: 0
-            value: {fileID: 0}
+            value: {fileID: 616545160}
         - ownerOption: 0
           gameObject:
             useVariable: 0
@@ -940,7 +940,7 @@ MonoBehaviour:
               tooltip: 
               showInInspector: 0
               networkSync: 0
-              value: {fileID: 0}
+              value: {fileID: 616545160}
           fsmName:
             useVariable: 0
             name: 
@@ -7036,7 +7036,7 @@ MonoBehaviour:
             tooltip: 
             showInInspector: 0
             networkSync: 0
-            value: {fileID: 0}
+            value: {fileID: 616545160}
         - ownerOption: 0
           gameObject:
             useVariable: 0
@@ -8177,7 +8177,6 @@ MonoBehaviour:
     maxArrows: 0
     maxRunes: 0
     maxLockpicks: 0
-    gold: 0
     moveSpeed: .300000012
     rotateSpeed: 0
     orientation: 0
@@ -8275,7 +8274,7 @@ MonoBehaviour:
             tooltip: 
             showInInspector: 0
             networkSync: 0
-            value: {fileID: 0}
+            value: {fileID: 616545160}
         animationCurveParams: []
         functionCallParams: []
         fsmTemplateControlParams: []
@@ -10862,7 +10861,7 @@ MonoBehaviour:
             tooltip: 
             showInInspector: 0
             networkSync: 0
-            value: {fileID: 0}
+            value: {fileID: 616545160}
         - ownerOption: 0
           gameObject:
             useVariable: 0
@@ -11591,7 +11590,7 @@ MonoBehaviour:
             tooltip: 
             showInInspector: 0
             networkSync: 0
-            value: {fileID: 0}
+            value: {fileID: 616545160}
         - ownerOption: 0
           gameObject:
             useVariable: 0
@@ -13430,7 +13429,7 @@ MonoBehaviour:
             tooltip: 
             showInInspector: 0
             networkSync: 0
-            value: {fileID: 0}
+            value: {fileID: 616545160}
         - ownerOption: 1
           gameObject:
             useVariable: 1
@@ -13438,7 +13437,7 @@ MonoBehaviour:
             tooltip: 
             showInInspector: 0
             networkSync: 0
-            value: {fileID: 0}
+            value: {fileID: 616545160}
         animationCurveParams: []
         functionCallParams: []
         fsmTemplateControlParams: []
@@ -13459,7 +13458,7 @@ MonoBehaviour:
               tooltip: 
               showInInspector: 0
               networkSync: 0
-              value: {fileID: 0}
+              value: {fileID: 616545160}
           fsmName:
             useVariable: 0
             name: 
@@ -13571,7 +13570,7 @@ MonoBehaviour:
             tooltip: 
             showInInspector: 0
             networkSync: 0
-            value: {fileID: 0}
+            value: {fileID: 1361644027}
         animationCurveParams: []
         functionCallParams: []
         fsmTemplateControlParams: []
@@ -16169,7 +16168,7 @@ MonoBehaviour:
             tooltip: 
             showInInspector: 0
             networkSync: 0
-            value: {fileID: 0}
+            value: {fileID: 616545160}
         animationCurveParams: []
         functionCallParams: []
         fsmTemplateControlParams: []
@@ -16428,7 +16427,7 @@ MonoBehaviour:
             tooltip: 
             showInInspector: 0
             networkSync: 0
-            value: {fileID: 0}
+            value: {fileID: 616545160}
         animationCurveParams: []
         functionCallParams: []
         fsmTemplateControlParams: []
@@ -17648,7 +17647,7 @@ MonoBehaviour:
             tooltip: 
             showInInspector: 0
             networkSync: 0
-            value: {fileID: 0}
+            value: {fileID: 616545160}
         - ownerOption: 0
           gameObject:
             useVariable: 0
@@ -18437,7 +18436,7 @@ MonoBehaviour:
             tooltip: 
             showInInspector: 0
             networkSync: 0
-            value: {fileID: 0}
+            value: {fileID: 616545160}
         - ownerOption: 0
           gameObject:
             useVariable: 0
@@ -23542,7 +23541,7 @@ MonoBehaviour:
             tooltip: 
             showInInspector: 0
             networkSync: 0
-            value: {fileID: 0}
+            value: {fileID: 616545160}
         - ownerOption: 0
           gameObject:
             useVariable: 0
@@ -25202,7 +25201,7 @@ MonoBehaviour:
             tooltip: 
             showInInspector: 0
             networkSync: 0
-            value: {fileID: 0}
+            value: {fileID: 616545160}
         - ownerOption: 0
           gameObject:
             useVariable: 0
@@ -26653,7 +26652,7 @@ MonoBehaviour:
             tooltip: 
             showInInspector: 0
             networkSync: 0
-            value: {fileID: 0}
+            value: {fileID: 616545160}
         - ownerOption: 0
           gameObject:
             useVariable: 0
@@ -27257,7 +27256,7 @@ MonoBehaviour:
               tooltip: 
               showInInspector: 0
               networkSync: 0
-              value: {fileID: 0}
+              value: {fileID: 616545160}
           fsmName:
             useVariable: 0
             name: 
@@ -29687,7 +29686,7 @@ MonoBehaviour:
             tooltip: 
             showInInspector: 0
             networkSync: 0
-            value: {fileID: 0}
+            value: {fileID: 616545160}
         - ownerOption: 0
           gameObject:
             useVariable: 0
@@ -30409,7 +30408,7 @@ MonoBehaviour:
             tooltip: 
             showInInspector: 0
             networkSync: 0
-            value: {fileID: 0}
+            value: {fileID: 616545160}
         animationCurveParams: []
         functionCallParams: []
         fsmTemplateControlParams: []
@@ -30552,7 +30551,7 @@ MonoBehaviour:
             tooltip: 
             showInInspector: 0
             networkSync: 0
-            value: {fileID: 0}
+            value: {fileID: 616545160}
         animationCurveParams: []
         functionCallParams: []
         fsmTemplateControlParams: []
@@ -30883,7 +30882,7 @@ MonoBehaviour:
             tooltip: 
             showInInspector: 0
             networkSync: 0
-            value: {fileID: 0}
+            value: {fileID: 616545160}
         - ownerOption: 0
           gameObject:
             useVariable: 0

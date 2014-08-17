@@ -20,10 +20,12 @@ public class PlayerSaveService {
 
     void LoadSave () {
         Debug.Log("Loading existing save");
+        Debug.Log("hitpoints is " + playerRef.GetProperty("HitPoints"));
     }
 
     void CreateNewSave () {
         Debug.Log("Creating new save");
+        ES2.Save<string>("1", PlayerSaveService.saveKey);
     }
 
 }

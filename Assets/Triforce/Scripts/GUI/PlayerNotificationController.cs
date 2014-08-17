@@ -3,7 +3,7 @@ using System.Collections;
 
 public class PlayerNotificationController : GameController {
 
-  HUDText hudText;
+    HUDText hudText;
 
 	// Use this for initialization
 	void Start () {
