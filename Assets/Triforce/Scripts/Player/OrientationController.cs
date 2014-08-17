@@ -11,30 +11,8 @@ public class OrientationController : GameController {
 	}
 
 	void Update () {
-		DetectRotate();
-//		DetectPivot();
 	}
 
-	void DetectRotate () {
-		if (currentInputController.rotateRight) {
-//			RotateRight();
-		}
-		if (currentInputController.rotateLeft) {
-//			RotateLeft();
-		}
-	}
-
-	void RotateRight () {
-		previousOrientation = player.orientation;
-		player.RotateCounterClockwise();
-		UpdateOrientation();
-	}
-
-	void RotateLeft () {
-		previousOrientation = player.orientation;
-		player.RotateClockwise();
-		UpdateOrientation();
-	}
 
 	void UpdateOrientation () {
 		FsmVariables.GlobalVariables.GetFsmString("Orientation").Value = player.orientation.ToString();

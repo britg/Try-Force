@@ -1852,7 +1852,17 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   player:
-    hitPoints: 0
+    maxHitPoints: 0
+    maxMana: 0
+    maxArrows: 0
+    maxRunes: 0
+    maxLockpicks: 0
+    currentHitPoints: 0
+    currentMana: 0
+    currentArrows: 0
+    currentRunes: 0
+    currentLockpicks: 0
+    gold: 0
     moveSpeed: .300000012
     rotateSpeed: 0
     orientation: 0
@@ -3914,6 +3924,12 @@ MonoBehaviour:
         showInInspector: 0
         networkSync: 0
         value: 100
+      - useVariable: 1
+        name: Hitpoints Change
+        tooltip: 
+        showInInspector: 0
+        networkSync: 0
+        value: 0
       - useVariable: 1
         name: Hitpoints Max
         tooltip: 

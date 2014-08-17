@@ -7,6 +7,7 @@ public class PlayerController : GameController {
 	public CircleCollider2D collisionBody;
 
 	void Start () {
+        LoadPlayer();
 	}
 
 	void Update () {
@@ -40,5 +41,10 @@ public class PlayerController : GameController {
 
 		return true;
 	}
+
+    void LoadPlayer() {
+        PlayerSaveService playerSaveService = new PlayerSaveService();
+        playerSaveService.Load(ref player);
+    }
 
 }

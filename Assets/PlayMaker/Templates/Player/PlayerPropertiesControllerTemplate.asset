@@ -15,7 +15,7 @@ MonoBehaviour:
   fsm:
     usedInTemplate: {fileID: 11400000}
     name: Properties
-    startState: Check Save Exists
+    startState: State 1
     states:
     - name: Save Properties
       description: 
@@ -23,7 +23,7 @@ MonoBehaviour:
       position:
         serializedVersion: 2
         x: 721
-        y: 112
+        y: 128
         width: 122
         height: 16
       isBreakpoint: 0
@@ -214,7 +214,7 @@ MonoBehaviour:
       position:
         serializedVersion: 2
         x: 250
-        y: 116.984375
+        y: 132.984375
         width: 150
         height: 48
       isBreakpoint: 0
@@ -289,7 +289,7 @@ MonoBehaviour:
       position:
         serializedVersion: 2
         x: 60
-        y: 161
+        y: 177
         width: 100
         height: 32
       isBreakpoint: 0
@@ -363,7 +363,7 @@ MonoBehaviour:
       position:
         serializedVersion: 2
         x: 261
-        y: 271
+        y: 287
         width: 154
         height: 48
       isBreakpoint: 0
@@ -438,7 +438,7 @@ MonoBehaviour:
       position:
         serializedVersion: 2
         x: 507
-        y: 300
+        y: 316
         width: 162
         height: 32
       isBreakpoint: 0
@@ -492,7 +492,7 @@ MonoBehaviour:
       position:
         serializedVersion: 2
         x: 505
-        y: 237.960938
+        y: 253.960938
         width: 112
         height: 32
       isBreakpoint: 0
@@ -566,7 +566,7 @@ MonoBehaviour:
       position:
         serializedVersion: 2
         x: 279
-        y: 413
+        y: 429
         width: 150
         height: 48
       isBreakpoint: 0
@@ -641,7 +641,7 @@ MonoBehaviour:
       position:
         serializedVersion: 2
         x: 506
-        y: 401
+        y: 417
         width: 100
         height: 32
       isBreakpoint: 0
@@ -715,7 +715,7 @@ MonoBehaviour:
       position:
         serializedVersion: 2
         x: 505
-        y: 460
+        y: 476
         width: 137
         height: 32
       isBreakpoint: 0
@@ -769,7 +769,7 @@ MonoBehaviour:
       position:
         serializedVersion: 2
         x: 267.796875
-        y: 553.03125
+        y: 569.03125
         width: 150
         height: 48
       isBreakpoint: 0
@@ -844,7 +844,7 @@ MonoBehaviour:
       position:
         serializedVersion: 2
         x: 516
-        y: 546
+        y: 562
         width: 100
         height: 32
       isBreakpoint: 0
@@ -918,7 +918,7 @@ MonoBehaviour:
       position:
         serializedVersion: 2
         x: 519
-        y: 604
+        y: 620
         width: 122
         height: 32
       isBreakpoint: 0
@@ -972,7 +972,7 @@ MonoBehaviour:
       position:
         serializedVersion: 2
         x: 287
-        y: 680
+        y: 696
         width: 150
         height: 48
       isBreakpoint: 0
@@ -1047,7 +1047,7 @@ MonoBehaviour:
       position:
         serializedVersion: 2
         x: 511
-        y: 664
+        y: 680
         width: 100
         height: 32
       isBreakpoint: 0
@@ -1121,7 +1121,7 @@ MonoBehaviour:
       position:
         serializedVersion: 2
         x: 512
-        y: 728
+        y: 744
         width: 137
         height: 32
       isBreakpoint: 0
@@ -1175,7 +1175,7 @@ MonoBehaviour:
       position:
         serializedVersion: 2
         x: 273.476562
-        y: 814.421875
+        y: 830.421875
         width: 158
         height: 48
       isBreakpoint: 0
@@ -1250,7 +1250,7 @@ MonoBehaviour:
       position:
         serializedVersion: 2
         x: 511.484375
-        y: 810.484375
+        y: 826.484375
         width: 116
         height: 32
       isBreakpoint: 0
@@ -1324,7 +1324,7 @@ MonoBehaviour:
       position:
         serializedVersion: 2
         x: 509
-        y: 866.320312
+        y: 882.320312
         width: 155
         height: 32
       isBreakpoint: 0
@@ -1378,7 +1378,7 @@ MonoBehaviour:
       position:
         serializedVersion: 2
         x: 283.390625
-        y: 952.132812
+        y: 968.132812
         width: 150
         height: 48
       isBreakpoint: 0
@@ -1453,7 +1453,7 @@ MonoBehaviour:
       position:
         serializedVersion: 2
         x: 512.921875
-        y: 962.007812
+        y: 978.007812
         width: 100
         height: 16
       isBreakpoint: 0
@@ -1519,7 +1519,7 @@ MonoBehaviour:
       position:
         serializedVersion: 2
         x: 510.226562
-        y: 1010.24219
+        y: 1026.24219
         width: 131
         height: 16
       isBreakpoint: 0
@@ -1565,7 +1565,7 @@ MonoBehaviour:
       position:
         serializedVersion: 2
         x: 922
-        y: 112
+        y: 128
         width: 109
         height: 16
       isBreakpoint: 0
@@ -1618,7 +1618,7 @@ MonoBehaviour:
       position:
         serializedVersion: 2
         x: 802
-        y: 269
+        y: 285
         width: 102
         height: 32
       isBreakpoint: 0
@@ -1729,7 +1729,7 @@ MonoBehaviour:
       position:
         serializedVersion: 2
         x: 799
-        y: 346
+        y: 362
         width: 142
         height: 64
       isBreakpoint: 0
@@ -1832,7 +1832,7 @@ MonoBehaviour:
       position:
         serializedVersion: 2
         x: 1012
-        y: 337
+        y: 353
         width: 100
         height: 32
       isBreakpoint: 0
@@ -1886,7 +1886,7 @@ MonoBehaviour:
       position:
         serializedVersion: 2
         x: 1084
-        y: 413
+        y: 429
         width: 100
         height: 32
       isBreakpoint: 0
@@ -1940,7 +1940,7 @@ MonoBehaviour:
       position:
         serializedVersion: 2
         x: 1089
-        y: 500
+        y: 516
         width: 113
         height: 32
       isBreakpoint: 0
@@ -1994,7 +1994,7 @@ MonoBehaviour:
       position:
         serializedVersion: 2
         x: 1277
-        y: 113
+        y: 129
         width: 181
         height: 32
       isBreakpoint: 0
@@ -2105,7 +2105,7 @@ MonoBehaviour:
       position:
         serializedVersion: 2
         x: 1297
-        y: 189
+        y: 205
         width: 137
         height: 32
       isBreakpoint: 0
@@ -2160,7 +2160,7 @@ MonoBehaviour:
       position:
         serializedVersion: 2
         x: 1300
-        y: 273
+        y: 289
         width: 144
         height: 16
       isBreakpoint: 0
@@ -2310,6 +2310,47 @@ MonoBehaviour:
         - functionCall
         paramDataPos: 00000000000000000400000000000000
         paramByteDataSize: 00000000040000000400000000000000
+    - name: State 1
+      description: 
+      colorIndex: 0
+      position:
+        serializedVersion: 2
+        x: 523
+        y: 102
+        width: 100
+        height: 16
+      isBreakpoint: 0
+      isSequence: 0
+      hideUnused: 0
+      transitions: []
+      actionData:
+        actionNames: []
+        customNames: []
+        actionEnabled: 
+        actionIsOpen: 
+        actionStartIndex: 
+        actionHashCodes: 
+        unityObjectParams: []
+        fsmGameObjectParams: []
+        fsmOwnerDefaultParams: []
+        animationCurveParams: []
+        functionCallParams: []
+        fsmTemplateControlParams: []
+        fsmEventTargetParams: []
+        fsmPropertyParams: []
+        layoutOptionParams: []
+        fsmStringParams: []
+        fsmObjectParams: []
+        fsmVarParams: []
+        byteData: 
+        arrayParamSizes: 
+        arrayParamTypes: []
+        customTypeSizes: 
+        customTypeNames: []
+        paramDataType: 
+        paramName: []
+        paramDataPos: 
+        paramByteDataSize: 
     events:
     - name: FINISHED
       isSystemEvent: 1
