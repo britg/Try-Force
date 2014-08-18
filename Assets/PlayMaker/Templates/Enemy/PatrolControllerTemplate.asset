@@ -23,7 +23,7 @@ MonoBehaviour:
       position:
         serializedVersion: 2
         x: 261
-        y: 194
+        y: 242
         width: 164
         height: 48
       isBreakpoint: 0
@@ -86,7 +86,7 @@ MonoBehaviour:
       position:
         serializedVersion: 2
         x: 541.625
-        y: 220.695312
+        y: 268.695312
         width: 152
         height: 64
       isBreakpoint: 0
@@ -210,7 +210,7 @@ MonoBehaviour:
       position:
         serializedVersion: 2
         x: 564.101562
-        y: 331.828125
+        y: 379.828125
         width: 100
         height: 32
       isBreakpoint: 0
@@ -288,7 +288,7 @@ MonoBehaviour:
       position:
         serializedVersion: 2
         x: 56.296875
-        y: 483.101562
+        y: 531.101562
         width: 130
         height: 64
       isBreakpoint: 0
@@ -388,7 +388,7 @@ MonoBehaviour:
       position:
         serializedVersion: 2
         x: 60.484375
-        y: 594.273438
+        y: 642.273438
         width: 101
         height: 32
       isBreakpoint: 0
@@ -478,7 +478,7 @@ MonoBehaviour:
       position:
         serializedVersion: 2
         x: 61.203125
-        y: 333.71875
+        y: 381.71875
         width: 127
         height: 48
       isBreakpoint: 0
@@ -551,7 +551,7 @@ MonoBehaviour:
       position:
         serializedVersion: 2
         x: 59
-        y: 407
+        y: 455
         width: 129
         height: 32
       isBreakpoint: 0
@@ -627,7 +627,7 @@ MonoBehaviour:
       position:
         serializedVersion: 2
         x: 293.796875
-        y: 105.242188
+        y: 153.242188
         width: 104
         height: 48
       isBreakpoint: 0
@@ -690,7 +690,7 @@ MonoBehaviour:
       position:
         serializedVersion: 2
         x: 374.835938
-        y: 490.320312
+        y: 538.320312
         width: 100
         height: 32
       isBreakpoint: 0
@@ -744,7 +744,7 @@ MonoBehaviour:
       position:
         serializedVersion: 2
         x: 373
-        y: 539
+        y: 587
         width: 100
         height: 32
       isBreakpoint: 0
@@ -823,7 +823,13 @@ MonoBehaviour:
     globalTransitions: []
     variables:
       floatVariables: []
-      intVariables: []
+      intVariables:
+      - useVariable: 1
+        name: Hitpoints
+        tooltip: 
+        showInInspector: 0
+        networkSync: 0
+        value: 0
       boolVariables:
       - useVariable: 1
         name: Frozen

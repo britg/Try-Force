@@ -595,7 +595,7 @@ MonoBehaviour:
               tooltip: 
               showInInspector: 0
               networkSync: 0
-              value: {fileID: 616545160}
+              value: {fileID: 0}
           fsmName:
             useVariable: 0
             name: 
@@ -4856,6 +4856,7 @@ GameObject:
   - 50: {fileID: 469507181}
   - 114: {fileID: 469507180}
   - 114: {fileID: 469507179}
+  - 114: {fileID: 469507183}
   m_Layer: 8
   m_Name: Sword
   m_TagString: Weapon
@@ -5379,6 +5380,22 @@ BoxCollider2D:
   m_IsTrigger: 1
   m_Size: {x: 2.16000009, y: 1.33000004}
   m_Center: {x: 0, y: .829999983}
+--- !u!114 &469507183
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 469507177}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1481092c03235d442a5f5be7f6b9bc48, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  weapon:
+    name: Rusty Iron Sword
+    damageType: 0
+    damageMin: 10
+    damageMax: 20
 --- !u!1 &479789803
 GameObject:
   m_ObjectHideFlags: 0
@@ -7397,7 +7414,7 @@ MonoBehaviour:
             tooltip: 
             showInInspector: 0
             networkSync: 0
-            value: {fileID: 616545160}
+            value: {fileID: 0}
         animationCurveParams: []
         functionCallParams: []
         fsmTemplateControlParams: []
@@ -11774,7 +11791,7 @@ MonoBehaviour:
             tooltip: 
             showInInspector: 0
             networkSync: 0
-            value: {fileID: 616545160}
+            value: {fileID: 0}
         - ownerOption: 1
           gameObject:
             useVariable: 1
@@ -11782,7 +11799,7 @@ MonoBehaviour:
             tooltip: 
             showInInspector: 0
             networkSync: 0
-            value: {fileID: 616545160}
+            value: {fileID: 0}
         animationCurveParams: []
         functionCallParams: []
         fsmTemplateControlParams: []
@@ -11803,7 +11820,7 @@ MonoBehaviour:
               tooltip: 
               showInInspector: 0
               networkSync: 0
-              value: {fileID: 616545160}
+              value: {fileID: 0}
           fsmName:
             useVariable: 0
             name: 
@@ -11915,7 +11932,7 @@ MonoBehaviour:
             tooltip: 
             showInInspector: 0
             networkSync: 0
-            value: {fileID: 1361644027}
+            value: {fileID: 0}
         animationCurveParams: []
         functionCallParams: []
         fsmTemplateControlParams: []
@@ -14513,7 +14530,7 @@ MonoBehaviour:
             tooltip: 
             showInInspector: 0
             networkSync: 0
-            value: {fileID: 616545160}
+            value: {fileID: 0}
         animationCurveParams: []
         functionCallParams: []
         fsmTemplateControlParams: []
@@ -14772,7 +14789,7 @@ MonoBehaviour:
             tooltip: 
             showInInspector: 0
             networkSync: 0
-            value: {fileID: 616545160}
+            value: {fileID: 0}
         animationCurveParams: []
         functionCallParams: []
         fsmTemplateControlParams: []
@@ -24010,7 +24027,7 @@ MonoBehaviour:
               tooltip: 
               showInInspector: 0
               networkSync: 0
-              value: {fileID: 616545160}
+              value: {fileID: 0}
           fsmName:
             useVariable: 0
             name: 
@@ -26741,7 +26758,7 @@ MonoBehaviour:
             tooltip: 
             showInInspector: 0
             networkSync: 0
-            value: {fileID: 616545160}
+            value: {fileID: 0}
         animationCurveParams: []
         functionCallParams: []
         fsmTemplateControlParams: []
@@ -26884,7 +26901,7 @@ MonoBehaviour:
             tooltip: 
             showInInspector: 0
             networkSync: 0
-            value: {fileID: 616545160}
+            value: {fileID: 0}
         animationCurveParams: []
         functionCallParams: []
         fsmTemplateControlParams: []

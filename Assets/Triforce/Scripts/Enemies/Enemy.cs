@@ -2,74 +2,47 @@
 using System.Collections;
 
 [System.Serializable]
-public class Enemy : IDamageReceiver {
+public class Enemy : IDamageable {
 
-	public enum AggroState {
-		Idle,
-		Aggro,
-		InRange,
-		Stunned,
-		KnockedBack,
-		Dead
-	}
+    public int hitPoints;
+    public int maxHitPoints;
+    public int armor;
 
-	public int _hitPoints;
-	public int hitPoints { get { return _hitPoints; } }
+    public int HitPoints { 
+        get {
+            return hitPoints;
+        }
+        set {
+            hitPoints = value;
+        }
+    }
 
-	public float moveSpeed;
-	public float attackPower;
-	public float attackDuration;
-	public float attackCooldown;
-	public float stunDuration;
+    public int MaxHitPoints { 
+        get {
+            return maxHitPoints;
+        }
+        set {
+            maxHitPoints = value;
+        }
+    }
 
-	public Enemy.AggroState aggroState;
-	public bool idle { get { return aggroState == Enemy.AggroState.Idle; } }
-	public bool aggro { get { return aggroState == Enemy.AggroState.Aggro; } }
-	public bool inRange { get { return aggroState == Enemy.AggroState.InRange; } }
-	public bool stunned { get { return aggroState == Enemy.AggroState.Stunned; } }
-	public bool knockedBack { get { return aggroState == Enemy.AggroState.KnockedBack; } }
-	public bool dead { get { return aggroState == Enemy.AggroState.Dead; } }
+    public int Armor {
+        get {
+            return armor;
+        }
+        set {
+            armor = value;
+        }
+    }
 
-	public void EnterAggroState () {
-		aggroState = Enemy.AggroState.Aggro;
-	}
+    public bool Dead { get; set; }
 
-	public void EnterInRangeState () {
-		aggroState = Enemy.AggroState.InRange;
-	}
 
-	public void EnterIdleState () {
-		aggroState = Enemy.AggroState.Idle;
-	}
+    public Weapon weapon;
 
-	public void TakeDamageFrom (IProjectile projectile) {
-		Debug.Log ("Enemy model: taking damage from projectile " + projectile);
-		_hitPoints -= 1;
+    public void TakeDamage (int amount) {
+        int newHp = HitPoints - amount;
+        HitPoints = (int)Mathf.Clamp((float)newHp, 0f, (float)MaxHitPoints);
+    }
 
-		if (_hitPoints <= 0) {
-			Die();
-		}
-	}
-
-	public void TakeDamageFrom (IWeapon weapon) {
-		Debug.Log ("Enemy model: taking damage from weapon " + weapon);
-		Die();
-	}
-
-	public void TakeDamageFrom (ISpell spell) {
-		Debug.Log ("Enemy model: taking damage from spell " + spell);
-		Die();
-	}
-
-	void KnockBack () {
-		aggroState = Enemy.AggroState.KnockedBack;
-	}
-
-	public void AfterKnockBack () {
-		aggroState = Enemy.AggroState.Stunned;
-	}
-
-	void Die () {
-		aggroState = Enemy.AggroState.Dead;
-	}
 }
