@@ -3,5 +3,6 @@ using System.Collections;
 
 public class WeaponController : GameController {
 
-	public IWeapon weapon;
+    public Weapon weapon;
+
 }

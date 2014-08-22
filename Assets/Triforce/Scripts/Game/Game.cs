@@ -14,4 +14,6 @@ public static class Game {
 	public static string enemyWeaponTag = "EnemyWeapon";
 
 	public static string enemyLayer = "Enemy";
+
+    public static string savePath = "Triforce.save";
 }
